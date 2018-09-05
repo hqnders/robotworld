@@ -39,6 +39,11 @@ class Robot : public AbstractAgent,
   Robot(const std::string &aName);
   Robot(const std::string &aName, const Point &aPosition);
   virtual ~Robot();
+  
+  /**
+   * Calculate the fastest route towards the goal
+   */
+  void calculateRoute(GoalPtr aGoal);
 
   std::string getName() const {
     return name;
@@ -249,11 +254,6 @@ class Robot : public AbstractAgent,
    * Drive to the point without stopping
    */
   void drive();
-
-  /**
-   * Calculate the fastest route towards the goal
-   */
-  void calculateRoute(GoalPtr aGoal);
 
   /**
    * @return Whether or not the robot is at it's goal

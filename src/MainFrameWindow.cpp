@@ -252,6 +252,11 @@ Panel *MainFrameWindow::initialiseButtonPanel() {
                         [this](CommandEvent &anEvent) { this->OnUnpopulate(anEvent); }),
              GBPosition(0, 1),
              GBSpan(1, 1), EXPAND);
+    sizer->Add(makeButton(panel,
+                        "Calc route",
+                        [this](CommandEvent &anEvent) { this->OnCalcRoute(anEvent); }),
+             GBPosition(0, 2),
+             GBSpan(1, 1), EXPAND);
 
   sizer->Add(makeButton(panel,
                         "Start robot",
@@ -284,6 +289,32 @@ Panel *MainFrameWindow::initialiseButtonPanel() {
                         [this](CommandEvent &anEvent) { this->OnStopListening(anEvent); }),
              GBPosition(2, 2),
              GBSpan(1, 1), EXPAND);
+  //sizer->Add(makeButton(panel,
+                        //"Setup Slave",
+                        //[this](CommandEvent &anEvent) { this->OnPopulate(anEvent); this->OnStartListening(anEvent); }),
+             //GBPosition(0, 0),
+             //GBSpan(1, 1), EXPAND);
+  //sizer->Add(makeButton(panel,
+                        //"Setup Master",
+                        //[this](CommandEvent &anEvent) { this->OnPopulate(anEvent); this->OnStartListening(anEvent); this->OnSendMessage(anEvent); this->OnSyncButton(anEvent); }),
+             //GBPosition(0, 1),
+             //GBSpan(1, 1), EXPAND);
+
+  //sizer->Add(makeButton(panel,
+                        //"Start robot",
+                        //[this](CommandEvent &anEvent) { this->OnStartRobot(anEvent); }),
+             //GBPosition(1, 0),
+             //GBSpan(1, 1), EXPAND);
+  //sizer->Add(makeButton(panel,
+                        //"Stop robot",
+                        //[this](CommandEvent &anEvent) { this->OnStopRobot(anEvent); }),
+             //GBPosition(1, 1),
+             //GBSpan(1, 1), EXPAND);
+  //sizer->Add(makeButton(panel,
+                        //"Quit",
+                        //[this](CommandEvent &anEvent) { this->OnStopRobot(anEvent); this->OnStopListening(anEvent); this->OnUnpopulate(anEvent); }),
+             //GBPosition(2, 0),
+             //GBSpan(1, 1), EXPAND);
 
   panel->SetSizerAndFit(sizer);
 
@@ -326,9 +357,22 @@ void MainFrameWindow::OnStartRobot(CommandEvent & UNUSEDPARAM(anEvent)) {
   Logger::log("Attempting to start Robot...");
   model::RobotPtr robot = model::RobotWorld::getRobotWorld().getRobot("Robot");
   if (robot && !robot->isActing()) {
-    Messaging::Message message(model::Robot::startRobotRequest);
-    robot->getClient()->dispatchMessage(message);
+    //Messaging::Message message(model::Robot::startRobotRequest);
+    //robot->getClient()->dispatchMessage(message);
     robot->startActing();
+  }
+}
+/**
+ *
+ */
+void MainFrameWindow::OnCalcRoute(CommandEvent & UNUSEDPARAM(anEvent)) {
+  Logger::log("Attempting to calculate Robot route...");
+  model::RobotPtr robot = model::RobotWorld::getRobotWorld().getRobot("Robot");
+  if (robot && !robot->isActing()) {
+    //Messaging::Message message(model::Robot::startRobotRequest);
+    //robot->getClient()->dispatchMessage(message);
+    robot->calculateRoute(robot->getGoalToFind());
+    //robot->startActing();
   }
 }
 /**

@@ -62,6 +62,7 @@ class MainFrameWindow : public Frame {
   void OnSendMessage(CommandEvent &anEvent);
   void OnStopListening(CommandEvent &anEvent);
   void OnSyncButton(CommandEvent &anEvent);
+  void OnCalcRoute(CommandEvent &anEvent);
   };
 } //namespace Application
 
