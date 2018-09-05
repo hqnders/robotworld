@@ -1,0 +1,214 @@
+\hypertarget{class_messaging_1_1_session}{}\section{Messaging\+:\+:Session Class Reference}
+\label{class_messaging_1_1_session}\index{Messaging\+::\+Session@{Messaging\+::\+Session}}
+
+
+{\ttfamily \#include $<$Session.\+hpp$>$}
+
+
+
+Inheritance diagram for Messaging\+:\+:Session\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_messaging_1_1_session__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_messaging_1_1_session_ab2e5e804ffa5711fbc7007f07180a0df}{Session} (boost\+::asio\+::io\+\_\+service \&io\+\_\+service)
+\item 
+virtual void \hyperlink{class_messaging_1_1_session_a89cbd6e05fdbbe1c9e26cbcab92d6044}{start} ()=0
+\item 
+virtual void \hyperlink{class_messaging_1_1_session_ac2fbf589586288cee9b408514907d044}{handle\+Message\+Read} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message)=0
+\item 
+virtual void \hyperlink{class_messaging_1_1_session_afcf204df8f7e67e470d454d9de561515}{handle\+Message\+Written} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message)=0
+\item 
+boost\+::asio\+::ip\+::tcp\+::socket \& \hyperlink{class_messaging_1_1_session_aedafb8b5c664cd9d2d86b90b863bde77}{get\+Socket} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_messaging_1_1_session_a9b5aa90c447db3b432751f453565e84b}{read\+Message} ()
+\item 
+void \hyperlink{class_messaging_1_1_session_a1ce6c51bea887b0745318de8de202af7}{handle\+Header\+Read} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message, const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t U\+N\+U\+S\+E\+D\+P\+A\+R\+AM(bytes\+\_\+transferred))
+\item 
+void \hyperlink{class_messaging_1_1_session_a9b2379db03dd4b22896df3b6891509a9}{handle\+Body\+Read} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message, const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+transferred)
+\item 
+void \hyperlink{class_messaging_1_1_session_a224c7c9cc62b4b9e3ccd21c3121f9b03}{handle\+Message\+Read} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message, const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t U\+N\+U\+S\+E\+D\+P\+A\+R\+AM(bytes\+\_\+transferred))
+\item 
+void \hyperlink{class_messaging_1_1_session_af6693149abfd302fd6285d99a0131f18}{write\+Message} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message)
+\item 
+void \hyperlink{class_messaging_1_1_session_aa6bb0133b721e77c31411cccc1eb6c40}{handle\+Header\+Written} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message, const boost\+::system\+::error\+\_\+code \&error)
+\item 
+void \hyperlink{class_messaging_1_1_session_a42e7eb7f1e5d41861417d03dcb5419e7}{handle\+Body\+Written} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message, const boost\+::system\+::error\+\_\+code \&error)
+\item 
+void \hyperlink{class_messaging_1_1_session_a4ad739e7dea45e860feae03c2ae728b2}{handle\+Message\+Written} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message, const boost\+::system\+::error\+\_\+code \&error)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::ip\+::tcp\+::socket {\bfseries socket}\hypertarget{class_messaging_1_1_session_aae95e1daf9716126c33e59d5f28d6271}{}\label{class_messaging_1_1_session_aae95e1daf9716126c33e59d5f28d6271}
+
+\item 
+std\+::vector$<$ char $>$ {\bfseries header\+Buffer}\hypertarget{class_messaging_1_1_session_a4a88bd6b136ddf540e0230c0c71a97a1}{}\label{class_messaging_1_1_session_a4a88bd6b136ddf540e0230c0c71a97a1}
+
+\item 
+std\+::vector$<$ char $>$ {\bfseries body\+Buffer}\hypertarget{class_messaging_1_1_session_a1a1a1351d07b456e3a9c229d94e143d0}{}\label{class_messaging_1_1_session_a1a1a1351d07b456e3a9c229d94e143d0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A session is an encapsulation of a request/response transaction sequence. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Messaging\+::\+Session@{Messaging\+::\+Session}!Session@{Session}}
+\index{Session@{Session}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{Session(boost\+::asio\+::io\+\_\+service \&io\+\_\+service)}{Session(boost::asio::io_service &io_service)}}]{\setlength{\rightskip}{0pt plus 5cm}Messaging\+::\+Session\+::\+Session (
+\begin{DoxyParamCaption}
+\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_messaging_1_1_session_ab2e5e804ffa5711fbc7007f07180a0df}{}\label{class_messaging_1_1_session_ab2e5e804ffa5711fbc7007f07180a0df}
+
+\begin{DoxyParams}{Parameters}
+{\em io\+\_\+service} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Messaging\+::\+Session@{Messaging\+::\+Session}!get\+Socket@{get\+Socket}}
+\index{get\+Socket@{get\+Socket}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{get\+Socket()}{getSocket()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::asio\+::ip\+::tcp\+::socket\& Messaging\+::\+Session\+::get\+Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_messaging_1_1_session_aedafb8b5c664cd9d2d86b90b863bde77}{}\label{class_messaging_1_1_session_aedafb8b5c664cd9d2d86b90b863bde77}
+This function must be public or \hyperlink{class_messaging_1_1_client}{Client} and \hyperlink{class_messaging_1_1_server}{Server} should be friend of \hyperlink{class_messaging_1_1_session}{Session}
+
+\begin{DoxyReturn}{Returns}
+the socket of this \hyperlink{class_messaging_1_1_session}{Session} 
+\end{DoxyReturn}
+\index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Body\+Read@{handle\+Body\+Read}}
+\index{handle\+Body\+Read@{handle\+Body\+Read}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Body\+Read(\+Message \&a\+Message, const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t bytes\+\_\+transferred)}{handleBodyRead(Message &aMessage, const boost::system::error_code &error, size_t bytes_transferred)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::handle\+Body\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message, }
+\item[{const boost\+::system\+::error\+\_\+code \&}]{error, }
+\item[{size\+\_\+t}]{bytes\+\_\+transferred}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_a9b2379db03dd4b22896df3b6891509a9}{}\label{class_messaging_1_1_session_a9b2379db03dd4b22896df3b6891509a9}
+This function as called after the body bytes are read.
+
+Any error handling (throwing an exception ;-\/)) is done in this function and then the function with the same name but without the error is called. \index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Body\+Written@{handle\+Body\+Written}}
+\index{handle\+Body\+Written@{handle\+Body\+Written}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Body\+Written(\+Message \&a\+Message, const boost\+::system\+::error\+\_\+code \&error)}{handleBodyWritten(Message &aMessage, const boost::system::error_code &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::handle\+Body\+Written (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message, }
+\item[{const boost\+::system\+::error\+\_\+code \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_a42e7eb7f1e5d41861417d03dcb5419e7}{}\label{class_messaging_1_1_session_a42e7eb7f1e5d41861417d03dcb5419e7}
+This function is called after the body bytes are written. \index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Header\+Read@{handle\+Header\+Read}}
+\index{handle\+Header\+Read@{handle\+Header\+Read}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Header\+Read(\+Message \&a\+Message, const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t U\+N\+U\+S\+E\+D\+P\+A\+R\+A\+M(bytes\+\_\+transferred))}{handleHeaderRead(Message &aMessage, const boost::system::error_code &error, size_t UNUSEDPARAM(bytes_transferred))}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::handle\+Header\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message, }
+\item[{const boost\+::system\+::error\+\_\+code \&}]{error, }
+\item[{size\+\_\+t }]{U\+N\+U\+S\+E\+D\+P\+A\+R\+AMbytes\+\_\+transferred}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_a1ce6c51bea887b0745318de8de202af7}{}\label{class_messaging_1_1_session_a1ce6c51bea887b0745318de8de202af7}
+This function is called after the header bytes are read. \index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Header\+Written@{handle\+Header\+Written}}
+\index{handle\+Header\+Written@{handle\+Header\+Written}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Header\+Written(\+Message \&a\+Message, const boost\+::system\+::error\+\_\+code \&error)}{handleHeaderWritten(Message &aMessage, const boost::system::error_code &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::handle\+Header\+Written (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message, }
+\item[{const boost\+::system\+::error\+\_\+code \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_aa6bb0133b721e77c31411cccc1eb6c40}{}\label{class_messaging_1_1_session_aa6bb0133b721e77c31411cccc1eb6c40}
+This function is called after the header bytes are written. \index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Message\+Read@{handle\+Message\+Read}}
+\index{handle\+Message\+Read@{handle\+Message\+Read}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Message\+Read(\+Message \&a\+Message)=0}{handleMessageRead(Message &aMessage)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Messaging\+::\+Session\+::handle\+Message\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_messaging_1_1_session_ac2fbf589586288cee9b408514907d044}{}\label{class_messaging_1_1_session_ac2fbf589586288cee9b408514907d044}
+Handle the fact that a message is read. This function is called by the framework after the message (header + body) is read. Normally this is the only function that a \hyperlink{class_messaging_1_1_server_session}{Server\+Session} or \hyperlink{class_messaging_1_1_client_session}{Client\+Session} has to implement. 
+
+Implemented in \hyperlink{class_messaging_1_1_client_session_a0539a7c332de1b853fd3405ac23b696c}{Messaging\+::\+Client\+Session}, and \hyperlink{class_messaging_1_1_server_session_a294d16e8d6c8839fee2358443d78dc15}{Messaging\+::\+Server\+Session}.
+
+\index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Message\+Read@{handle\+Message\+Read}}
+\index{handle\+Message\+Read@{handle\+Message\+Read}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Message\+Read(\+Message \&a\+Message, const boost\+::system\+::error\+\_\+code \&error, size\+\_\+t U\+N\+U\+S\+E\+D\+P\+A\+R\+A\+M(bytes\+\_\+transferred))}{handleMessageRead(Message &aMessage, const boost::system::error_code &error, size_t UNUSEDPARAM(bytes_transferred))}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::handle\+Message\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message, }
+\item[{const boost\+::system\+::error\+\_\+code \&}]{error, }
+\item[{size\+\_\+t }]{U\+N\+U\+S\+E\+D\+P\+A\+R\+AMbytes\+\_\+transferred}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_a224c7c9cc62b4b9e3ccd21c3121f9b03}{}\label{class_messaging_1_1_session_a224c7c9cc62b4b9e3ccd21c3121f9b03}
+This function is called after both the header and body bytes are read. \index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Message\+Written@{handle\+Message\+Written}}
+\index{handle\+Message\+Written@{handle\+Message\+Written}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Message\+Written(\+Message \&a\+Message)=0}{handleMessageWritten(Message &aMessage)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Messaging\+::\+Session\+::handle\+Message\+Written (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_messaging_1_1_session_afcf204df8f7e67e470d454d9de561515}{}\label{class_messaging_1_1_session_afcf204df8f7e67e470d454d9de561515}
+Handle the fact that a message is written. This function is called by the framework after the message (header + body) is written. Normally this is the only function that a \hyperlink{class_messaging_1_1_server_session}{Server\+Session} or \hyperlink{class_messaging_1_1_client_session}{Client\+Session} has to implement. \index{Messaging\+::\+Session@{Messaging\+::\+Session}!handle\+Message\+Written@{handle\+Message\+Written}}
+\index{handle\+Message\+Written@{handle\+Message\+Written}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{handle\+Message\+Written(\+Message \&a\+Message, const boost\+::system\+::error\+\_\+code \&error)}{handleMessageWritten(Message &aMessage, const boost::system::error_code &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::handle\+Message\+Written (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message, }
+\item[{const boost\+::system\+::error\+\_\+code \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_a4ad739e7dea45e860feae03c2ae728b2}{}\label{class_messaging_1_1_session_a4ad739e7dea45e860feae03c2ae728b2}
+This function is called after both the header and body bytes are written.
+
+Any error handling (throwing an exception ;-\/)) is done in this function and then the function with the same name but without the error is called. \index{Messaging\+::\+Session@{Messaging\+::\+Session}!read\+Message@{read\+Message}}
+\index{read\+Message@{read\+Message}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{read\+Message()}{readMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::read\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_a9b5aa90c447db3b432751f453565e84b}{}\label{class_messaging_1_1_session_a9b5aa90c447db3b432751f453565e84b}
+read\+Message will read the message in 2 a-\/sync reads, 1 for the header and 1 for the body. After each read a callback will be called that should handle the stuff just read. After reading the full message handle\+Message\+Read will be called whose responsibility it is to handle the message as a whole.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_messaging_1_1_session_a1ce6c51bea887b0745318de8de202af7}{Session\+::handle\+Header\+Read} 
+
+\hyperlink{class_messaging_1_1_session_a9b2379db03dd4b22896df3b6891509a9}{Session\+::handle\+Body\+Read} 
+
+\hyperlink{class_messaging_1_1_session_ac2fbf589586288cee9b408514907d044}{Session\+::handle\+Message\+Read} 
+\end{DoxySeeAlso}
+\index{Messaging\+::\+Session@{Messaging\+::\+Session}!start@{start}}
+\index{start@{start}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{start()=0}{start()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Messaging\+::\+Session\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_messaging_1_1_session_a89cbd6e05fdbbe1c9e26cbcab92d6044}{}\label{class_messaging_1_1_session_a89cbd6e05fdbbe1c9e26cbcab92d6044}
+Typically a \hyperlink{class_messaging_1_1_server_session}{Server\+Session} has a read/write sequence, a \hyperlink{class_messaging_1_1_client_session}{Client\+Session} a write/read sequence 
+
+Implemented in \hyperlink{class_messaging_1_1_client_session_abdafb1626e9eb590ae2ed984e095a490}{Messaging\+::\+Client\+Session}, and \hyperlink{class_messaging_1_1_server_session_a5b700fe14c9ec5fc54fde5a8eab22da6}{Messaging\+::\+Server\+Session}.
+
+\index{Messaging\+::\+Session@{Messaging\+::\+Session}!write\+Message@{write\+Message}}
+\index{write\+Message@{write\+Message}!Messaging\+::\+Session@{Messaging\+::\+Session}}
+\subsubsection[{\texorpdfstring{write\+Message(\+Message \&a\+Message)}{writeMessage(Message &aMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Session\+::write\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_messaging_1_1_session_af6693149abfd302fd6285d99a0131f18}{}\label{class_messaging_1_1_session_af6693149abfd302fd6285d99a0131f18}
+write\+Message will write the message in 2 a-\/sync writes, 1 for the header and 1 for the body. After each write a callback will be called that should handle the stuff just read. After writing the full message handle\+Message\+Written will be called.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_messaging_1_1_session_aa6bb0133b721e77c31411cccc1eb6c40}{Session\+::handle\+Header\+Written} 
+
+\hyperlink{class_messaging_1_1_session_a42e7eb7f1e5d41861417d03dcb5419e7}{Session\+::handle\+Body\+Written} 
+
+\hyperlink{class_messaging_1_1_session_afcf204df8f7e67e470d454d9de561515}{Session\+::handle\+Message\+Written} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Session.\+hpp\end{DoxyCompactItemize}

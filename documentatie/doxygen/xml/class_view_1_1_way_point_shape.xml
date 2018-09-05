@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_view_1_1_way_point_shape" kind="class" language="C++" prot="public">
+    <compoundname>View::WayPointShape</compoundname>
+    <basecompoundref refid="class_view_1_1_rectangle_shape" prot="public" virt="non-virtual">View::RectangleShape</basecompoundref>
+    <derivedcompoundref refid="class_view_1_1_goal_shape" prot="public" virt="non-virtual">View::GoalShape</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <header>Type safe accessors and mutators</header>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1ad5ae425bed0688bd0d51f5ddbc8d4dc1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>model::WayPointPtr</type>
+        <definition>model::WayPointPtr View::WayPointShape::getWayPoint</definition>
+        <argsstring>() const </argsstring>
+        <name>getWayPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type safe accessor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1ad75feefcec15d7c2ea7de8d1fea71fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::WayPointShape::setWayPoint</definition>
+        <argsstring>(model::WayPointPtr aWayPoint)</argsstring>
+        <name>setWayPoint</name>
+        <param>
+          <type>model::WayPointPtr</type>
+          <declname>aWayPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type safe mutator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="35" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Observer functions</header>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1a84f786f8027e91441c8197cdb56b3d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::WayPointShape::handleNotification</definition>
+        <argsstring>()</argsstring>
+        <name>handleNotification</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1acae95cb4b05d77196451520ee7d7ca9c">handleNotification</reimplements>
+        <reimplementedby refid="class_view_1_1_goal_shape_1a881cfbfd4b3d6d3b37498e12d8291f6f">handleNotification</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A Notifier will call this function if this Observer will handle the notifications of that Notifier. It is the responsibility of the Observer to filter any events it is interested in. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="67" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Pure virtual abstract Shape functions</header>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1ac8e4cd575b74030ac9931f64bba16e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::WayPointShape::draw</definition>
+        <argsstring>(wxDC &amp;dc)</argsstring>
+        <name>draw</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1a430ce6f93a932205861ec0327df3ca42">draw</reimplements>
+        <param>
+          <type>wxDC &amp;</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="76" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="46" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1a2fa9c9ec63a43d61ed5356060cab8cc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::WayPointShape::setCentre</definition>
+        <argsstring>(const Point &amp;aPoint)</argsstring>
+        <name>setCentre</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1a905817abb1294f0e83f1ecdb065cc994">setCentre</reimplements>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="80" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1a89bbc1a878732d81245c5b5b6c5f035a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string View::WayPointShape::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1a82517a7fb6b1b0331efaa79f306ecc38">asString</reimplements>
+        <reimplementedby refid="class_view_1_1_goal_shape_1a7f6c2c9c9502d264657a0b688e3d5e86">asString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="89" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1a0f21e281b69fe62eb8728ad5dc28fce6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string View::WayPointShape::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1ae46b92ba72ec4a590afbd106ced79c98">asDebugString</reimplements>
+        <reimplementedby refid="class_view_1_1_goal_shape_1a7d88c0780ae52278bacb44f4a6c79da5">asDebugString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="93" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="103" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1a580fc67d3d92b31572b783ad31fdc523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>View::WayPointShape::WayPointShape</definition>
+        <argsstring>(model::WayPointPtr aWayPoint)</argsstring>
+        <name>WayPointShape</name>
+        <param>
+          <type>model::WayPointPtr</type>
+          <declname>aWayPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="19" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1ab6ebc2c5d9d740d63ffd2ffcaf1f9fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>View::WayPointShape::~WayPointShape</definition>
+        <argsstring>()</argsstring>
+        <name>~WayPointShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1adf7ab3f773081c4797f9e9e9aa2a0e6e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string View::WayPointShape::getNormalColour</definition>
+        <argsstring>() const </argsstring>
+        <name>getNormalColour</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1a1014ef91f3ffb2b7da225293051cda8a">getNormalColour</reimplements>
+        <reimplementedby refid="class_view_1_1_goal_shape_1a31a8bb188f7870024c168529e8788673">getNormalColour</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="40" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1a94efb36c66c4ef2ac2bd8a7130abb11c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string View::WayPointShape::getSelectionColour</definition>
+        <argsstring>() const </argsstring>
+        <name>getSelectionColour</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1a2d0161c7d5a84cf2305b41f8b14f7573">getSelectionColour</reimplements>
+        <reimplementedby refid="class_view_1_1_goal_shape_1a9b0b0c7aa41bfe75723e847a4a57173e">getSelectionColour</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="47" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_way_point_shape_1a768899743f4d76d0f6c907db9234823c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string View::WayPointShape::getActivationColour</definition>
+        <argsstring>() const </argsstring>
+        <name>getActivationColour</name>
+        <reimplements refid="class_view_1_1_rectangle_shape_1a30ef8c82bf9c40d0f39ce9568c7027f7">getActivationColour</reimplements>
+        <reimplementedby refid="class_view_1_1_goal_shape_1a5f3f650fd43dc5ba30518deec6859506">getActivationColour</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="54" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="763">
+        <label>View::WayPointShape</label>
+        <link refid="class_view_1_1_way_point_shape"/>
+        <childnode refid="764" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>View::GoalShape</label>
+        <link refid="class_view_1_1_goal_shape"/>
+        <childnode refid="763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="765">
+        <label>View::Shape</label>
+        <link refid="class_view_1_1_shape"/>
+        <childnode refid="766" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="764">
+        <label>View::RectangleShape</label>
+        <link refid="class_view_1_1_rectangle_shape"/>
+        <childnode refid="765" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>View::ViewObject</label>
+        <link refid="class_view_1_1_view_object"/>
+        <childnode refid="767" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="769">
+        <label>View::WayPointShape</label>
+        <link refid="class_view_1_1_way_point_shape"/>
+        <childnode refid="770" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="771">
+        <label>View::Shape</label>
+        <link refid="class_view_1_1_shape"/>
+        <childnode refid="772" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>View::RectangleShape</label>
+        <link refid="class_view_1_1_rectangle_shape"/>
+        <childnode refid="771" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="772">
+        <label>View::ViewObject</label>
+        <link refid="class_view_1_1_view_object"/>
+        <childnode refid="773" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" line="14" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp" bodystart="13" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_view_1_1_way_point_shape_1a0f21e281b69fe62eb8728ad5dc28fce6" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>asDebugString</name></member>
+      <member refid="class_view_1_1_way_point_shape_1a89bbc1a878732d81245c5b5b6c5f035a" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>asString</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1ac32ad0276db89433370ad4a50752b734" prot="protected" virt="non-virtual"><scope>View::WayPointShape</scope><name>borderWidth</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a12930d710b0629b49c95c86d686291a3" prot="protected" virt="non-virtual"><scope>View::WayPointShape</scope><name>centre</name></member>
+      <member refid="class_view_1_1_way_point_shape_1ac8e4cd575b74030ac9931f64bba16e1f" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>draw</name></member>
+      <member refid="class_view_1_1_way_point_shape_1a768899743f4d76d0f6c907db9234823c" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>getActivationColour</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1acc3ec065295ec50ae74e1a6546ea97dc" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>getBorderWidth</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a075d237a4c4bad46346e9305fd9f60d7" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>getCentre</name></member>
+      <member refid="class_view_1_1_shape_1a537df4d4736c76092f66d24c1205704d" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>getData</name></member>
+      <member refid="class_view_1_1_view_object_1a84ff0c9baf21a4736dacaf0811ea0851" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>getModelObject</name></member>
+      <member refid="class_view_1_1_way_point_shape_1adf7ab3f773081c4797f9e9e9aa2a0e6e" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>getNormalColour</name></member>
+      <member refid="class_view_1_1_view_object_1af1779cd5a68017ff5a1ece2afec8ddc0" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>getObjectId</name></member>
+      <member refid="class_view_1_1_shape_1af5616956f613db8a30a65b12914ccd8c" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>getSelectedPoint</name></member>
+      <member refid="class_view_1_1_way_point_shape_1a94efb36c66c4ef2ac2bd8a7130abb11c" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>getSelectionColour</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1abbc036fe705e1766ec6294707eac1567" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>getSize</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a892ec0b500eaa885ee4514d1775a37e9" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>getSpacing</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a6f431ce0f2f8436c8071eb7d07f198aa" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>getTitle</name></member>
+      <member refid="class_view_1_1_way_point_shape_1ad5ae425bed0688bd0d51f5ddbc8d4dc1" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>getWayPoint</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a6e075b3fda71d5dd4fbd3f3f9ff42126" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>handleActivated</name></member>
+      <member refid="class_view_1_1_shape_1abfe27e44508e837d8d62de605b32dd61" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>handleBeginLeftDrag</name></member>
+      <member refid="class_view_1_1_shape_1a0ffded9065c593ce94e3db4d27078bec" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>handleEndDrag</name></member>
+      <member refid="class_view_1_1_way_point_shape_1a84f786f8027e91441c8197cdb56b3d5f" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>handleNotification</name></member>
+      <member refid="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>handleNotificationsFor</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a15a3cd81166a65e5734b79c87552db00" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>handleSelection</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a69be3838db55e8557e6cb1e767ed0aab" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>isBorderPoint</name></member>
+      <member refid="class_view_1_1_shape_1af9e1799d43f25355d04f95c1f4e75277" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>isSelected</name></member>
+      <member refid="class_base_1_1_observer_1a0b8f55248bb0b393ed760d50b7f58d21" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>Observer</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1ac736dfe69f1a3633696d8c663cd49b51" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>occupies</name></member>
+      <member refid="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>operator&lt;</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a7c1339a9ae1096201bfdc9b8a0802a48" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>operator=</name></member>
+      <member refid="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>operator==</name></member>
+      <member refid="class_view_1_1_view_object_1a7b0dee4ac27877d28968858214e708e3" prot="protected" virt="virtual"><scope>View::WayPointShape</scope><name>rebindModelObject</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a6fc6a32c159acc4ef318564996fa0965" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>RectangleShape</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a9625cfce67d2df4c22014467a3dbc0e0" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>RectangleShape</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a3203649d35ff84e9b5523d16832c757e" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>RectangleShape</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a5cc335ae000fa88ef759b89a8b83acd0" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>setBorderWidth</name></member>
+      <member refid="class_view_1_1_way_point_shape_1a2fa9c9ec63a43d61ed5356060cab8cc7" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>setCentre</name></member>
+      <member refid="class_view_1_1_shape_1abc73bac8ae94ccbb8228410367091575" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>setData</name></member>
+      <member refid="class_view_1_1_view_object_1aff22ce3c0e7d0db12837f16902595c24" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>setModelObject</name></member>
+      <member refid="class_view_1_1_shape_1a44eacfc99c6a81016afecd06731eedb0" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>setSelected</name></member>
+      <member refid="class_view_1_1_shape_1aa698e74f91344d0d0dee2c3273c1ec07" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>setSelectedAt</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a1750f2d2258a33f149764d2df471a7ae" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>setSize</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1aa1d0774ba0de3aeb2acdc6b4af528fd5" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>setSpacing</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a21019b56d4ddb7d582e7bd3ee13f8973" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>setTitle</name></member>
+      <member refid="class_view_1_1_way_point_shape_1ad75feefcec15d7c2ea7de8d1fea71fe9" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>setWayPoint</name></member>
+      <member refid="class_view_1_1_shape_1a9740ec703e12e87ac1a49023b3bcd507" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>Shape</name></member>
+      <member refid="class_view_1_1_shape_1afb97a8a335b877e5541c3c9844e5959c" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>Shape</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1a92563881c24a730b99d600b39558ebfc" prot="protected" virt="non-virtual"><scope>View::WayPointShape</scope><name>size</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1ab2330833ac41ecb5233ce20728450a7b" prot="protected" virt="non-virtual"><scope>View::WayPointShape</scope><name>spacing</name></member>
+      <member refid="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>stopHandlingNotificationsFor</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1af9f808c588d4c618d857dcd46e27073f" prot="protected" virt="non-virtual"><scope>View::WayPointShape</scope><name>title</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1aff10ae7e56d55aca3f4accd7386e6e4f" prot="protected" virt="non-virtual"><scope>View::WayPointShape</scope><name>titleSize</name></member>
+      <member refid="class_view_1_1_view_object_1aa54c31897c07be82e15f595736f4ebe9" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>ViewObject</name></member>
+      <member refid="class_view_1_1_view_object_1abbc94f6ef3de75d64602e4d26694f2cc" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>ViewObject</name></member>
+      <member refid="class_view_1_1_way_point_shape_1a580fc67d3d92b31572b783ad31fdc523" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>WayPointShape</name></member>
+      <member refid="class_base_1_1_observer_1aca7a3c17bdc9d86a9f67519779baf2e9" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>~Observer</name></member>
+      <member refid="class_view_1_1_rectangle_shape_1aa4b0226be14f29bde34290b72cdecde6" prot="public" virt="non-virtual"><scope>View::WayPointShape</scope><name>~RectangleShape</name></member>
+      <member refid="class_view_1_1_shape_1a4169e646865eb9f6c248087d13f236de" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>~Shape</name></member>
+      <member refid="class_view_1_1_view_object_1aeece80891c9da5b57181e3c42ce25eec" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>~ViewObject</name></member>
+      <member refid="class_view_1_1_way_point_shape_1ab6ebc2c5d9d740d63ffd2ffcaf1f9fb4" prot="public" virt="virtual"><scope>View::WayPointShape</scope><name>~WayPointShape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

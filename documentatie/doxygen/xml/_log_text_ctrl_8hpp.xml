@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_log_text_ctrl_8hpp" kind="file" language="C++">
+    <compoundname>LogTextCtrl.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes refid="_widgets_8hpp" local="yes">Widgets.hpp</includes>
+    <includes refid="_point_8hpp" local="yes">Point.hpp</includes>
+    <includes refid="_size_8hpp" local="yes">Size.hpp</includes>
+    <includedby refid="_log_text_ctrl_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.cpp</includedby>
+    <includedby refid="_main_frame_window_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp</includedby>
+    <includedby refid="_widget_debug_trace_function_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.cpp</includedby>
+    <incdepgraph>
+      <node id="760">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="753">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="740">
+        <label>wx/app.h</label>
+      </node>
+      <node id="745">
+        <label>wx/event.h</label>
+      </node>
+      <node id="754">
+        <label>wx/font.h</label>
+      </node>
+      <node id="742">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="764">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="759">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="755">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="770">
+        <label>wx/region.h</label>
+      </node>
+      <node id="768">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="747" relation="include">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>string</label>
+      </node>
+      <node id="747">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="738">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="755" relation="include">
+        </childnode>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+        <childnode refid="758" relation="include">
+        </childnode>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="756">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="748">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="743">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="752">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="750">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="736">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp</label>
+        <link refid="LogTextCtrl.hpp"/>
+        <childnode refid="737" relation="include">
+        </childnode>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="761">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="746">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="737">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="763">
+        <label>wx/string.h</label>
+      </node>
+      <node id="767">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="747" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="744">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="749">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="762">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="751">
+        <label>wx/button.h</label>
+      </node>
+      <node id="769">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="770" relation="include">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="758">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_application_1_1_log_text_ctrl" prot="public">Application::LogTextCtrl</innerclass>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LOGTEXTCTRL_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGTEXTCTRL_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Widgets.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Point.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Size.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>wxDECLARE_EVENT(ROBOTWORLD_TRACE_EVENT,<sp/>CommandEvent);</highlight></codeline>
+<codeline lineno="18" refid="class_application_1_1_log_text_ctrl" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_application_1_1_log_text_ctrl" kindref="compound">LogTextCtrl</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>wxTextCtrl</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_application_1_1_log_text_ctrl" kindref="compound">LogTextCtrl</ref>(<sp/><sp/><sp/><sp/>Window*<sp/>aParent,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WindowId<sp/>aWindowId<sp/>=<sp/>DEFAULT_ID,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>aStyle<sp/>=<sp/>wxTE_READONLY<sp/>|<sp/>wxTE_MULTILINE<sp/>|<sp/>wxTE_DONTWRAP,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>anInitialText<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Point&amp;<sp/>aPoint<sp/>=<sp/>DefaultPosition,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Size&amp;<sp/>aSize<sp/>=<sp/>DefaultSize);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_application_1_1_log_text_ctrl" kindref="compound">LogTextCtrl</ref>();</highlight></codeline>
+<codeline lineno="36"></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_log_text_ctrl_1aecf20eb2fc19af8632542de0166a050e" kindref="member">log</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aString);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_log_text_ctrl_1af03d3d9049d7a9c13de10d249751fc5e" kindref="member">OnCommandEvent</ref>(<sp/>CommandEvent&amp;<sp/>anEvent);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>LogTextCtrl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LOGTEXTCTRL_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp"/>
+  </compounddef>
+</doxygen>

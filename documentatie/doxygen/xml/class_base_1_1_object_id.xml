@@ -1,0 +1,773 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_base_1_1_object_id" kind="class" language="C++" prot="public">
+    <compoundname>Base::ObjectId</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::vector&lt; unsigned char &gt;</basecompoundref>
+    <includes refid="_object_id_8hpp" local="no">ObjectId.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>CORBA required interface for PortableServer::ObjectId and sequence&lt; T &gt;</header>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a3028106d58f6db9df06c2faf797f30f8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pointer</type>
+        <definition>static pointer Base::ObjectId::allocbuf</definition>
+        <argsstring>(unsigned long nelems)</argsstring>
+        <name>allocbuf</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>nelems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Do not use. It always throws an Danu::InvalidRequest exception.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nelems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a new-ed buffer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="209" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a2a50ef3cccf4fd20fd17f2c52fd00c9d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Base::ObjectId::freebuf</definition>
+        <argsstring>(pointer aT)</argsstring>
+        <name>freebuf</name>
+        <param>
+          <type>pointer</type>
+          <declname>aT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Do not use. It always throws an Danu::InvalidRequest exception.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aT</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer to free </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="218" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a62a23904516e14dbef8fee4e5804fa6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Base::ObjectId::ObjectId</definition>
+        <argsstring>()</argsstring>
+        <name>ObjectId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default ctor.</para><para>Also specified by </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="54" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a198bf2ac34a1ab0150a43c97d8002cec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Base::ObjectId::ObjectId</definition>
+        <argsstring>(unsigned long max)</argsstring>
+        <name>ObjectId</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum ctor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial elements reservation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="63" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a4f0abd7ada085282e495d1a5fab3ea43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Base::ObjectId::ObjectId</definition>
+        <argsstring>(unsigned long, unsigned long len, unsigned char *aDataPointer, bool)</argsstring>
+        <name>ObjectId</name>
+        <param>
+          <type>unsigned</type>
+          <declname>long</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>aDataPointer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data ctor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial elements reservation. Is actually ignored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Start of the data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>release</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the sequences owns and manages any containing pointers Is actually ignored and always true. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="76" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="76" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1abdd4924553c835229354677dad7c3c26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Base::ObjectId::ObjectId</definition>
+        <argsstring>(const ObjectId &amp;anObjectId)</argsstring>
+        <name>ObjectId</name>
+        <param>
+          <type>const <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> &amp;</type>
+          <declname>anObjectId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Makes a deep copy. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="86" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a62fd29d91e79c3c9130f45cbb32275fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Base::ObjectId::~ObjectId</definition>
+        <argsstring>()</argsstring>
+        <name>~ObjectId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Also specified by PortableServer::ObjectId and sequence&lt; T &gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="93" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a4a48d8c6f85bd9fd2991710635d316d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long Base::ObjectId::maximum</definition>
+        <argsstring>() const </argsstring>
+        <name>maximum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The virtual maximum of bytes for this <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref>. This maximum can safely be ignored. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="98" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a2eae06c2581239d292ea3467c3cfdfba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Base::ObjectId::length</definition>
+        <argsstring>(unsigned long len)</argsstring>
+        <name>length</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If the current length of the sequence is less than the new length we append new elements which are created by calling the default constructor. If the current length is more than the new length we just cut of the tail of the sequence.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new length of the sequence </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="110" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="110" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1aad6bf09824bc18612fa6654cb5f0bb0f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long Base::ObjectId::length</definition>
+        <argsstring>() const </argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current length of the <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="125" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a518d985d2a670fdcb6ef360e2655e44b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>reference</type>
+        <definition>reference Base::ObjectId::operator[]</definition>
+        <argsstring>(unsigned long index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mutable character at index. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="135" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a8a1c7b67bea028bf2073f81751fc3f94" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_reference</type>
+        <definition>const_reference Base::ObjectId::operator[]</definition>
+        <argsstring>(unsigned long index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The non-mutable character at index. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="145" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a27eb724a90e960cdf691c76391cc786d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Base::ObjectId::release</definition>
+        <argsstring>() const </argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This returns always true for a value container</para><para><simplesect kind="return"><para>true if this container owns the data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="155" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a5469cb64007c5007be8ab2893fb3848a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Base::ObjectId::replace</definition>
+        <argsstring>(unsigned long, unsigned long len, pointer newData, bool)</argsstring>
+        <name>replace</name>
+        <param>
+          <type>unsigned</type>
+          <declname>long</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>pointer</type>
+          <declname>newData</declname>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is ignored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Is ignored and is treated as true </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="164" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="164" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1aa91cd5a6d4b78734f903138614098868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pointer</type>
+        <definition>pointer Base::ObjectId::get_buffer</definition>
+        <argsstring>(bool orphan=false)</argsstring>
+        <name>get_buffer</name>
+        <param>
+          <type>bool</type>
+          <declname>orphan</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orphan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> as a modifyable continues buffer. If the buffer is modified as that it expands the buffer this  lead to failure eventually </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="180" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="180" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a0f4d8c05f11d882598daf15c2c1cd714" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const_pointer</type>
+        <definition>const_pointer Base::ObjectId::get_buffer</definition>
+        <argsstring>() const </argsstring>
+        <name>get_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> as a readonly continues buffer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="198" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_base_1_1_object_id_1afdc5a733d73342473fec933503e49a6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Base::ObjectId::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="297" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="119" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a38e6fd78d084461a0535bd86b998db56" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Base::ObjectId::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="302" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_base_1_1_object_id_1a2a6b8719e9bd362d3cae8a901d238f6f" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char Base::ObjectId::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="26" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_base_1_1_object_id_1a36a06bae51c88c5893592b28bd9311e5" prot="public" static="no">
+        <type>unsigned char *</type>
+        <definition>typedef unsigned char* Base::ObjectId::pointer</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="27" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_base_1_1_object_id_1a1ce45b4d8cec8780cf96e8aa9b921930" prot="public" static="no">
+        <type>const unsigned char *</type>
+        <definition>typedef const unsigned char* Base::ObjectId::const_pointer</definition>
+        <argsstring></argsstring>
+        <name>const_pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="28" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_base_1_1_object_id_1a486ec6587bbbd140dd776281788e98ee" prot="public" static="no">
+        <type>unsigned char &amp;</type>
+        <definition>typedef unsigned char&amp; Base::ObjectId::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="29" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_base_1_1_object_id_1a0a971f0617804dc1e107865f3bb473d3" prot="public" static="no">
+        <type>const unsigned char &amp;</type>
+        <definition>typedef const unsigned char&amp; Base::ObjectId::const_reference</definition>
+        <argsstring></argsstring>
+        <name>const_reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="30" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_base_1_1_object_id_1af6e0e53cd168c8de532d458eedefba53" prot="public" static="no">
+        <type>std::vector&lt; unsigned char &gt;</type>
+        <definition>typedef std::vector&lt; unsigned char &gt; Base::ObjectId::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_base_1_1_object_id_1a8ccba80236842b454cf6e7dda04e12f5" prot="public" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Base::ObjectId::objectIdNamespace</definition>
+        <argsstring></argsstring>
+        <name>objectIdNamespace</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If an <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> should be <emphasis>really</emphasis> universal unique every application should have its own namespace </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="36" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_base_1_1_object_id_1a5ec6e05d2302d16274d66c815e43baf9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref></type>
+        <definition>ObjectId Base::ObjectId::newObjectId</definition>
+        <argsstring>()</argsstring>
+        <name>newObjectId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns an <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> that is guaranteed to be unique in the application it is generated in. If multiple application use the same library it is the responsibility of the applications to ensure uniqueness between applications. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="43" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="16" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_base_1_1_object_id_1a96f9abac9baddbf62eaad80bd1499e72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIterator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Base::ObjectId::ObjectId</definition>
+        <argsstring>(InputIterator first, InputIterator last)</argsstring>
+        <name>ObjectId</name>
+        <param>
+          <type>InputIterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>InputIterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="228" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="228" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1aca3e55b04c30d9f939f04b2de5aa25c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Base::ObjectId::ObjectId</definition>
+        <argsstring>(const std::string &amp;anObjectIdString)</argsstring>
+        <name>ObjectId</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>anObjectIdString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="236" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="236" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a449f58cf08f6684639023708b882a00e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> &amp;</type>
+        <definition>ObjectId&amp; Base::ObjectId::operator=</definition>
+        <argsstring>(const ObjectId &amp;anObjectId)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> &amp;</type>
+          <declname>anObjectId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="243" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="243" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1abe7eb5f3190496d40e1f364b6145e4b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Base::ObjectId::operator==</definition>
+        <argsstring>(const ObjectId &amp;anObjectId) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> &amp;</type>
+          <declname>anObjectId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anObjectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the Danu::ObjectId part is the same </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="256" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1ad69ac55dac3aafd3ea38281ae7d762c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Base::ObjectId::operator&lt;</definition>
+        <argsstring>(const ObjectId &amp;anObjectId) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> &amp;</type>
+          <declname>anObjectId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anObjectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the Danu::ObjectId part is less </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="261" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1af3e9b3d04e1628fa6c1973920fabcd14" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Base::ObjectId::toString</definition>
+        <argsstring>() const </argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calling obj1.fromString( obj2.toString()) has the same effect as assignment, obj1 = obj2.</para><para><simplesect kind="return"><para>std::string </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="267" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="267" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1ae32c9ac9ee69665fed2771854da880b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Base::ObjectId::fromString</definition>
+        <argsstring>(const std::string &amp;anObjectIdString)</argsstring>
+        <name>fromString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>anObjectIdString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calling obj1.fromString( obj2.toString()) has the same effect as assignment, obj1 = obj2.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anObjectIdString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string representation of an <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="276" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="276" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a113567944442dcaebfbb8abe2e8952fb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Base::ObjectId::isNull</definition>
+        <argsstring>() const </argsstring>
+        <name>isNull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="284" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="97" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_object_id_1a7b5254288f7bf70ed7a6268abc3b930b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Base::ObjectId::isValid</definition>
+        <argsstring>() const </argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="288" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="108" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> class is also used in Dagda. Therefore it has the required PortableServer::ObjectId / unbounded sequence interface.</para><para>The OID class is 16 bytes, this class is 24 bytes. If one is memory constraint the OID class may be of some help. Be warned: the OID class is not actively maintained anymore (but than, who reeds this besides me, the maintainer). </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="582">
+        <label>Base::ObjectId</label>
+        <link refid="class_base_1_1_object_id"/>
+        <childnode refid="583" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="583">
+        <label>std::vector&lt; unsigned char &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="584">
+        <label>Base::ObjectId</label>
+        <link refid="class_base_1_1_object_id"/>
+        <childnode refid="585" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>std::vector&lt; unsigned char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" line="24" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.hpp" bodystart="23" bodyend="306"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_object_id_1a3028106d58f6db9df06c2faf797f30f8" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>allocbuf</name></member>
+      <member refid="class_base_1_1_object_id_1a38e6fd78d084461a0535bd86b998db56" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>asDebugString</name></member>
+      <member refid="class_base_1_1_object_id_1afdc5a733d73342473fec933503e49a6e" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>asString</name></member>
+      <member refid="class_base_1_1_object_id_1af6e0e53cd168c8de532d458eedefba53" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>base</name></member>
+      <member refid="class_base_1_1_object_id_1a1ce45b4d8cec8780cf96e8aa9b921930" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>const_pointer</name></member>
+      <member refid="class_base_1_1_object_id_1a0a971f0617804dc1e107865f3bb473d3" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>const_reference</name></member>
+      <member refid="class_base_1_1_object_id_1a2a50ef3cccf4fd20fd17f2c52fd00c9d" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>freebuf</name></member>
+      <member refid="class_base_1_1_object_id_1ae32c9ac9ee69665fed2771854da880b6" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>fromString</name></member>
+      <member refid="class_base_1_1_object_id_1aa91cd5a6d4b78734f903138614098868" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>get_buffer</name></member>
+      <member refid="class_base_1_1_object_id_1a0f4d8c05f11d882598daf15c2c1cd714" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>get_buffer</name></member>
+      <member refid="class_base_1_1_object_id_1a113567944442dcaebfbb8abe2e8952fb" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>isNull</name></member>
+      <member refid="class_base_1_1_object_id_1a7b5254288f7bf70ed7a6268abc3b930b" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>isValid</name></member>
+      <member refid="class_base_1_1_object_id_1a2eae06c2581239d292ea3467c3cfdfba" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>length</name></member>
+      <member refid="class_base_1_1_object_id_1aad6bf09824bc18612fa6654cb5f0bb0f" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>length</name></member>
+      <member refid="class_base_1_1_object_id_1a4a48d8c6f85bd9fd2991710635d316d8" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>maximum</name></member>
+      <member refid="class_base_1_1_object_id_1a5ec6e05d2302d16274d66c815e43baf9" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>newObjectId</name></member>
+      <member refid="class_base_1_1_object_id_1a62a23904516e14dbef8fee4e5804fa6c" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>ObjectId</name></member>
+      <member refid="class_base_1_1_object_id_1a198bf2ac34a1ab0150a43c97d8002cec" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>ObjectId</name></member>
+      <member refid="class_base_1_1_object_id_1a4f0abd7ada085282e495d1a5fab3ea43" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>ObjectId</name></member>
+      <member refid="class_base_1_1_object_id_1abdd4924553c835229354677dad7c3c26" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>ObjectId</name></member>
+      <member refid="class_base_1_1_object_id_1a96f9abac9baddbf62eaad80bd1499e72" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>ObjectId</name></member>
+      <member refid="class_base_1_1_object_id_1aca3e55b04c30d9f939f04b2de5aa25c5" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>ObjectId</name></member>
+      <member refid="class_base_1_1_object_id_1a8ccba80236842b454cf6e7dda04e12f5" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>objectIdNamespace</name></member>
+      <member refid="class_base_1_1_object_id_1ad69ac55dac3aafd3ea38281ae7d762c0" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>operator&lt;</name></member>
+      <member refid="class_base_1_1_object_id_1a449f58cf08f6684639023708b882a00e" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>operator=</name></member>
+      <member refid="class_base_1_1_object_id_1abe7eb5f3190496d40e1f364b6145e4b2" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>operator==</name></member>
+      <member refid="class_base_1_1_object_id_1a518d985d2a670fdcb6ef360e2655e44b" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>operator[]</name></member>
+      <member refid="class_base_1_1_object_id_1a8a1c7b67bea028bf2073f81751fc3f94" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>operator[]</name></member>
+      <member refid="class_base_1_1_object_id_1a36a06bae51c88c5893592b28bd9311e5" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>pointer</name></member>
+      <member refid="class_base_1_1_object_id_1a486ec6587bbbd140dd776281788e98ee" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>reference</name></member>
+      <member refid="class_base_1_1_object_id_1a27eb724a90e960cdf691c76391cc786d" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>release</name></member>
+      <member refid="class_base_1_1_object_id_1a5469cb64007c5007be8ab2893fb3848a" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>replace</name></member>
+      <member refid="class_base_1_1_object_id_1af3e9b3d04e1628fa6c1973920fabcd14" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>toString</name></member>
+      <member refid="class_base_1_1_object_id_1a2a6b8719e9bd362d3cae8a901d238f6f" prot="public" virt="non-virtual"><scope>Base::ObjectId</scope><name>value_type</name></member>
+      <member refid="class_base_1_1_object_id_1a62fd29d91e79c3c9130f45cbb32275fc" prot="public" virt="virtual"><scope>Base::ObjectId</scope><name>~ObjectId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

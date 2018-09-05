@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_base_1_1_notification_function_type_traits" kind="struct" language="C++" prot="public">
+    <compoundname>Base::NotificationFunctionTypeTraits</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>NotificationFunction</declname>
+        <defname>NotificationFunction</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_base_1_1_notification_function_type_traits_1aec5d2dfeb9d2c47940f7a6e09b81362b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Base::NotificationFunctionTypeTraits&lt; NotificationFunction &gt;::call</definition>
+        <argsstring>(NotificationFunction &amp;aNotificationFunction, NotifyEvent &amp;)</argsstring>
+        <name>call</name>
+        <param>
+          <type>NotificationFunction &amp;</type>
+          <declname>aNotificationFunction</declname>
+        </param>
+        <param>
+          <type>NotifyEvent &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp" line="19" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp" bodystart="17" bodyend="24"/>
+    <listofallmembers>
+      <member refid="struct_base_1_1_notification_function_type_traits_1aec5d2dfeb9d2c47940f7a6e09b81362b" prot="public" virt="non-virtual"><scope>Base::NotificationFunctionTypeTraits</scope><name>call</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_abstract_stimulus" kind="class" language="C++" prot="public">
+    <compoundname>model::AbstractStimulus</compoundname>
+    <derivedcompoundref refid="class_model_1_1_distance_stimulus" prot="public" virt="non-virtual">model::DistanceStimulus</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_abstract_stimulus_1aeba7837d89968081ec337d80e59562fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual model::AbstractStimulus::~AbstractStimulus</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractStimulus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="432">
+        <label>model::AbstractStimulus</label>
+        <link refid="class_model_1_1_abstract_stimulus"/>
+      </node>
+      <node id="433">
+        <label>model::DistanceStimulus</label>
+        <link refid="class_model_1_1_distance_stimulus"/>
+        <childnode refid="432" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" bodystart="17" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_stimulus_1aeba7837d89968081ec337d80e59562fe" prot="public" virt="virtual"><scope>model::AbstractStimulus</scope><name>~AbstractStimulus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

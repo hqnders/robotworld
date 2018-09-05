@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_communication_service" kind="class" language="C++" prot="public">
+    <compoundname>Messaging::CommunicationService</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_messaging_1_1_communication_service_1adfecdaa0092561cf3d727ead644f9648" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacestd_1af8ef78a9cf464d7f7faf334b0648cd20" kindref="member">std::thread</ref></type>
+        <definition>std::thread Messaging::CommunicationService::requestHandlerThread</definition>
+        <argsstring></argsstring>
+        <name>requestHandlerThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_communication_service_1a0db30c408ea15a514aaf975c36253d15" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service</type>
+        <definition>boost::asio::io_service Messaging::CommunicationService::io_service</definition>
+        <argsstring></argsstring>
+        <name>io_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="65" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_messaging_1_1_communication_service_1a84eb6ffc757597611e01dfacb46c3702" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_messaging_1_1_communication_service" kindref="compound">CommunicationService</ref> &amp;</type>
+        <definition>CommunicationService &amp; Messaging::CommunicationService::getCommunicationService</definition>
+        <argsstring>()</argsstring>
+        <name>getCommunicationService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="22" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_messaging_1_1_communication_service_1a603bfa697fbac1d8ea95115fbc78de24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boost::asio::io_service &amp;</type>
+        <definition>boost::asio::io_service &amp; Messaging::CommunicationService::getIOService</definition>
+        <argsstring>()</argsstring>
+        <name>getIOService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is public because otherwise it the classes <ref refid="class_messaging_1_1_session" kindref="compound">Session</ref>, <ref refid="class_messaging_1_1_server" kindref="compound">Server</ref> and <ref refid="class_messaging_1_1_client" kindref="compound">Client</ref> have to be friends </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="27" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_communication_service_1a91ea43508fc513e2be07071314bfcad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::CommunicationService::runRequestHandler</definition>
+        <argsstring>(RequestHandlerPtr aRequestHandler, short aPort=12345)</argsstring>
+        <name>runRequestHandler</name>
+        <param>
+          <type>RequestHandlerPtr</type>
+          <declname>aRequestHandler</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>aPort</declname>
+          <defval>12345</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Runs the given aRequestHandler at the given port until boost::asio::io_service::io_service.run() returns. In the limited context of RobotWorld this is done by sending a &quot;stop&quot;-message. <simplesect kind="see"><para><ref refid="class_messaging_1_1_server_session_1a294d16e8d6c8839fee2358443d78dc15" kindref="member">ServerSession::handleMessageRead( Message&amp; aMessage)</ref> for the implementation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="33" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.cpp" bodystart="25" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_communication_service_1aafbba827051d66b74a0d5262074a950a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::CommunicationService::runRequestHandler</definition>
+        <argsstring>(RequestHandlerPtr aRequestHandler, const std::string &amp;aPort)</argsstring>
+        <name>runRequestHandler</name>
+        <param>
+          <type>RequestHandlerPtr</type>
+          <declname>aRequestHandler</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses <ref refid="namespacestd_1a5a4884a3b1890357be19cd6ff56179da" kindref="member">std::stoi</ref> for string to <emphasis>int</emphasis> conversion. Throws the exceptions that <ref refid="namespacestd_1a5a4884a3b1890357be19cd6ff56179da" kindref="member">std::stoi</ref> may throw. If int &gt; max short you lose... </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="39" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" bodystart="39" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_messaging_1_1_communication_service_1afb31be6dc4b3de3ed9eec1c07547adba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::CommunicationService::CommunicationService</definition>
+        <argsstring>()</argsstring>
+        <name>CommunicationService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="48" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_communication_service_1ae22bcd4ff3ac89f349f6673526066624" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Messaging::CommunicationService::~CommunicationService</definition>
+        <argsstring>()</argsstring>
+        <name>~CommunicationService</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="52" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_communication_service_1a2904df0ff0c7edf0e8a3e319ab7d0d72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::CommunicationService::runRequestHandlerWorker</definition>
+        <argsstring>(RequestHandlerPtr aRequestHandler, short aPort)</argsstring>
+        <name>runRequestHandlerWorker</name>
+        <param>
+          <type>RequestHandlerPtr</type>
+          <declname>aRequestHandler</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>aPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="56" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.cpp" bodystart="49" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" line="17" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommunicationService.hpp" bodystart="16" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_communication_service_1afb31be6dc4b3de3ed9eec1c07547adba" prot="private" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>CommunicationService</name></member>
+      <member refid="class_messaging_1_1_communication_service_1a84eb6ffc757597611e01dfacb46c3702" prot="public" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>getCommunicationService</name></member>
+      <member refid="class_messaging_1_1_communication_service_1a603bfa697fbac1d8ea95115fbc78de24" prot="public" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>getIOService</name></member>
+      <member refid="class_messaging_1_1_communication_service_1a0db30c408ea15a514aaf975c36253d15" prot="private" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>io_service</name></member>
+      <member refid="class_messaging_1_1_communication_service_1adfecdaa0092561cf3d727ead644f9648" prot="private" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>requestHandlerThread</name></member>
+      <member refid="class_messaging_1_1_communication_service_1a91ea43508fc513e2be07071314bfcad9" prot="public" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>runRequestHandler</name></member>
+      <member refid="class_messaging_1_1_communication_service_1aafbba827051d66b74a0d5262074a950a" prot="public" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>runRequestHandler</name></member>
+      <member refid="class_messaging_1_1_communication_service_1a2904df0ff0c7edf0e8a3e319ab7d0d72" prot="private" virt="non-virtual"><scope>Messaging::CommunicationService</scope><name>runRequestHandlerWorker</name></member>
+      <member refid="class_messaging_1_1_communication_service_1ae22bcd4ff3ac89f349f6673526066624" prot="private" virt="virtual"><scope>Messaging::CommunicationService</scope><name>~CommunicationService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1044 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_robot" kind="class" language="C++" prot="public">
+    <compoundname>model::Robot</compoundname>
+    <basecompoundref refid="class_model_1_1_abstract_agent" prot="public" virt="non-virtual">model::AbstractAgent</basecompoundref>
+    <basecompoundref refid="class_messaging_1_1_message_handler" prot="public" virt="non-virtual">Messaging::MessageHandler</basecompoundref>
+    <basecompoundref refid="class_base_1_1_observer" prot="public" virt="non-virtual">Base::Observer</basecompoundref>
+      <sectiondef kind="user-defined">
+      <header>Observer functions</header>
+      <memberdef kind="function" id="class_model_1_1_robot_1a7629555402fa8b55658d52fdc88ab889" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::Robot::handleNotification</definition>
+        <argsstring>()</argsstring>
+        <name>handleNotification</name>
+        <reimplements refid="class_base_1_1_observer_1a37d00a5290a60aa9ab664af5d1642c3e">handleNotification</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A Notifier will call this function if this Observer will handle the notifications of that Notifier. It is the responsibility of the Observer to filter any events it is interested in. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="193" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="340" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Messaging::MessageHandler functions</header>
+      <memberdef kind="function" id="class_model_1_1_robot_1a5b52eb37c4e11850c3f60263599bd79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::Robot::handleRequest</definition>
+        <argsstring>(Messaging::Message &amp;aMessage)</argsstring>
+        <name>handleRequest</name>
+        <reimplements refid="class_messaging_1_1_request_handler_1afa23f0ab94ae851a487173a5087da898">handleRequest</reimplements>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Messaging::Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called by a ServerSesssion whenever a message is received. If the request is handled, any response <emphasis>must</emphasis> be set in the Message argument. The message argument is then echoed back to the requester, probably a ClientSession.</para><para><simplesect kind="see"><para><ref refid="class_messaging_1_1_request_handler_1afa23f0ab94ae851a487173a5087da898" kindref="member">Messaging::RequestHandler::handleRequest( Messaging::Message&amp; aMessage)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="220" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="353" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1afa5fb42fca43fdfedb08d3a7cb38c037" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::Robot::handleResponse</definition>
+        <argsstring>(const Messaging::Message &amp;aMessage)</argsstring>
+        <name>handleResponse</name>
+        <reimplements refid="class_messaging_1_1_response_handler_1a13c456a994ef15b4f7be7beed4e2f91f">handleResponse</reimplements>
+        <param>
+          <type>const <ref refid="struct_messaging_1_1_message" kindref="compound">Messaging::Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called by a ClientSession whenever a response to a previous request is received.</para><para><simplesect kind="see"><para><ref refid="class_messaging_1_1_response_handler_1a13c456a994ef15b4f7be7beed4e2f91f" kindref="member">Messaging::ResponseHandler::handleResponse( const Messaging::Message&amp; aMessage)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="226" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="377" bodyend="393"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_model_1_1_robot_1a888add69a87a3e0f82a3f9c95140716f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::Robot::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplements refid="class_model_1_1_abstract_agent_1a4cee6603af332eb80d524bf3af70489a">asString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="235" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="397" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1aaf05b81b0aff3dac7b39effa462da04e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::Robot::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplements refid="class_model_1_1_abstract_agent_1abcb33490b0f5761a2659bf705aff04b5">asDebugString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="239" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="408" bodyend="417"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>The types of messages a Robot should understand</header>
+      <memberdef kind="enum" id="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5" prot="public" static="no">
+        <name>MessageType</name>
+        <enumvalue id="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5a61a265eb7382841535498df9ac3070f5" prot="public">
+          <name>EchoRequest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5ac27c38db9cf9ec53e65fd11fc8d98b74" prot="public">
+          <name>EchoResponse</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="247" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1a0662da2861fd3153d95c58429fdc4ddc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string model::Robot::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="270" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1aa97b8df50213ea94ed458febb4196ec7" prot="private" static="no" mutable="no">
+        <type>Size</type>
+        <definition>Size model::Robot::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="272" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1a0912ea257e2be1752b6b16b578138298" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point model::Robot::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="273" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1a2a9862f0595251a2e2b992e46c65d47a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref></type>
+        <definition>BoundedVector model::Robot::front</definition>
+        <argsstring></argsstring>
+        <name>front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="275" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1ad947acb96165c77daf4b745306340dd4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float model::Robot::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="276" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1a239e53600d3e9748c8a95b675b614438" prot="private" static="no" mutable="no">
+        <type>GoalPtr</type>
+        <definition>GoalPtr model::Robot::goal</definition>
+        <argsstring></argsstring>
+        <name>goal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="278" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1ab986a36dbfe5b72af7763883a316d30f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_path_algorithm_1_1_a_star" kindref="compound">PathAlgorithm::AStar</ref></type>
+        <definition>PathAlgorithm::AStar model::Robot::astar</definition>
+        <argsstring></argsstring>
+        <name>astar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="279" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1ac0c75cf0d1be32340cc93b152cd70901" prot="private" static="no" mutable="no">
+        <type>PathAlgorithm::Path</type>
+        <definition>PathAlgorithm::Path model::Robot::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="280" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1ac954e8cc205017a0034a9d1ac474ac61" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool model::Robot::acting</definition>
+        <argsstring></argsstring>
+        <name>acting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="282" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1a201c166c775e9c3caf550b763b9ef65a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool model::Robot::driving</definition>
+        <argsstring></argsstring>
+        <name>driving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="283" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1a0e31a83bf7ad7cc274f5eaf79cb47cd7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool model::Robot::communicating</definition>
+        <argsstring></argsstring>
+        <name>communicating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="284" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1ae16224e79ce707ecd66a5e392d89cff3" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacestd_1af8ef78a9cf464d7f7faf334b0648cd20" kindref="member">std::thread</ref></type>
+        <definition>std::thread model::Robot::robotThread</definition>
+        <argsstring></argsstring>
+        <name>robotThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="286" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_robot_1a1e9dbd900868136e02f169059a41d38e" prot="private" static="no" mutable="yes">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex model::Robot::robotMutex</definition>
+        <argsstring></argsstring>
+        <name>robotMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="287" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a25462b6b270e44638522554646dd1180" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::drive</definition>
+        <argsstring>()</argsstring>
+        <name>drive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="256" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="421" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a398f0983a93029ebe3d52a9136e46035" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::calculateRoute</definition>
+        <argsstring>(GoalPtr aGoal)</argsstring>
+        <name>calculateRoute</name>
+        <param>
+          <type>GoalPtr</type>
+          <declname>aGoal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="260" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="478" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a2af2ed12ab1ba7fc165c65ab960ce47f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool model::Robot::arrived</definition>
+        <argsstring>(GoalPtr aGoal)</argsstring>
+        <name>arrived</name>
+        <param>
+          <type>GoalPtr</type>
+          <declname>aGoal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="264" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="497" bodyend="504"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a64b560d02f2b8b2ce673ae79c48efee0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool model::Robot::collision</definition>
+        <argsstring>()</argsstring>
+        <name>collision</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="268" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="508" bodyend="526"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_robot_1a690a348e58682f1529f2e45a5b050a15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::Robot::Robot</definition>
+        <argsstring>()</argsstring>
+        <name>Robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="43" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="24" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a9fb211152f3e75c65eafd1550e90203f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::Robot::Robot</definition>
+        <argsstring>(const std::string &amp;aName)</argsstring>
+        <name>Robot</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="47" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="40" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1ac7afa4c9bc8982bd7e5918ed4c9173d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::Robot::Robot</definition>
+        <argsstring>(const std::string &amp;aName, const Point &amp;aPosition)</argsstring>
+        <name>Robot</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aName</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="51" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="56" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a38d95cd9941ac61090d33e1e1d9f67a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>model::Robot::~Robot</definition>
+        <argsstring>()</argsstring>
+        <name>~Robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="56" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="73" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1acbaa390189fe54d71c5ca1db809f10b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string model::Robot::getName</definition>
+        <argsstring>() const </argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="60" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1ac39ad2cbd403962eebe60fd9dd4a1171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::setName</definition>
+        <argsstring>(const std::string &amp;aName, bool aNotifyObservers=true)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="67" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="91" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1add846e39a98489592f07b456a06396db" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Size</type>
+        <definition>Size model::Robot::getSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="72" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1aa9053536ee4aa3c58883f1fe14d46c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::setSize</definition>
+        <argsstring>(const Size &amp;aSize, bool aNotifyObservers=true)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="76" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="111" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a02a103f767306bce47f60127ceddf171" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::Robot::getPosition</definition>
+        <argsstring>() const </argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="81" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a2d983199228926b70bc2dfa4dbbab006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::setPosition</definition>
+        <argsstring>(const Point &amp;aPosition, bool aNotifyObservers=true)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPosition</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="88" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="123" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a85ab146591702b24ab8bd9b2ff960a2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref></type>
+        <definition>BoundedVector model::Robot::getFront</definition>
+        <argsstring>() const </argsstring>
+        <name>getFront</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="93" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1ad61c7c66fc588a7ba017cbb1f0045e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::setFront</definition>
+        <argsstring>(const BoundedVector &amp;aVector, bool aNotifyObservers=true)</argsstring>
+        <name>setFront</name>
+        <param>
+          <type>const <ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+          <declname>aVector</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="97" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="142" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a134d8fa080a68cc524f386c8662be03e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float model::Robot::getSpeed</definition>
+        <argsstring>() const </argsstring>
+        <name>getSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="102" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a7471c11187faa28369f0e3846810e128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::setSpeed</definition>
+        <argsstring>(float aNewSpeed, bool aNotifyObservers=true)</argsstring>
+        <name>setSpeed</name>
+        <param>
+          <type>float</type>
+          <declname>aNewSpeed</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="106" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="161" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1afedfe806d9fa854cbc641691ef27aada" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool model::Robot::isActing</definition>
+        <argsstring>() const </argsstring>
+        <name>isActing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the robot is acting, i.e. either planning or driving </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="112" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a4cf81acadfb2bb3e92cdbbedd5e53659" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::Robot::startActing</definition>
+        <argsstring>()</argsstring>
+        <name>startActing</name>
+        <reimplements refid="class_model_1_1_abstract_agent_1a783133675cf1d592a95eadcbded59d2e">startActing</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="119" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="173" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1abca861407c0992ee5748b15e772f7840" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::Robot::stopActing</definition>
+        <argsstring>()</argsstring>
+        <name>stopActing</name>
+        <reimplements refid="class_model_1_1_abstract_agent_1a369070540beac48686890b06d831fabe">stopActing</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="123" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="182" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a0eae3f369405de1ed7f4dcf70aedc348" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool model::Robot::isDriving</definition>
+        <argsstring>() const </argsstring>
+        <name>isDriving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the robot is driving </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="128" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="128" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1acedb81c962e36fbe88fdd583f6c8f696" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::Robot::startDriving</definition>
+        <argsstring>()</argsstring>
+        <name>startDriving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="135" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="191" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1afd92a5235f1a171b02031b694f9bd4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::Robot::stopDriving</definition>
+        <argsstring>()</argsstring>
+        <name>stopDriving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="139" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a9ec882e34e2aed582174c127b79c358d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool model::Robot::isCommunicating</definition>
+        <argsstring>() const </argsstring>
+        <name>isCommunicating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the robot is communicating, i.e. listens with an active ServerConnection </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="144" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a0178459eef83c12c50056717b3c5b8a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::startCommunicating</definition>
+        <argsstring>()</argsstring>
+        <name>startCommunicating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Starts a ServerConnection that listens at port 12345 unless given an other port by specifying a command line argument -local_port=port </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="152" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="210" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a7aabb3039cde09a96e07d900a5e19972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Robot::stopCommunicating</definition>
+        <argsstring>()</argsstring>
+        <name>stopCommunicating</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connects to the ServerConnection that listens at port 12345 unless given an other port by specifying a command line argument -local_port=port and sends a message with messageType &quot;1&quot; and a body with &quot;stop&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="159" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="230" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a49de60413e7391b51632c3137d14d7f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Region</type>
+        <definition>Region model::Robot::getRegion</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="163" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1ae33fd5aaf09cdb89e4d02b4a138ed3b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool model::Robot::intersects</definition>
+        <argsstring>(const Region &amp;aRegion) const </argsstring>
+        <name>intersects</name>
+        <param>
+          <type>const Region &amp;</type>
+          <declname>aRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="167" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="260" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1ad04268210b4531df65b17dfe425173e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::Robot::getFrontLeft</definition>
+        <argsstring>() const </argsstring>
+        <name>getFrontLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="171" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="269" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1adb945c72992d0fcb78dca5a9e8513e1b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::Robot::getFrontRight</definition>
+        <argsstring>() const </argsstring>
+        <name>getFrontRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="175" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="286" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a2757b46172e01b641ccf6f1e7783ca4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::Robot::getBackLeft</definition>
+        <argsstring>() const </argsstring>
+        <name>getBackLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="179" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="303" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a4761dc0e97ce402c9010ba25737f33ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::Robot::getBackRight</definition>
+        <argsstring>() const </argsstring>
+        <name>getBackRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="183" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp" bodystart="322" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1accc03064c9ae17be090629566e2b5075" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>PathAlgorithm::OpenSet</type>
+        <definition>PathAlgorithm::OpenSet model::Robot::getOpenSet</definition>
+        <argsstring>() const </argsstring>
+        <name>getOpenSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="198" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_robot_1a8913b96ae0804e35138ad7c9858bcb0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>PathAlgorithm::Path</type>
+        <definition>PathAlgorithm::Path model::Robot::getPath</definition>
+        <argsstring>() const </argsstring>
+        <name>getPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="205" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="627">
+        <label>Messaging::ResponseHandler</label>
+        <link refid="class_messaging_1_1_response_handler"/>
+      </node>
+      <node id="621">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="622" relation="public-inheritance">
+        </childnode>
+        <childnode refid="623" relation="public-inheritance">
+        </childnode>
+        <childnode refid="624" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="622">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="625">
+        <label>Messaging::MessageHandler</label>
+        <link refid="class_messaging_1_1_message_handler"/>
+        <childnode refid="626" relation="public-inheritance">
+        </childnode>
+        <childnode refid="627" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="619">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="620" relation="public-inheritance">
+        </childnode>
+        <childnode refid="625" relation="public-inheritance">
+        </childnode>
+        <childnode refid="628" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="623">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="628">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="620">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="621" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="624">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="626">
+        <label>Messaging::RequestHandler</label>
+        <link refid="class_messaging_1_1_request_handler"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="638">
+        <label>Messaging::ResponseHandler</label>
+        <link refid="class_messaging_1_1_response_handler"/>
+      </node>
+      <node id="631">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="632">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="636">
+        <label>Messaging::MessageHandler</label>
+        <link refid="class_messaging_1_1_message_handler"/>
+        <childnode refid="637" relation="public-inheritance">
+        </childnode>
+        <childnode refid="638" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="635">
+        <label>Base::Queue&lt; std::shared_ptr&lt; model::AbstractPercept &gt; &gt;</label>
+        <link refid="class_base_1_1_queue"/>
+      </node>
+      <node id="629">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="636" relation="public-inheritance">
+        </childnode>
+        <childnode refid="639" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="639">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="630">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+        <childnode refid="635" relation="usage">
+          <edgelabel>perceptQueue</edgelabel>
+        </childnode>
+      </node>
+      <node id="634">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="637">
+        <label>Messaging::RequestHandler</label>
+        <link refid="class_messaging_1_1_request_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" line="38" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp" bodystart="35" bodyend="288"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_agent_1ae08b5a6acb4f8192a55817fdcf6505e0" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>AbstractAgent</name></member>
+      <member refid="class_model_1_1_robot_1ac954e8cc205017a0034a9d1ac474ac61" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>acting</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a23cd2a046e9e782f44a3dc0685fa84ca" prot="protected" virt="non-virtual"><scope>model::Robot</scope><name>actuators</name></member>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>model::Robot</scope><name>addObserver</name></member>
+      <member refid="class_model_1_1_abstract_agent_1ab8fb558bec05bc1a7ea5402bf996705f" prot="public" virt="virtual"><scope>model::Robot</scope><name>addPercept</name></member>
+      <member refid="class_model_1_1_robot_1a2af2ed12ab1ba7fc165c65ab960ce47f" prot="protected" virt="non-virtual"><scope>model::Robot</scope><name>arrived</name></member>
+      <member refid="class_model_1_1_robot_1aaf05b81b0aff3dac7b39effa462da04e" prot="public" virt="virtual"><scope>model::Robot</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_robot_1a888add69a87a3e0f82a3f9c95140716f" prot="public" virt="virtual"><scope>model::Robot</scope><name>asString</name></member>
+      <member refid="class_model_1_1_robot_1ab986a36dbfe5b72af7763883a316d30f" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>astar</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a87cba14848a2ef4ec831ed2e44e85b63" prot="public" virt="virtual"><scope>model::Robot</scope><name>attachActuator</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a9e9a85420a923bb7d68acbda8208e2ad" prot="public" virt="virtual"><scope>model::Robot</scope><name>attachSensor</name></member>
+      <member refid="class_model_1_1_robot_1a398f0983a93029ebe3d52a9136e46035" prot="protected" virt="non-virtual"><scope>model::Robot</scope><name>calculateRoute</name></member>
+      <member refid="class_model_1_1_robot_1a64b560d02f2b8b2ce673ae79c48efee0" prot="protected" virt="non-virtual"><scope>model::Robot</scope><name>collision</name></member>
+      <member refid="class_model_1_1_robot_1a0e31a83bf7ad7cc274f5eaf79cb47cd7" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>communicating</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>model::Robot</scope><name>disableNotification</name></member>
+      <member refid="class_model_1_1_robot_1a25462b6b270e44638522554646dd1180" prot="protected" virt="non-virtual"><scope>model::Robot</scope><name>drive</name></member>
+      <member refid="class_model_1_1_robot_1a201c166c775e9c3caf550b763b9ef65a" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>driving</name></member>
+      <member refid="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5a61a265eb7382841535498df9ac3070f5" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>EchoRequest</name></member>
+      <member refid="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5ac27c38db9cf9ec53e65fd11fc8d98b74" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>EchoResponse</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>model::Robot</scope><name>enableNotification</name></member>
+      <member refid="class_model_1_1_robot_1a2a9862f0595251a2e2b992e46c65d47a" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>front</name></member>
+      <member refid="class_model_1_1_robot_1a2757b46172e01b641ccf6f1e7783ca4d" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getBackLeft</name></member>
+      <member refid="class_model_1_1_robot_1a4761dc0e97ce402c9010ba25737f33ad" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getBackRight</name></member>
+      <member refid="class_model_1_1_robot_1a85ab146591702b24ab8bd9b2ff960a2f" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getFront</name></member>
+      <member refid="class_model_1_1_robot_1ad04268210b4531df65b17dfe425173e9" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getFrontLeft</name></member>
+      <member refid="class_model_1_1_robot_1adb945c72992d0fcb78dca5a9e8513e1b" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getFrontRight</name></member>
+      <member refid="class_model_1_1_robot_1acbaa390189fe54d71c5ca1db809f10b0" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getName</name></member>
+      <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getObjectId</name></member>
+      <member refid="class_model_1_1_robot_1accc03064c9ae17be090629566e2b5075" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getOpenSet</name></member>
+      <member refid="class_model_1_1_robot_1a8913b96ae0804e35138ad7c9858bcb0c" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getPath</name></member>
+      <member refid="class_model_1_1_robot_1a02a103f767306bce47f60127ceddf171" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getPosition</name></member>
+      <member refid="class_model_1_1_robot_1a49de60413e7391b51632c3137d14d7f2" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getRegion</name></member>
+      <member refid="class_model_1_1_robot_1add846e39a98489592f07b456a06396db" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getSize</name></member>
+      <member refid="class_model_1_1_robot_1a134d8fa080a68cc524f386c8662be03e" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>getSpeed</name></member>
+      <member refid="class_model_1_1_robot_1a239e53600d3e9748c8a95b675b614438" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>goal</name></member>
+      <member refid="class_model_1_1_robot_1a7629555402fa8b55658d52fdc88ab889" prot="public" virt="virtual"><scope>model::Robot</scope><name>handleNotification</name></member>
+      <member refid="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" prot="public" virt="virtual"><scope>model::Robot</scope><name>handleNotificationsFor</name></member>
+      <member refid="class_model_1_1_robot_1a5b52eb37c4e11850c3f60263599bd79c" prot="public" virt="virtual"><scope>model::Robot</scope><name>handleRequest</name></member>
+      <member refid="class_model_1_1_robot_1afa5fb42fca43fdfedb08d3a7cb38c037" prot="public" virt="virtual"><scope>model::Robot</scope><name>handleResponse</name></member>
+      <member refid="class_model_1_1_robot_1ae33fd5aaf09cdb89e4d02b4a138ed3b0" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>intersects</name></member>
+      <member refid="class_model_1_1_robot_1afedfe806d9fa854cbc641691ef27aada" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>isActing</name></member>
+      <member refid="class_model_1_1_robot_1a9ec882e34e2aed582174c127b79c358d" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>isCommunicating</name></member>
+      <member refid="class_model_1_1_robot_1a0eae3f369405de1ed7f4dcf70aedc348" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>isDriving</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>model::Robot</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>MessageType</name></member>
+      <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>ModelObject</name></member>
+      <member refid="class_model_1_1_robot_1a0662da2861fd3153d95c58429fdc4ddc" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>name</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual" ambiguityscope="model::"><scope>model::Robot</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>model::Robot</scope><name>notifyObservers</name></member>
+      <member refid="class_base_1_1_observer_1a0b8f55248bb0b393ed760d50b7f58d21" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>Observer</name></member>
+      <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" prot="public" virt="non-virtual" ambiguityscope="model::"><scope>model::Robot</scope><name>operator&lt;</name></member>
+      <member refid="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" prot="public" virt="non-virtual" ambiguityscope="Base::Observer::"><scope>model::Robot</scope><name>operator&lt;</name></member>
+      <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" prot="public" virt="non-virtual" ambiguityscope="model::"><scope>model::Robot</scope><name>operator==</name></member>
+      <member refid="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" prot="public" virt="non-virtual" ambiguityscope="Base::Observer::"><scope>model::Robot</scope><name>operator==</name></member>
+      <member refid="class_model_1_1_robot_1ac0c75cf0d1be32340cc93b152cd70901" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>path</name></member>
+      <member refid="class_model_1_1_abstract_agent_1ae49bfbbddb9c9a76478ec12f4760d127" prot="protected" virt="non-virtual"><scope>model::Robot</scope><name>perceptQueue</name></member>
+      <member refid="class_model_1_1_robot_1a0912ea257e2be1752b6b16b578138298" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>position</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>model::Robot</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>model::Robot</scope><name>removeObserver</name></member>
+      <member refid="class_model_1_1_robot_1a690a348e58682f1529f2e45a5b050a15" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>Robot</name></member>
+      <member refid="class_model_1_1_robot_1a9fb211152f3e75c65eafd1550e90203f" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>Robot</name></member>
+      <member refid="class_model_1_1_robot_1ac7afa4c9bc8982bd7e5918ed4c9173d2" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>Robot</name></member>
+      <member refid="class_model_1_1_robot_1a1e9dbd900868136e02f169059a41d38e" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>robotMutex</name></member>
+      <member refid="class_model_1_1_robot_1ae16224e79ce707ecd66a5e392d89cff3" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>robotThread</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a0235b5c010dedd813b12ae7e97cc4e2e" prot="protected" virt="non-virtual"><scope>model::Robot</scope><name>sensors</name></member>
+      <member refid="class_model_1_1_robot_1ad61c7c66fc588a7ba017cbb1f0045e2f" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>setFront</name></member>
+      <member refid="class_model_1_1_robot_1ac39ad2cbd403962eebe60fd9dd4a1171" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>setName</name></member>
+      <member refid="class_model_1_1_robot_1a2d983199228926b70bc2dfa4dbbab006" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>setPosition</name></member>
+      <member refid="class_model_1_1_robot_1aa9053536ee4aa3c58883f1fe14d46c1f" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>setSize</name></member>
+      <member refid="class_model_1_1_robot_1a7471c11187faa28369f0e3846810e128" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>setSpeed</name></member>
+      <member refid="class_model_1_1_robot_1aa97b8df50213ea94ed458febb4196ec7" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>size</name></member>
+      <member refid="class_model_1_1_robot_1ad947acb96165c77daf4b745306340dd4" prot="private" virt="non-virtual"><scope>model::Robot</scope><name>speed</name></member>
+      <member refid="class_model_1_1_robot_1a4cf81acadfb2bb3e92cdbbedd5e53659" prot="public" virt="virtual"><scope>model::Robot</scope><name>startActing</name></member>
+      <member refid="class_model_1_1_robot_1a0178459eef83c12c50056717b3c5b8a8" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>startCommunicating</name></member>
+      <member refid="class_model_1_1_robot_1acedb81c962e36fbe88fdd583f6c8f696" prot="public" virt="virtual"><scope>model::Robot</scope><name>startDriving</name></member>
+      <member refid="class_model_1_1_robot_1abca861407c0992ee5748b15e772f7840" prot="public" virt="virtual"><scope>model::Robot</scope><name>stopActing</name></member>
+      <member refid="class_model_1_1_robot_1a7aabb3039cde09a96e07d900a5e19972" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>stopCommunicating</name></member>
+      <member refid="class_model_1_1_robot_1afd92a5235f1a171b02031b694f9bd4e7" prot="public" virt="virtual"><scope>model::Robot</scope><name>stopDriving</name></member>
+      <member refid="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" prot="public" virt="virtual"><scope>model::Robot</scope><name>stopHandlingNotificationsFor</name></member>
+      <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" prot="public" virt="non-virtual"><scope>model::Robot</scope><name>toPtr</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a3b826d63673dea922f69855333752519" prot="public" virt="virtual"><scope>model::Robot</scope><name>~AbstractAgent</name></member>
+      <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" prot="public" virt="virtual"><scope>model::Robot</scope><name>~ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>model::Robot</scope><name>~Notifier</name></member>
+      <member refid="class_base_1_1_observer_1aca7a3c17bdc9d86a9f67519779baf2e9" prot="public" virt="virtual"><scope>model::Robot</scope><name>~Observer</name></member>
+      <member refid="class_messaging_1_1_request_handler_1a78b960d598da57f343b4942436353d61" prot="public" virt="virtual"><scope>model::Robot</scope><name>~RequestHandler</name></member>
+      <member refid="class_messaging_1_1_response_handler_1a0020294e74e5b60aaeef4d703f66cd7a" prot="public" virt="virtual"><scope>model::Robot</scope><name>~ResponseHandler</name></member>
+      <member refid="class_model_1_1_robot_1a38d95cd9941ac61090d33e1e1d9f67a0" prot="public" virt="virtual"><scope>model::Robot</scope><name>~Robot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

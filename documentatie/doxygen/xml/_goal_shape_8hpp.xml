@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_goal_shape_8hpp" kind="file" language="C++">
+    <compoundname>GoalShape.hpp</compoundname>
+    <includes refid="_shape_8hpp" local="yes">Shape.hpp</includes>
+    <includes local="no">string</includes>
+    <includes refid="_goal_8hpp" local="yes">Goal.hpp</includes>
+    <includes refid="_way_point_shape_8hpp" local="yes">WayPointShape.hpp</includes>
+    <includedby refid="_goal_shape_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.cpp</includedby>
+    <includedby refid="_robot_world_canvas_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp</includedby>
+    <incdepgraph>
+      <node id="464">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="457">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="444">
+        <label>wx/app.h</label>
+      </node>
+      <node id="449">
+        <label>wx/event.h</label>
+      </node>
+      <node id="480">
+        <label>iterator</label>
+      </node>
+      <node id="458">
+        <label>wx/font.h</label>
+      </node>
+      <node id="446">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="468">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="463">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="477">
+        <label>ObjectId.hpp</label>
+        <link refid="_object_id_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="474">
+        <label>wx/region.h</label>
+      </node>
+      <node id="439">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.hpp</label>
+        <link refid="GoalShape.hpp"/>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="488" relation="include">
+        </childnode>
+      </node>
+      <node id="489">
+        <label>RectangleShape.hpp</label>
+        <link refid="_rectangle_shape_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="443">
+        <label>string</label>
+      </node>
+      <node id="451">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="442">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="460">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="452">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="447">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="456">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="454">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="469">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="487">
+        <label>WayPoint.hpp</label>
+        <link refid="_way_point_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+      </node>
+      <node id="465">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="481">
+        <label>vector</label>
+      </node>
+      <node id="475">
+        <label>ViewObject.hpp</label>
+        <link refid="_view_object_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="441">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="440">
+        <label>Shape.hpp</label>
+        <link refid="_shape_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>wx/string.h</label>
+      </node>
+      <node id="471">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+      </node>
+      <node id="461">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="482">
+        <label>ModelObject.hpp</label>
+        <link refid="_model_object_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="484" relation="include">
+        </childnode>
+        <childnode refid="485" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="479">
+        <label>iostream</label>
+      </node>
+      <node id="453">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="466">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="486">
+        <label>Goal.hpp</label>
+        <link refid="_goal_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="483" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>wx/button.h</label>
+      </node>
+      <node id="473">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="474" relation="include">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="478">
+        <label>algorithm</label>
+      </node>
+      <node id="476">
+        <label>Observer.hpp</label>
+        <link refid="_observer_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>wx/statline.h</label>
+      </node>
+      <node id="483">
+        <label>memory</label>
+      </node>
+      <node id="488">
+        <label>WayPointShape.hpp</label>
+        <link refid="_way_point_shape_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="489" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>Notifier.hpp</label>
+        <link refid="_notifier_8hpp_source"/>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_view_1_1_goal_shape" prot="public">View::GoalShape</innerclass>
+    <innernamespace refid="namespace_view">View</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GOALSHAPE_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GOALSHAPE_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Shape.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Goal.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;WayPointShape.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_view" kindref="compound">View</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="class_view_1_1_goal_shape" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_view_1_1_goal_shape" kindref="compound">GoalShape</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_view_1_1_way_point_shape" kindref="compound">WayPointShape</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_view_1_1_goal_shape" kindref="compound">GoalShape</ref>(<sp/>model::GoalPtr<sp/>aGoal);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_view_1_1_goal_shape" kindref="compound">GoalShape</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model::GoalPtr<sp/><ref refid="class_view_1_1_goal_shape_1a8c0c1cce167a4e8a0cf085f676c213a0" kindref="member">getGoal</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1_1_goal_shape_1a2e8149d939f204e0cc0efc2488af8fb2" kindref="member">setGoal</ref>(<sp/>model::GoalPtr<sp/>aGoal);</highlight></codeline>
+<codeline lineno="40"></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>getNormalColour()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="44"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;GREEN&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>getSelectionColour()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="51"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;BLUE&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/>getActivationColour()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;BLACK&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_view_1_1_goal_shape_1a881cfbfd4b3d6d3b37498e12d8291f6f" kindref="member">handleNotification</ref>();</highlight></codeline>
+<codeline lineno="72"></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_view_1_1_goal_shape_1a7f6c2c9c9502d264657a0b688e3d5e86" kindref="member">asString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_view_1_1_goal_shape_1a7d88c0780ae52278bacb44f4a6c79da5" kindref="member">asDebugString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>View</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GOAL_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.hpp"/>
+  </compounddef>
+</doxygen>

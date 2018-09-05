@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_way_point" kind="class" language="C++" prot="public">
+    <compoundname>model::WayPoint</compoundname>
+    <basecompoundref refid="class_model_1_1_model_object" prot="public" virt="non-virtual">model::ModelObject</basecompoundref>
+    <derivedcompoundref refid="class_model_1_1_goal" prot="public" virt="non-virtual">model::Goal</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a2504ccca4e76765faaf91b85c1e0fb75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::WayPoint::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplements refid="class_model_1_1_model_object_1a9db00b9150a932a1637e425f24c0bdf0">asString</reimplements>
+        <reimplementedby refid="class_model_1_1_goal_1a3a2482cbc274b38165125a75be970f29">asString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="83" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="107" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1aa7acf33a786c98fa593a3a38d6270723" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::WayPoint::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplements refid="class_model_1_1_model_object_1aced22b0b0ee637c598c463de6a1d8d03">asDebugString</reimplements>
+        <reimplementedby refid="class_model_1_1_goal_1a30c24f8dfe63a025222753f7d8fa8392">asDebugString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="87" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="118" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_model_1_1_way_point_1a80d8ba3cece904b354052bbe8de0da93" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string model::WayPoint::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="91" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_way_point_1a134b6b0327cfa4205999769924d184ea" prot="private" static="no" mutable="no">
+        <type>Size</type>
+        <definition>Size model::WayPoint::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="92" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_way_point_1a0ceb77692b7e7647e6e9af4e007bc464" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point model::WayPoint::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="93" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_way_point_1a89c58be0f5c9629aac90e96612fb7f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::WayPoint::WayPoint</definition>
+        <argsstring>()</argsstring>
+        <name>WayPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a70f8825f3cd0071c61be7dbabd957334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::WayPoint::WayPoint</definition>
+        <argsstring>(const std::string &amp;aName)</argsstring>
+        <name>WayPoint</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="25" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a4c4b8340bf9b9553f411a337a3d11466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::WayPoint::WayPoint</definition>
+        <argsstring>(const std::string &amp;aName, const Point &amp;aPosition)</argsstring>
+        <name>WayPoint</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aName</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="29" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a6470dfb5a5d1dae54b53b1d0e071d614" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>model::WayPoint::~WayPoint</definition>
+        <argsstring>()</argsstring>
+        <name>~WayPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="34" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1ad941861604a21f01e2c6c3836aaecc50" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string model::WayPoint::getName</definition>
+        <argsstring>() const </argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="38" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a436222b246b29ca5af7a6b56ca983435" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::WayPoint::setName</definition>
+        <argsstring>(const std::string &amp;aName, bool aNotifyObservers=true)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="45" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="39" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a4c8a6165c661efd3182d58174f00c4f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Size</type>
+        <definition>Size model::WayPoint::getSize</definition>
+        <argsstring>() const </argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="50" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1ab21868d4ea0aaca73130b8195482a711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::WayPoint::setSize</definition>
+        <argsstring>(const Size &amp;aSize, bool aNotifyObservers=true)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="54" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="58" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a75120951ffb56d4f4cafb042013c757f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::WayPoint::getPosition</definition>
+        <argsstring>() const </argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="59" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a174d63b3a9b11d03ec31ed3841280814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::WayPoint::setPosition</definition>
+        <argsstring>(const Point &amp;aPosition, bool aNotifyObservers=true)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPosition</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="66" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a383c2c26ff883a788f3829c66929b4b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Region</type>
+        <definition>Region model::WayPoint::getRegion</definition>
+        <argsstring>() const </argsstring>
+        <name>getRegion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="71" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="82" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_way_point_1a6ba9b3c6eae47ebf8943862619a4c435" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool model::WayPoint::intersects</definition>
+        <argsstring>(const Region &amp;aRegion) const </argsstring>
+        <name>intersects</name>
+        <param>
+          <type>const Region &amp;</type>
+          <declname>aRegion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="75" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="752">
+        <label>model::WayPoint</label>
+        <link refid="class_model_1_1_way_point"/>
+        <childnode refid="753" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+        <childnode refid="755" relation="public-inheritance">
+        </childnode>
+        <childnode refid="756" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="754">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="757">
+        <label>model::Goal</label>
+        <link refid="class_model_1_1_goal"/>
+        <childnode refid="752" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="756">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="758">
+        <label>model::WayPoint</label>
+        <link refid="class_model_1_1_way_point"/>
+        <childnode refid="759" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="760" relation="public-inheritance">
+        </childnode>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+        <childnode refid="762" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="760">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="761">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="762">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" line="16" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp" bodystart="15" bodyend="94"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>addObserver</name></member>
+      <member refid="class_model_1_1_way_point_1aa7acf33a786c98fa593a3a38d6270723" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_way_point_1a2504ccca4e76765faaf91b85c1e0fb75" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>asString</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>enableNotification</name></member>
+      <member refid="class_model_1_1_way_point_1ad941861604a21f01e2c6c3836aaecc50" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>getName</name></member>
+      <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>getObjectId</name></member>
+      <member refid="class_model_1_1_way_point_1a75120951ffb56d4f4cafb042013c757f" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>getPosition</name></member>
+      <member refid="class_model_1_1_way_point_1a383c2c26ff883a788f3829c66929b4b7" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>getRegion</name></member>
+      <member refid="class_model_1_1_way_point_1a4c8a6165c661efd3182d58174f00c4f3" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>getSize</name></member>
+      <member refid="class_model_1_1_way_point_1a6ba9b3c6eae47ebf8943862619a4c435" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>intersects</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>ModelObject</name></member>
+      <member refid="class_model_1_1_way_point_1a80d8ba3cece904b354052bbe8de0da93" prot="private" virt="non-virtual"><scope>model::WayPoint</scope><name>name</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>notifyObservers</name></member>
+      <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>operator&lt;</name></member>
+      <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>operator==</name></member>
+      <member refid="class_model_1_1_way_point_1a0ceb77692b7e7647e6e9af4e007bc464" prot="private" virt="non-virtual"><scope>model::WayPoint</scope><name>position</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>removeObserver</name></member>
+      <member refid="class_model_1_1_way_point_1a436222b246b29ca5af7a6b56ca983435" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>setName</name></member>
+      <member refid="class_model_1_1_way_point_1a174d63b3a9b11d03ec31ed3841280814" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>setPosition</name></member>
+      <member refid="class_model_1_1_way_point_1ab21868d4ea0aaca73130b8195482a711" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>setSize</name></member>
+      <member refid="class_model_1_1_way_point_1a134b6b0327cfa4205999769924d184ea" prot="private" virt="non-virtual"><scope>model::WayPoint</scope><name>size</name></member>
+      <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>toPtr</name></member>
+      <member refid="class_model_1_1_way_point_1a89c58be0f5c9629aac90e96612fb7f6c" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>WayPoint</name></member>
+      <member refid="class_model_1_1_way_point_1a70f8825f3cd0071c61be7dbabd957334" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>WayPoint</name></member>
+      <member refid="class_model_1_1_way_point_1a4c4b8340bf9b9553f411a337a3d11466" prot="public" virt="non-virtual"><scope>model::WayPoint</scope><name>WayPoint</name></member>
+      <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>~ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>~Notifier</name></member>
+      <member refid="class_model_1_1_way_point_1a6470dfb5a5d1dae54b53b1d0e071d614" prot="public" virt="virtual"><scope>model::WayPoint</scope><name>~WayPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

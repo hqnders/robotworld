@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_distance_percept" kind="class" language="C++" prot="public">
+    <compoundname>model::DistancePercept</compoundname>
+    <basecompoundref refid="class_model_1_1_abstract_percept" prot="public" virt="non-virtual">model::AbstractPercept</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_model_1_1_distance_percept_1a8e4a64e9c3844e42a211a0aa945f7998" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double model::DistancePercept::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="51" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_distance_percept_1a83e7312e3ed47d97c6bfc41b9e0c0e4a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double model::DistancePercept::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="52" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_distance_percept_1ab3cca9b4d5a5b837124688f9bab2e7f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>model::DistancePercept::DistancePercept</definition>
+        <argsstring>(const DistanceStimulus &amp;aDistanceStimulus)</argsstring>
+        <name>DistancePercept</name>
+        <param>
+          <type>const <ref refid="class_model_1_1_distance_stimulus" kindref="compound">DistanceStimulus</ref> &amp;</type>
+          <declname>aDistanceStimulus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="40" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_distance_percept_1a476417dd79dead365451b522d40a6995" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>model::DistancePercept::DistancePercept</definition>
+        <argsstring>(double anAngle, double aDistance)</argsstring>
+        <name>DistancePercept</name>
+        <param>
+          <type>double</type>
+          <declname>anAngle</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>aDistance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="45" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="455">
+        <label>model::DistancePercept</label>
+        <link refid="class_model_1_1_distance_percept"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="456">
+        <label>model::AbstractPercept</label>
+        <link refid="class_model_1_1_abstract_percept"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="457">
+        <label>model::DistancePercept</label>
+        <link refid="class_model_1_1_distance_percept"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="458">
+        <label>model::AbstractPercept</label>
+        <link refid="class_model_1_1_abstract_percept"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="38" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="37" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_distance_percept_1a8e4a64e9c3844e42a211a0aa945f7998" prot="public" virt="non-virtual"><scope>model::DistancePercept</scope><name>angle</name></member>
+      <member refid="class_model_1_1_distance_percept_1a83e7312e3ed47d97c6bfc41b9e0c0e4a" prot="public" virt="non-virtual"><scope>model::DistancePercept</scope><name>distance</name></member>
+      <member refid="class_model_1_1_distance_percept_1ab3cca9b4d5a5b837124688f9bab2e7f7" prot="public" virt="non-virtual"><scope>model::DistancePercept</scope><name>DistancePercept</name></member>
+      <member refid="class_model_1_1_distance_percept_1a476417dd79dead365451b522d40a6995" prot="public" virt="non-virtual"><scope>model::DistancePercept</scope><name>DistancePercept</name></member>
+      <member refid="class_model_1_1_abstract_percept_1a8f1128645f41927d6696260b2131eb4e" prot="public" virt="virtual"><scope>model::DistancePercept</scope><name>~AbstractPercept</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

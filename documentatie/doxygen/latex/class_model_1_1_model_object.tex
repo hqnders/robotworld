@@ -1,0 +1,150 @@
+\hypertarget{class_model_1_1_model_object}{}\section{model\+:\+:model\+Object Class Reference}
+\label{class_model_1_1_model_object}\index{model\+::\+model\+Object@{model\+::\+model\+Object}}
+
+
+Inheritance diagram for model\+:\+:model\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_model_object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for model\+:\+:model\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_model_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_base_1_1_object_id}{Base\+::\+Object\+Id} \& \hyperlink{class_model_1_1_model_object_afc50aa1e512814a9b6c37a4d3f8b4a97}{get\+Object\+Id} () const 
+\item 
+{\footnotesize template$<$typename Destination\+Type $>$ }\\std\+::shared\+\_\+ptr$<$ Destination\+Type $>$ \hyperlink{class_model_1_1_model_object_a5330f9a80aeecb0ffe5110fc74258dcb}{to\+Ptr} ()
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Constructors and destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries model\+Object} ()\hypertarget{class_model_1_1_model_object_aec6051457cc42ff15ad76dea42278cec}{}\label{class_model_1_1_model_object_aec6051457cc42ff15ad76dea42278cec}
+
+\item 
+virtual {\bfseries $\sim$\+model\+Object} ()\hypertarget{class_model_1_1_model_object_a83cf28d0263fca8bbb4003253f767d22}{}\label{class_model_1_1_model_object_a83cf28d0263fca8bbb4003253f767d22}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Operators}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_model_1_1_model_object_a4dd43ca01fedf5452e9990c1954ada7b}{operator==} (const \hyperlink{class_model_1_1_model_object}{model\+Object} \&a\+model\+Object) const
+\item 
+bool \hyperlink{class_model_1_1_model_object_a8f5b0be9dabedf96e17cf26dfaa58109}{operator$<$} (const \hyperlink{class_model_1_1_model_object}{model\+Object} \&a\+model\+Object) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_model_object_a9db00b9150a932a1637e425f24c0bdf0}{as\+String} () const 
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_model_object_aced22b0b0ee637c598c463de6a1d8d03}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Member Function Documentation}
+\index{model\+::\+model\+Object@{model\+::\+model\+Object}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!model\+::\+model\+Object@{model\+::\+model\+Object}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+model\+Object\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_model_object_aced22b0b0ee637c598c463de6a1d8d03}{}\label{class_model_1_1_model_object_aced22b0b0ee637c598c463de6a1d8d03}
+Returns a description of the object with all data of the object usable for debugging 
+
+Reimplemented from \hyperlink{class_base_1_1_notifier_ae9189ab41334252a50dbaa82b6326c12}{Base\+::\+Notifier}.
+
+
+
+Reimplemented in \hyperlink{class_model_1_1_robot_aaf05b81b0aff3dac7b39effa462da04e}{model\+::\+Robot}, \hyperlink{class_model_1_1_robot_world_a9c599037d4bdc7ebd4e9138c3cf3cc82}{model\+::\+Robot\+World}, \hyperlink{class_model_1_1_abstract_sensor_aa67bce32b6a602772773f0f23d0634f0}{model\+::\+Abstract\+Sensor}, \hyperlink{class_model_1_1_laser_distance_sensor_ab32d7cbfd19a9a5ec12a0c06ebb02b4f}{model\+::\+Laser\+Distance\+Sensor}, \hyperlink{class_model_1_1_way_point_aa7acf33a786c98fa593a3a38d6270723}{model\+::\+Way\+Point}, \hyperlink{class_model_1_1_abstract_agent_abcb33490b0f5761a2659bf705aff04b5}{model\+::\+Abstract\+Agent}, \hyperlink{class_model_1_1_wall_a298bfdfe9f2d9d637d53b233ec431277}{model\+::\+Wall}, \hyperlink{class_model_1_1_abstract_actuator_ab5199d4458a2913844459832d563f989}{model\+::\+Abstract\+Actuator}, and \hyperlink{class_model_1_1_goal_a30c24f8dfe63a025222753f7d8fa8392}{model\+::\+Goal}.
+
+\index{model\+::\+model\+Object@{model\+::\+model\+Object}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!model\+::\+model\+Object@{model\+::\+model\+Object}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+model\+Object\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_model_object_a9db00b9150a932a1637e425f24c0bdf0}{}\label{class_model_1_1_model_object_a9db00b9150a932a1637e425f24c0bdf0}
+Returns a 1-\/line description of the object 
+
+Reimplemented from \hyperlink{class_base_1_1_notifier_a5b3d9077ee7023746a05377f2c6b192e}{Base\+::\+Notifier}.
+
+
+
+Reimplemented in \hyperlink{class_model_1_1_robot_a888add69a87a3e0f82a3f9c95140716f}{model\+::\+Robot}, \hyperlink{class_model_1_1_robot_world_a9f5a599b9d6523f45df7cbb0aafe4c08}{model\+::\+Robot\+World}, \hyperlink{class_model_1_1_abstract_sensor_a85c18d6d51b8b6a3b97f682ad242be9d}{model\+::\+Abstract\+Sensor}, \hyperlink{class_model_1_1_laser_distance_sensor_a9403593acd21d557e5af1d79901fde34}{model\+::\+Laser\+Distance\+Sensor}, \hyperlink{class_model_1_1_way_point_a2504ccca4e76765faaf91b85c1e0fb75}{model\+::\+Way\+Point}, \hyperlink{class_model_1_1_abstract_agent_a4cee6603af332eb80d524bf3af70489a}{model\+::\+Abstract\+Agent}, \hyperlink{class_model_1_1_wall_af537e51905929a5b583ed5f91e60096b}{model\+::\+Wall}, \hyperlink{class_model_1_1_abstract_actuator_a6fe9d0ac0c7c6c56176fff61a773a4b9}{model\+::\+Abstract\+Actuator}, and \hyperlink{class_model_1_1_goal_a3a2482cbc274b38165125a75be970f29}{model\+::\+Goal}.
+
+\index{model\+::\+model\+Object@{model\+::\+model\+Object}!get\+Object\+Id@{get\+Object\+Id}}
+\index{get\+Object\+Id@{get\+Object\+Id}!model\+::\+model\+Object@{model\+::\+model\+Object}}
+\subsubsection[{\texorpdfstring{get\+Object\+Id() const }{getObjectId() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Base\+::\+Object\+Id}\& model\+::\+model\+Object\+::get\+Object\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_1_1_model_object_afc50aa1e512814a9b6c37a4d3f8b4a97}{}\label{class_model_1_1_model_object_afc50aa1e512814a9b6c37a4d3f8b4a97}
+\begin{DoxyReturn}{Returns}
+the object\+Id (identity) of the \hyperlink{class_model_1_1_model_object}{model\+Object}
+\end{DoxyReturn}
+\index{model\+::\+model\+Object@{model\+::\+model\+Object}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!model\+::\+model\+Object@{model\+::\+model\+Object}}
+\subsubsection[{\texorpdfstring{operator$<$(const model\+Object \&a\+model\+Object) const }{operator<(const ModelObject &aModelObject) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+::\+model\+Object\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf model\+Object} \&}]{a\+model\+Object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_1_1_model_object_a8f5b0be9dabedf96e17cf26dfaa58109}{}\label{class_model_1_1_model_object_a8f5b0be9dabedf96e17cf26dfaa58109}
+Less than operator which compares the object\+Ids
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+model\+Object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if lhs.\+object\+Id is less than rhs.\+object\+Id, false otherwise 
+\end{DoxyReturn}
+\index{model\+::\+model\+Object@{model\+::\+model\+Object}!operator==@{operator==}}
+\index{operator==@{operator==}!model\+::\+model\+Object@{model\+::\+model\+Object}}
+\subsubsection[{\texorpdfstring{operator==(const model\+Object \&a\+model\+Object) const }{operator==(const ModelObject &aModelObject) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+::\+model\+Object\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf model\+Object} \&}]{a\+model\+Object}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_1_1_model_object_a4dd43ca01fedf5452e9990c1954ada7b}{}\label{class_model_1_1_model_object_a4dd43ca01fedf5452e9990c1954ada7b}
+Equal to operator which compares the object\+Ids
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+model\+Object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if object\+Ids are the same, false otherwise 
+\end{DoxyReturn}
+\index{model\+::\+model\+Object@{model\+::\+model\+Object}!to\+Ptr@{to\+Ptr}}
+\index{to\+Ptr@{to\+Ptr}!model\+::\+model\+Object@{model\+::\+model\+Object}}
+\subsubsection[{\texorpdfstring{to\+Ptr()}{toPtr()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Destination\+Type $>$ std\+::shared\+\_\+ptr$<$Destination\+Type$>$ model\+::\+model\+Object\+::to\+Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_1_1_model_object_a5330f9a80aeecb0ffe5110fc74258dcb}{}\label{class_model_1_1_model_object_a5330f9a80aeecb0ffe5110fc74258dcb}
+Converts the contained \hyperlink{class_model_1_1_model_object}{model\+Object} to a std\+::shared\+\_\+ptr$<$\+Destination\+Type$>$
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+Destination\+Type$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/model\+Object.\+hpp\item
+/home/hqnders/\+Documents/robotworld/src/model\+Object.\+cpp\end{DoxyCompactItemize}

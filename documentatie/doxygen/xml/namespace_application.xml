@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_application" kind="namespace" language="C++">
+    <compoundname>Application</compoundname>
+    <innerclass refid="class_application_1_1_commandline_argument" prot="public">Application::CommandlineArgument</innerclass>
+    <innerclass refid="class_application_1_1_logger" prot="public">Application::Logger</innerclass>
+    <innerclass refid="class_application_1_1_log_text_ctrl" prot="public">Application::LogTextCtrl</innerclass>
+    <innerclass refid="class_application_1_1_main_application" prot="public">Application::MainApplication</innerclass>
+    <innerclass refid="class_application_1_1_main_frame_window" prot="public">Application::MainFrameWindow</innerclass>
+    <innerclass refid="class_application_1_1_widget_debug_trace_function" prot="public">Application::WidgetDebugTraceFunction</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3" prot="public" static="no">
+        <name>@0</name>
+        <enumvalue id="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a1f96fdf720c73686bf1a682308d59170" prot="public">
+          <name>ID_QUIT</name>
+          <initializer>= wxID_EXIT</initializer>
+          <briefdescription>
+<para>ID_QUIT. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3ae7a32495bcea0e5809ac2ddc6c722a65" prot="public">
+          <name>ID_OPTIONS</name>
+          <initializer>= wxID_PROPERTIES</initializer>
+          <briefdescription>
+<para>ID_OPTIONS. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a1e31762522225ea8bacbfaed2c3b3669" prot="public">
+          <name>ID_ABOUT</name>
+          <initializer>= wxID_ABOUT</initializer>
+          <briefdescription>
+<para>ID_ABOUT. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a24c7e4a180139f76890cbfbc92e02183" prot="public">
+          <name>ID_WIDGET_DEBUG_TRACE_FUNCTION</name>
+          <briefdescription>
+<para>ID_WIDGET_DEBUG_TRACE_FUNCTION. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a8c9a121bb8e9e5cd08fdc570d9c390bc" prot="public">
+          <name>ID_STDCOUT_DEBUG_TRACE_FUNCTION</name>
+          <briefdescription>
+<para>ID_STDCOUT_DEBUG_TRACE_FUNCTION. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IDs for the controls and the menu commands If there are (default) wxWidget ID&apos;s: try to maintain compatibility, especially wxID_ABOUT because on a Mac it is special </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" line="26" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="25" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_button_8hpp_1a238e70f3615d9645caabec1494c99c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Button *</type>
+        <definition>Button* Application::makeButton</definition>
+        <argsstring>(Window *aParent, const std::string &amp;aLabel, const std::function&lt; void(CommandEvent &amp;) &gt; &amp;anActionFunction)</argsstring>
+        <name>makeButton</name>
+        <param>
+          <type>Window *</type>
+          <declname>aParent</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aLabel</declname>
+        </param>
+        <param>
+          <type>const std::function&lt; void(CommandEvent &amp;) &gt; &amp;</type>
+          <declname>anActionFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Utility function that creates a Button with aLabel that binds the given ActionFunction with the wxEVT_COMMAND_BUTTON_CLICKED of the button.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aLabel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anActionFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp" line="22" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="_log_text_ctrl_8cpp_1aaf13f5448a1eb83054c69d4fc0f29585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::wxDEFINE_EVENT</definition>
+        <argsstring>(ROBOTWORLD_TRACE_EVENT, CommandEvent)</argsstring>
+        <name>wxDEFINE_EVENT</name>
+        <param>
+          <type>ROBOTWORLD_TRACE_EVENT</type>
+        </param>
+        <param>
+          <type>CommandEvent</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.cpp" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_log_text_ctrl_8hpp_1a6173c1f7d3465a5e56be197f842bc41e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::wxDECLARE_EVENT</definition>
+        <argsstring>(ROBOTWORLD_TRACE_EVENT, CommandEvent)</argsstring>
+        <name>wxDECLARE_EVENT</name>
+        <param>
+          <type>ROBOTWORLD_TRACE_EVENT</type>
+        </param>
+        <param>
+          <type>CommandEvent</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_application_8cpp_1a1f6ab8acf93267dddfdfb9d2500204a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::wxIMPLEMENT_APP_NO_MAIN</definition>
+        <argsstring>(MainApplication)</argsstring>
+        <name>wxIMPLEMENT_APP_NO_MAIN</name>
+        <param>
+          <type><ref refid="class_application_1_1_main_application" kindref="compound">MainApplication</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_application_8cpp_1a8385de8a3bbb35a3b7cfee9b16835ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_application_1_1_main_application" kindref="compound">MainApplication</ref> &amp;</type>
+        <definition>MainApplication &amp; Application::TheApp</definition>
+        <argsstring>()</argsstring>
+        <name>TheApp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Global application accessor function.</para><para><simplesect kind="return"><para><ref refid="class_application_1_1_main_application" kindref="compound">MainApplication</ref> The <ref refid="class_application_1_1_main_application" kindref="compound">MainApplication</ref> object for this application. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp" line="12" column="1"/>
+  </compounddef>
+</doxygen>

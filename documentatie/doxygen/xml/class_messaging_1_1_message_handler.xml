@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_message_handler" kind="class" language="C++" prot="public">
+    <compoundname>Messaging::MessageHandler</compoundname>
+    <basecompoundref refid="class_messaging_1_1_request_handler" prot="public" virt="non-virtual">Messaging::RequestHandler</basecompoundref>
+    <basecompoundref refid="class_messaging_1_1_response_handler" prot="public" virt="non-virtual">Messaging::ResponseHandler</basecompoundref>
+    <derivedcompoundref refid="class_model_1_1_robot" prot="public" virt="non-virtual">model::Robot</derivedcompoundref>
+    <includes refid="_message_handler_8hpp" local="no">MessageHandler.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Convenience interface class for a class that acts both as server and client in the Messaging protocol <simplesect kind="see"><para><ref refid="class_messaging_1_1_request_handler_1afa23f0ab94ae851a487173a5087da898" kindref="member">RequestHandler::handleRequest( Message&amp; aMessage)</ref> </para></simplesect>
+<simplesect kind="see"><para>ResponseHandler::handleResponse( Message&amp; aMessage) </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="533">
+        <label>Messaging::ResponseHandler</label>
+        <link refid="class_messaging_1_1_response_handler"/>
+      </node>
+      <node id="531">
+        <label>Messaging::MessageHandler</label>
+        <link refid="class_messaging_1_1_message_handler"/>
+        <childnode refid="532" relation="public-inheritance">
+        </childnode>
+        <childnode refid="533" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="531" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>Messaging::RequestHandler</label>
+        <link refid="class_messaging_1_1_request_handler"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="537">
+        <label>Messaging::ResponseHandler</label>
+        <link refid="class_messaging_1_1_response_handler"/>
+      </node>
+      <node id="535">
+        <label>Messaging::MessageHandler</label>
+        <link refid="class_messaging_1_1_message_handler"/>
+        <childnode refid="536" relation="public-inheritance">
+        </childnode>
+        <childnode refid="537" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="536">
+        <label>Messaging::RequestHandler</label>
+        <link refid="class_messaging_1_1_request_handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="57" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" bodystart="56" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_request_handler_1afa23f0ab94ae851a487173a5087da898" prot="public" virt="pure-virtual"><scope>Messaging::MessageHandler</scope><name>handleRequest</name></member>
+      <member refid="class_messaging_1_1_response_handler_1a13c456a994ef15b4f7be7beed4e2f91f" prot="public" virt="pure-virtual"><scope>Messaging::MessageHandler</scope><name>handleResponse</name></member>
+      <member refid="class_messaging_1_1_request_handler_1a78b960d598da57f343b4942436353d61" prot="public" virt="virtual"><scope>Messaging::MessageHandler</scope><name>~RequestHandler</name></member>
+      <member refid="class_messaging_1_1_response_handler_1a0020294e74e5b60aaeef4d703f66cd7a" prot="public" virt="virtual"><scope>Messaging::MessageHandler</scope><name>~ResponseHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

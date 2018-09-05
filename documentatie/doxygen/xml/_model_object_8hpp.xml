@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_model_object_8hpp" kind="file" language="C++">
+    <compoundname>ModelObject.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">boost/noncopyable.hpp</includes>
+    <includes refid="_notifier_8hpp" local="yes">Notifier.hpp</includes>
+    <includes refid="_object_id_8hpp" local="yes">ObjectId.hpp</includes>
+    <includedby refid="_abstract_actuator_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp</includedby>
+    <includedby refid="_abstract_agent_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp</includedby>
+    <includedby refid="_abstract_sensor_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp</includedby>
+    <includedby refid="_way_point_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp</includedby>
+    <includedby refid="_view_object_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp</includedby>
+    <includedby refid="_robot_world_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp</includedby>
+    <includedby refid="_model_object_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/ModelObject.cpp</includedby>
+    <includedby refid="_wall_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp</includedby>
+    <incdepgraph>
+      <node id="1096">
+        <label>iterator</label>
+      </node>
+      <node id="1094">
+        <label>ObjectId.hpp</label>
+        <link refid="_object_id_8hpp_source"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1089">
+        <label>string</label>
+      </node>
+      <node id="1092">
+        <label>vector</label>
+      </node>
+      <node id="1086">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="1085">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/ModelObject.hpp</label>
+        <link refid="ModelObject.hpp"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+      <node id="1087">
+        <label>iostream</label>
+      </node>
+      <node id="1095">
+        <label>algorithm</label>
+      </node>
+      <node id="1093">
+        <label>Observer.hpp</label>
+        <link refid="_observer_8hpp_source"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+      </node>
+      <node id="1088">
+        <label>memory</label>
+      </node>
+      <node id="1091">
+        <label>Notifier.hpp</label>
+        <link refid="_notifier_8hpp_source"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1115">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp</label>
+        <link refid="_robot_world_8hpp_source"/>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp</label>
+        <link refid="_abstract_agent_8hpp_source"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp</label>
+        <link refid="_laser_distance_sensor_8hpp_source"/>
+      </node>
+      <node id="1116">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp</label>
+        <link refid="_wall_8hpp_source"/>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp</label>
+        <link refid="_abstract_actuator_8hpp_source"/>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1107">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.hpp</label>
+        <link refid="_goal_shape_8hpp_source"/>
+      </node>
+      <node id="1103">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp</label>
+        <link refid="_abstract_sensor_8hpp_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp</label>
+        <link refid="_rectangle_shape_8hpp_source"/>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp</label>
+        <link refid="_robot_8hpp_source"/>
+        <childnode refid="1102" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</label>
+        <link refid="_robot_world_canvas_8hpp_source"/>
+      </node>
+      <node id="1105">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp</label>
+        <link refid="_way_point_8hpp_source"/>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WallShape.hpp</label>
+        <link refid="_wall_shape_8hpp_source"/>
+      </node>
+      <node id="1109">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp</label>
+        <link refid="_view_object_8hpp_source"/>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp</label>
+        <link refid="_shape_8hpp_source"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/ModelObject.hpp</label>
+        <link refid="ModelObject.hpp"/>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Goal.hpp</label>
+        <link refid="_goal_8hpp_source"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.hpp</label>
+        <link refid="_steering_actuator_8hpp_source"/>
+      </node>
+      <node id="1112">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LineShape.hpp</label>
+        <link refid="_line_shape_8hpp_source"/>
+        <childnode refid="1113" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.hpp</label>
+        <link refid="_robot_shape_8hpp_source"/>
+      </node>
+      <node id="1108">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp</label>
+        <link refid="_way_point_shape_8hpp_source"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_model_1_1_model_object" prot="public">model::ModelObject</innerclass>
+    <innernamespace refid="namespace_model">model</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MODELOBJECT_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODELOBJECT_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2014<sp/>Joost<sp/>Kraaijeveld.<sp/>See<sp/>license.txt<sp/>for<sp/>details.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>For<sp/>information,<sp/>bug<sp/>reports<sp/>and<sp/>additions<sp/>send<sp/>an<sp/>e-mail<sp/>to<sp/>RobotWorld@Askesis.nl.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Author:<sp/>jkr</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/noncopyable.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Notifier.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ObjectId.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_model" kindref="compound">model</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ModelObject;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;ModelObject&gt;<sp/>ModelObjectPtr;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_model_1_1_model_object" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_model_1_1_model_object" kindref="compound">ModelObject</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>boost::noncopyable,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_notifier" kindref="compound">Base::Notifier</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::enable_shared_from_this&lt;ModelObject&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_model_1_1_model_object" kindref="compound">ModelObject</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_model_1_1_model_object" kindref="compound">ModelObject</ref>();</highlight></codeline>
+<codeline lineno="47"></codeline>
+<codeline lineno="57" refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" kindref="member">operator==</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_model_1_1_model_object" kindref="compound">ModelObject</ref>&amp;<sp/>aModelObject)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="58"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>objectId<sp/>==<sp/>aModelObject.objectId;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67" refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" kindref="member">operator&lt;</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_model_1_1_model_object" kindref="compound">ModelObject</ref>&amp;<sp/>aModelObject)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="68"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>objectId<sp/>&lt;<sp/>aModelObject.objectId;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"></codeline>
+<codeline lineno="76" refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_object_id" kindref="compound">Base::ObjectId</ref>&amp;<sp/><ref refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" kindref="member">getObjectId</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>objectId;}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>DestinationType&gt;</highlight></codeline>
+<codeline lineno="83" refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::shared_ptr&lt;DestinationType&gt;<sp/><ref refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" kindref="member">toPtr</ref>()</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::dynamic_pointer_cast&lt;DestinationType&gt;(shared_from_this());</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_model_1_1_model_object_1a9db00b9150a932a1637e425f24c0bdf0" kindref="member">asString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_model_1_1_model_object_1aced22b0b0ee637c598c463de6a1d8d03" kindref="member">asDebugString</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_base_1_1_object_id" kindref="compound">Base::ObjectId</ref><sp/>objectId;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MODELOBJECT_HPP_<sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ModelObject.hpp"/>
+  </compounddef>
+</doxygen>

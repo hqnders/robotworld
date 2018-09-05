@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_base_1_1_notification_handler" kind="class" language="C++" prot="public">
+    <compoundname>Base::NotificationHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">EventHandler</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>NotificationFunction</declname>
+        <defname>NotificationFunction</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_base_1_1_notification_handler_1a7d10294da7546bf101f33ad453bbd07e" prot="private" static="no" mutable="no">
+        <type>NotificationFunction</type>
+        <definition>NotificationFunction Base::NotificationHandler&lt; NotificationFunction &gt;::function</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" line="37" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_base_1_1_notification_handler_1afcd3ef66adda7297131dc6abdef0122e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Base::NotificationHandler&lt; NotificationFunction &gt;::NotificationHandler</definition>
+        <argsstring>(const NotificationFunction &amp;aNotificationFunction)</argsstring>
+        <name>NotificationHandler</name>
+        <param>
+          <type>const NotificationFunction &amp;</type>
+          <declname>aNotificationFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" line="19" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notification_handler_1a7af6b53ab8be95c95d65e4af80e469ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Base::NotificationHandler&lt; NotificationFunction &gt;::~NotificationHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~NotificationHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" line="25" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notification_handler_1a1071e6455f5e96e93f1b6645f7d9bcde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Base::NotificationHandler&lt; NotificationFunction &gt;::OnNotificationEvent</definition>
+        <argsstring>(NotifyEvent &amp;aNotifyEvent)</argsstring>
+        <name>OnNotificationEvent</name>
+        <param>
+          <type>NotifyEvent &amp;</type>
+          <declname>aNotifyEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="565">
+        <label>EventHandler</label>
+      </node>
+      <node id="564">
+        <label>Base::NotificationHandler&lt; NotificationFunction &gt;</label>
+        <link refid="class_base_1_1_notification_handler"/>
+        <childnode refid="565" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="567">
+        <label>EventHandler</label>
+      </node>
+      <node id="566">
+        <label>Base::NotificationHandler&lt; NotificationFunction &gt;</label>
+        <link refid="class_base_1_1_notification_handler"/>
+        <childnode refid="567" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" line="17" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp" bodystart="16" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_notification_handler_1a7d10294da7546bf101f33ad453bbd07e" prot="private" virt="non-virtual"><scope>Base::NotificationHandler</scope><name>function</name></member>
+      <member refid="class_base_1_1_notification_handler_1afcd3ef66adda7297131dc6abdef0122e" prot="public" virt="non-virtual"><scope>Base::NotificationHandler</scope><name>NotificationHandler</name></member>
+      <member refid="class_base_1_1_notification_handler_1a1071e6455f5e96e93f1b6645f7d9bcde" prot="public" virt="non-virtual"><scope>Base::NotificationHandler</scope><name>OnNotificationEvent</name></member>
+      <member refid="class_base_1_1_notification_handler_1a7af6b53ab8be95c95d65e4af80e469ac" prot="public" virt="virtual"><scope>Base::NotificationHandler</scope><name>~NotificationHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

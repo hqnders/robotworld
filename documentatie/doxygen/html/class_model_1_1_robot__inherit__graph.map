@@ -1,0 +1,9 @@
+<map id="model::Robot" name="model::Robot">
+<area shape="rect" id="node2" href="$class_model_1_1_abstract_agent.html" title="model::AbstractAgent" alt="" coords="141,169,289,196"/>
+<area shape="rect" id="node3" href="$class_model_1_1_model_object.html" title="model::ModelObject" alt="" coords="146,95,285,121"/>
+<area shape="rect" id="node5" href="$class_base_1_1_notifier.html" title="Base::Notifier" alt="" coords="164,13,267,39"/>
+<area shape="rect" id="node7" href="$class_messaging_1_1_message_handler.html" title="Messaging::MessageHandler" alt="" coords="313,169,504,196"/>
+<area shape="rect" id="node8" href="$class_messaging_1_1_request_handler.html" title="Messaging::RequestHandler" alt="" coords="311,95,498,121"/>
+<area shape="rect" id="node9" href="$class_messaging_1_1_response_handler.html" title="Messaging::ResponseHandler" alt="" coords="522,95,719,121"/>
+<area shape="rect" id="node10" href="$class_base_1_1_observer.html" title="Base::Observer" alt="" coords="528,169,641,196"/>
+</map>

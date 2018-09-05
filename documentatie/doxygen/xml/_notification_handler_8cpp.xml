@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_notification_handler_8cpp" kind="file" language="C++">
+    <compoundname>NotificationHandler.cpp</compoundname>
+    <includes refid="_notification_handler_8hpp" local="yes">NotificationHandler.hpp</includes>
+    <incdepgraph>
+      <node id="1220">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="1232">
+        <label>functional</label>
+      </node>
+      <node id="1213">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="1195">
+        <label>NotificationHandler.hpp</label>
+        <link refid="_notification_handler_8hpp_source"/>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1197" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+      </node>
+      <node id="1200">
+        <label>wx/app.h</label>
+      </node>
+      <node id="1205">
+        <label>wx/event.h</label>
+      </node>
+      <node id="1214">
+        <label>wx/font.h</label>
+      </node>
+      <node id="1202">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="1224">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="1219">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="1215">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="1230">
+        <label>wx/region.h</label>
+      </node>
+      <node id="1228">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="1207" relation="include">
+        </childnode>
+      </node>
+      <node id="1199">
+        <label>string</label>
+      </node>
+      <node id="1207">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="1198">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+        <childnode refid="1210" relation="include">
+        </childnode>
+        <childnode refid="1211" relation="include">
+        </childnode>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1217" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+        <childnode refid="1223" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+        <childnode refid="1226" relation="include">
+        </childnode>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+        <childnode refid="1229" relation="include">
+        </childnode>
+      </node>
+      <node id="1201">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="1216">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="1208">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="1203">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="1197">
+        <label>NotificationEvent.hpp</label>
+        <link refid="_notification_event_8hpp_source"/>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+      </node>
+      <node id="1212">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="1210">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="1225">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="1221">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="1206">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="1231">
+        <label>NotificationFunctionTypeTraits.hpp</label>
+        <link refid="_notification_function_type_traits_8hpp_source"/>
+        <childnode refid="1196" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1198" relation="include">
+        </childnode>
+      </node>
+      <node id="1196">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="1223">
+        <label>wx/string.h</label>
+      </node>
+      <node id="1227">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="1207" relation="include">
+        </childnode>
+      </node>
+      <node id="1217">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="1204">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="1209">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="1222">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="1194">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.cpp</label>
+        <link refid="NotificationHandler.cpp"/>
+        <childnode refid="1195" relation="include">
+        </childnode>
+      </node>
+      <node id="1211">
+        <label>wx/button.h</label>
+      </node>
+      <node id="1229">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="1230" relation="include">
+        </childnode>
+      </node>
+      <node id="1226">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="1218">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;NotificationHandler.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.cpp"/>
+  </compounddef>
+</doxygen>

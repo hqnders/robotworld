@@ -1,0 +1,100 @@
+\hypertarget{class_path_algorithm_1_1_a_star}{}\section{Path\+Algorithm\+:\+:A\+Star Class Reference}
+\label{class_path_algorithm_1_1_a_star}\index{Path\+Algorithm\+::\+A\+Star@{Path\+Algorithm\+::\+A\+Star}}
+
+
+Inheritance diagram for Path\+Algorithm\+:\+:A\+Star\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_path_algorithm_1_1_a_star__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Path\+Algorithm\+:\+:A\+Star\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_path_algorithm_1_1_a_star__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Path {\bfseries search} (const Point \&a\+Start\+Point, const Point \&a\+Goal\+Point, const Size \&a\+Robot\+Size)\hypertarget{class_path_algorithm_1_1_a_star_a9112cf1a7a2e991046d88a1f5cba8925}{}\label{class_path_algorithm_1_1_a_star_a9112cf1a7a2e991046d88a1f5cba8925}
+
+\item 
+Path {\bfseries search} (\hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} a\+Start, const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Goal, const Size \&a\+Robot\+Size)\hypertarget{class_path_algorithm_1_1_a_star_a08d4471b622ff7cef2d6a65af869ceb3}{}\label{class_path_algorithm_1_1_a_star_a08d4471b622ff7cef2d6a65af869ceb3}
+
+\item 
+void {\bfseries add\+To\+Open\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_a63f88f24acf7bf34cd060051134c9190}{}\label{class_path_algorithm_1_1_a_star_a63f88f24acf7bf34cd060051134c9190}
+
+\item 
+void {\bfseries remove\+From\+Open\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_afcc23a676145d6e280d1c3430af5380a}{}\label{class_path_algorithm_1_1_a_star_afcc23a676145d6e280d1c3430af5380a}
+
+\item 
+void {\bfseries remove\+From\+Open\+Set} (Open\+Set\+::iterator \&i)\hypertarget{class_path_algorithm_1_1_a_star_aba29c2585fbf49880cf5e8b9bf6d3eb5}{}\label{class_path_algorithm_1_1_a_star_aba29c2585fbf49880cf5e8b9bf6d3eb5}
+
+\item 
+Open\+Set\+::iterator {\bfseries find\+In\+Open\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_ae78bfebdee31135fdfb2f302347f962f}{}\label{class_path_algorithm_1_1_a_star_ae78bfebdee31135fdfb2f302347f962f}
+
+\item 
+bool {\bfseries find\+Remove\+In\+Open\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_a657aaaf577ca25e68e6a5af57214e7d4}{}\label{class_path_algorithm_1_1_a_star_a657aaaf577ca25e68e6a5af57214e7d4}
+
+\item 
+void {\bfseries remove\+First\+From\+Open\+Set} ()\hypertarget{class_path_algorithm_1_1_a_star_a5bb18edbbd54833aac9eddfe63ba652d}{}\label{class_path_algorithm_1_1_a_star_a5bb18edbbd54833aac9eddfe63ba652d}
+
+\item 
+void {\bfseries add\+To\+Closed\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_a53139e4b3cd3971a2bf85a430e83378f}{}\label{class_path_algorithm_1_1_a_star_a53139e4b3cd3971a2bf85a430e83378f}
+
+\item 
+void {\bfseries remove\+From\+Closed\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_a1b6971a9c5878e859cbdb3270dda93b4}{}\label{class_path_algorithm_1_1_a_star_a1b6971a9c5878e859cbdb3270dda93b4}
+
+\item 
+void {\bfseries remove\+From\+Closed\+Set} (Closed\+Set\+::iterator \&i)\hypertarget{class_path_algorithm_1_1_a_star_a799953993c1255f0ce559f7233d3c926}{}\label{class_path_algorithm_1_1_a_star_a799953993c1255f0ce559f7233d3c926}
+
+\item 
+Closed\+Set\+::iterator {\bfseries find\+In\+Closed\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_a73d9639e838fd55bb392d01238fc967a}{}\label{class_path_algorithm_1_1_a_star_a73d9639e838fd55bb392d01238fc967a}
+
+\item 
+bool {\bfseries find\+Remove\+Closed\+Set} (const \hyperlink{struct_path_algorithm_1_1_vertex}{Vertex} \&a\+Vertex)\hypertarget{class_path_algorithm_1_1_a_star_a843db81c9950c0184ee31627313f5793}{}\label{class_path_algorithm_1_1_a_star_a843db81c9950c0184ee31627313f5793}
+
+\item 
+Closed\+Set {\bfseries get\+Closed\+Set} () const \hypertarget{class_path_algorithm_1_1_a_star_a94fcc29f04e6398edbd58effbf59b49a}{}\label{class_path_algorithm_1_1_a_star_a94fcc29f04e6398edbd58effbf59b49a}
+
+\item 
+Open\+Set {\bfseries get\+Open\+Set} () const \hypertarget{class_path_algorithm_1_1_a_star_ae419f2d019378d9b4435d862b70da72f}{}\label{class_path_algorithm_1_1_a_star_ae419f2d019378d9b4435d862b70da72f}
+
+\item 
+Vertex\+Map {\bfseries get\+Predecessor\+Map} () const \hypertarget{class_path_algorithm_1_1_a_star_ac4ce233712c0f7aac44d029e61888581}{}\label{class_path_algorithm_1_1_a_star_ac4ce233712c0f7aac44d029e61888581}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Closed\+Set \& {\bfseries get\+CS} ()\hypertarget{class_path_algorithm_1_1_a_star_a4cb2a6c928a01fcac02533500bd8ace5}{}\label{class_path_algorithm_1_1_a_star_a4cb2a6c928a01fcac02533500bd8ace5}
+
+\item 
+const Closed\+Set \& {\bfseries get\+CS} () const \hypertarget{class_path_algorithm_1_1_a_star_a420e1ac8824a265dc2272c7e50899322}{}\label{class_path_algorithm_1_1_a_star_a420e1ac8824a265dc2272c7e50899322}
+
+\item 
+Open\+Set \& {\bfseries get\+OS} ()\hypertarget{class_path_algorithm_1_1_a_star_a48e23107ffca02392bdf2439775baecf}{}\label{class_path_algorithm_1_1_a_star_a48e23107ffca02392bdf2439775baecf}
+
+\item 
+const Open\+Set \& {\bfseries get\+OS} () const \hypertarget{class_path_algorithm_1_1_a_star_af5ea4271f9318edaa68d8030e35d0cf1}{}\label{class_path_algorithm_1_1_a_star_af5ea4271f9318edaa68d8030e35d0cf1}
+
+\item 
+Vertex\+Map \& {\bfseries get\+PM} ()\hypertarget{class_path_algorithm_1_1_a_star_a4bb6718fd07f503ff836c5cdccd74236}{}\label{class_path_algorithm_1_1_a_star_a4bb6718fd07f503ff836c5cdccd74236}
+
+\item 
+const Vertex\+Map \& {\bfseries get\+PM} () const \hypertarget{class_path_algorithm_1_1_a_star_a021ff514f018ce9ec7db705578a210d4}{}\label{class_path_algorithm_1_1_a_star_a021ff514f018ce9ec7db705578a210d4}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/A\+Star.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/A\+Star.\+cpp\end{DoxyCompactItemize}

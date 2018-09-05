@@ -1,0 +1,99 @@
+\hypertarget{class_model_1_1_abstract_agent}{}\section{model\+:\+:Abstract\+Agent Class Reference}
+\label{class_model_1_1_abstract_agent}\index{model\+::\+Abstract\+Agent@{model\+::\+Abstract\+Agent}}
+
+
+Inheritance diagram for model\+:\+:Abstract\+Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_abstract_agent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for model\+:\+:Abstract\+Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_abstract_agent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries attach\+Sensor} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_sensor}{Abstract\+Sensor} $>$ a\+Sensor, bool attach\+Sensor\+To\+Agent=false)\hypertarget{class_model_1_1_abstract_agent_a9e9a85420a923bb7d68acbda8208e2ad}{}\label{class_model_1_1_abstract_agent_a9e9a85420a923bb7d68acbda8208e2ad}
+
+\item 
+virtual void {\bfseries attach\+Actuator} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_actuator}{Abstract\+Actuator} $>$ an\+Actuator, bool attach\+Actuator\+To\+Agent=false)\hypertarget{class_model_1_1_abstract_agent_a87cba14848a2ef4ec831ed2e44e85b63}{}\label{class_model_1_1_abstract_agent_a87cba14848a2ef4ec831ed2e44e85b63}
+
+\item 
+virtual void {\bfseries add\+Percept} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_percept}{Abstract\+Percept} $>$ an\+Abstract\+Percept)\hypertarget{class_model_1_1_abstract_agent_ab8fb558bec05bc1a7ea5402bf996705f}{}\label{class_model_1_1_abstract_agent_ab8fb558bec05bc1a7ea5402bf996705f}
+
+\item 
+virtual void {\bfseries start\+Acting} ()=0\hypertarget{class_model_1_1_abstract_agent_a783133675cf1d592a95eadcbded59d2e}{}\label{class_model_1_1_abstract_agent_a783133675cf1d592a95eadcbded59d2e}
+
+\item 
+virtual void {\bfseries stop\+Acting} ()=0\hypertarget{class_model_1_1_abstract_agent_a369070540beac48686890b06d831fabe}{}\label{class_model_1_1_abstract_agent_a369070540beac48686890b06d831fabe}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_abstract_agent_a4cee6603af332eb80d524bf3af70489a}{as\+String} () const 
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_abstract_agent_abcb33490b0f5761a2659bf705aff04b5}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_sensor}{Abstract\+Sensor} $>$ $>$ {\bfseries sensors}\hypertarget{class_model_1_1_abstract_agent_a0235b5c010dedd813b12ae7e97cc4e2e}{}\label{class_model_1_1_abstract_agent_a0235b5c010dedd813b12ae7e97cc4e2e}
+
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_actuator}{Abstract\+Actuator} $>$ $>$ {\bfseries actuators}\hypertarget{class_model_1_1_abstract_agent_a23cd2a046e9e782f44a3dc0685fa84ca}{}\label{class_model_1_1_abstract_agent_a23cd2a046e9e782f44a3dc0685fa84ca}
+
+\item 
+\hyperlink{class_base_1_1_queue}{Base\+::\+Queue}$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_percept}{Abstract\+Percept} $>$ $>$ {\bfseries percept\+Queue}\hypertarget{class_model_1_1_abstract_agent_ae49bfbbddb9c9a76478ec12f4760d127}{}\label{class_model_1_1_abstract_agent_ae49bfbbddb9c9a76478ec12f4760d127}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{model\+::\+Abstract\+Agent@{model\+::\+Abstract\+Agent}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!model\+::\+Abstract\+Agent@{model\+::\+Abstract\+Agent}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+Abstract\+Agent\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_abstract_agent_abcb33490b0f5761a2659bf705aff04b5}{}\label{class_model_1_1_abstract_agent_abcb33490b0f5761a2659bf705aff04b5}
+Returns a description of the object with all data of the object usable for debugging 
+
+Reimplemented from \hyperlink{class_model_1_1_model_object_aced22b0b0ee637c598c463de6a1d8d03}{model\+::\+model\+Object}.
+
+
+
+Reimplemented in \hyperlink{class_model_1_1_robot_aaf05b81b0aff3dac7b39effa462da04e}{model\+::\+Robot}.
+
+\index{model\+::\+Abstract\+Agent@{model\+::\+Abstract\+Agent}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!model\+::\+Abstract\+Agent@{model\+::\+Abstract\+Agent}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+Abstract\+Agent\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_abstract_agent_a4cee6603af332eb80d524bf3af70489a}{}\label{class_model_1_1_abstract_agent_a4cee6603af332eb80d524bf3af70489a}
+Returns a 1-\/line description of the object 
+
+Reimplemented from \hyperlink{class_model_1_1_model_object_a9db00b9150a932a1637e425f24c0bdf0}{model\+::\+model\+Object}.
+
+
+
+Reimplemented in \hyperlink{class_model_1_1_robot_a888add69a87a3e0f82a3f9c95140716f}{model\+::\+Robot}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Abstract\+Agent.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Abstract\+Agent.\+cpp\end{DoxyCompactItemize}

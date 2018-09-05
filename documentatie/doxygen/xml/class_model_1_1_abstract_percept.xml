@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_abstract_percept" kind="class" language="C++" prot="public">
+    <compoundname>model::AbstractPercept</compoundname>
+    <derivedcompoundref refid="class_model_1_1_distance_percept" prot="public" virt="non-virtual">model::DistancePercept</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_abstract_percept_1a8f1128645f41927d6696260b2131eb4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual model::AbstractPercept::~AbstractPercept</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractPercept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" line="37" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="417">
+        <label>model::DistancePercept</label>
+        <link refid="class_model_1_1_distance_percept"/>
+        <childnode refid="416" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>model::AbstractPercept</label>
+        <link refid="class_model_1_1_abstract_percept"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" line="32" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp" bodystart="31" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_percept_1a8f1128645f41927d6696260b2131eb4e" prot="public" virt="virtual"><scope>model::AbstractPercept</scope><name>~AbstractPercept</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

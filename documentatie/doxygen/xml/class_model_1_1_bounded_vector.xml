@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_bounded_vector" kind="class" language="C++" prot="public">
+    <compoundname>model::BoundedVector</compoundname>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a5a0115cf9e87c118474d507efcbaddfb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::BoundedVector::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="102" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="100" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1aa04899e137a269e9ab116535c4fadc07" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::BoundedVector::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="106" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_model_1_1_bounded_vector_1a0d837ee4acabf638003a62c9d50a9935" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float model::BoundedVector::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="110" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_bounded_vector_1a627a1a0ab97bd13e2d1b6ec179ad58ca" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float model::BoundedVector::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="111" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a6f9c2ace8143904b8b39c85c7e7c2f25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>model::BoundedVector::BoundedVector</definition>
+        <argsstring>()</argsstring>
+        <name>BoundedVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a55d60da08dc45930fe4b7db6aca8a55d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>model::BoundedVector::BoundedVector</definition>
+        <argsstring>(float anX, float anY)</argsstring>
+        <name>BoundedVector</name>
+        <param>
+          <type>float</type>
+          <declname>anX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>anY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="29" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1ab769d7fcd9ca402df947e5515c929515" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>model::BoundedVector::BoundedVector</definition>
+        <argsstring>(const Point &amp;aPoint1, const Point &amp;aPoint2)</argsstring>
+        <name>BoundedVector</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint1</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="38" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1ab39ae90320b2e9e3f12ef25322620b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>model::BoundedVector::BoundedVector</definition>
+        <argsstring>(const BoundedVector &amp;aPolarCoord)</argsstring>
+        <name>BoundedVector</name>
+        <param>
+          <type>const <ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+          <declname>aPolarCoord</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="47" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a6c3a027447297bcc67b8aa5180b1629a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual model::BoundedVector::~BoundedVector</definition>
+        <argsstring>()</argsstring>
+        <name>~BoundedVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="55" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a9cd9a0c3001c9a717b9fe7c38c4a791a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float model::BoundedVector::getMagnitude</definition>
+        <argsstring>()</argsstring>
+        <name>getMagnitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a063e74d97117138fc2ed5fe7e007f133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::BoundedVector::normalise</definition>
+        <argsstring>()</argsstring>
+        <name>normalise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="65" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="18" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a6a4148a2cf2298951d0b2469c33d799f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref></type>
+        <definition>BoundedVector model::BoundedVector::getNormalised</definition>
+        <argsstring>()</argsstring>
+        <name>getNormalised</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a29b4dd3c012309ccdb622fab46da50cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::BoundedVector::reverse</definition>
+        <argsstring>()</argsstring>
+        <name>reverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="73" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a6f707a9499dc1a1a4051fa2b40f8d40d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+        <definition>BoundedVector &amp; model::BoundedVector::operator+=</definition>
+        <argsstring>(const BoundedVector &amp;aVector)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+          <declname>aVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="77" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1ae1cb231bfe977d563eebfd47526cb1c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+        <definition>BoundedVector &amp; model::BoundedVector::operator-=</definition>
+        <argsstring>(const BoundedVector &amp;aVector)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+          <declname>aVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="81" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1aeed3b7e66556126aee3478daa6f9199b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+        <definition>BoundedVector &amp; model::BoundedVector::operator*=</definition>
+        <argsstring>(float aScalar)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>float</type>
+          <declname>aScalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="85" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1ac949b337eed72116f01507c7bba5820a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref> &amp;</type>
+        <definition>BoundedVector &amp; model::BoundedVector::operator/=</definition>
+        <argsstring>(float aScalar)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>float</type>
+          <declname>aScalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="89" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_bounded_vector_1a05b571d646e8c226c3bef443cbdb00f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_1_1_bounded_vector" kindref="compound">BoundedVector</ref></type>
+        <definition>BoundedVector model::BoundedVector::operator-</definition>
+        <argsstring>()</argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="93" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" line="16" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp" bodystart="15" bodyend="112"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_bounded_vector_1aa04899e137a269e9ab116535c4fadc07" prot="public" virt="virtual"><scope>model::BoundedVector</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a5a0115cf9e87c118474d507efcbaddfb" prot="public" virt="virtual"><scope>model::BoundedVector</scope><name>asString</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a6f9c2ace8143904b8b39c85c7e7c2f25" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>BoundedVector</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a55d60da08dc45930fe4b7db6aca8a55d" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>BoundedVector</name></member>
+      <member refid="class_model_1_1_bounded_vector_1ab769d7fcd9ca402df947e5515c929515" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>BoundedVector</name></member>
+      <member refid="class_model_1_1_bounded_vector_1ab39ae90320b2e9e3f12ef25322620b18" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>BoundedVector</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a9cd9a0c3001c9a717b9fe7c38c4a791a" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>getMagnitude</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a6a4148a2cf2298951d0b2469c33d799f" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>getNormalised</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a063e74d97117138fc2ed5fe7e007f133" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>normalise</name></member>
+      <member refid="class_model_1_1_bounded_vector_1aeed3b7e66556126aee3478daa6f9199b" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>operator*=</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a6f707a9499dc1a1a4051fa2b40f8d40d" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>operator+=</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a05b571d646e8c226c3bef443cbdb00f7" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>operator-</name></member>
+      <member refid="class_model_1_1_bounded_vector_1ae1cb231bfe977d563eebfd47526cb1c0" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>operator-=</name></member>
+      <member refid="class_model_1_1_bounded_vector_1ac949b337eed72116f01507c7bba5820a" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>operator/=</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a29b4dd3c012309ccdb622fab46da50cb" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>reverse</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a0d837ee4acabf638003a62c9d50a9935" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>x</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a627a1a0ab97bd13e2d1b6ec179ad58ca" prot="public" virt="non-virtual"><scope>model::BoundedVector</scope><name>y</name></member>
+      <member refid="class_model_1_1_bounded_vector_1a6c3a027447297bcc67b8aa5180b1629a" prot="public" virt="virtual"><scope>model::BoundedVector</scope><name>~BoundedVector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

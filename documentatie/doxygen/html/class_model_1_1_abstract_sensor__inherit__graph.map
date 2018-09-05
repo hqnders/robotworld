@@ -1,0 +1,5 @@
+<map id="model::AbstractSensor" name="model::AbstractSensor">
+<area shape="rect" id="node6" href="$class_model_1_1_laser_distance_sensor.html" title="model::LaserDistanceSensor" alt="" coords="120,244,311,271"/>
+<area shape="rect" id="node2" href="$class_model_1_1_model_object.html" title="model::ModelObject" alt="" coords="146,95,285,121"/>
+<area shape="rect" id="node4" href="$class_base_1_1_notifier.html" title="Base::Notifier" alt="" coords="164,13,267,39"/>
+</map>

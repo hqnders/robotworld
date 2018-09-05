@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_math_utils_8hpp" kind="file" language="C++">
+    <compoundname>MathUtils.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includedby refid="_bounded_vector_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.cpp</includedby>
+    <includedby refid="_shape2_d_utils_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp</includedby>
+    <includedby refid="_main_frame_window_8cpp" local="no">/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp</includedby>
+    <includedby refid="_math_utils_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.cpp</includedby>
+    <includedby refid="_robot_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp</includedby>
+    <incdepgraph>
+      <node id="1030">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="1029">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.hpp</label>
+        <link refid="MathUtils.hpp"/>
+        <childnode refid="1030" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1032">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp</label>
+        <link refid="_shape2_d_utils_8hpp_source"/>
+      </node>
+      <node id="1031">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.hpp</label>
+        <link refid="MathUtils.hpp"/>
+        <childnode refid="1032" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_utils_1_1_math_utils" prot="public">Utils::MathUtils</innerclass>
+    <innernamespace refid="namespace_utils">Utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MATHUTILS_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MATHUTILS_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_utils" kindref="compound">Utils</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>PI<sp/>=<sp/>3.141592654;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ALMOST_ZERO<sp/>=<sp/>0.000000000000001;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_utils_1_1_math_utils" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_utils_1_1_math_utils" kindref="compound">MathUtils</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>toRadians(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aDegrees);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>toDegrees(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>aRadian);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>class<sp/>Math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Utils</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MATHUTILS_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_server" kind="class" language="C++" prot="public">
+    <compoundname>Messaging::Server</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_messaging_1_1_server_1a248edc6d35bb39ff332f32145013cf66" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service &amp;</type>
+        <definition>boost::asio::io_service&amp; Messaging::Server::io_service</definition>
+        <argsstring></argsstring>
+        <name>io_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" line="62" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_server_1ab2d32a71de425766f800e7c9896a0e9f" prot="private" static="no" mutable="no">
+        <type>boost::asio::ip::tcp::acceptor</type>
+        <definition>boost::asio::ip::tcp::acceptor Messaging::Server::acceptor</definition>
+        <argsstring></argsstring>
+        <name>acceptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" line="65" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_server_1aed7d6b019e82a75c982ccc56629cee6c" prot="private" static="no" mutable="no">
+        <type>RequestHandlerPtr</type>
+        <definition>RequestHandlerPtr Messaging::Server::requestHandler</definition>
+        <argsstring></argsstring>
+        <name>requestHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_messaging_1_1_server_1a8f618713380149543f0817e2675d81aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Server::Server</definition>
+        <argsstring>(short port, RequestHandlerPtr aRequestHandler)</argsstring>
+        <name>Server</name>
+        <param>
+          <type>short</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>RequestHandlerPtr</type>
+          <declname>aRequestHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The server will listen on localhost/ip-address on the port </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" line="19" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_server_1afd2d80942cfce9e61abda7bec21b5833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Server::~Server</definition>
+        <argsstring>()</argsstring>
+        <name>~Server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_server_1a7af1a9647f151e832c274d3674b6845f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Server::handleAccept</definition>
+        <argsstring>(ServerSession *aSession, const boost::system::error_code &amp;error)</argsstring>
+        <name>handleAccept</name>
+        <param>
+          <type><ref refid="class_messaging_1_1_server_session" kindref="compound">ServerSession</ref> *</type>
+          <declname>aSession</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle any incoming connections </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" line="37" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" bodystart="37" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" line="14" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Server.hpp" bodystart="13" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_server_1ab2d32a71de425766f800e7c9896a0e9f" prot="private" virt="non-virtual"><scope>Messaging::Server</scope><name>acceptor</name></member>
+      <member refid="class_messaging_1_1_server_1a7af1a9647f151e832c274d3674b6845f" prot="public" virt="non-virtual"><scope>Messaging::Server</scope><name>handleAccept</name></member>
+      <member refid="class_messaging_1_1_server_1a248edc6d35bb39ff332f32145013cf66" prot="private" virt="non-virtual"><scope>Messaging::Server</scope><name>io_service</name></member>
+      <member refid="class_messaging_1_1_server_1aed7d6b019e82a75c982ccc56629cee6c" prot="private" virt="non-virtual"><scope>Messaging::Server</scope><name>requestHandler</name></member>
+      <member refid="class_messaging_1_1_server_1a8f618713380149543f0817e2675d81aa" prot="public" virt="non-virtual"><scope>Messaging::Server</scope><name>Server</name></member>
+      <member refid="class_messaging_1_1_server_1afd2d80942cfce9e61abda7bec21b5833" prot="public" virt="non-virtual"><scope>Messaging::Server</scope><name>~Server</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

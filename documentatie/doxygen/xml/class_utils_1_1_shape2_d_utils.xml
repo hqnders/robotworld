@@ -1,0 +1,645 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_utils_1_1_shape2_d_utils" kind="class" language="C++" prot="public">
+    <compoundname>Utils::Shape2DUtils</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5" prot="public" static="no">
+        <name>CompassPoint</name>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a294454a735757c76bf535dfcb34c8dd3" prot="public">
+          <name>CP_NORTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0ac28a9bd47cc98c5983a3ddefd46fee" prot="public">
+          <name>CP_NORTHEAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0a4a30e036fe6bd33cebd2adb1803c81" prot="public">
+          <name>CP_EAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5aab475ba787ebe431af7c7db64708dd6f" prot="public">
+          <name>CP_SOUTHEAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a51c0d0e44374c0912d4811d3720e9b05" prot="public">
+          <name>CP_SOUTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0419db439e1ee90b70095ace31d423f3" prot="public">
+          <name>CP_SOUTHWEST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a475280eaba356cd18ba98f254f95d462" prot="public">
+          <name>CP_WEST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5acc2b65f1404a1a8af47c676345cdbe44" prot="public">
+          <name>CP_NORTHWEST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum to find the point of a rectangle </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="94" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" bodystart="93" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a0a6d71335cddbfb02f15603a9594f3e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Utils::Shape2DUtils::getAngle</definition>
+        <argsstring>(const model::BoundedVector &amp;aVector)</argsstring>
+        <name>getAngle</name>
+        <param>
+          <type>const <ref refid="class_model_1_1_bounded_vector" kindref="compound">model::BoundedVector</ref> &amp;</type>
+          <declname>aVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a4d91eeb6e08a2116209b69ec75bc8966" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Utils::Shape2DUtils::getAngle</definition>
+        <argsstring>(const Point &amp;aStartpoint, const Point &amp;anEndPoint)</argsstring>
+        <name>getAngle</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aStartpoint</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>anEndPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="27" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a404882ff5a44d0cfa6500941c4b925f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Utils::Shape2DUtils::intersect</definition>
+        <argsstring>(const Point &amp;aStartLine1, const Point &amp;aEndLine1, const Point &amp;aStartLine2, const Point &amp;anEndLine2)</argsstring>
+        <name>intersect</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aStartLine1</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aEndLine1</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aStartLine2</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>anEndLine2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="32" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="47" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a0c1b1443dbc38bac0178ef9240270a9d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point Utils::Shape2DUtils::getIntersection</definition>
+        <argsstring>(const Point &amp;aStartLine1, const Point &amp;aEndLine1, const Point &amp;aStartLine2, const Point &amp;anEndLine2)</argsstring>
+        <name>getIntersection</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aStartLine1</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aEndLine1</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aStartLine2</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>anEndLine2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="39" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="87" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a297b88bbdc022369dbc06775878a73e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Utils::Shape2DUtils::isInsidePolygon</definition>
+        <argsstring>(Point *aPolygon, int aNumberOfPoints, const Point &amp;aPoint)</argsstring>
+        <name>isInsidePolygon</name>
+        <param>
+          <type>Point *</type>
+          <declname>aPolygon</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aNumberOfPoints</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aPolygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of points </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numberOfPoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The point for which to test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the point is inside the polygon, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="50" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="127" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a9fea1c3cfa86f8776a2ffca0f1683c58" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Utils::Shape2DUtils::isOnLine</definition>
+        <argsstring>(const Point &amp;aStartPoint, const Point &amp;anEndPoint, const Point &amp;aPoint, int aRadius=6)</argsstring>
+        <name>isOnLine</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aStartPoint</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>anEndPoint</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aRadius</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aStartpoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anEndPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of pixels we can be wrong </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if aPoint is within aRadius of the given line </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="169" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1ab86f3e66e5a8f9bbc93e68c8ecc41f38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Utils::Shape2DUtils::isOnLine</definition>
+        <argsstring>(Point *aPolygon, int aNumberOfPoints, const Point &amp;aPoint, int aRadius=6, bool aClosedShape=true)</argsstring>
+        <name>isOnLine</name>
+        <param>
+          <type>Point *</type>
+          <declname>aPolygon</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aNumberOfPoints</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aRadius</declname>
+          <defval>6</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aClosedShape</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aPolygon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of points that form a path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numberOfPoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of points in the array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of pixels we can be wrong </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aClosedShape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True if the path is a closed, false otherwise </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if aPoint is within aRadius of the given path lines </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="75" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="241" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a80a202c16649fa6da57343df10035f7e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point Utils::Shape2DUtils::rotate</definition>
+        <argsstring>(const Point &amp;aPoint, double anAngle)</argsstring>
+        <name>rotate</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>anAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The rotation will be done around (0.0)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rotated point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="88" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="265" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1ab1beebca006b82c3f78669b6a13529f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5" kindref="member">CompassPoint</ref></type>
+        <definition>Shape2DUtils::CompassPoint Utils::Shape2DUtils::getCompassPoint</definition>
+        <argsstring>(const Point &amp;aPoint, const Size &amp;aSize, const Point &amp;aBorderPoint, int aRadius=6)</argsstring>
+        <name>getCompassPoint</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aSize</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aBorderPoint</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aRadius</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Point on the border of the shape </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="109" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="273" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a19ef7cb8dc087ba4d9eb65c4f11fd7e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Utils::Shape2DUtils::isCompassPoint</definition>
+        <argsstring>(const Point &amp;aPoint, const Size &amp;aSize, const Point &amp;aBorderPoint, CompassPoint aCompassPoint, int aRadius=6)</argsstring>
+        <name>isCompassPoint</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aSize</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aBorderPoint</declname>
+        </param>
+        <param>
+          <type><ref refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5" kindref="member">CompassPoint</ref></type>
+          <declname>aCompassPoint</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aRadius</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aBorderPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aCompassPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="120" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="316" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a47efad1075c8fabb7af1146f17fadaa2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Utils::Shape2DUtils::asString</definition>
+        <argsstring>(const Point &amp;aPoint)</argsstring>
+        <name>asString</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="129" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="333" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a801c67d2024d833171fbb99d9ddb5cf1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Utils::Shape2DUtils::asString</definition>
+        <argsstring>(const Size &amp;aSize)</argsstring>
+        <name>asString</name>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="133" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="342" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a2b54dee36b497da4e9f99ce27cbc4470" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Utils::Shape2DUtils::rotateX</definition>
+        <argsstring>(const Point &amp;aPoint, double anAngle)</argsstring>
+        <name>rotateX</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>anAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="136" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="369" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1ad09e100184c73aa040f9018d24ca5279" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Utils::Shape2DUtils::rotateY</definition>
+        <argsstring>(const Point &amp;aPoint, double anAngle)</argsstring>
+        <name>rotateY</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>anAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="138" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="377" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a961c5b62a418519b156d0fc100f03e8b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Utils::Shape2DUtils::rotateX</definition>
+        <argsstring>(int anX, int anY, double anAngle)</argsstring>
+        <name>rotateX</name>
+        <param>
+          <type>int</type>
+          <declname>anX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>anAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="140" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="351" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_shape2_d_utils_1a06068dc58423b2d9b4175d8b5584abff" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Utils::Shape2DUtils::rotateY</definition>
+        <argsstring>(int anX, int anY, double anAngle)</argsstring>
+        <name>rotateY</name>
+        <param>
+          <type>int</type>
+          <declname>anX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>anAngle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="143" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp" bodystart="360" bodyend="365"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp" bodystart="17" bodyend="147"/>
+    <listofallmembers>
+      <member refid="class_utils_1_1_shape2_d_utils_1a47efad1075c8fabb7af1146f17fadaa2" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>asString</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a801c67d2024d833171fbb99d9ddb5cf1" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>asString</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CompassPoint</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0a4a30e036fe6bd33cebd2adb1803c81" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_EAST</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a294454a735757c76bf535dfcb34c8dd3" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_NORTH</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0ac28a9bd47cc98c5983a3ddefd46fee" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_NORTHEAST</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5acc2b65f1404a1a8af47c676345cdbe44" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_NORTHWEST</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a51c0d0e44374c0912d4811d3720e9b05" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_SOUTH</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5aab475ba787ebe431af7c7db64708dd6f" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_SOUTHEAST</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0419db439e1ee90b70095ace31d423f3" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_SOUTHWEST</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a475280eaba356cd18ba98f254f95d462" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>CP_WEST</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a0a6d71335cddbfb02f15603a9594f3e7" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>getAngle</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a4d91eeb6e08a2116209b69ec75bc8966" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>getAngle</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1ab1beebca006b82c3f78669b6a13529f8" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>getCompassPoint</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a0c1b1443dbc38bac0178ef9240270a9d" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>getIntersection</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a404882ff5a44d0cfa6500941c4b925f5" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>intersect</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a19ef7cb8dc087ba4d9eb65c4f11fd7e3" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>isCompassPoint</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a297b88bbdc022369dbc06775878a73e5" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>isInsidePolygon</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a9fea1c3cfa86f8776a2ffca0f1683c58" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>isOnLine</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1ab86f3e66e5a8f9bbc93e68c8ecc41f38" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>isOnLine</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a80a202c16649fa6da57343df10035f7e" prot="public" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>rotate</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a2b54dee36b497da4e9f99ce27cbc4470" prot="protected" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>rotateX</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a961c5b62a418519b156d0fc100f03e8b" prot="protected" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>rotateX</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1ad09e100184c73aa040f9018d24ca5279" prot="protected" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>rotateY</name></member>
+      <member refid="class_utils_1_1_shape2_d_utils_1a06068dc58423b2d9b4175d8b5584abff" prot="protected" virt="non-virtual"><scope>Utils::Shape2DUtils</scope><name>rotateY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+\hypertarget{class_messaging_1_1_response_handler}{}\section{Messaging\+:\+:Response\+Handler Class Reference}
+\label{class_messaging_1_1_response_handler}\index{Messaging\+::\+Response\+Handler@{Messaging\+::\+Response\+Handler}}
+
+
+{\ttfamily \#include $<$Message\+Handler.\+hpp$>$}
+
+
+
+Inheritance diagram for Messaging\+:\+:Response\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_messaging_1_1_response_handler__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_messaging_1_1_response_handler_a13c456a994ef15b4f7be7beed4e2f91f}{handle\+Response} (const \hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base client interface for handling remote responses Classes derived from this interface can serve as client in the Messaging protocol by implementing this interface. 
+
+\subsection{Member Function Documentation}
+\index{Messaging\+::\+Response\+Handler@{Messaging\+::\+Response\+Handler}!handle\+Response@{handle\+Response}}
+\index{handle\+Response@{handle\+Response}!Messaging\+::\+Response\+Handler@{Messaging\+::\+Response\+Handler}}
+\subsubsection[{\texorpdfstring{handle\+Response(const Message \&a\+Message)=0}{handleResponse(const Message &aMessage)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Messaging\+::\+Response\+Handler\+::handle\+Response (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_messaging_1_1_response_handler_a13c456a994ef15b4f7be7beed4e2f91f}{}\label{class_messaging_1_1_response_handler_a13c456a994ef15b4f7be7beed4e2f91f}
+The given argument contains the result/response of/to a previous request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_model_1_1_robot_afa5fb42fca43fdfedb08d3a7cb38c037}{model\+::\+Robot}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Message\+Handler.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{class_view_1_1_wall_shape}{}\section{View\+:\+:Wall\+Shape Class Reference}
+\label{class_view_1_1_wall_shape}\index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+
+
+Inheritance diagram for View\+:\+:Wall\+Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_view_1_1_wall_shape__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for View\+:\+:Wall\+Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_view_1_1_wall_shape__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Wall\+Shape} (model\+::\+Wall\+Ptr a\+Wall)\hypertarget{class_view_1_1_wall_shape_a79daa25e2a0c2cc670569fd071c95d25}{}\label{class_view_1_1_wall_shape_a79daa25e2a0c2cc670569fd071c95d25}
+
+\item 
+{\bfseries Wall\+Shape} (model\+::\+Wall\+Ptr a\+Wall, Rectangle\+Shape\+Ptr a\+Rectangle\+Shape1, Rectangle\+Shape\+Ptr a\+Rectangle\+Shape2)\hypertarget{class_view_1_1_wall_shape_a4056d010b2966b184a722eacbf97cf83}{}\label{class_view_1_1_wall_shape_a4056d010b2966b184a722eacbf97cf83}
+
+\item 
+virtual void \hyperlink{class_view_1_1_wall_shape_afb594e5259f6ce9c57fc6516db138716}{set\+Selected\+At} (const Point \&a\+Point=Default\+Position, bool a\+Selected=true)
+\item 
+Rectangle\+Shape\+Ptr \hyperlink{class_view_1_1_wall_shape_ac53998b44692cb6d51e57db6d32b9fa2}{has\+End\+Point\+At} (const Point \&a\+Point)
+\item 
+bool {\bfseries has\+End\+Point} (Rectangle\+Shape\+Ptr a\+Rectangle\+Shape)\hypertarget{class_view_1_1_wall_shape_a75b8d2472e424677fb2b3eec03e62273}{}\label{class_view_1_1_wall_shape_a75b8d2472e424677fb2b3eec03e62273}
+
+\item 
+void {\bfseries update\+End\+Point} (Rectangle\+Shape\+Ptr a\+Rectangle\+Shape)\hypertarget{class_view_1_1_wall_shape_aac9b0aacd63e785094059297b12689fe}{}\label{class_view_1_1_wall_shape_aac9b0aacd63e785094059297b12689fe}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Type safe accessors and mutators}\par
+\begin{DoxyCompactItemize}
+\item 
+model\+::\+Wall\+Ptr \hyperlink{class_view_1_1_wall_shape_a61554729a6afeececccff6ad23bf0924}{get\+Wall} () const
+\item 
+void \hyperlink{class_view_1_1_wall_shape_a0b34f9a058db38586162d63c3950b6d0}{set\+Wall} (model\+::\+Wall\+Ptr a\+Wall)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Pure virtual abstract Shape functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries draw} (wx\+DC \&dc)\hypertarget{class_view_1_1_wall_shape_a1da863c9f5b02edf721f173fef2903d8}{}\label{class_view_1_1_wall_shape_a1da863c9f5b02edf721f173fef2903d8}
+
+\item 
+virtual bool \hyperlink{class_view_1_1_wall_shape_ab71871a176a8d08210513d2ce920c176}{occupies} (const Point \&a\+Point) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_view_1_1_wall_shape_a1d93e20e10199c6a550c29cd3f88349b}{as\+String} () const 
+\item 
+virtual std\+::string \hyperlink{class_view_1_1_wall_shape_a0b24f24720b2870e6d71e316842bf57f}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string View\+::\+Wall\+Shape\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_view_1_1_wall_shape_a0b24f24720b2870e6d71e316842bf57f}{}\label{class_view_1_1_wall_shape_a0b24f24720b2870e6d71e316842bf57f}
+Returns a description of the object with all data of the object usable for debugging 
+
+Reimplemented from \hyperlink{class_view_1_1_line_shape_a625bf67fd65a8258d6186ec9e350cc45}{View\+::\+Line\+Shape}.
+
+\index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string View\+::\+Wall\+Shape\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_view_1_1_wall_shape_a1d93e20e10199c6a550c29cd3f88349b}{}\label{class_view_1_1_wall_shape_a1d93e20e10199c6a550c29cd3f88349b}
+Returns a 1-\/line description of the object 
+
+Reimplemented from \hyperlink{class_view_1_1_line_shape_a814f67ef4b420635f5a71309c4d20a04}{View\+::\+Line\+Shape}.
+
+\index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}!get\+Wall@{get\+Wall}}
+\index{get\+Wall@{get\+Wall}!View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+\subsubsection[{\texorpdfstring{get\+Wall() const }{getWall() const }}]{\setlength{\rightskip}{0pt plus 5cm}model\+::\+Wall\+Ptr View\+::\+Wall\+Shape\+::get\+Wall (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_view_1_1_wall_shape_a61554729a6afeececccff6ad23bf0924}{}\label{class_view_1_1_wall_shape_a61554729a6afeececccff6ad23bf0924}
+Type safe accessor \index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}!has\+End\+Point\+At@{has\+End\+Point\+At}}
+\index{has\+End\+Point\+At@{has\+End\+Point\+At}!View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+\subsubsection[{\texorpdfstring{has\+End\+Point\+At(const Point \&a\+Point)}{hasEndPointAt(const Point &aPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle\+Shape\+Ptr View\+::\+Wall\+Shape\+::has\+End\+Point\+At (
+\begin{DoxyParamCaption}
+\item[{const Point \&}]{a\+Point}
+\end{DoxyParamCaption}
+)}\hypertarget{class_view_1_1_wall_shape_ac53998b44692cb6d51e57db6d32b9fa2}{}\label{class_view_1_1_wall_shape_ac53998b44692cb6d51e57db6d32b9fa2}
+Return nullptr if the point is inside an end point \index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}!occupies@{occupies}}
+\index{occupies@{occupies}!View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+\subsubsection[{\texorpdfstring{occupies(const Point \&a\+Point) const }{occupies(const Point &aPoint) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool View\+::\+Wall\+Shape\+::occupies (
+\begin{DoxyParamCaption}
+\item[{const Point \&}]{a\+Point}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_view_1_1_wall_shape_ab71871a176a8d08210513d2ce920c176}{}\label{class_view_1_1_wall_shape_ab71871a176a8d08210513d2ce920c176}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is in the shape 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_view_1_1_line_shape_a746b918386d398654f3471af760878ef}{View\+::\+Line\+Shape}.
+
+\index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}!set\+Selected\+At@{set\+Selected\+At}}
+\index{set\+Selected\+At@{set\+Selected\+At}!View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+\subsubsection[{\texorpdfstring{set\+Selected\+At(const Point \&a\+Point=\+Default\+Position, bool a\+Selected=true)}{setSelectedAt(const Point &aPoint=DefaultPosition, bool aSelected=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void View\+::\+Wall\+Shape\+::set\+Selected\+At (
+\begin{DoxyParamCaption}
+\item[{const Point \&}]{a\+Point = {\ttfamily DefaultPosition}, }
+\item[{bool}]{a\+Selected = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_view_1_1_wall_shape_afb594e5259f6ce9c57fc6516db138716}{}\label{class_view_1_1_wall_shape_afb594e5259f6ce9c57fc6516db138716}
+By default this does the same as Shape\+::set\+Selected because by default a \hyperlink{class_view_1_1_shape}{Shape} has no volume or surface and the selection point can be assumed to be the centre. 
+
+Reimplemented from \hyperlink{class_view_1_1_shape_aa698e74f91344d0d0dee2c3273c1ec07}{View\+::\+Shape}.
+
+\index{View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}!set\+Wall@{set\+Wall}}
+\index{set\+Wall@{set\+Wall}!View\+::\+Wall\+Shape@{View\+::\+Wall\+Shape}}
+\subsubsection[{\texorpdfstring{set\+Wall(\+model\+::\+Wall\+Ptr a\+Wall)}{setWall(model::WallPtr aWall)}}]{\setlength{\rightskip}{0pt plus 5cm}void View\+::\+Wall\+Shape\+::set\+Wall (
+\begin{DoxyParamCaption}
+\item[{model\+::\+Wall\+Ptr}]{a\+Wall}
+\end{DoxyParamCaption}
+)}\hypertarget{class_view_1_1_wall_shape_a0b34f9a058db38586162d63c3950b6d0}{}\label{class_view_1_1_wall_shape_a0b34f9a058db38586162d63c3950b6d0}
+Type safe mutator 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Wall\+Shape.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Wall\+Shape.\+cpp\end{DoxyCompactItemize}

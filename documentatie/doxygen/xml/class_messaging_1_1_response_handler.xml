@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_response_handler" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Messaging::ResponseHandler</compoundname>
+    <derivedcompoundref refid="class_messaging_1_1_message_handler" prot="public" virt="non-virtual">Messaging::MessageHandler</derivedcompoundref>
+    <includes refid="_message_handler_8hpp" local="no">MessageHandler.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_messaging_1_1_response_handler_1a0020294e74e5b60aaeef4d703f66cd7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Messaging::ResponseHandler::~ResponseHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~ResponseHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="41" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_response_handler_1a13c456a994ef15b4f7be7beed4e2f91f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::ResponseHandler::handleResponse</definition>
+        <argsstring>(const Message &amp;aMessage)=0</argsstring>
+        <name>handleResponse</name>
+        <reimplementedby refid="class_model_1_1_robot_1afa5fb42fca43fdfedb08d3a7cb38c037">handleResponse</reimplementedby>
+        <param>
+          <type>const <ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The given argument contains the result/response of/to a previous request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base client interface for handling remote responses Classes derived from this interface can serve as client in the Messaging protocol by implementing this interface. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="615">
+        <label>Messaging::ResponseHandler</label>
+        <link refid="class_messaging_1_1_response_handler"/>
+      </node>
+      <node id="616">
+        <label>Messaging::MessageHandler</label>
+        <link refid="class_messaging_1_1_message_handler"/>
+        <childnode refid="615" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="617">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="39" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" bodystart="38" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_response_handler_1a13c456a994ef15b4f7be7beed4e2f91f" prot="public" virt="pure-virtual"><scope>Messaging::ResponseHandler</scope><name>handleResponse</name></member>
+      <member refid="class_messaging_1_1_response_handler_1a0020294e74e5b60aaeef4d703f66cd7a" prot="public" virt="virtual"><scope>Messaging::ResponseHandler</scope><name>~ResponseHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

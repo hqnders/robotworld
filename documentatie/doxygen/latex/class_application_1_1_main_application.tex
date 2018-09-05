@@ -1,0 +1,141 @@
+\hypertarget{class_application_1_1_main_application}{}\section{Application\+:\+:Main\+Application Class Reference}
+\label{class_application_1_1_main_application}\index{Application\+::\+Main\+Application@{Application\+::\+Main\+Application}}
+
+
+Inheritance diagram for Application\+:\+:Main\+Application\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_application_1_1_main_application__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Application\+:\+:Main\+Application\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_application_1_1_main_application__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_application_1_1_main_application_ac9714c4b1debf0d532e2b30224833b53}{On\+Init} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{Indent}{\bf Command line handling functions}\par
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_application_1_1_main_application_abdb7b37eb40ea2884233907a0fc39849}{set\+Commandline\+Arguments} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+static bool \hyperlink{class_application_1_1_main_application_a973c9c83d80717041866159f1f64609e}{is\+Arg\+Given} (const std\+::string \&a\+Variable)
+\item 
+static \hyperlink{class_application_1_1_commandline_argument}{Commandline\+Argument} \& \hyperlink{class_application_1_1_main_application_ad696027fcd46221aa7897b8d3e970c83}{get\+Arg} (const std\+::string \&a\+Variable)
+\item 
+static \hyperlink{class_application_1_1_commandline_argument}{Commandline\+Argument} \& \hyperlink{class_application_1_1_main_application_aac4212439e07c828329b701af43b7c6a}{get\+Arg} (unsigned long an\+Argument\+Number)
+\item 
+static std\+::vector$<$ std\+::string $>$ \& \hyperlink{class_application_1_1_main_application_a042c7143dd9517896ba9926b43ffeafd}{get\+Commandline\+Files} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Member Function Documentation}
+\index{Application\+::\+Main\+Application@{Application\+::\+Main\+Application}!get\+Arg@{get\+Arg}}
+\index{get\+Arg@{get\+Arg}!Application\+::\+Main\+Application@{Application\+::\+Main\+Application}}
+\subsubsection[{\texorpdfstring{get\+Arg(const std\+::string \&a\+Variable)}{getArg(const std::string &aVariable)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Commandline\+Argument} \& Application\+::\+Main\+Application\+::get\+Arg (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{a\+Variable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_application_1_1_main_application_ad696027fcd46221aa7897b8d3e970c83}{}\label{class_application_1_1_main_application_ad696027fcd46221aa7897b8d3e970c83}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Variable} & The requested variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested argument if available, throws an exception otherwise 
+\end{DoxyReturn}
+\index{Application\+::\+Main\+Application@{Application\+::\+Main\+Application}!get\+Arg@{get\+Arg}}
+\index{get\+Arg@{get\+Arg}!Application\+::\+Main\+Application@{Application\+::\+Main\+Application}}
+\subsubsection[{\texorpdfstring{get\+Arg(unsigned long an\+Argument\+Number)}{getArg(unsigned long anArgumentNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Commandline\+Argument} \& Application\+::\+Main\+Application\+::get\+Arg (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{an\+Argument\+Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_application_1_1_main_application_aac4212439e07c828329b701af43b7c6a}{}\label{class_application_1_1_main_application_aac4212439e07c828329b701af43b7c6a}
+
+\begin{DoxyParams}{Parameters}
+{\em an\+Argument\+Number} & The requested variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The requested argument if available, throws an exception otherwise 
+\end{DoxyReturn}
+\index{Application\+::\+Main\+Application@{Application\+::\+Main\+Application}!get\+Commandline\+Files@{get\+Commandline\+Files}}
+\index{get\+Commandline\+Files@{get\+Commandline\+Files}!Application\+::\+Main\+Application@{Application\+::\+Main\+Application}}
+\subsubsection[{\texorpdfstring{get\+Commandline\+Files()}{getCommandlineFiles()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::string $>$ \& Application\+::\+Main\+Application\+::get\+Commandline\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_application_1_1_main_application_a042c7143dd9517896ba9926b43ffeafd}{}\label{class_application_1_1_main_application_a042c7143dd9517896ba9926b43ffeafd}
+\begin{DoxyReturn}{Returns}
+Any files that are given on the command line. 
+\end{DoxyReturn}
+\index{Application\+::\+Main\+Application@{Application\+::\+Main\+Application}!is\+Arg\+Given@{is\+Arg\+Given}}
+\index{is\+Arg\+Given@{is\+Arg\+Given}!Application\+::\+Main\+Application@{Application\+::\+Main\+Application}}
+\subsubsection[{\texorpdfstring{is\+Arg\+Given(const std\+::string \&a\+Variable)}{isArgGiven(const std::string &aVariable)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Application\+::\+Main\+Application\+::is\+Arg\+Given (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{a\+Variable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_application_1_1_main_application_a973c9c83d80717041866159f1f64609e}{}\label{class_application_1_1_main_application_a973c9c83d80717041866159f1f64609e}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Variable} & The format of the variable is implementation defined. Be aware that \char`\"{}-\/\char`\"{} is N\+OT stripped from the argument. The comparisson is done by operator==( const string\&). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the argument is given, false otherwise. 
+\end{DoxyReturn}
+\index{Application\+::\+Main\+Application@{Application\+::\+Main\+Application}!On\+Init@{On\+Init}}
+\index{On\+Init@{On\+Init}!Application\+::\+Main\+Application@{Application\+::\+Main\+Application}}
+\subsubsection[{\texorpdfstring{On\+Init()}{OnInit()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Application\+::\+Main\+Application\+::\+On\+Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_application_1_1_main_application_ac9714c4b1debf0d532e2b30224833b53}{}\label{class_application_1_1_main_application_ac9714c4b1debf0d532e2b30224833b53}
+This one is called on application startup and is a good place for the app initialisation\+: doing it here and not in the ctor allows to have an error return
+
+\begin{DoxyReturn}{Returns}
+If \hyperlink{class_application_1_1_main_application_ac9714c4b1debf0d532e2b30224833b53}{On\+Init()} returns false, the application terminates 
+\end{DoxyReturn}
+\index{Application\+::\+Main\+Application@{Application\+::\+Main\+Application}!set\+Commandline\+Arguments@{set\+Commandline\+Arguments}}
+\index{set\+Commandline\+Arguments@{set\+Commandline\+Arguments}!Application\+::\+Main\+Application@{Application\+::\+Main\+Application}}
+\subsubsection[{\texorpdfstring{set\+Commandline\+Arguments(int argc, char $\ast$argv[])}{setCommandlineArguments(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}void Application\+::\+Main\+Application\+::set\+Commandline\+Arguments (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_application_1_1_main_application_abdb7b37eb40ea2884233907a0fc39849}{}\label{class_application_1_1_main_application_abdb7b37eb40ea2884233907a0fc39849}
+The handling of the arguments is\+:
+\begin{DoxyEnumerate}
+\item Any argument starting with \char`\"{}-\/\char`\"{} that has \char`\"{}=\char`\"{} in it somewhere is treated as \char`\"{}argument = value\char`\"{}. Spaces are not allowed.
+\item Any argument starting with a \char`\"{}-\/\char`\"{} that has no \char`\"{}=\char`\"{} in it somewhere is treated as a boolean with the value \char`\"{}true\char`\"{}. There are no variables that can be false.
+\item Arguments without \char`\"{}-\/\char`\"{} prefix are assumed to be files.
+\item The \char`\"{}-\/\char`\"{} is N\+OT stripped from the argument.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & the count of the arguments \\
+\hline
+{\em argv} & the array with the values of the arguments \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Main\+Application.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Main\+Application.\+cpp\end{DoxyCompactItemize}

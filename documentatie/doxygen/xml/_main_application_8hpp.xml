@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_main_application_8hpp" kind="file" language="C++">
+    <compoundname>MainApplication.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes refid="_widgets_8hpp" local="yes">Widgets.hpp</includes>
+    <includes refid="_commandline_argument_8hpp" local="yes">CommandlineArgument.hpp</includes>
+    <includedby refid="_logger_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.cpp</includedby>
+    <includedby refid="_main_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Main.cpp</includedby>
+    <includedby refid="_main_application_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp</includedby>
+    <includedby refid="_main_frame_window_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp</includedby>
+    <includedby refid="_robot_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp</includedby>
+    <incdepgraph>
+      <node id="886">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="879">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="898">
+        <label>limits</label>
+      </node>
+      <node id="866">
+        <label>wx/app.h</label>
+      </node>
+      <node id="871">
+        <label>wx/event.h</label>
+      </node>
+      <node id="880">
+        <label>wx/font.h</label>
+      </node>
+      <node id="868">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="890">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="885">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="881">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="896">
+        <label>wx/region.h</label>
+      </node>
+      <node id="894">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="873" relation="include">
+        </childnode>
+      </node>
+      <node id="863">
+        <label>string</label>
+      </node>
+      <node id="873">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="865">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="869" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+      </node>
+      <node id="861">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp</label>
+        <link refid="MainApplication.hpp"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+      </node>
+      <node id="867">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="882">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="874">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="869">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="878">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="876">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="891">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="887">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="864">
+        <label>vector</label>
+      </node>
+      <node id="872">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="862">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="889">
+        <label>wx/string.h</label>
+      </node>
+      <node id="893">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="873" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="870">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="875">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="888">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="897">
+        <label>CommandlineArgument.hpp</label>
+        <link refid="_commandline_argument_8hpp_source"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>wx/button.h</label>
+      </node>
+      <node id="895">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="896" relation="include">
+        </childnode>
+      </node>
+      <node id="892">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="884">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_application_1_1_main_application" prot="public">Application::MainApplication</innerclass>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_main_application_8hpp_1a05c155bde9faeffb2add53aa8a060c58" prot="public" static="no">
+        <name>runGUI</name>
+        <initializer>wxEntry</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="15" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MAINAPPLICATION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAINAPPLICATION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Widgets.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CommandlineArgument.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor">#define<sp/>runGUI<sp/>wxEntry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MainApplication;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>MainApplication&amp;<sp/>TheApp();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_application_1_1_main_application" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_application_1_1_main_application" kindref="compound">MainApplication</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>wxApp</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_main_application_1ac9714c4b1debf0d532e2b30224833b53" kindref="member">OnInit</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_main_application_1abdb7b37eb40ea2884233907a0fc39849" kindref="member">setCommandlineArguments</ref>(<sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_main_application_1a973c9c83d80717041866159f1f64609e" kindref="member">isArgGiven</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aVariable);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref>&amp;<sp/><ref refid="class_application_1_1_main_application_1ad696027fcd46221aa7897b8d3e970c83" kindref="member">getArg</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aVariable);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref>&amp;<sp/><ref refid="class_application_1_1_main_application_1ad696027fcd46221aa7897b8d3e970c83" kindref="member">getArg</ref>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>anArgumentNumber);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;<sp/>std::string<sp/>&gt;&amp;<sp/><ref refid="class_application_1_1_main_application_1a042c7143dd9517896ba9926b43ffeafd" kindref="member">getCommandlineFiles</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;<sp/>CommandlineArgument<sp/>&gt;<sp/>commandlineArguments;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::vector&lt;<sp/>std::string<sp/>&gt;<sp/>commandlineFiles;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>class<sp/>MainApplication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MAINAPPLICATION_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp"/>
+  </compounddef>
+</doxygen>

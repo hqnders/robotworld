@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_laser_distance_sensor" kind="class" language="C++" prot="public">
+    <compoundname>model::LaserDistanceSensor</compoundname>
+    <basecompoundref refid="class_model_1_1_abstract_sensor" prot="public" virt="non-virtual">model::AbstractSensor</basecompoundref>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_model_1_1_laser_distance_sensor_1a9403593acd21d557e5af1d79901fde34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::LaserDistanceSensor::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplements refid="class_model_1_1_abstract_sensor_1a85c18d6d51b8b6a3b97f682ad242be9d">asString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="92" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_laser_distance_sensor_1ab32d7cbfd19a9a5ec12a0c06ebb02b4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::LaserDistanceSensor::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplements refid="class_model_1_1_abstract_sensor_1aa67bce32b6a602772773f0f23d0634f0">asDebugString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="96" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_laser_distance_sensor_1a43150f12636692438c32e7cf957410fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::LaserDistanceSensor::LaserDistanceSensor</definition>
+        <argsstring>()</argsstring>
+        <name>LaserDistanceSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="68" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_laser_distance_sensor_1aa9686c425108f245858bb281acf15346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::LaserDistanceSensor::LaserDistanceSensor</definition>
+        <argsstring>(Robot *aRobot)</argsstring>
+        <name>LaserDistanceSensor</name>
+        <param>
+          <type><ref refid="class_model_1_1_robot" kindref="compound">Robot</ref> *</type>
+          <declname>aRobot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="72" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_laser_distance_sensor_1aa2128778239d19d47c113515d3b75063" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>model::LaserDistanceSensor::~LaserDistanceSensor</definition>
+        <argsstring>()</argsstring>
+        <name>~LaserDistanceSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="76" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_laser_distance_sensor_1a532a168e8d0f7f6986075e83ba58de3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_stimulus" kindref="compound">AbstractStimulus</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; AbstractStimulus &gt; model::LaserDistanceSensor::getStimulus</definition>
+        <argsstring>() const </argsstring>
+        <name>getStimulus</name>
+        <reimplements refid="class_model_1_1_abstract_sensor_1a63ae4aa9e8ac1592f48dbdb1b734ddde">getStimulus</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="80" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_laser_distance_sensor_1af3dc2140292c2e3def32b89e3e0a5e87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_percept" kindref="compound">AbstractPercept</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; AbstractPercept &gt; model::LaserDistanceSensor::getPerceptFor</definition>
+        <argsstring>(std::shared_ptr&lt; AbstractStimulus &gt; anAbstractStimulus) const </argsstring>
+        <name>getPerceptFor</name>
+        <reimplements refid="class_model_1_1_abstract_sensor_1ac9254468d847d18b0895b9fa29fb7871">getPerceptFor</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_stimulus" kindref="compound">AbstractStimulus</ref> &gt;</type>
+          <declname>anAbstractStimulus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="84" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="492">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="493" relation="public-inheritance">
+        </childnode>
+        <childnode refid="494" relation="public-inheritance">
+        </childnode>
+        <childnode refid="495" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="494">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="495">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="491">
+        <label>model::AbstractSensor</label>
+        <link refid="class_model_1_1_abstract_sensor"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="490">
+        <label>model::LaserDistanceSensor</label>
+        <link refid="class_model_1_1_laser_distance_sensor"/>
+        <childnode refid="491" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="498">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="499" relation="public-inheritance">
+        </childnode>
+        <childnode refid="500" relation="public-inheritance">
+        </childnode>
+        <childnode refid="501" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="503">
+        <label>Base::Queue&lt; std::shared_ptr&lt; model::AbstractPercept &gt; &gt;</label>
+        <link refid="class_base_1_1_queue"/>
+      </node>
+      <node id="500">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="502">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+        <childnode refid="503" relation="usage">
+          <edgelabel>perceptQueue</edgelabel>
+        </childnode>
+      </node>
+      <node id="501">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="497">
+        <label>model::AbstractSensor</label>
+        <link refid="class_model_1_1_abstract_sensor"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+        <childnode refid="502" relation="usage">
+          <edgelabel>agent</edgelabel>
+        </childnode>
+      </node>
+      <node id="496">
+        <label>model::LaserDistanceSensor</label>
+        <link refid="class_model_1_1_laser_distance_sensor"/>
+        <childnode refid="497" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="63" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="62" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_sensor_1aac26d87792344b5422af0c8ea681c558" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>AbstractSensor</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1a787a53fde6320acca0a3500221f11bf4" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>AbstractSensor</name></member>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>addObserver</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1acc26be4569ca92c524e3759f8bda8e36" prot="protected" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>agent</name></member>
+      <member refid="class_model_1_1_laser_distance_sensor_1ab32d7cbfd19a9a5ec12a0c06ebb02b4f" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_laser_distance_sensor_1a9403593acd21d557e5af1d79901fde34" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>asString</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1ad78d0c553f653f564fbbe222a1a8bd81" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>attachAgent</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1ab6bc01195b77d486d7ea628f731416db" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>detachAgent</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>enableNotification</name></member>
+      <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>getObjectId</name></member>
+      <member refid="class_model_1_1_laser_distance_sensor_1af3dc2140292c2e3def32b89e3e0a5e87" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>getPerceptFor</name></member>
+      <member refid="class_model_1_1_laser_distance_sensor_1a532a168e8d0f7f6986075e83ba58de3e" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>getStimulus</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_model_1_1_laser_distance_sensor_1a43150f12636692438c32e7cf957410fe" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>LaserDistanceSensor</name></member>
+      <member refid="class_model_1_1_laser_distance_sensor_1aa9686c425108f245858bb281acf15346" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>LaserDistanceSensor</name></member>
+      <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>notifyObservers</name></member>
+      <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>operator&lt;</name></member>
+      <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>operator==</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>removeObserver</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1ab85ffa9f6dbdf249681ed95a052bf017" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>run</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1ad4cbae39fd0117e9917c33a6a7f09fa5" prot="protected" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>running</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1a2b0fb54fe519b4c58187b939ec612eb0" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>sendPercept</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1ab8de89a6213d2a76d930e02a3cac3947" prot="protected" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>sensorMutex</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1a7de4321e9fa04d352cd42b7f33e2ce9c" prot="protected" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>sensorThread</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1a31f0eb53ed8252c45e4ac64ea328d7b9" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>setOff</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1a958bad26decf903bb28fd45bc835c7bb" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>setOn</name></member>
+      <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" prot="public" virt="non-virtual"><scope>model::LaserDistanceSensor</scope><name>toPtr</name></member>
+      <member refid="class_model_1_1_abstract_sensor_1a3fc48cedbf4c5083b1b90da3d704ba5a" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>~AbstractSensor</name></member>
+      <member refid="class_model_1_1_laser_distance_sensor_1aa2128778239d19d47c113515d3b75063" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>~LaserDistanceSensor</name></member>
+      <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>~ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>model::LaserDistanceSensor</scope><name>~Notifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

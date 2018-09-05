@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_distance_stimulus" kind="class" language="C++" prot="public">
+    <compoundname>model::DistanceStimulus</compoundname>
+    <basecompoundref refid="class_model_1_1_abstract_stimulus" prot="public" virt="non-virtual">model::AbstractStimulus</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_model_1_1_distance_stimulus_1ac2a26e553ae72f4cdb28147cbac38bc4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double model::DistanceStimulus::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="29" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_distance_stimulus_1a509312aa1c6cc55236a3b81014ea6d7c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double model::DistanceStimulus::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="30" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_distance_stimulus_1a5ec267e4e945106911cd9fff534e2b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>model::DistanceStimulus::DistanceStimulus</definition>
+        <argsstring>(double anAngle, double aDistance)</argsstring>
+        <name>DistanceStimulus</name>
+        <param>
+          <type>double</type>
+          <declname>anAngle</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>aDistance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="23" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="460">
+        <label>model::AbstractStimulus</label>
+        <link refid="class_model_1_1_abstract_stimulus"/>
+      </node>
+      <node id="459">
+        <label>model::DistanceStimulus</label>
+        <link refid="class_model_1_1_distance_stimulus"/>
+        <childnode refid="460" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="462">
+        <label>model::AbstractStimulus</label>
+        <link refid="class_model_1_1_abstract_stimulus"/>
+      </node>
+      <node id="461">
+        <label>model::DistanceStimulus</label>
+        <link refid="class_model_1_1_distance_stimulus"/>
+        <childnode refid="462" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="20" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_distance_stimulus_1ac2a26e553ae72f4cdb28147cbac38bc4" prot="public" virt="non-virtual"><scope>model::DistanceStimulus</scope><name>angle</name></member>
+      <member refid="class_model_1_1_distance_stimulus_1a509312aa1c6cc55236a3b81014ea6d7c" prot="public" virt="non-virtual"><scope>model::DistanceStimulus</scope><name>distance</name></member>
+      <member refid="class_model_1_1_distance_stimulus_1a5ec267e4e945106911cd9fff534e2b07" prot="public" virt="non-virtual"><scope>model::DistanceStimulus</scope><name>DistanceStimulus</name></member>
+      <member refid="class_model_1_1_abstract_stimulus_1aeba7837d89968081ec337d80e59562fe" prot="public" virt="virtual"><scope>model::DistanceStimulus</scope><name>~AbstractStimulus</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,117 @@
+\hypertarget{class_base_1_1_observer}{}\section{Base\+:\+:Observer Class Reference}
+\label{class_base_1_1_observer}\index{Base\+::\+Observer@{Base\+::\+Observer}}
+
+
+{\ttfamily \#include $<$Observer.\+hpp$>$}
+
+
+
+Inheritance diagram for Base\+:\+:Observer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_1_1_observer__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Constructors and destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Observer} ()\hypertarget{class_base_1_1_observer_a0b8f55248bb0b393ed760d50b7f58d21}{}\label{class_base_1_1_observer_a0b8f55248bb0b393ed760d50b7f58d21}
+
+\item 
+virtual {\bfseries $\sim$\+Observer} ()\hypertarget{class_base_1_1_observer_aca7a3c17bdc9d86a9f67519779baf2e9}{}\label{class_base_1_1_observer_aca7a3c17bdc9d86a9f67519779baf2e9}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Operators}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_base_1_1_observer_aca74f78fc397401d5e90cd85193bd84c}{operator==} (const \hyperlink{class_base_1_1_observer}{Observer} \&a\+Observer) const 
+\item 
+bool \hyperlink{class_base_1_1_observer_aeabd57c2929d345f45132d4c0c1c6c58}{operator$<$} (const \hyperlink{class_base_1_1_observer}{Observer} \&a\+Observer) const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Observer functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_base_1_1_observer_a805cc1ddc6526d692af81d76ae29d802}{handle\+Notifications\+For} (\hyperlink{class_base_1_1_notifier}{Notifier} \&a\+Notifier)
+\item 
+virtual void \hyperlink{class_base_1_1_observer_a0646f881f6716ab7be41ecefa74b5071}{stop\+Handling\+Notifications\+For} (\hyperlink{class_base_1_1_notifier}{Notifier} \&a\+Notifier)
+\item 
+virtual void \hyperlink{class_base_1_1_observer_a37d00a5290a60aa9ab664af5d1642c3e}{handle\+Notification} ()=0
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Notifier}\hypertarget{class_base_1_1_observer_ac1a7d2e9a33255ac264c6abd1782cd8d}{}\label{class_base_1_1_observer_ac1a7d2e9a33255ac264c6abd1782cd8d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_base_1_1_observer}{Observer} class is part of a straight forward implementation of the Observer/\+Notifier pattern
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_base_1_1_notifier}{Notifier} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{Base\+::\+Observer@{Base\+::\+Observer}!handle\+Notification@{handle\+Notification}}
+\index{handle\+Notification@{handle\+Notification}!Base\+::\+Observer@{Base\+::\+Observer}}
+\subsubsection[{\texorpdfstring{handle\+Notification()=0}{handleNotification()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Base\+::\+Observer\+::handle\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_base_1_1_observer_a37d00a5290a60aa9ab664af5d1642c3e}{}\label{class_base_1_1_observer_a37d00a5290a60aa9ab664af5d1642c3e}
+A \hyperlink{class_base_1_1_notifier}{Notifier} will call this function if this \hyperlink{class_base_1_1_observer}{Observer} will handle the notifications of that \hyperlink{class_base_1_1_notifier}{Notifier}. It is the responsibility of the \hyperlink{class_base_1_1_observer}{Observer} to filter any events it is interested in. 
+
+Implemented in \hyperlink{class_model_1_1_robot_a7629555402fa8b55658d52fdc88ab889}{model\+::\+Robot}, \hyperlink{class_view_1_1_robot_world_canvas_af24f07e5484dbba2edd563c826694098}{View\+::\+Robot\+World\+Canvas}, \hyperlink{class_view_1_1_robot_shape_aa8e3a33d23b11a1f9c4580ff46d3d9f7}{View\+::\+Robot\+Shape}, \hyperlink{class_view_1_1_goal_shape_a881cfbfd4b3d6d3b37498e12d8291f6f}{View\+::\+Goal\+Shape}, \hyperlink{class_view_1_1_way_point_shape_a84f786f8027e91441c8197cdb56b3d5f}{View\+::\+Way\+Point\+Shape}, \hyperlink{class_view_1_1_rectangle_shape_acae95cb4b05d77196451520ee7d7ca9c}{View\+::\+Rectangle\+Shape}, and \hyperlink{class_view_1_1_line_shape_a21a183cd9f63130fe48497743c2c4abb}{View\+::\+Line\+Shape}.
+
+\index{Base\+::\+Observer@{Base\+::\+Observer}!handle\+Notifications\+For@{handle\+Notifications\+For}}
+\index{handle\+Notifications\+For@{handle\+Notifications\+For}!Base\+::\+Observer@{Base\+::\+Observer}}
+\subsubsection[{\texorpdfstring{handle\+Notifications\+For(\+Notifier \&a\+Notifier)}{handleNotificationsFor(Notifier &aNotifier)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Observer\+::handle\+Notifications\+For (
+\begin{DoxyParamCaption}
+\item[{{\bf Notifier} \&}]{a\+Notifier}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_observer_a805cc1ddc6526d692af81d76ae29d802}{}\label{class_base_1_1_observer_a805cc1ddc6526d692af81d76ae29d802}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Notifier} & The \hyperlink{class_base_1_1_notifier}{Notifier} this \hyperlink{class_base_1_1_observer}{Observer} will observe \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Observer@{Base\+::\+Observer}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Base\+::\+Observer@{Base\+::\+Observer}}
+\subsubsection[{\texorpdfstring{operator$<$(const Observer \&a\+Observer) const }{operator<(const Observer &aObserver) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+::\+Observer\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Observer} \&}]{a\+Observer}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_base_1_1_observer_aeabd57c2929d345f45132d4c0c1c6c58}{}\label{class_base_1_1_observer_aeabd57c2929d345f45132d4c0c1c6c58}
+Compares the this pointer by default. \index{Base\+::\+Observer@{Base\+::\+Observer}!operator==@{operator==}}
+\index{operator==@{operator==}!Base\+::\+Observer@{Base\+::\+Observer}}
+\subsubsection[{\texorpdfstring{operator==(const Observer \&a\+Observer) const }{operator==(const Observer &aObserver) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+::\+Observer\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Observer} \&}]{a\+Observer}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_base_1_1_observer_aca74f78fc397401d5e90cd85193bd84c}{}\label{class_base_1_1_observer_aca74f78fc397401d5e90cd85193bd84c}
+Compares the this pointer by default. \index{Base\+::\+Observer@{Base\+::\+Observer}!stop\+Handling\+Notifications\+For@{stop\+Handling\+Notifications\+For}}
+\index{stop\+Handling\+Notifications\+For@{stop\+Handling\+Notifications\+For}!Base\+::\+Observer@{Base\+::\+Observer}}
+\subsubsection[{\texorpdfstring{stop\+Handling\+Notifications\+For(\+Notifier \&a\+Notifier)}{stopHandlingNotificationsFor(Notifier &aNotifier)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Observer\+::stop\+Handling\+Notifications\+For (
+\begin{DoxyParamCaption}
+\item[{{\bf Notifier} \&}]{a\+Notifier}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_observer_a0646f881f6716ab7be41ecefa74b5071}{}\label{class_base_1_1_observer_a0646f881f6716ab7be41ecefa74b5071}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Notifier} & The \hyperlink{class_base_1_1_notifier}{Notifier} this \hyperlink{class_base_1_1_observer}{Observer} will not observe anymore \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Observer.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Observer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_base_1_1_notification_function_type_traits_tracing" kind="struct" language="C++" prot="public">
+    <compoundname>Base::NotificationFunctionTypeTraitsTracing</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp" line="13" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp" bodystart="12" bodyend="14"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

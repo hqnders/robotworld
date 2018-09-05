@@ -1,0 +1,193 @@
+\hypertarget{struct_messaging_1_1_message}{}\section{Messaging\+:\+:Message Struct Reference}
+\label{struct_messaging_1_1_message}\index{Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_messaging_1_1_message_1_1_message_header}{Message\+Header}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::string {\bfseries Message\+Body}\hypertarget{struct_messaging_1_1_message_a6e58a0f71d17a8950334fca1383fd514}{}\label{struct_messaging_1_1_message_a6e58a0f71d17a8950334fca1383fd514}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_messaging_1_1_message_ae70b36c0c4ec25e5e622202efaf82513}{Message} (char a\+Message\+Type)
+\item 
+\hyperlink{struct_messaging_1_1_message_a0771c811ee4035a8fea938b1e79fbfce}{Message} (char a\+Message\+Type, const std\+::string \&a\+Message)
+\item 
+\hyperlink{struct_messaging_1_1_message_ad8b7c8ca68f83e15e37d8caf28797cbf}{Message} (const \hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message)
+\item 
+\hyperlink{struct_messaging_1_1_message_1_1_message_header}{Message\+Header} \hyperlink{struct_messaging_1_1_message_abb173c7d9557a5dc08aae8e7b114d87d}{get\+Header} () const 
+\item 
+void \hyperlink{struct_messaging_1_1_message_aa5d6274a086f01a52853a0536316402e}{set\+Header} (const \hyperlink{struct_messaging_1_1_message_1_1_message_header}{Message\+Header} \&a\+Header)
+\item 
+char \hyperlink{struct_messaging_1_1_message_af035748b0a1426a8b73f74d85f120be0}{get\+Message\+Type} () const 
+\item 
+void \hyperlink{struct_messaging_1_1_message_a9a63d50cbf443564d6092d532495f95f}{set\+Message\+Type} (char a\+Message\+Type)
+\item 
+Message\+Body \hyperlink{struct_messaging_1_1_message_a83ac5ea677d87bc22d56c545bf61127e}{get\+Body} () const 
+\item 
+void \hyperlink{struct_messaging_1_1_message_abedc9083e15715ad417043e6c483818e}{set\+Body} (const std\+::string \&a\+Body)
+\item 
+unsigned long \hyperlink{struct_messaging_1_1_message_a61baa8ab016b7b6d07ceade6268db5af}{length} () const 
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{struct_messaging_1_1_message_ac20fb163de9035e2050a04de9ad176d5}{as\+String} () const 
+\item 
+virtual std\+::string \hyperlink{struct_messaging_1_1_message_a179ec6c4dc374ca0035aa5141522756f}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char {\bfseries message\+Type}\hypertarget{struct_messaging_1_1_message_a3a27bf3f32d43a3a9f3980a408ba5061}{}\label{struct_messaging_1_1_message_a3a27bf3f32d43a3a9f3980a408ba5061}
+
+\item 
+Message\+Body {\bfseries message}\hypertarget{struct_messaging_1_1_message_ae6af5cd6b85d80ff2769f94be6bf02da}{}\label{struct_messaging_1_1_message_ae6af5cd6b85d80ff2769f94be6bf02da}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!Message@{Message}}
+\index{Message@{Message}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{Message(char a\+Message\+Type)}{Message(char aMessageType)}}]{\setlength{\rightskip}{0pt plus 5cm}Messaging\+::\+Message\+::\+Message (
+\begin{DoxyParamCaption}
+\item[{char}]{a\+Message\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_ae70b36c0c4ec25e5e622202efaf82513}{}\label{struct_messaging_1_1_message_ae70b36c0c4ec25e5e622202efaf82513}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Message\+Type} & \\
+\hline
+\end{DoxyParams}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!Message@{Message}}
+\index{Message@{Message}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{Message(char a\+Message\+Type, const std\+::string \&a\+Message)}{Message(char aMessageType, const std::string &aMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}Messaging\+::\+Message\+::\+Message (
+\begin{DoxyParamCaption}
+\item[{char}]{a\+Message\+Type, }
+\item[{const std\+::string \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_a0771c811ee4035a8fea938b1e79fbfce}{}\label{struct_messaging_1_1_message_a0771c811ee4035a8fea938b1e79fbfce}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Message\+Type} & \\
+\hline
+{\em a\+Message} & \\
+\hline
+\end{DoxyParams}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!Message@{Message}}
+\index{Message@{Message}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{Message(const Message \&a\+Message)}{Message(const Message &aMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}Messaging\+::\+Message\+::\+Message (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_ad8b7c8ca68f83e15e37d8caf28797cbf}{}\label{struct_messaging_1_1_message_ad8b7c8ca68f83e15e37d8caf28797cbf}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Message} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Messaging\+::\+Message\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{struct_messaging_1_1_message_a179ec6c4dc374ca0035aa5141522756f}{}\label{struct_messaging_1_1_message_a179ec6c4dc374ca0035aa5141522756f}
+Returns a description of the object with all data of the object usable for debugging \index{Messaging\+::\+Message@{Messaging\+::\+Message}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Messaging\+::\+Message\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{struct_messaging_1_1_message_ac20fb163de9035e2050a04de9ad176d5}{}\label{struct_messaging_1_1_message_ac20fb163de9035e2050a04de9ad176d5}
+Returns a 1-\/line description of the object \index{Messaging\+::\+Message@{Messaging\+::\+Message}!get\+Body@{get\+Body}}
+\index{get\+Body@{get\+Body}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{get\+Body() const }{getBody() const }}]{\setlength{\rightskip}{0pt plus 5cm}Message\+Body Messaging\+::\+Message\+::get\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_a83ac5ea677d87bc22d56c545bf61127e}{}\label{struct_messaging_1_1_message_a83ac5ea677d87bc22d56c545bf61127e}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{get\+Header() const }{getHeader() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Message\+Header} Messaging\+::\+Message\+::get\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_abb173c7d9557a5dc08aae8e7b114d87d}{}\label{struct_messaging_1_1_message_abb173c7d9557a5dc08aae8e7b114d87d}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!get\+Message\+Type@{get\+Message\+Type}}
+\index{get\+Message\+Type@{get\+Message\+Type}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{get\+Message\+Type() const }{getMessageType() const }}]{\setlength{\rightskip}{0pt plus 5cm}char Messaging\+::\+Message\+::get\+Message\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_af035748b0a1426a8b73f74d85f120be0}{}\label{struct_messaging_1_1_message_af035748b0a1426a8b73f74d85f120be0}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!length@{length}}
+\index{length@{length}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{length() const }{length() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Messaging\+::\+Message\+::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_a61baa8ab016b7b6d07ceade6268db5af}{}\label{struct_messaging_1_1_message_a61baa8ab016b7b6d07ceade6268db5af}
+\begin{DoxyReturn}{Returns}
+The length of the message in bytes 
+\end{DoxyReturn}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!set\+Body@{set\+Body}}
+\index{set\+Body@{set\+Body}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{set\+Body(const std\+::string \&a\+Body)}{setBody(const std::string &aBody)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Message\+::set\+Body (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{a\+Body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_abedc9083e15715ad417043e6c483818e}{}\label{struct_messaging_1_1_message_abedc9083e15715ad417043e6c483818e}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Body} & \\
+\hline
+\end{DoxyParams}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!set\+Header@{set\+Header}}
+\index{set\+Header@{set\+Header}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{set\+Header(const Message\+Header \&a\+Header)}{setHeader(const MessageHeader &aHeader)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Message\+::set\+Header (
+\begin{DoxyParamCaption}
+\item[{const {\bf Message\+Header} \&}]{a\+Header}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_aa5d6274a086f01a52853a0536316402e}{}\label{struct_messaging_1_1_message_aa5d6274a086f01a52853a0536316402e}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Header} & \\
+\hline
+\end{DoxyParams}
+\index{Messaging\+::\+Message@{Messaging\+::\+Message}!set\+Message\+Type@{set\+Message\+Type}}
+\index{set\+Message\+Type@{set\+Message\+Type}!Messaging\+::\+Message@{Messaging\+::\+Message}}
+\subsubsection[{\texorpdfstring{set\+Message\+Type(char a\+Message\+Type)}{setMessageType(char aMessageType)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Message\+::set\+Message\+Type (
+\begin{DoxyParamCaption}
+\item[{char}]{a\+Message\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_messaging_1_1_message_a9a63d50cbf443564d6092d532495f95f}{}\label{struct_messaging_1_1_message_a9a63d50cbf443564d6092d532495f95f}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Message\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Message.\+hpp\end{DoxyCompactItemize}

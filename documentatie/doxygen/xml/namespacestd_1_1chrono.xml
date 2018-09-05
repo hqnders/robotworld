@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacestd_1_1chrono" kind="namespace" language="C++">
+    <compoundname>std::chrono</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_mingw_std_8hpp_1afaefde6e554881cfe743874c308733e7" prot="public" static="no">
+        <type>boost::chrono::duration&lt; Rep, Period &gt;</type>
+        <definition>using std::chrono::duration = typedef boost::chrono::duration&lt; Rep, Period &gt;</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="91" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_mingw_std_8hpp_1a63a8315bbc47454d8d07bd0c1a1b2fa9" prot="public" static="no">
+        <type>duration&lt; boost::int_least64_t, boost::milli &gt;</type>
+        <definition>typedef duration&lt;boost::int_least64_t, boost::milli&gt; std::chrono::milliseconds</definition>
+        <argsstring></argsstring>
+        <name>milliseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="92" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="89" column="1"/>
+  </compounddef>
+</doxygen>

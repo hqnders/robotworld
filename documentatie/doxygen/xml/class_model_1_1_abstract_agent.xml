@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_abstract_agent" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>model::AbstractAgent</compoundname>
+    <basecompoundref refid="class_model_1_1_model_object" prot="public" virt="non-virtual">model::ModelObject</basecompoundref>
+    <derivedcompoundref refid="class_model_1_1_robot" prot="public" virt="non-virtual">model::Robot</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1a4cee6603af332eb80d524bf3af70489a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::AbstractAgent::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplements refid="class_model_1_1_model_object_1a9db00b9150a932a1637e425f24c0bdf0">asString</reimplements>
+        <reimplementedby refid="class_model_1_1_robot_1a888add69a87a3e0f82a3f9c95140716f">asString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="75" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp" bodystart="55" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1abcb33490b0f5761a2659bf705aff04b5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::AbstractAgent::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplements refid="class_model_1_1_model_object_1aced22b0b0ee637c598c463de6a1d8d03">asDebugString</reimplements>
+        <reimplementedby refid="class_model_1_1_robot_1aaf05b81b0aff3dac7b39effa462da04e">asDebugString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="79" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp" bodystart="64" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_model_1_1_abstract_agent_1a0235b5c010dedd813b12ae7e97cc4e2e" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_sensor" kindref="compound">AbstractSensor</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; AbstractSensor &gt; &gt; model::AbstractAgent::sensors</definition>
+        <argsstring></argsstring>
+        <name>sensors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="82" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_abstract_agent_1a23cd2a046e9e782f44a3dc0685fa84ca" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_actuator" kindref="compound">AbstractActuator</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::shared_ptr&lt; AbstractActuator &gt; &gt; model::AbstractAgent::actuators</definition>
+        <argsstring></argsstring>
+        <name>actuators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="83" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_abstract_agent_1ae49bfbbddb9c9a76478ec12f4760d127" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_base_1_1_queue" kindref="compound">Base::Queue</ref>&lt; std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_percept" kindref="compound">AbstractPercept</ref> &gt; &gt;</type>
+        <definition>Base::Queue&lt; std::shared_ptr&lt; AbstractPercept &gt; &gt; model::AbstractAgent::perceptQueue</definition>
+        <argsstring></argsstring>
+        <name>perceptQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="84" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1ae08b5a6acb4f8192a55817fdcf6505e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::AbstractAgent::AbstractAgent</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractAgent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="41" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1a3b826d63673dea922f69855333752519" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>model::AbstractAgent::~AbstractAgent</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractAgent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="45" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1a9e9a85420a923bb7d68acbda8208e2ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::AbstractAgent::attachSensor</definition>
+        <argsstring>(std::shared_ptr&lt; AbstractSensor &gt; aSensor, bool attachSensorToAgent=false)</argsstring>
+        <name>attachSensor</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_sensor" kindref="compound">AbstractSensor</ref> &gt;</type>
+          <declname>aSensor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>attachSensorToAgent</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="49" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp" bodystart="24" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1a87cba14848a2ef4ec831ed2e44e85b63" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::AbstractAgent::attachActuator</definition>
+        <argsstring>(std::shared_ptr&lt; AbstractActuator &gt; anActuator, bool attachActuatorToAgent=false)</argsstring>
+        <name>attachActuator</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_actuator" kindref="compound">AbstractActuator</ref> &gt;</type>
+          <declname>anActuator</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>attachActuatorToAgent</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="54" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1ab8fb558bec05bc1a7ea5402bf996705f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::AbstractAgent::addPercept</definition>
+        <argsstring>(std::shared_ptr&lt; AbstractPercept &gt; anAbstractPercept)</argsstring>
+        <name>addPercept</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_percept" kindref="compound">AbstractPercept</ref> &gt;</type>
+          <declname>anAbstractPercept</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="59" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1a783133675cf1d592a95eadcbded59d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void model::AbstractAgent::startActing</definition>
+        <argsstring>()=0</argsstring>
+        <name>startActing</name>
+        <reimplementedby refid="class_model_1_1_robot_1a4cf81acadfb2bb3e92cdbbedd5e53659">startActing</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_agent_1a369070540beac48686890b06d831fabe" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void model::AbstractAgent::stopActing</definition>
+        <argsstring>()=0</argsstring>
+        <name>stopActing</name>
+        <reimplementedby refid="class_model_1_1_robot_1abca861407c0992ee5748b15e772f7840">stopActing</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="403">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="407">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="402">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="409">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+        <childnode refid="411" relation="public-inheritance">
+        </childnode>
+        <childnode refid="412" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="413">
+        <label>Base::Queue&lt; std::shared_ptr&lt; model::AbstractPercept &gt; &gt;</label>
+        <link refid="class_base_1_1_queue"/>
+      </node>
+      <node id="411">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="408">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+        <childnode refid="413" relation="usage">
+          <edgelabel>perceptQueue</edgelabel>
+        </childnode>
+      </node>
+      <node id="412">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="36" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="35" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_agent_1ae08b5a6acb4f8192a55817fdcf6505e0" prot="public" virt="non-virtual"><scope>model::AbstractAgent</scope><name>AbstractAgent</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a23cd2a046e9e782f44a3dc0685fa84ca" prot="protected" virt="non-virtual"><scope>model::AbstractAgent</scope><name>actuators</name></member>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>addObserver</name></member>
+      <member refid="class_model_1_1_abstract_agent_1ab8fb558bec05bc1a7ea5402bf996705f" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>addPercept</name></member>
+      <member refid="class_model_1_1_abstract_agent_1abcb33490b0f5761a2659bf705aff04b5" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a4cee6603af332eb80d524bf3af70489a" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>asString</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a87cba14848a2ef4ec831ed2e44e85b63" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>attachActuator</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a9e9a85420a923bb7d68acbda8208e2ad" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>attachSensor</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>enableNotification</name></member>
+      <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" prot="public" virt="non-virtual"><scope>model::AbstractAgent</scope><name>getObjectId</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" prot="public" virt="non-virtual"><scope>model::AbstractAgent</scope><name>ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>model::AbstractAgent</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>notifyObservers</name></member>
+      <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" prot="public" virt="non-virtual"><scope>model::AbstractAgent</scope><name>operator&lt;</name></member>
+      <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" prot="public" virt="non-virtual"><scope>model::AbstractAgent</scope><name>operator==</name></member>
+      <member refid="class_model_1_1_abstract_agent_1ae49bfbbddb9c9a76478ec12f4760d127" prot="protected" virt="non-virtual"><scope>model::AbstractAgent</scope><name>perceptQueue</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>removeObserver</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a0235b5c010dedd813b12ae7e97cc4e2e" prot="protected" virt="non-virtual"><scope>model::AbstractAgent</scope><name>sensors</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a783133675cf1d592a95eadcbded59d2e" prot="public" virt="pure-virtual"><scope>model::AbstractAgent</scope><name>startActing</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a369070540beac48686890b06d831fabe" prot="public" virt="pure-virtual"><scope>model::AbstractAgent</scope><name>stopActing</name></member>
+      <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" prot="public" virt="non-virtual"><scope>model::AbstractAgent</scope><name>toPtr</name></member>
+      <member refid="class_model_1_1_abstract_agent_1a3b826d63673dea922f69855333752519" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>~AbstractAgent</name></member>
+      <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>~ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>model::AbstractAgent</scope><name>~Notifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

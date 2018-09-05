@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_application_1_1_log_text_ctrl" kind="class" language="C++" prot="public">
+    <compoundname>Application::LogTextCtrl</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxTextCtrl</basecompoundref>
+    <includes refid="_log_text_ctrl_8hpp" local="no">LogTextCtrl.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors and destructor</header>
+      <memberdef kind="function" id="class_application_1_1_log_text_ctrl_1aded0f03a723158ab1a3d2de74a3c8262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::LogTextCtrl::LogTextCtrl</definition>
+        <argsstring>(Window *aParent, WindowId aWindowId=DEFAULT_ID, long aStyle=wxTE_READONLY|wxTE_MULTILINE|wxTE_DONTWRAP, const std::string &amp;anInitialText=&quot;&quot;, const Point &amp;aPoint=DefaultPosition, const Size &amp;aSize=DefaultSize)</argsstring>
+        <name>LogTextCtrl</name>
+        <param>
+          <type>Window *</type>
+          <declname>aParent</declname>
+        </param>
+        <param>
+          <type>WindowId</type>
+          <declname>aWindowId</declname>
+          <defval>DEFAULT_ID</defval>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>aStyle</declname>
+          <defval>wxTE_READONLY|wxTE_MULTILINE|wxTE_DONTWRAP</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>anInitialText</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+          <defval>DefaultPosition</defval>
+        </param>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aSize</declname>
+          <defval>DefaultSize</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp" line="28" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.cpp" bodystart="12" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_log_text_ctrl_1a02828be6cb16c6c772f881757f61c7af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Application::LogTextCtrl::~LogTextCtrl</definition>
+        <argsstring>()</argsstring>
+        <name>~LogTextCtrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp" line="34" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1_1_log_text_ctrl_1aecf20eb2fc19af8632542de0166a050e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Application::LogTextCtrl::log</definition>
+        <argsstring>(const std::string &amp;aString)</argsstring>
+        <name>log</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp" line="40" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_application_1_1_log_text_ctrl_1af03d3d9049d7a9c13de10d249751fc5e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::LogTextCtrl::OnCommandEvent</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnCommandEvent</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anEvent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp" line="46" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A text widget that accepts the tracing of a trace function. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="516">
+        <label>wxTextCtrl</label>
+      </node>
+      <node id="515">
+        <label>Application::LogTextCtrl</label>
+        <link refid="class_application_1_1_log_text_ctrl"/>
+        <childnode refid="516" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="518">
+        <label>wxTextCtrl</label>
+      </node>
+      <node id="517">
+        <label>Application::LogTextCtrl</label>
+        <link refid="class_application_1_1_log_text_ctrl"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp" line="19" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp" bodystart="18" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_log_text_ctrl_1aecf20eb2fc19af8632542de0166a050e" prot="public" virt="virtual"><scope>Application::LogTextCtrl</scope><name>log</name></member>
+      <member refid="class_application_1_1_log_text_ctrl_1aded0f03a723158ab1a3d2de74a3c8262" prot="public" virt="non-virtual"><scope>Application::LogTextCtrl</scope><name>LogTextCtrl</name></member>
+      <member refid="class_application_1_1_log_text_ctrl_1af03d3d9049d7a9c13de10d249751fc5e" prot="protected" virt="non-virtual"><scope>Application::LogTextCtrl</scope><name>OnCommandEvent</name></member>
+      <member refid="class_application_1_1_log_text_ctrl_1a02828be6cb16c6c772f881757f61c7af" prot="public" virt="virtual"><scope>Application::LogTextCtrl</scope><name>~LogTextCtrl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

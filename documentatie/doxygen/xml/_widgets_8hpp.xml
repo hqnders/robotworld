@@ -1,0 +1,902 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_widgets_8hpp" kind="file" language="C++">
+    <compoundname>Widgets.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">wx/app.h</includes>
+    <includes local="no">wx/dc.h</includes>
+    <includes local="no">wx/dcclient.h</includes>
+    <includes local="no">wx/defs.h</includes>
+    <includes local="no">wx/dnd.h</includes>
+    <includes local="no">wx/event.h</includes>
+    <includes local="no">wx/gbsizer.h</includes>
+    <includes local="no">wx/gdicmn.h</includes>
+    <includes local="no">wx/imaglist.h</includes>
+    <includes local="no">wx/splitter.h</includes>
+    <includes local="no">wx/brush.h</includes>
+    <includes local="no">wx/button.h</includes>
+    <includes local="no">wx/colour.h</includes>
+    <includes local="no">wx/cursor.h</includes>
+    <includes local="no">wx/font.h</includes>
+    <includes local="no">wx/frame.h</includes>
+    <includes local="no">wx/menu.h</includes>
+    <includes local="no">wx/msgdlg.h</includes>
+    <includes local="no">wx/statline.h</includes>
+    <includes local="no">wx/toolbar.h</includes>
+    <includes local="no">wx/listbase.h</includes>
+    <includes local="no">wx/scrolwin.h</includes>
+    <includes local="no">wx/sizer.h</includes>
+    <includes local="no">wx/string.h</includes>
+    <includes local="no">wx/treebase.h</includes>
+    <includes local="no">wx/validate.h</includes>
+    <includes local="no">wx/generic/textdlgg.h</includes>
+    <includes refid="_point_8hpp" local="yes">Point.hpp</includes>
+    <includes refid="_size_8hpp" local="yes">Size.hpp</includes>
+    <includes refid="_region_8hpp" local="yes">Region.hpp</includes>
+    <includedby refid="_button_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp</includedby>
+    <includedby refid="_shape_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp</includedby>
+    <includedby refid="_rectangle_shape_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp</includedby>
+    <includedby refid="_main_application_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp</includedby>
+    <includedby refid="_main_frame_window_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp</includedby>
+    <includedby refid="_log_text_ctrl_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp</includedby>
+    <includedby refid="_robot_world_canvas_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</includedby>
+    <includedby refid="_notification_event_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp</includedby>
+    <includedby refid="_notification_function_type_traits_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp</includedby>
+    <includedby refid="_notification_handler_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp</includedby>
+    <includedby refid="_widget_debug_trace_function_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp</includedby>
+    <includedby refid="_robot_shape_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.hpp</includedby>
+    <includedby refid="_shape2_d_utils_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.cpp</includedby>
+    <includedby refid="_widgets_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.cpp</includedby>
+    <incdepgraph>
+      <node id="2700">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="2693">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="2680">
+        <label>wx/app.h</label>
+      </node>
+      <node id="2685">
+        <label>wx/event.h</label>
+      </node>
+      <node id="2694">
+        <label>wx/font.h</label>
+      </node>
+      <node id="2682">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="2704">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="2699">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="2695">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="2710">
+        <label>wx/region.h</label>
+      </node>
+      <node id="2708">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="2687" relation="include">
+        </childnode>
+      </node>
+      <node id="2679">
+        <label>string</label>
+      </node>
+      <node id="2687">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="2677">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp</label>
+        <link refid="Widgets.hpp"/>
+        <childnode refid="2678" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+        <childnode refid="2680" relation="include">
+        </childnode>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2682" relation="include">
+        </childnode>
+        <childnode refid="2683" relation="include">
+        </childnode>
+        <childnode refid="2684" relation="include">
+        </childnode>
+        <childnode refid="2685" relation="include">
+        </childnode>
+        <childnode refid="2686" relation="include">
+        </childnode>
+        <childnode refid="2687" relation="include">
+        </childnode>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2689" relation="include">
+        </childnode>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2691" relation="include">
+        </childnode>
+        <childnode refid="2692" relation="include">
+        </childnode>
+        <childnode refid="2693" relation="include">
+        </childnode>
+        <childnode refid="2694" relation="include">
+        </childnode>
+        <childnode refid="2695" relation="include">
+        </childnode>
+        <childnode refid="2696" relation="include">
+        </childnode>
+        <childnode refid="2697" relation="include">
+        </childnode>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2702" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2707" relation="include">
+        </childnode>
+        <childnode refid="2708" relation="include">
+        </childnode>
+        <childnode refid="2709" relation="include">
+        </childnode>
+      </node>
+      <node id="2681">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="2696">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="2688">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="2683">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="2692">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="2690">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="2705">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="2701">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="2686">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="2678">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="2703">
+        <label>wx/string.h</label>
+      </node>
+      <node id="2707">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="2687" relation="include">
+        </childnode>
+      </node>
+      <node id="2697">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="2684">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="2689">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="2702">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="2691">
+        <label>wx/button.h</label>
+      </node>
+      <node id="2709">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="2710" relation="include">
+        </childnode>
+      </node>
+      <node id="2706">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="2698">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2725">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp</label>
+        <link refid="_notification_handler_8hpp_source"/>
+        <childnode refid="2720" relation="include">
+        </childnode>
+      </node>
+      <node id="2714">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.hpp</label>
+        <link refid="_goal_shape_8hpp_source"/>
+      </node>
+      <node id="2715">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp</label>
+        <link refid="_rectangle_shape_8hpp_source"/>
+        <childnode refid="2716" relation="include">
+        </childnode>
+        <childnode refid="2717" relation="include">
+        </childnode>
+        <childnode refid="2719" relation="include">
+        </childnode>
+        <childnode refid="2718" relation="include">
+        </childnode>
+      </node>
+      <node id="2711">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp</label>
+        <link refid="Widgets.hpp"/>
+        <childnode refid="2712" relation="include">
+        </childnode>
+        <childnode refid="2713" relation="include">
+        </childnode>
+        <childnode refid="2715" relation="include">
+        </childnode>
+        <childnode refid="2721" relation="include">
+        </childnode>
+        <childnode refid="2722" relation="include">
+        </childnode>
+        <childnode refid="2723" relation="include">
+        </childnode>
+        <childnode refid="2720" relation="include">
+        </childnode>
+        <childnode refid="2724" relation="include">
+        </childnode>
+        <childnode refid="2726" relation="include">
+        </childnode>
+        <childnode refid="2725" relation="include">
+        </childnode>
+        <childnode refid="2727" relation="include">
+        </childnode>
+        <childnode refid="2719" relation="include">
+        </childnode>
+      </node>
+      <node id="2721">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp</label>
+        <link refid="_main_application_8hpp_source"/>
+      </node>
+      <node id="2722">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp</label>
+        <link refid="_main_frame_window_8hpp_source"/>
+      </node>
+      <node id="2727">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp</label>
+        <link refid="_widget_debug_trace_function_8hpp_source"/>
+      </node>
+      <node id="2724">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp</label>
+        <link refid="_notification_event_8hpp_source"/>
+        <childnode refid="2725" relation="include">
+        </childnode>
+      </node>
+      <node id="2720">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</label>
+        <link refid="_robot_world_canvas_8hpp_source"/>
+      </node>
+      <node id="2723">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp</label>
+        <link refid="_log_text_ctrl_8hpp_source"/>
+      </node>
+      <node id="2718">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WallShape.hpp</label>
+        <link refid="_wall_shape_8hpp_source"/>
+      </node>
+      <node id="2726">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp</label>
+        <link refid="_notification_function_type_traits_8hpp_source"/>
+        <childnode refid="2725" relation="include">
+        </childnode>
+      </node>
+      <node id="2713">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp</label>
+        <link refid="_shape_8hpp_source"/>
+        <childnode refid="2714" relation="include">
+        </childnode>
+        <childnode refid="2715" relation="include">
+        </childnode>
+        <childnode refid="2717" relation="include">
+        </childnode>
+        <childnode refid="2720" relation="include">
+        </childnode>
+      </node>
+      <node id="2712">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp</label>
+        <link refid="_button_8hpp_source"/>
+      </node>
+      <node id="2717">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LineShape.hpp</label>
+        <link refid="_line_shape_8hpp_source"/>
+        <childnode refid="2718" relation="include">
+        </childnode>
+      </node>
+      <node id="2719">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.hpp</label>
+        <link refid="_robot_shape_8hpp_source"/>
+      </node>
+      <node id="2716">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp</label>
+        <link refid="_way_point_shape_8hpp_source"/>
+        <childnode refid="2714" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_widgets">Widgets</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_widgets_8hpp_1a9cfb4a036ae0f13fbbe4bc744385a78b" prot="public" static="no">
+        <name>ActivateEventHandler</name>
+        <initializer>wxActivateEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/">http://docs.wxwidgets.org/stable/</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="49" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a5b85ba9e93ef5e4db35cd8435255c922" prot="public" static="no">
+        <name>CommandEventHandler</name>
+        <initializer>wxCommandEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_command_event_handler">http://docs.wxwidgets.org/stable/classwx_command_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="81" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a5c118a78fde16235921129f96ebd0bd6" prot="public" static="no">
+        <name>DefaultPosition</name>
+        <initializer>wxDefaultPosition</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_default_position">http://docs.wxwidgets.org/stable/classwx_default_position</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="93" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a657655c9d6484a163a04f7294eef41a9" prot="public" static="no">
+        <name>DefaultSize</name>
+        <initializer>wxDefaultSize</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_default_size">http://docs.wxwidgets.org/stable/classwx_default_size</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="97" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1aee22abdedd52e733642452599e4fc9d9" prot="public" static="no">
+        <name>DefaultValidator</name>
+        <initializer>wxDefaultValidator</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://http://docs.wxwidgets.org/stable/classwx_validator">http://http://docs.wxwidgets.org/stable/classwx_validator</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="101" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a41c44c425813371b4e2dc7d0a9417498" prot="public" static="no">
+        <name>EventHandler</name>
+        <initializer>wxEvtHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_event_handler">http://docs.wxwidgets.org/stable/classwx_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="113" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a480724eaea11e00528f1dd3fe08baf1f" prot="public" static="no">
+        <name>KeyEventHandler</name>
+        <initializer>wxKeyEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_key_event_handler">http://docs.wxwidgets.org/stable/classwx_key_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="153" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1ae65a317fec935a685c2fc5b377811897" prot="public" static="no">
+        <name>ListEventHandler</name>
+        <initializer>wxListEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_list_event_handler">http://docs.wxwidgets.org/stable/classwx_list_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="161" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a2315a392e3d9cea6bee6e304a648d102" prot="public" static="no">
+        <name>MouseEventHandler</name>
+        <initializer>wxMouseEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_mouse_event_handler">http://docs.wxwidgets.org/stable/classwx_mouse_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="181" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a05369d9c3987caef88fea950ec7dac42" prot="public" static="no">
+        <name>NullColour</name>
+        <initializer>wxNullColour</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_colour">http://docs.wxwidgets.org/stable/classwx_colour</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="189" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a8389e9d7a03cb4fbd7171c5b39a9b222" prot="public" static="no">
+        <name>PaintEventHandler</name>
+        <initializer>wxPaintEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_paint_event_handler">http://docs.wxwidgets.org/stable/classwx_paint_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="197" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a16cf9b415cefa19d424163a3e942e4c7" prot="public" static="no">
+        <name>SizeEventHandler</name>
+        <initializer>wxSizeEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_size_event_handler">http://docs.wxwidgets.org/stable/classwx_size_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="217" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a80fddf652cab35aa75ccde85da45002a" prot="public" static="no">
+        <name>TreeEventHandler</name>
+        <initializer>wxTreeEventHandler</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_tree_event_handler">http://docs.wxwidgets.org/stable/classwx_tree_event_handler</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="253" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1af33bef1503f247339e615a9912923337" prot="public" static="no">
+        <name>WindowId</name>
+        <initializer>wxWindowID</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_window_id">http://docs.wxwidgets.org/stable/classwx_window_id</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="265" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a50f28d60b2b6da9c769708953aaa34d0" prot="public" static="no">
+        <name>DEFAULT_ID</name>
+        <initializer>wxID_ANY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="271" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1af2bb1c1737739b051deb69773ef0c841" prot="public" static="no">
+        <name>FOCUS_COLOUR</name>
+        <initializer>wxColour(240,240,200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="273" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a36b36953427b96dbdefa9ca87241813e" prot="public" static="no">
+        <name>DEFAULT_FRAME_STYLE</name>
+        <initializer>wxDEFAULT_FRAME_STYLE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="274" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a92dafb332f94c22638d6fb1814930289" prot="public" static="no">
+        <name>DEFAULT_DIALOG_STYLE</name>
+        <initializer>wxDEFAULT_DIALOG_STYLE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="275" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a97dac97a9d62cab329ae223cac5e3143" prot="public" static="no">
+        <name>CROSS_CURSOR</name>
+        <initializer>wxCROSS_CURSOR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="277" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1aa3d76f1301b09b8e7be9e84ac14c1665" prot="public" static="no">
+        <name>HOURGLASS_CURSOR</name>
+        <initializer>wxHOURGLASS_CURSOR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="278" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a1e696e60a54196535539b97ff36a96b0" prot="public" static="no">
+        <name>STANDARD_CURSOR</name>
+        <initializer>wxSTANDARD_CURSOR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="279" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a08c5a854755afba2080c91c1ddff3e7b" prot="public" static="no">
+        <name>TAB_TRAVERSAL</name>
+        <initializer>wxTAB_TRAVERSAL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="281" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a8a83ed9cfd3999a57d92156a56ce6b01" prot="public" static="no">
+        <name>LC_LIST</name>
+        <initializer>wxLC_LIST</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="283" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a4f57b4608c8ac84e5e0abf3b00cd76d6" prot="public" static="no">
+        <name>LC_REPORT</name>
+        <initializer>wxLC_REPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="284" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1a7a2e9b467810589dafdd57d15ace37c3" prot="public" static="no">
+        <name>LC_SINGLE_SEL</name>
+        <initializer>wxLC_SINGLE_SEL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="285" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1ad585f2f410610dba5f8212c5241cc3a0" prot="public" static="no">
+        <name>TR_HAS_BUTTONS</name>
+        <initializer>wxTR_HAS_BUTTONS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="287" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_widgets_8hpp_1ac90e9d2dc9ed7b9db6b57f9059ee9440" prot="public" static="no">
+        <name>TR_HIDE_ROOT</name>
+        <initializer>wxTR_HIDE_ROOT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="288" column="9" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WIDGETS_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIDGETS_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/app.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/dc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/dcclient.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/defs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/dnd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/event.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/gbsizer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/gdicmn.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/imaglist.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/splitter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/brush.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/button.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/colour.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/cursor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/font.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/frame.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/menu.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/msgdlg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/statline.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/toolbar.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/listbase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/scrolwin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/sizer.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/treebase.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/validate.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/generic/textdlgg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Point.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Size.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Region.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_widgets" kindref="compound">Widgets</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxActivateEvent<sp/>ActivateEvent;</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor">#define<sp/>ActivateEventHandler<sp/>wxActivateEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxBoxSizer<sp/>BoxSizer;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxBrush<sp/>Brush;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxButton<sp/>Button;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxColour<sp/>Colour;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxCursor<sp/>Cursor;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxCommandEvent<sp/>CommandEvent;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxCloseEvent<sp/>CloseEvent;</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor">#define<sp/>CommandEventHandler<sp/>wxCommandEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxCoord<sp/>Coord;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxDataFormat<sp/>DataFormat;</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor">#define<sp/>DefaultPosition<sp/>wxDefaultPosition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor">#define<sp/>DefaultSize<sp/>wxDefaultSize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor">#define<sp/>DefaultValidator<sp/>wxDefaultValidator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxDragResult<sp/>DragResult;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxEvent<sp/>Event;</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor">#define<sp/>EventHandler<sp/>wxEvtHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxFlexGridSizer<sp/>FlexGridSizer;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxFocusEvent<sp/>FocusEvent;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxFont<sp/>Font;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxFrame<sp/>Frame;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxGBPosition<sp/>GBPosition;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxGBSpan<sp/>GBSpan;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxGridBagSizer<sp/>GridBagSizer;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxImageList<sp/>ImageList;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxKeyEvent<sp/>KeyEvent;</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor">#define<sp/>KeyEventHandler<sp/>wxKeyEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxListEvent<sp/>ListEvent;</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor">#define<sp/>ListEventHandler<sp/>wxListEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxListItem<sp/>ListItem;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxMenuBar<sp/>MenuBar;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxMenu<sp/>Menu;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxMouseEvent<sp/>MouseEvent;</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor">#define<sp/>MouseEventHandler<sp/>wxMouseEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxNotifyEvent<sp/>NotifyEvent;</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor">#define<sp/>NullColour<sp/>wxNullColour</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxPaintEvent<sp/>PaintEvent;</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor">#define<sp/>PaintEventHandler<sp/>wxPaintEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxPanel<sp/>Panel;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxScrolledCanvas<sp/>ScrolledCanvas;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxScrolledWindow<sp/>ScrolledWindow;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxSizeEvent<sp/>SizeEvent;</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor">#define<sp/>SizeEventHandler<sp/>wxSizeEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxSizer<sp/>Sizer;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxSizerFlags<sp/>SizerFlags;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxSplitterWindow<sp/>SplitterWindow;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxStaticBoxSizer<sp/>StaticBoxSizer;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxStaticLine<sp/>StaticLine;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxTextEntryDialog<sp/>TextEntryDialog;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxToolBar<sp/>ToolBar;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxTreeEvent<sp/>TreeEvent;</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor">#define<sp/>TreeEventHandler<sp/>wxTreeEventHandler</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxTreeItemId<sp/>TreeItemId;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxValidator<sp/>Validator;</highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor">#define<sp/>WindowId<sp/>wxWindowID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxWindow<sp/>Window;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_ID<sp/>wxID_ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FOCUS_COLOUR<sp/>wxColour(240,240,200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_FRAME_STYLE<sp/>wxDEFAULT_FRAME_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_DIALOG_STYLE<sp/>wxDEFAULT_DIALOG_STYLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CROSS_CURSOR<sp/>wxCROSS_CURSOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HOURGLASS_CURSOR<sp/>wxHOURGLASS_CURSOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STANDARD_CURSOR<sp/>wxSTANDARD_CURSOR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAB_TRAVERSAL<sp/>wxTAB_TRAVERSAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LC_LIST<sp/>wxLC_LIST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LC_REPORT<sp/>wxLC_REPORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LC_SINGLE_SEL<sp/>wxLC_SINGLE_SEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TR_HAS_BUTTONS<sp/>wxTR_HAS_BUTTONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TR_HIDE_ROOT<sp/>wxTR_HIDE_ROOT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>GeometryCentre</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CENTRE<sp/>=<sp/>wxCENTRE,</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CENTER<sp/>=<sp/>CENTRE</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Orientation</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HORIZONTAL<sp/>=<sp/>wxHORIZONTAL,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIR_HORIZONTAL<sp/>=<sp/>HORIZONTAL,</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VERTICAL<sp/>=<sp/>wxVERTICAL,</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIR_VERTICAL<sp/>=<sp/>VERTICAL,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOTH<sp/>=<sp/>VERTICAL<sp/>|<sp/>HORIZONTAL</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Direction</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LEFT<sp/>=<sp/>wxLEFT,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RIGHT<sp/>=<sp/>wxRIGHT,</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UP<sp/>=<sp/>wxUP,</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DOWN<sp/>=<sp/>wxDOWN,</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TOP<sp/>=<sp/>UP,</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BOTTOM<sp/>=<sp/>DOWN,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NORTH<sp/>=<sp/>UP,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SOUTH<sp/>=<sp/>DOWN,</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WEST<sp/>=<sp/>LEFT,</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EAST<sp/>=<sp/>RIGHT,</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALL<sp/>=<sp/>(UP<sp/>|<sp/>DOWN<sp/>|<sp/>RIGHT<sp/>|<sp/>LEFT)</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Alignment</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_NOT<sp/>=<sp/>wxALIGN_NOT,</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_CENTER_HORIZONTAL<sp/>=<sp/>wxALIGN_CENTER_HORIZONTAL,</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_CENTRE_HORIZONTAL<sp/>=<sp/>ALIGN_CENTER_HORIZONTAL,</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_LEFT<sp/>=<sp/>ALIGN_NOT,</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_TOP<sp/>=<sp/>ALIGN_NOT,</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_RIGHT<sp/>=<sp/>wxALIGN_RIGHT,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_BOTTOM<sp/>=<sp/>wxALIGN_BOTTOM,</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_CENTER_VERTICAL<sp/>=<sp/>wxALIGN_CENTER_VERTICAL,</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_CENTRE_VERTICAL<sp/>=<sp/>ALIGN_CENTER_VERTICAL,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_CENTER<sp/>=<sp/>(ALIGN_CENTER_HORIZONTAL<sp/>|<sp/>ALIGN_CENTER_VERTICAL),</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_CENTRE<sp/>=<sp/>ALIGN_CENTER,</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ALIGN_MASK<sp/>=<sp/>wxALIGN_MASK</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Stretch</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STRETCH_NOT<sp/>=<sp/>wxSTRETCH_NOT,</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SHRINK<sp/>=<sp/>wxSHRINK,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GROW<sp/>=<sp/>wxGROW,</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXPAND<sp/>=<sp/>GROW,</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SHAPED<sp/>=<sp/>wxSHAPED,</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FIXED_MINSIZE<sp/>=<sp/>wxFIXED_MINSIZE,</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RESERVE_SPACE_EVEN_IF_HIDDEN<sp/>=<sp/>wxRESERVE_SPACE_EVEN_IF_HIDDEN,</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TILE<sp/>=<sp/>wxTILE</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>wxString<sp/>WXSTRING(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>aText)</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>wxString::FromAscii(<sp/>aText);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>wxString<sp/>WXSTRING(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aString)</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>wxString::FromAscii(<sp/>aString.c_str());</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>wxString<sp/>WXSTRING(<sp/>std::string&amp;<sp/>aString)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>wxString::FromAscii(<sp/>aString.c_str());</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/>STDSTRING(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>wxString&amp;<sp/>aString)</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(<sp/>aString.ToAscii());</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/>STDSTRING(<sp/>wxString&amp;<sp/>aString)</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(<sp/>aString.ToAscii());</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetTextFromUser(<sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aTitleBarMessage,</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aMessage,</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aDefaultValue<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Window*<sp/>aParent<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>centre<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Point&amp;<sp/>aPoint<sp/>=<sp/>DefaultPosition);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Widgets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_widgets" kindref="compound">Widgets</ref>;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WIDGETS_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp"/>
+  </compounddef>
+</doxygen>

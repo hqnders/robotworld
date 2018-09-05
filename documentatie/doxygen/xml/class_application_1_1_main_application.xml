@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_application_1_1_main_application" kind="class" language="C++" prot="public">
+    <compoundname>Application::MainApplication</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">wxApp</basecompoundref>
+      <sectiondef kind="user-defined">
+      <header>Command line handling functions</header>
+      <memberdef kind="function" id="class_application_1_1_main_application_1abdb7b37eb40ea2884233907a0fc39849" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainApplication::setCommandlineArguments</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>setCommandlineArguments</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The handling of the arguments is:<orderedlist>
+<listitem><para>Any argument starting with &quot;-&quot; that has &quot;=&quot; in it somewhere is treated as &quot;argument = value&quot;. Spaces are not allowed.</para></listitem><listitem><para>Any argument starting with a &quot;-&quot; that has no &quot;=&quot; in it somewhere is treated as a boolean with the value &quot;true&quot;. There are no variables that can be false.</para></listitem><listitem><para>Arguments without &quot;-&quot; prefix are assumed to be files.</para></listitem><listitem><para>The &quot;-&quot; is NOT stripped from the argument.</para></listitem></orderedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the count of the arguments </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array with the values of the arguments </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="54" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" bodystart="61" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_application_1a973c9c83d80717041866159f1f64609e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Application::MainApplication::isArgGiven</definition>
+        <argsstring>(const std::string &amp;aVariable)</argsstring>
+        <name>isArgGiven</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aVariable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aVariable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format of the variable is implementation defined. Be aware that &quot;-&quot; is NOT stripped from the argument. The comparisson is done by operator==( const string&amp;). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the argument is given, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="63" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_application_1ad696027fcd46221aa7897b8d3e970c83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &amp;</type>
+        <definition>CommandlineArgument &amp; Application::MainApplication::getArg</definition>
+        <argsstring>(const std::string &amp;aVariable)</argsstring>
+        <name>getArg</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aVariable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aVariable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The requested variable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The requested argument if available, throws an exception otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" bodystart="120" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_application_1aac4212439e07c828329b701af43b7c6a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &amp;</type>
+        <definition>CommandlineArgument &amp; Application::MainApplication::getArg</definition>
+        <argsstring>(unsigned long anArgumentNumber)</argsstring>
+        <name>getArg</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>anArgumentNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anArgumentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The requested variable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The requested argument if available, throws an exception otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="75" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" bodystart="130" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_application_1a042c7143dd9517896ba9926b43ffeafd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt; &amp;</type>
+        <definition>std::vector&lt; std::string &gt; &amp; Application::MainApplication::getCommandlineFiles</definition>
+        <argsstring>()</argsstring>
+        <name>getCommandlineFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Any files that are given on the command line. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="80" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_application_1_1_main_application_1aba7767fc1d07f3b314501091aab39300" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &gt;</type>
+        <definition>std::vector&lt; CommandlineArgument &gt; Application::MainApplication::commandlineArguments</definition>
+        <argsstring></argsstring>
+        <name>commandlineArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="85" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_application_1a2e308317d29f933b7b50159a08ffc250" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; Application::MainApplication::commandlineFiles</definition>
+        <argsstring></argsstring>
+        <name>commandlineFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="86" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1_1_main_application_1ac9714c4b1debf0d532e2b30224833b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Application::MainApplication::OnInit</definition>
+        <argsstring>()</argsstring>
+        <name>OnInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This one is called on application startup and is a good place for the app initialisation: doing it here and not in the ctor allows to have an error return</para><para><simplesect kind="return"><para>If <ref refid="class_application_1_1_main_application_1ac9714c4b1debf0d532e2b30224833b53" kindref="member">OnInit()</ref> returns false, the application terminates </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="39" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.cpp" bodystart="30" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="519">
+        <label>Application::MainApplication</label>
+        <link refid="class_application_1_1_main_application"/>
+        <childnode refid="520" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>wxApp</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="521">
+        <label>Application::MainApplication</label>
+        <link refid="class_application_1_1_main_application"/>
+        <childnode refid="522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>wxApp</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp" bodystart="30" bodyend="88"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_main_application_1aba7767fc1d07f3b314501091aab39300" prot="private" virt="non-virtual"><scope>Application::MainApplication</scope><name>commandlineArguments</name></member>
+      <member refid="class_application_1_1_main_application_1a2e308317d29f933b7b50159a08ffc250" prot="private" virt="non-virtual"><scope>Application::MainApplication</scope><name>commandlineFiles</name></member>
+      <member refid="class_application_1_1_main_application_1ad696027fcd46221aa7897b8d3e970c83" prot="public" virt="non-virtual"><scope>Application::MainApplication</scope><name>getArg</name></member>
+      <member refid="class_application_1_1_main_application_1aac4212439e07c828329b701af43b7c6a" prot="public" virt="non-virtual"><scope>Application::MainApplication</scope><name>getArg</name></member>
+      <member refid="class_application_1_1_main_application_1a042c7143dd9517896ba9926b43ffeafd" prot="public" virt="non-virtual"><scope>Application::MainApplication</scope><name>getCommandlineFiles</name></member>
+      <member refid="class_application_1_1_main_application_1a973c9c83d80717041866159f1f64609e" prot="public" virt="non-virtual"><scope>Application::MainApplication</scope><name>isArgGiven</name></member>
+      <member refid="class_application_1_1_main_application_1ac9714c4b1debf0d532e2b30224833b53" prot="public" virt="virtual"><scope>Application::MainApplication</scope><name>OnInit</name></member>
+      <member refid="class_application_1_1_main_application_1abdb7b37eb40ea2884233907a0fc39849" prot="public" virt="non-virtual"><scope>Application::MainApplication</scope><name>setCommandlineArguments</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_request_handler" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Messaging::RequestHandler</compoundname>
+    <derivedcompoundref refid="class_messaging_1_1_message_handler" prot="public" virt="non-virtual">Messaging::MessageHandler</derivedcompoundref>
+    <includes refid="_message_handler_8hpp" local="no">MessageHandler.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_messaging_1_1_request_handler_1a78b960d598da57f343b4942436353d61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Messaging::RequestHandler::~RequestHandler</definition>
+        <argsstring>()</argsstring>
+        <name>~RequestHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_request_handler_1afa23f0ab94ae851a487173a5087da898" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::RequestHandler::handleRequest</definition>
+        <argsstring>(Message &amp;aMessage)=0</argsstring>
+        <name>handleRequest</name>
+        <reimplementedby refid="class_model_1_1_robot_1a5b52eb37c4e11850c3f60263599bd79c">handleRequest</reimplementedby>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>After this function is called aMessage is returned as response to the requesting client, i.e. it should contain the result/response of/to the request.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Base server interface for handling remote requests Classes derived from this interface can serve as server in the Messaging protocol by implementing this interface. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="612">
+        <label>Messaging::MessageHandler</label>
+        <link refid="class_messaging_1_1_message_handler"/>
+        <childnode refid="611" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="611">
+        <label>Messaging::RequestHandler</label>
+        <link refid="class_messaging_1_1_request_handler"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" bodystart="20" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_request_handler_1afa23f0ab94ae851a487173a5087da898" prot="public" virt="pure-virtual"><scope>Messaging::RequestHandler</scope><name>handleRequest</name></member>
+      <member refid="class_messaging_1_1_request_handler_1a78b960d598da57f343b4942436353d61" prot="public" virt="virtual"><scope>Messaging::RequestHandler</scope><name>~RequestHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

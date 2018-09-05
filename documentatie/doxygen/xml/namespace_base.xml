@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_base" kind="namespace" language="C++">
+    <compoundname>Base</compoundname>
+    <innerclass refid="class_base_1_1_debug_trace_function" prot="public">Base::DebugTraceFunction</innerclass>
+    <innerclass refid="struct_base_1_1_notification_function_type_traits" prot="public">Base::NotificationFunctionTypeTraits</innerclass>
+    <innerclass refid="struct_base_1_1_notification_function_type_traits_3_01std_1_1function_3_01void_07_notify_event_01_6_08_01_4_01_4" prot="public">Base::NotificationFunctionTypeTraits&lt; std::function&lt; void(NotifyEvent &amp;) &gt; &gt;</innerclass>
+    <innerclass refid="struct_base_1_1_notification_function_type_traits_tracing" prot="public">Base::NotificationFunctionTypeTraitsTracing</innerclass>
+    <innerclass refid="class_base_1_1_notification_handler" prot="public">Base::NotificationHandler</innerclass>
+    <innerclass refid="class_base_1_1_notifier" prot="public">Base::Notifier</innerclass>
+    <innerclass refid="class_base_1_1_object_id" prot="public">Base::ObjectId</innerclass>
+    <innerclass refid="class_base_1_1_observer" prot="public">Base::Observer</innerclass>
+    <innerclass refid="class_base_1_1_queue" prot="public">Base::Queue</innerclass>
+    <innerclass refid="class_base_1_1_std_out_debug_trace_function" prot="public">Base::StdOutDebugTraceFunction</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_notification_event_8hpp_1ab45a962abc3f0bcf97e68d8cb3bd3ed2" prot="public" static="no">
+        <type>void(wxEvtHandler::*</type>
+        <definition>typedef void(wxEvtHandler::* Base::NotificationEventFunction) (NotifyEvent &amp;)</definition>
+        <argsstring>)(NotifyEvent &amp;)</argsstring>
+        <name>NotificationEventFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp" line="11" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_notification_event_8hpp_1a3c927384acd34593c1043539c229e42b" prot="public" static="no" mutable="no">
+        <type>const wxEventType</type>
+        <definition>const wxEventType Base::EVT_NOTIFICATIONEVENT</definition>
+        <argsstring></argsstring>
+        <name>EVT_NOTIFICATIONEVENT</name>
+        <initializer>= wxNewEventType()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp" line="10" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_object_id_8cpp_1ae9ce16182a2c76bddfdf2ee942367114" prot="public" static="yes" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex Base::newObjectIdMutex</definition>
+        <argsstring></argsstring>
+        <name>newObjectIdMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" line="14" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_notification_function_type_traits_8hpp_1acc547fe112dfe8e6787a9b9edd68ad9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Base::Ooops</definition>
+        <argsstring>(NotifyEvent &amp;)</argsstring>
+        <name>Ooops</name>
+        <param>
+          <type>NotifyEvent &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dummy function to allow for usage of not-yet implemented std::function&lt;void (CommandEvent&amp;)&gt; functions <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_object_id_8cpp_1a7917d08dbad925ca11aa559946aba05b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; Base::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const ObjectId &amp;anObjectId)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_base_1_1_object_id" kindref="compound">ObjectId</ref> &amp;</type>
+          <declname>anObjectId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" line="136" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ObjectId.cpp" bodystart="136" bodyend="140"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.cpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

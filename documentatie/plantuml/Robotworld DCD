@@ -1,0 +1,1130 @@
+@startuml
+
+package PathAlgorithm {
+class AStar {
+	+getClosedSet() : ClosedSet {query}
+	#getCS() : ClosedSet&
+	#getCS() : ClosedSet& {query}
+	+findInClosedSet(const Vertex& aVertex) : ClosedSet::iterator
+	+getOpenSet() : OpenSet {query}
+	#getOS() : OpenSet&
+	#getOS() : OpenSet& {query}
+	+findInOpenSet(const Vertex& aVertex) : OpenSet::iterator
+	+search(const Point& aStartPoint, const Point& aGoalPoint, const Size& aRobotSize) : Path
+	+search(Vertex aStart, const Vertex& aGoal, const Size& aRobotSize) : Path
+	-closedSet : PathAlgorithm::ClosedSet
+	-openSet : PathAlgorithm::OpenSet
+	-predecessorMap : PathAlgorithm::VertexMap
+	+getPredecessorMap() : VertexMap {query}
+	#getPM() : VertexMap&
+	#getPM() : VertexMap& {query}
+	+findRemoveClosedSet(const Vertex& aVertex) : bool
+	+findRemoveInOpenSet(const Vertex& aVertex) : bool
+	-closedSetMutex : mutable std::recursive_mutex
+	-openSetMutex : mutable std::recursive_mutex
+	-predecessorMapMutex : mutable std::recursive_mutex
+	+addToClosedSet(const Vertex& aVertex) : void
+	+addToOpenSet(const Vertex& aVertex) : void
+	+removeFirstFromOpenSet() : void
+	+removeFromClosedSet(const Vertex& aVertex) : void
+	+removeFromClosedSet(ClosedSet::iterator& i) : void
+	+removeFromOpenSet(const Vertex& aVertex) : void
+	+removeFromOpenSet(OpenSet::iterator& i) : void
+}
+
+class Vertex {
+	+Vertex(int anX, int anY)
+	+Vertex(const Point& aPoint)
+	+asPoint() : Point {query}
+	+equalPoint(const Vertex& aVertex) : bool {query}
+	+lessCost(const Vertex& aVertex) : bool {query}
+	+lessId(const Vertex& aVertex) : bool {query}
+	+actualCost : double
+	+heuristicCost : double
+	+x : int
+	+y : int
+}
+
+class Edge {
+	+Edge(const Vertex& aVertex1, const Vertex& aVertex2)
+	+Edge(const Edge& anEdge)
+	+vertex1 : Vertex
+	+vertex2 : Vertex
+	+otherSide(const Vertex& aVertex) : Vertex& {query}
+	+thisSide(const Vertex& aVertex) : Vertex& {query}
+}
+class VertexEqualPointCompare {
+	+operator()(const Vertex& lhs, const Vertex& rhs) : bool {query}
+}
+
+class VertexLessCostCompare {
+	+operator()(const Vertex& lhs, const Vertex& rhs) : bool {query}
+}
+
+class VertexLessIdCompare {
+	+operator()(const Vertex& lhs, const Vertex& rhs) : bool {query}
+}
+
+class ViewObject {
+	+ViewObject()
+	+ViewObject(model::ModelObjectPtr aModelObject)
+	+~ViewObject()
+	-objectId : Base::ObjectId
+	+getObjectId() : Base::ObjectId& {query}
+	+getModelObject() : model::ModelObjectPtr {query}
+	-modelObject : model::ModelObjectPtr
+	#rebindModelObject(model::ModelObjectPtr aModelObject) : void
+	+setModelObject(model::ModelObjectPtr aModelObject) : void
+}
+}
+
+package model{
+abstract class AbstractActuator {
+	+AbstractActuator()
+	+AbstractActuator(AbstractAgent* anAgent)
+	+~AbstractActuator()
+	#agent : AbstractAgent*
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+attachAgent(AbstractAgent* anAgent) : void
+	+detachAgent() : void
+	+{abstract} handleCommand(AbstractCommand& anAbstractCommand) : void
+}
+
+abstract class AbstractAgent {
+	+AbstractAgent()
+	+~AbstractAgent()
+	#perceptQueue : Base::Queue< std::shared_ptr< AbstractPercept> >
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	#actuators : std::vector< std::shared_ptr< AbstractActuator> >
+	#sensors : std::vector< std::shared_ptr< AbstractSensor> >
+	+addPercept(std::shared_ptr< AbstractPercept> anAbstractPercept) : void
+	+attachActuator(std::shared_ptr< AbstractActuator> anActuator, bool attachActuatorToAgent) : void
+	+attachSensor(std::shared_ptr< AbstractSensor> aSensor, bool attachSensorToAgent) : void
+	+{abstract} startActing() : void
+	+{abstract} stopActing() : void
+}
+
+class AbstractCommand {
+	+~AbstractCommand()
+}
+
+class AbstractPercept {
+	+~AbstractPercept()
+}
+
+abstract class AbstractSensor {
+	+AbstractSensor()
+	+AbstractSensor(AbstractAgent* anAgent)
+	+~AbstractSensor()
+	#agent : AbstractAgent*
+	#running : bool
+	#sensorMutex : mutable std::recursive_mutex
+	+{abstract} getPerceptFor(std::shared_ptr< AbstractStimulus> anAbstractPercepts) : std::shared_ptr<AbstractPercept> {query}
+	+{abstract} getStimulus() : std::shared_ptr<AbstractStimulus> {query}
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	#sensorThread : std::thread
+	+attachAgent(AbstractAgent* anAgent) : void
+	+detachAgent() : void
+	+run(unsigned long aSleepTime) : void
+	+sendPercept(std::shared_ptr< AbstractPercept> anAbstractPercept) : void
+	+setOff() : void
+	+setOn(unsigned long aSleepTime) : void
+}
+
+class AbstractStimulus {
+	+~AbstractStimulus()
+}
+
+class BoundedVector {
+	+BoundedVector()
+	+BoundedVector(float anX, float anY)
+	+BoundedVector(const Point& aPoint1, const Point& aPoint2)
+	+BoundedVector(const BoundedVector& aPolarCoord)
+	+~BoundedVector()
+	+getNormalised() : BoundedVector
+	+operator-() : BoundedVector
+	+operator*=(float aScalar) : BoundedVector&
+	+operator+=(const BoundedVector& aVector) : BoundedVector&
+	+operator-=(const BoundedVector& aVector) : BoundedVector&
+	+operator/=(float aScalar) : BoundedVector&
+	+getMagnitude() : float
+	+x : float
+	+y : float
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+normalise() : void
+	+reverse() : void
+}
+
+class Robot {
+	+Robot()
+	+Robot(const std::string& aName)
+	+Robot(const std::string& aName, const Point& aPosition)
+	+~Robot()
+	-front : BoundedVector
+	+getFront() : BoundedVector {query}
+	-goal : model::GoalPtr
+	-astar : PathAlgorithm::AStar
+	+getOpenSet() : PathAlgorithm::OpenSet {query}
+	+getPath() : PathAlgorithm::Path {query}
+	-path : PathAlgorithm::Path
+	+getBackLeft() : Point {query}
+	+getBackRight() : Point {query}
+	+getFrontLeft() : Point {query}
+	+getFrontRight() : Point {query}
+	+getPosition() : Point {query}
+	-position : Point
+	+getRegion() : Region {query}
+	+getSize() : Size {query}
+	-size : Size
+	-acting : bool
+	#arrived(model::GoalPtr aGoal) : bool
+	#collision() : bool
+	-communicating : bool
+	-driving : bool
+	+intersects(const Region& aRegion) : bool {query}
+	+isActing() : bool {query}
+	+isCommunicating() : bool {query}
+	+isDriving() : bool {query}
+	+getSpeed() : float {query}
+	-speed : float
+	-robotMutex : mutable std::recursive_mutex
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getName() : std::string {query}
+	-name : std::string
+	-robotThread : std::thread
+	#calculateRoute(model::GoalPtr aGoal) : void
+	#drive() : void
+	+handleNotification() : void
+	+handleRequest(Messaging::Message& aMessage) : void
+	+handleResponse(const Messaging::Message& aMessage) : void
+	+setFront(const BoundedVector& aVector, bool aNotifyObservers) : void
+	+setName(const std::string& aName, bool aNotifyObservers) : void
+	+setPosition(const Point& aPosition, bool aNotifyObservers) : void
+	+setSize(const Size& aSize, bool aNotifyObservers) : void
+	+setSpeed(float aNewSpeed, bool aNotifyObservers) : void
+	+startActing() : void
+	+startCommunicating() : void
+	+startDriving() : void
+	+stopActing() : void
+	+stopCommunicating() : void
+	+stopDriving() : void
+}
+
+class LaserDistanceSensor {
+	+LaserDistanceSensor()
+	+LaserDistanceSensor(Robot* aRobot)
+	+~LaserDistanceSensor()
+	+getPerceptFor(std::shared_ptr< AbstractStimulus> anAbstractStimulus) : std::shared_ptr<AbstractPercept> {query}
+	+getStimulus() : std::shared_ptr<AbstractStimulus> {query}
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+}
+
+class ModelObject {
+	+ModelObject()
+	+~ModelObject()
+	-objectId : Base::ObjectId
+	+getObjectId() : Base::ObjectId& {query}
+	+operator<(const ModelObject& aModelObject) : bool {query}
+	+operator==(const ModelObject& aModelObject) : bool {query}
+	+toPtr() : std::shared_ptr<DestinationType>
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+}
+
+class RobotWorld {
+	#RobotWorld()
+	#~RobotWorld()
+	+getGoal(const std::string& aName) : GoalPtr {query}
+	+getGoal(const Base::ObjectId& anObjectId) : GoalPtr {query}
+	+newGoal(const std::string& aName, const Point& aPosition, bool aNotifyObservers) : GoalPtr
+	+getRobot(const std::string& aName) : RobotPtr {query}
+	+getRobot(const Base::ObjectId& anObjectId) : RobotPtr {query}
+	+newRobot(const std::string& aName, const Point& aPosition, bool aNotifyObservers) : RobotPtr
+	+{static} getRobotWorld() : RobotWorld&
+	+getWall(const Base::ObjectId& anObjectId) : WallPtr {query}
+	+newWall(const Point& aPoint1, const Point& aPoint2, bool aNotifyObservers) : WallPtr
+	+getWayPoint(const std::string& aName) : WayPointPtr {query}
+	+getWayPoint(const Base::ObjectId& anObjectId) : WayPointPtr {query}
+	+newWayPoint(const std::string& aName, const Point& aPosition, bool aNotifyObservers) : WayPointPtr
+	-goals : mutable std::vector< GoalPtr>
+	-robots : mutable std::vector< RobotPtr>
+	-walls : mutable std::vector< WallPtr>
+	-wayPoints : mutable std::vector< WayPointPtr>
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getGoals() : std::vector<GoalPtr>& {query}
+	+getRobots() : std::vector<RobotPtr>& {query}
+	+getWalls() : std::vector<WallPtr>& {query}
+	+getWayPoints() : std::vector<WayPointPtr>& {query}
+	+deleteGoal(model::GoalPtr aGoal, bool aNotifyObservers) : void
+	+deleteRobot(model::RobotPtr aRobot, bool aNotifyObservers) : void
+	+deleteWall(model::WallPtr aWall, bool aNotifyObservers) : void
+	+deleteWayPoint(model::WayPointPtr aWayPoint, bool aNotifyObservers) : void
+	+populate(int aNumberOfWalls) : void
+	+unpopulate(bool aNotifyObservers) : void
+	+unpopulate(const std::vector<Base::ObjectId>& aKeepObjects, bool aNotifyObservers) : void
+}
+
+class SteeringActuator {
+	+SteeringActuator()
+	+~SteeringActuator()
+	+handleCommand(AbstractCommand& anAbstractCommand) : void
+}
+
+class Wall {
+	+Wall()
+	+Wall(const Point& aPoint1, const Point& aPoint2)
+	+~Wall()
+	+getPoint1() : Point {query}
+	+getPoint2() : Point {query}
+	-point1 : Point
+	-point2 : Point
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+setPoint1(const Point& aPoint1, bool aNotifyObservers) : void
+	+setPoint2(const Point& aPoint2, bool aNotifyObservers) : void
+}
+
+class WayPoint {
+	+WayPoint()
+	+WayPoint(const std::string& aName)
+	+WayPoint(const std::string& aName, const Point& aPosition)
+	+~WayPoint()
+	+getPosition() : Point {query}
+	-position : Point
+	+getRegion() : Region {query}
+	+getSize() : Size {query}
+	-size : Size
+	+intersects(const Region& aRegion) : bool {query}
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getName() : std::string {query}
+	-name : std::string
+	+setName(const std::string& aName, bool aNotifyObservers) : void
+	+setPosition(const Point& aPosition, bool aNotifyObservers) : void
+	+setSize(const Size& aSize, bool aNotifyObservers) : void
+}
+
+class DistancePercept {
+	+DistancePercept(const DistanceStimulus& aDistanceStimulus)
+	+DistancePercept(double anAngle, double aDistance)
+	+angle : double
+	+distance : double
+}
+
+class DistanceStimulus {
+	+DistanceStimulus(double anAngle, double aDistance)
+	+angle : double
+	+distance : double
+}
+
+class Goal {
+	+Goal()
+	+Goal(const std::string& aName)
+	+Goal(const std::string& aName, const Point& aPosition)
+	+~Goal()
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+}
+}
+
+package Messaging{
+class Client {
+	+Client(const std::string& aHost, const std::string& aPort, ResponseHandlerPtr aResponseHandler)
+	+~Client()
+	-responseHandler : ResponseHandlerPtr
+	-io_service : boost::asio::io_service&
+	-host : std::string
+	-port : std::string
+	+dispatchMessage(Message& aMessage) : void
+	+handleConnect(ClientSession* aSession, const boost::system::error_code& error) : void
+}
+
+class ClientSession {
+	+ClientSession(Message aMessage, boost::asio::io_service& io_service, ResponseHandlerPtr aResponseHandler)
+	+~ClientSession()
+	-message : Message
+	-responseHandler : ResponseHandlerPtr
+	+handleMessageRead(Message& aMessage) : void
+	+handleMessageWritten(Message& UNUSEDPARAM(aMessage)) : void
+	+start() : void
+}
+
+class CommunicationService {
+	-CommunicationService()
+	-~CommunicationService()
+	+{static} getCommunicationService() : CommunicationService&
+	-io_service : boost::asio::io_service
+	+getIOService() : boost::asio::io_service&
+	-requestHandlerThread : std::thread
+	+runRequestHandler(RequestHandlerPtr aRequestHandler, short aPort) : void
+	+runRequestHandler(RequestHandlerPtr aRequestHandler, const std::string& aPort) : void
+	-runRequestHandlerWorker(RequestHandlerPtr aRequestHandler, short aPort) : void
+}
+
+class Message {
+	+Message()
+	+Message(char aMessageType)
+	+Message(char aMessageType, const std::string& aMessage)
+	+Message(const Message& aMessage)
+	+~Message()
+	+getBody() : MessageBody {query}
+	+message : MessageBody
+	+getHeader() : MessageHeader {query}
+	+getMessageType() : char {query}
+	+messageType : char
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+length() : unsigned long {query}
+	+setBody(const std::string& aBody) : void
+	+setHeader(const MessageHeader& aHeader) : void
+	+setMessageType(char aMessageType) : void
+}
+
+class Message::MessageHeader {
+	+MessageHeader()
+	+MessageHeader(char aMessageType, unsigned long aMessageLength)
+	+MessageHeader(const std::string& aMessageHeaderBuffer)
+	+getMessageType() : char {query}
+	+messageType : char
+	+{static} magicNumber1 : static const char
+	+{static} magicNumber2 : static const char
+	+{static} magicNumber3 : static const char
+	+{static} magicNumber4 : static const char
+	+{static} majorVersion : static const char
+	+{static} minorVersion : static const char
+	+asString() : std::string {query}
+	+toString() : std::string {query}
+	+getHeaderLength() : unsigned long {query}
+	+getMessageLength() : unsigned long {query}
+	+messageLength : unsigned long
+	+fromString(const std::string& aString) : void
+}
+
+abstract class MessageHandler {
+}
+
+abstract class RequestHandler {
+	+~RequestHandler()
+	+{abstract} handleRequest(Message& aMessage) : void
+}
+
+abstract class ResponseHandler {
+	+~ResponseHandler()
+	+{abstract} handleResponse(const Message& aMessage) : void
+}
+
+
+class Server {
+	+Server(short port, RequestHandlerPtr aRequestHandler)
+	+~Server()
+	-requestHandler : RequestHandlerPtr
+	-io_service : boost::asio::io_service&
+	-acceptor : boost::asio::ip::tcp::acceptor
+	+handleAccept(ServerSession* aSession, const boost::system::error_code& error) : void
+}
+
+class ServerSession {
+	+ServerSession(boost::asio::io_service& io_service, RequestHandlerPtr aRequestHandler)
+	+~ServerSession()
+	-requestHandler : RequestHandlerPtr
+	+handleMessageRead(Message& aMessage) : void
+	+handleMessageWritten(Message& UNUSEDPARAM(aMessage)) : void
+	+start() : void
+}
+
+abstract class Session {
+	+Session(boost::asio::io_service& io_service)
+	+~Session()
+	#socket : boost::asio::ip::tcp::socket
+	+getSocket() : boost::asio::ip::tcp::socket&
+	#bodyBuffer : std::vector< char>
+	#headerBuffer : std::vector< char>
+	#handleBodyRead(Message& aMessage, const boost::system::error_code& error, size_t bytes_transferred) : void
+	#handleBodyWritten(Message& aMessage, const boost::system::error_code& error) : void
+	#handleHeaderRead(Message& aMessage, const boost::system::error_code& error, size_t UNUSEDPARAM(bytes_transferred)) : void
+	#handleHeaderWritten(Message& aMessage, const boost::system::error_code& error) : void
+	+{abstract} handleMessageRead(Message& aMessage) : void
+	#handleMessageRead(Message& aMessage, const boost::system::error_code& error, size_t UNUSEDPARAM(bytes_transferred)) : void
+	+{abstract} handleMessageWritten(Message& aMessage) : void
+	#handleMessageWritten(Message& aMessage, const boost::system::error_code& error) : void
+	#readMessage() : void
+	+{abstract} start() : void
+	#writeMessage(Message& aMessage) : void
+}
+}
+
+package Application{
+class CommandlineArgument {
+	+CommandlineArgument()
+	+CommandlineArgument(unsigned long anArgumentNumber, const std::string& aVariable, const std::string& aValue)
+	+CommandlineArgument(const CommandlineArgument& aCommandlineArgument)
+	+~CommandlineArgument()
+	+operator=(const CommandlineArgument& aCommandlineArgument) : CommandlineArgument&
+	+operator<(const CommandlineArgument& aCommandlineArgument) : bool {query}
+	+operator==(const unsigned long anArgumentNumber) : bool {query}
+	+operator==(const std::string& aVariable) : bool {query}
+	+operator==(const CommandlineArgument& aCommandlineArgument) : bool {query}
+	+value : std::string
+	+variable : std::string
+	+argumentNumber : unsigned long
+}
+
+class LogTextCtrl {
+	+LogTextCtrl(Window* aParent, WindowId aWindowId, long aStyle, const std::string& anInitialText, const Point& aPoint, const Size& aSize)
+	+~LogTextCtrl()
+	#OnCommandEvent(CommandEvent& anEvent) : void
+	+log(const std::string& aString) : void
+}
+
+class Logger {
+	+{static} isEnabled() : bool
+	-{static} disable : static bool
+	+{static} log(const std::string& aMessage) : void
+	+{static} setDisable(bool aDisable) : void
+}
+
+class MainApplication {
+	+{static} getArg(const std::string& aVariable) : CommandlineArgument&
+	+{static} getArg(unsigned long anArgumentNumber) : CommandlineArgument&
+	+OnInit() : bool
+	+{static} isArgGiven(const std::string& aVariable) : bool
+	-{static} commandlineArguments : static std::vector< CommandlineArgument>
+	-{static} commandlineFiles : static std::vector< std::string>
+	+{static} getCommandlineFiles() : std::vector<std::string>&
+	+{static} setCommandlineArguments(int argc, char* argv) : void
+}
+
+class MainFrameWindow {
+	+MainFrameWindow(const std::string& aTitle)
+	+~MainFrameWindow()
+	+getTraceFunction() : Base::DebugTraceFunction& {query}
+	-debugTraceFunction : Base::DebugTraceFunction*
+	-logTextCtrl : LogTextCtrl*
+	#initialiseMenuBar() : MenuBar*
+	-menuBar : MenuBar*
+	-buttonPanel : Panel*
+	-clientPanel : Panel*
+	#initialiseButtonPanel() : Panel*
+	#initialiseClientPanel() : Panel*
+	#initialiseLhsPanel() : Panel*
+	#initialiseRhsPanel() : Panel*
+	-lhsPanel : Panel*
+	-rhsPanel : Panel*
+	#initialiseSplitterWindow() : SplitterWindow*
+	-splitterWindow : SplitterWindow*
+	-robotWorldCanvas : View::RobotWorldCanvas*
+	-OnAbout(CommandEvent& anEvent) : void
+	-OnPopulate(CommandEvent& anEvent) : void
+	-OnQuit(CommandEvent& anEvent) : void
+	-OnSendMessage(CommandEvent& anEvent) : void
+	-OnStartListening(CommandEvent& anEvent) : void
+	-OnStartRobot(CommandEvent& anEvent) : void
+	-OnStdOutDebugTraceFunction(CommandEvent& anEvent) : void
+	-OnStopListening(CommandEvent& anEvent) : void
+	-OnStopRobot(CommandEvent& anEvent) : void
+	-OnUnpopulate(CommandEvent& anEvent) : void
+	-OnWidgetDebugTraceFunction(CommandEvent& anEvent) : void
+	#initialise() : void
+}
+
+class WidgetDebugTraceFunction {
+	+WidgetDebugTraceFunction(Application::LogTextCtrl* aLogTextCtrl)
+	-outputControl : Application::LogTextCtrl*
+	+trace(const std::string& aText) : void
+}
+}
+
+package Base{
+abstract class DebugTraceFunction {
+	+~DebugTraceFunction()
+	+{abstract} trace(const std::string& aText) : void
+}
+
+class NotificationFunctionTypeTraits <template< typename NotificationFunction >> {
+	+call(NotificationFunction& aNotificationFunction, NotifyEvent &) : void
+}
+
+class NotificationFunctionTypeTraitsTracing {
+}
+
+class NotificationHandler <template< typename NotificationFunction >> {
+	+NotificationHandler(const NotificationFunction& aNotificationFunction)
+	+~NotificationHandler()
+	-function : NotificationFunction
+	+OnNotificationEvent(NotifyEvent& aNotifyEvent) : void
+}
+
+class Notifier {
+	+Notifier(bool enable)
+	+~Notifier()
+	+isEnabledForNotification() : bool {query}
+	-notify : bool
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	-observers : std::vector< Observer*>
+	+addObserver(Observer& anObserver) : void
+	+disableNotification() : void
+	+enableNotification(bool enable) : void
+	+notifyObservers() : void
+	+removeAllObservers() : void
+	+removeObserver(Observer& anObserver) : void
+}
+
+class ObjectId {
+	+ObjectId()
+	+ObjectId(unsigned long max)
+	+ObjectId(unsigned long, unsigned long len, unsigned char* aDataPointer, bool)
+	+ObjectId(const ObjectId& anObjectId)
+	+ObjectId(InputIterator first, InputIterator last)
+	+ObjectId(const std::string& anObjectIdString)
+	+~ObjectId()
+	+{static} newObjectId() : ObjectId
+	+operator=(const ObjectId& anObjectId) : ObjectId&
+	+isNull() : bool {query}
+	+isValid() : bool {query}
+	+operator<(const ObjectId& anObjectId) : bool {query}
+	+operator==(const ObjectId& anObjectId) : bool {query}
+	+release() : bool {query}
+	+get_buffer() : const_pointer {query}
+	+operator[](unsigned long index) : const_reference {query}
+	+{static} allocbuf(unsigned long nelems) : pointer
+	+get_buffer(bool orphan) : pointer
+	+operator[](unsigned long index) : reference
+	+{static} objectIdNamespace : static std::string
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+toString() : std::string {query}
+	+length() : unsigned long {query}
+	+maximum() : unsigned long {query}
+	+{static} freebuf(pointer aT) : void
+	+fromString(const std::string& anObjectIdString) : void
+	+length(unsigned long len) : void
+	+replace(unsigned long, unsigned long len, pointer newData, bool) : void
+}
+
+abstract class Observer {
+	+Observer()
+	+~Observer()
+	+operator<(const Observer& aObserver) : bool {query}
+	+operator==(const Observer& aObserver) : bool {query}
+	+{abstract} handleNotification() : void
+	+handleNotificationsFor(Notifier& aNotifier) : void
+	+stopHandlingNotificationsFor(Notifier& aNotifier) : void
+}
+
+class Queue <template< typename QueueContentType >> {
+	+dequeue() : QueueContentType
+	+size() : size_t {query}
+	-queueFull : std::condition_variable
+	-queueBusy : std::mutex
+	-queue : std::queue< QueueContentType>
+	+enqueue(const QueueContentType& anElement) : void
+}
+
+
+class StdOutDebugTraceFunction {
+	+trace(const std::string& aText) : void
+}
+}
+
+package View{
+class GoalShape {
+	+GoalShape(model::GoalPtr aGoal)
+	+~GoalShape()
+	+getGoal() : model::GoalPtr {query}
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getActivationColour() : std::string {query}
+	+getNormalColour() : std::string {query}
+	+getSelectionColour() : std::string {query}
+	+handleNotification() : void
+	+setGoal(model::GoalPtr aGoal) : void
+}
+
+
+
+class LineShape {
+	+LineShape(RectangleShapePtr aNode1, RectangleShapePtr aNode2, const std::string& aTitle, int aLineWidth, int anArrowHeadSize)
+	+LineShape(model::ModelObjectPtr aModelObject, RectangleShapePtr aNode1, RectangleShapePtr aNode2, const std::string& aTitle, int aLineWidth, int anArrowHeadSize)
+	+~LineShape()
+	+getBegin() : Point {query}
+	+getCentre() : Point {query}
+	+getEnd() : Point {query}
+	-left : Point
+	-right : Point
+	-top : Point
+	#getNode1() : RectangleShapePtr
+	#getNode1() : RectangleShapePtr {query}
+	#getNode2() : RectangleShapePtr
+	#getNode2() : RectangleShapePtr {query}
+	-node1 : RectangleShapePtr
+	-node2 : RectangleShapePtr
+	+connects(RectangleShapePtr aNode) : bool {query}
+	+occupies(const Point& aPoint) : bool {query}
+	+getLength() : double {query}
+	-arrowHeadSize : int
+	+getArrowHeadSize() : int {query}
+	+getLineWidth() : int {query}
+	-lineWidth : int
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getTitle() : std::string {query}
+	-title : std::string
+	+draw(wxDC& dc) : void
+	+drawHead(wxDC& dc) : void
+	+handleActivated() : void
+	+handleNotification() : void
+	+handleSelection() : void
+	+setArrowHeadSize(int anArrowHeadSize) : void
+	+setCentre(const Point& aPoint) : void
+	+setLineWidth(int aLineWidth) : void
+	+setNode1(RectangleShapePtr aNode1) : void
+	+setNode2(RectangleShapePtr aNode2) : void
+	+setTitle(const std::string& aTitle) : void
+}
+
+class RectangleShape {
+	+RectangleShape(const std::string& aTitle)
+	+RectangleShape(const Point& aCentrePoint, const std::string& aTitle, int aBorderWidth, int aSpacing)
+	+RectangleShape(model::ModelObjectPtr aModelObject, const Point& aCentrePoint, const std::string& aTitle, int aBorderWidth, int aSpacing)
+	+~RectangleShape()
+	#centre : Point
+	+getCentre() : Point {query}
+	+operator=(const RectangleShape& aRectangleShape) : RectangleShape&
+	+getSize() : Size {query}
+	#size : Size
+	#titleSize : Size
+	+isBorderPoint(const Point aPoint, int aRadius) : bool {query}
+	+occupies(const Point& aPoint) : bool {query}
+	#borderWidth : int
+	+getBorderWidth() : int {query}
+	+getSpacing() : int {query}
+	#spacing : int
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getActivationColour() : std::string {query}
+	+getNormalColour() : std::string {query}
+	+getSelectionColour() : std::string {query}
+	+getTitle() : std::string {query}
+	#title : std::string
+	+draw(wxDC& dc) : void
+	+handleActivated() : void
+	+handleNotification() : void
+	+handleSelection() : void
+	+setBorderWidth(int aBorderWidth) : void
+	+setCentre(const Point& aPoint) : void
+	+setSize(const Size& aSize) : void
+	+setSpacing(int aSpacing) : void
+	+setTitle(const std::string& aTitle) : void
+}
+
+class RobotShape {
+	+RobotShape(model::RobotPtr aRobot)
+	+~RobotShape()
+	+getRobot() : model::RobotPtr {query}
+	-robotWorldCanvas : RobotWorldCanvas*
+	+occupies(const Point& aPoint) : bool {query}
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getActivationColour() : std::string {query}
+	+getNormalColour() : std::string {query}
+	+getSelectionColour() : std::string {query}
+	+draw(wxDC& dc) : void
+	+handleActivated() : void
+	+handleNotification() : void
+	+handleSelection() : void
+	+setCentre(const Point& aPoint) : void
+	+setRobot(model::RobotPtr aRobot) : void
+	+setRobotWorldCanvas(RobotWorldCanvas* aRobotWorldCanvas) : void
+}
+
+class RobotWorldCanvas {
+	+RobotWorldCanvas(Window* anOwner)
+	+RobotWorldCanvas(Window* anOwner, model::ModelObjectPtr aModelObject)
+	-function<void(NotifyEvent &)
+	+~RobotWorldCanvas()
+	+getRobotWorld() : model::RobotWorldPtr {query}
+	-actionOffset : Point
+	+devicePointFor(const Point& aScreenPoint) : Point {query}
+	-endActionPoint : Point
+	-popupPoint : Point
+	+screenPointFor(const Point& aDevicePoint) : Point {query}
+	-startActionPoint : Point
+	+getSelectedShape() : ShapePtr {query}
+	+getShapeAt(const Point& aPoint) : ShapePtr {query}
+	-startActionSize : Size
+	-endActionShape : View::ShapePtr
+	-selectedShape : View::ShapePtr
+	-startActionShape : View::ShapePtr
+	-activationEnabled : bool
+	-dandEnabled : bool
+	+isShapeAt(const Point& aPoint) : bool {query}
+	+isShapeSelected() : bool {query}
+	-menuItemEnabled : bool
+	+selectShapeAt(const Point& aPoint) : bool
+	-selectionEnabled : bool
+	-actionStatus : enum
+	-shapes : std::vector< ShapePtr>
+	-OnAddGoal(CommandEvent& event) : void
+	-OnAddRobot(CommandEvent& event) : void
+	-OnAddWall(CommandEvent& event) : void
+	-OnAddWayPoint(CommandEvent& event) : void
+	-OnCharDown(KeyEvent& event) : void
+	-OnDeleteGoal(CommandEvent& event) : void
+	-OnDeleteRobot(CommandEvent& event) : void
+	-OnDeleteWall(CommandEvent& event) : void
+	-OnDeleteWayPoint(CommandEvent& event) : void
+	-OnEditGoal(CommandEvent& event) : void
+	-OnEditRobot(CommandEvent& event) : void
+	-OnEditWall(CommandEvent& event) : void
+	-OnEditWayPoint(CommandEvent& event) : void
+	-OnKeyDown(KeyEvent& event) : void
+	-OnLeftDClick(MouseEvent& event) : void
+	-OnLeftDown(MouseEvent& event) : void
+	-OnLeftUp(MouseEvent& event) : void
+	-OnMiddleDClick(MouseEvent& event) : void
+	-OnMiddleDown(MouseEvent& event) : void
+	-OnMiddleUp(MouseEvent& event) : void
+	-OnMouseMotion(MouseEvent& event) : void
+	-OnNotificationEvent(NotifyEvent& aNotifyEvent) : void
+	-OnPaint(PaintEvent& event) : void
+	-OnRightDClick(MouseEvent& event) : void
+	-OnRightDown(MouseEvent& event) : void
+	-OnRightUp(MouseEvent& event) : void
+	-OnShapeInfo(CommandEvent& event) : void
+	-OnSize(SizeEvent& event) : void
+	-OnWorldInfo(CommandEvent& event) : void
+	-add(const std::vector<std::shared_ptr< T> >& aTs) : void
+	#addShape(View::RobotShapePtr aRobotShape) : void
+	#addShape(View::GoalShapePtr aGoalShape) : void
+	#addShape(View::WayPointShapePtr aWayPointShape) : void
+	#addShape(View::WallShapePtr aWallShape) : void
+	+enableActivationHandling(bool enable) : void
+	+enableDragAndDropHandling(bool enable) : void
+	+enableHandlePaint(bool enable) : void
+	+enableHandleSize(bool enable) : void
+	+enableItemMenuHandling(bool enable) : void
+	+enableKeyHandling(bool enable) : void
+	+enableLeftDClickHandling(bool enable) : void
+	+enableLeftDownHandling(bool enable) : void
+	+enableLeftUpHandling(bool enable) : void
+	+enableMiddleDClickHandling(bool enable) : void
+	+enableMiddleDownHandling(bool enable) : void
+	+enableMiddleUpHandling(bool enable) : void
+	+enableMouseMotionHandling(bool enable) : void
+	+enableRightDClickHandling(bool enable) : void
+	+enableRightDownHandling(bool enable) : void
+	+enableRightUpHandling(bool enable) : void
+	+enableSelectionHandling(bool enable) : void
+	#handleActivation(View::ShapePtr aShape) : void
+	#handleAddGoal(CommandEvent& event) : void
+	#handleAddRobot(CommandEvent& event) : void
+	#handleAddWall(CommandEvent& event) : void
+	#handleAddWayPoint(CommandEvent& event) : void
+	+handleBackGroundNotification() : void
+	#handleBeginLeftDrag(View::ShapePtr aShape) : void
+	#handleDeleteGoal(CommandEvent& event) : void
+	#handleDeleteRobot(CommandEvent& event) : void
+	#handleDeleteWall(CommandEvent& event) : void
+	#handleDeleteWayPoint(CommandEvent& event) : void
+	#handleEditGoal(CommandEvent& event) : void
+	#handleEditRobot(CommandEvent& event) : void
+	#handleEditWall(CommandEvent& event) : void
+	#handleEditWayPoint(CommandEvent& event) : void
+	#handleEndDrag(View::ShapePtr aShape) : void
+	#handleItemMenu(View::ShapePtr aSelectedShape, const Point& aPoint) : void
+	#handleKey(KeyEvent& event) : void
+	#handleLeftDClick(MouseEvent& event) : void
+	#handleLeftDown(MouseEvent& event) : void
+	#handleLeftUp(MouseEvent& event) : void
+	#handleMenu(const Point& aScreenPoint) : void
+	#handleMiddleDClick(MouseEvent& event) : void
+	#handleMiddleDown(MouseEvent& event) : void
+	#handleMiddleUp(MouseEvent& event) : void
+	#handleMouseMotion(MouseEvent& event) : void
+	+handleNotification() : void
+	#handleNotification(NotifyEvent& aNotifyEvent) : void
+	#handlePaint(PaintEvent& event) : void
+	#handleRightDClick(MouseEvent& event) : void
+	#handleRightDown(MouseEvent& event) : void
+	#handleRightUp(MouseEvent& event) : void
+	#handleSelection(View::ShapePtr aShape) : void
+	#handleShapeInfo(CommandEvent& event) : void
+	#handleSize(SizeEvent& event) : void
+	#initialise() : void
+	+populate(int aNumberOfWalls) : void
+	-remove(const std::vector<std::shared_ptr< T> >& aTs) : void
+	#removeGenericShape(View::ShapePtr aShape) : void
+	#removeShape(View::RobotShapePtr aRobotShape) : void
+	#removeShape(View::GoalShapePtr aGoalShape) : void
+	#removeShape(View::WayPointShapePtr aWayPointShape) : void
+	#removeShape(View::WallShapePtr aWallShape) : void
+	#render(wxDC& dc) : void
+	+setRobotWorld(model::RobotWorldPtr aRobotWorld) : void
+	+setSelectedShape(View::ShapePtr aSelectedShape) : void
+	+unpopulate() : void
+}
+
+abstract class Shape {
+	+Shape()
+	+Shape(model::ModelObjectPtr aModelObject)
+	+~Shape()
+	+{abstract} getCentre() : Point {query}
+	+getSelectedPoint() : Point {query}
+	-data : ShapeData*
+	+getData() : ShapeData* {query}
+	+isSelected() : bool {query}
+	+{abstract} occupies(const Point& aPoint) : bool {query}
+	-selected : bool
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+{abstract} draw(wxDC& dc) : void
+	+handleActivated() : void
+	+handleBeginLeftDrag() : void
+	+handleEndDrag() : void
+	+handleSelection() : void
+	+{abstract} setCentre(const Point& aPoint) : void
+	+setData(ShapeData* aData) : void
+	+setSelected(bool aSelected) : void
+	+setSelectedAt(const Point& aPoint, bool aSelected) : void
+}
+
+class ShapeData {
+	+~ShapeData()
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+}
+
+
+class WallShape {
+	+WallShape(model::WallPtr aWall)
+	+WallShape(model::WallPtr aWall, RectangleShapePtr aRectangleShape1, RectangleShapePtr aRectangleShape2)
+	+~WallShape()
+	+getWall() : model::WallPtr {query}
+	+hasEndPointAt(const Point& aPoint) : RectangleShapePtr
+	+hasEndPoint(RectangleShapePtr aRectangleShape) : bool
+	+occupies(const Point& aPoint) : bool {query}
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+draw(wxDC& dc) : void
+	+setSelectedAt(const Point& aPoint, bool aSelected) : void
+	+setWall(model::WallPtr aWall) : void
+	+updateEndPoint(RectangleShapePtr aRectangleShape) : void
+}
+
+class WayPointShape {
+	+WayPointShape(model::WayPointPtr aWayPoint)
+	+~WayPointShape()
+	+getWayPoint() : model::WayPointPtr {query}
+	+asDebugString() : std::string {query}
+	+asString() : std::string {query}
+	+getActivationColour() : std::string {query}
+	+getNormalColour() : std::string {query}
+	+getSelectionColour() : std::string {query}
+	+draw(wxDC& dc) : void
+	+handleNotification() : void
+	+setCentre(const Point& aPoint) : void
+	+setWayPoint(model::WayPointPtr aWayPoint) : void
+}
+}
+
+package Utils{
+class MathUtils {
+	+{static} toDegrees(float aRadian) : float
+	+{static} toRadians(float aDegrees) : float
+}
+
+class Shape2DUtils {
+	+{static} getIntersection(const Point& aStartLine1, const Point& aEndLine1, const Point& aStartLine2, const Point& anEndLine2) : Point
+	+{static} rotate(const Point& aPoint, double anAngle) : Point
+	+{static} intersect(const Point& aStartLine1, const Point& aEndLine1, const Point& aStartLine2, const Point& anEndLine2) : bool
+	+{static} isCompassPoint(const Point& aPoint, const Size& aSize, const Point& aBorderPoint, CompassPoint aCompassPoint, int aRadius) : bool
+	+{static} isInsidePolygon(Point* aPolygon, int aNumberOfPoints, const Point& aPoint) : bool
+	+{static} isOnLine(const Point& aStartPoint, const Point& anEndPoint, const Point& aPoint, int aRadius) : bool
+	+{static} isOnLine(Point* aPolygon, int aNumberOfPoints, const Point& aPoint, int aRadius, bool aClosedShape) : bool
+	+{static} getAngle(const model::BoundedVector& aVector) : double
+	+{static} getAngle(const Point& aStartpoint, const Point& anEndPoint) : double
+	#{static} rotateX(const Point& aPoint, double anAngle) : double
+	#{static} rotateX(int anX, int anY, double anAngle) : double
+	#{static} rotateY(const Point& aPoint, double anAngle) : double
+	#{static} rotateY(int anX, int anY, double anAngle) : double
+	+{static} getCompassPoint(const Point& aPoint, const Size& aSize, const Point& aBorderPoint, int aRadius) : int
+	+{static} asString(const Point& aPoint) : std::string
+	+{static} asString(const Size& aSize) : std::string
+}
+}
+
+/'enum Alignment {
+	ALIGN_BOTTOM
+	ALIGN_CENTER
+	ALIGN_CENTER_HORIZONTAL
+	ALIGN_CENTER_VERTICAL
+	ALIGN_CENTRE
+	ALIGN_CENTRE_HORIZONTAL
+	ALIGN_CENTRE_VERTICAL
+	ALIGN_LEFT
+	ALIGN_MASK
+	ALIGN_NOT
+	ALIGN_RIGHT
+	ALIGN_TOP
+}
+
+enum Direction {
+	ALL
+	BOTTOM
+	DOWN
+	EAST
+	LEFT
+	NORTH
+	RIGHT
+	SOUTH
+	TOP
+	UP
+	WEST
+}
+
+enum GeometryCentre {
+	CENTER
+	CENTRE
+}
+
+enum Orientation {
+	BOTH
+	DIR_HORIZONTAL
+	DIR_VERTICAL
+	HORIZONTAL
+	VERTICAL
+}
+
+enum Stretch {
+	EXPAND
+	FIXED_MINSIZE
+	GROW
+	RESERVE_SPACE_EVEN_IF_HIDDEN
+	SHAPED
+	SHRINK
+	STRETCH_NOT
+	TILE
+}'/
+
+AbstractActuator <|-- SteeringActuator
+AbstractAgent <|-- Robot
+AbstractPercept <|-- DistancePercept
+AbstractSensor <|-- LaserDistanceSensor
+AbstractStimulus <|-- DistanceStimulus
+DebugTraceFunction <|-- StdOutDebugTraceFunction
+LineShape <|-- WallShape
+ModelObject <|-- AbstractActuator
+ModelObject <|-- AbstractAgent
+ModelObject <|-- AbstractSensor
+ModelObject <|-- RobotWorld
+ModelObject <|-- Wall
+ModelObject <|-- WayPoint
+RectangleShape <|-- RobotShape
+RectangleShape <|-- WayPointShape
+RequestHandler <|-- MessageHandler
+ResponseHandler <|-- MessageHandler
+Session <|-- ClientSession
+Session <|-- ServerSession
+Shape <|-- LineShape
+Shape <|-- RectangleShape
+ViewObject <|-- RobotWorldCanvas
+ViewObject <|-- Shape
+WayPoint <|-- Goal
+WayPointShape <|-- GoalShape
+
+AbstractActuator ..> AbstractAgent
+AbstractAgent ..> AbstractActuator
+AbstractAgent ..> AbstractPercept
+AbstractAgent ..> AbstractSensor
+AbstractAgent --> Queue
+AbstractSensor ..> AbstractAgent
+ClientSession --> Message
+Edge "2" o-- Vertex
+MainApplication o-- CommandlineArgument
+MainFrameWindow ..> DebugTraceFunction
+MainFrameWindow ..> LogTextCtrl
+MainFrameWindow ..> RobotWorldCanvas
+ModelObject --> ObjectId
+Notifier o-- Observer
+RobotShape ..> RobotWorldCanvas
+Shape ..> ShapeData
+ViewObject --> ObjectId
+WidgetDebugTraceFunction ..> LogTextCtrl
+
+AbstractActuator ..> AbstractCommand
+AbstractSensor ..> AbstractStimulus
+AbstractSensor ..> AbstractPercept
+Client ..> ResponseHandler
+Client ..> ClientSession
+Client ..> Message
+Client ..> CommunicationService
+CommunicationService ..> RequestHandler
+LineShape ..> RectangleShape
+RequestHandler ..> Message
+ResponseHandler ..> Message
+Observer --> Notifier
+Robot --> Message
+Robot ..> Goal
+Robot --> AStar
+Robot --> BoundedVector
+RobotShape --> Robot
+RobotWorld ..> ObjectId
+RobotWorld --> WayPoint
+RobotWorld --> Goal
+RobotWorld --> Wall
+RobotWorldCanvas o-- Shape
+RobotWorldCanvas ..> RobotShape
+RobotWorldCanvas ..> GoalShape
+RobotWorldCanvas ..> WallShape
+RobotWorldCanvas ..> WayPointShape
+RobotWorldCanvas ..> RobotWorld
+Server ..> RequestHandler
+Server ..> CommunicationService
+Server ..> ServerSession
+Session --> Message
+ServerSession ..> RequestHandler
+ClientSession ..> ResponseHandler
+Shape2DUtils ..> BoundedVector
+SteeringActuator ..> AbstractCommand
+ViewObject ..> ModelObject
+WallShape ..> Wall
+WallShape ..> RectangleShape
+WayPointShape ..> WayPoint
+
+AStar ..> Wall
+AStar ..> RobotWorld
+AStar ..> Shape2DUtils
+Astar --> Vertex
+BoundedVector ..> BoundedVector
+CommunicationService --> Server
+LaserDistanceSensor ..> AbstractStimulus
+LaserDistanceSensor ..> AbstractPercept
+LaserDistanceSensor ..> DistanceStimulus
+LineShape ..> Shape2DUtils
+Logger ..> MainFrameWindow
+RectangleShape ..> Shape2DUtils
+Robot ..> RobotWorld
+Robot ..> CommunicationService
+Robot ..> MainApplication
+Robot ..> Logger
+Robot ..> Vertex
+Robot ..> AbstractSensor
+Robot ..> Wall
+Robot ..> Shape2DUtils
+RobotShape ..> RobotWorldCanvas
+RobotShape ..> BoundedVector
+RobotShape ..> RobotWorld
+RobotShape ..> Vertex
+RobotShape ..> Shape2DUtils
+
+
+
+@enduml

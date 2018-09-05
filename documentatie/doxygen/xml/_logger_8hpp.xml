@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_logger_8hpp" kind="file" language="C++">
+    <compoundname>Logger.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes local="no">string</includes>
+    <includedby refid="_abstract_agent_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.cpp</includedby>
+    <includedby refid="_abstract_sensor_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.cpp</includedby>
+    <includedby refid="_goal_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Goal.cpp</includedby>
+    <includedby refid="_goal_shape_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.cpp</includedby>
+    <includedby refid="_laser_distance_sensor_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.cpp</includedby>
+    <includedby refid="_line_shape_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/LineShape.cpp</includedby>
+    <includedby refid="_logger_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.cpp</includedby>
+    <includedby refid="_main_frame_window_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp</includedby>
+    <includedby refid="_notifier_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp</includedby>
+    <includedby refid="_robot_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.cpp</includedby>
+    <includedby refid="_robot_shape_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.cpp</includedby>
+    <includedby refid="_robot_world_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.cpp</includedby>
+    <includedby refid="_robot_world_canvas_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp</includedby>
+    <includedby refid="_wall_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp</includedby>
+    <includedby refid="_wall_shape_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WallShape.cpp</includedby>
+    <includedby refid="_way_point_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.cpp</includedby>
+    <includedby refid="_way_point_shape_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.cpp</includedby>
+    <incdepgraph>
+      <node id="697">
+        <label>string</label>
+      </node>
+      <node id="696">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="695">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp</label>
+        <link refid="Logger.hpp"/>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_application_1_1_logger" prot="public">Application::Logger</innerclass>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LOGGER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGGER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="class_application_1_1_logger" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_application_1_1_logger" kindref="compound">Logger</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_logger_1a0fa1454fb35f3e6980ba46801437f37e" kindref="member">log</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aMessage);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_logger_1a5440358021658e1f42b19c0fbddd6c41" kindref="member">setDisable</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>aDisable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33" refid="class_application_1_1_logger_1a0dea306413cd0a5d7680a10419007e33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_logger_1a0dea306413cd0a5d7680a10419007e33" kindref="member">isEnabled</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!disable;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disable;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LOGGER_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp"/>
+  </compounddef>
+</doxygen>

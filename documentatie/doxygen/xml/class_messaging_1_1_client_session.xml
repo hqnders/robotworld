@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_client_session" kind="class" language="C++" prot="public">
+    <compoundname>Messaging::ClientSession</compoundname>
+    <basecompoundref refid="class_messaging_1_1_session" prot="public" virt="virtual">Messaging::Session</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_messaging_1_1_client_session_1a2e58350c4dff5e9cacedddbd4d0f833d" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref></type>
+        <definition>Message Messaging::ClientSession::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="327" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_client_session_1a26faa3b7d3e3e6628b3ff88748243067" prot="private" static="no" mutable="no">
+        <type>ResponseHandlerPtr</type>
+        <definition>ResponseHandlerPtr Messaging::ClientSession::responseHandler</definition>
+        <argsstring></argsstring>
+        <name>responseHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="328" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_messaging_1_1_client_session_1adad9b3dc7dfa45237cb53784f1710906" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::ClientSession::ClientSession</definition>
+        <argsstring>(Message aMessage, boost::asio::io_service &amp;io_service, ResponseHandlerPtr aResponseHandler)</argsstring>
+        <name>ClientSession</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref></type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>io_service</declname>
+        </param>
+        <param>
+          <type>ResponseHandlerPtr</type>
+          <declname>aResponseHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>io_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aResponseHandler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="285" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="285" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_client_session_1ab4a7a99069138174beb31fd82f66ea68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::ClientSession::~ClientSession</definition>
+        <argsstring>()</argsstring>
+        <name>~ClientSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="296" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="296" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_client_session_1abdafb1626e9eb590ae2ed984e095a490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::ClientSession::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <reimplements refid="class_messaging_1_1_session_1a89cbd6e05fdbbe1c9e26cbcab92d6044">start</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1a89cbd6e05fdbbe1c9e26cbcab92d6044" kindref="member">Session::start()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="302" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_client_session_1a0539a7c332de1b853fd3405ac23b696c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::ClientSession::handleMessageRead</definition>
+        <argsstring>(Message &amp;aMessage)</argsstring>
+        <name>handleMessageRead</name>
+        <reimplements refid="class_messaging_1_1_session_1ac2fbf589586288cee9b408514907d044">handleMessageRead</reimplements>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1ac2fbf589586288cee9b408514907d044" kindref="member">Session::handleMessageRead( Message&amp; aMessage)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="309" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="309" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_client_session_1a9bfa2e2edfe325487ee04b046fdc4604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::ClientSession::handleMessageWritten</definition>
+        <argsstring>(Message &amp;UNUSEDPARAM(aMessage))</argsstring>
+        <name>handleMessageWritten</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>UNUSEDPARAM</declname>
+          <array>aMessage</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1afcf204df8f7e67e470d454d9de561515" kindref="member">Session::handleMessageWritten( Message&amp; aMessage)</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="320" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="320" bodyend="325"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="443">
+        <label>Messaging::ClientSession</label>
+        <link refid="class_messaging_1_1_client_session"/>
+        <childnode refid="444" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>Messaging::Session</label>
+        <link refid="class_messaging_1_1_session"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="445">
+        <label>Messaging::ClientSession</label>
+        <link refid="class_messaging_1_1_client_session"/>
+        <childnode refid="446" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>Messaging::Session</label>
+        <link refid="class_messaging_1_1_session"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="277" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="276" bodyend="329"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_session_1a1a1a1351d07b456e3a9c229d94e143d0" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>bodyBuffer</name></member>
+      <member refid="class_messaging_1_1_client_session_1adad9b3dc7dfa45237cb53784f1710906" prot="public" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>ClientSession</name></member>
+      <member refid="class_messaging_1_1_session_1aedafb8b5c664cd9d2d86b90b863bde77" prot="public" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>getSocket</name></member>
+      <member refid="class_messaging_1_1_session_1a9b2379db03dd4b22896df3b6891509a9" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>handleBodyRead</name></member>
+      <member refid="class_messaging_1_1_session_1a42e7eb7f1e5d41861417d03dcb5419e7" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>handleBodyWritten</name></member>
+      <member refid="class_messaging_1_1_session_1a1ce6c51bea887b0745318de8de202af7" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>handleHeaderRead</name></member>
+      <member refid="class_messaging_1_1_session_1aa6bb0133b721e77c31411cccc1eb6c40" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>handleHeaderWritten</name></member>
+      <member refid="class_messaging_1_1_client_session_1a0539a7c332de1b853fd3405ac23b696c" prot="public" virt="virtual"><scope>Messaging::ClientSession</scope><name>handleMessageRead</name></member>
+      <member refid="class_messaging_1_1_session_1a224c7c9cc62b4b9e3ccd21c3121f9b03" prot="protected" virt="non-virtual" ambiguityscope="Messaging::Session::"><scope>Messaging::ClientSession</scope><name>handleMessageRead</name></member>
+      <member refid="class_messaging_1_1_client_session_1a9bfa2e2edfe325487ee04b046fdc4604" prot="public" virt="virtual"><scope>Messaging::ClientSession</scope><name>handleMessageWritten</name></member>
+      <member refid="class_messaging_1_1_session_1afcf204df8f7e67e470d454d9de561515" prot="public" virt="pure-virtual" ambiguityscope="Messaging::Session::"><scope>Messaging::ClientSession</scope><name>handleMessageWritten</name></member>
+      <member refid="class_messaging_1_1_session_1a4ad739e7dea45e860feae03c2ae728b2" prot="protected" virt="non-virtual" ambiguityscope="Messaging::Session::"><scope>Messaging::ClientSession</scope><name>handleMessageWritten</name></member>
+      <member refid="class_messaging_1_1_session_1a4a88bd6b136ddf540e0230c0c71a97a1" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>headerBuffer</name></member>
+      <member refid="class_messaging_1_1_client_session_1a2e58350c4dff5e9cacedddbd4d0f833d" prot="private" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>message</name></member>
+      <member refid="class_messaging_1_1_session_1a9b5aa90c447db3b432751f453565e84b" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>readMessage</name></member>
+      <member refid="class_messaging_1_1_client_session_1a26faa3b7d3e3e6628b3ff88748243067" prot="private" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>responseHandler</name></member>
+      <member refid="class_messaging_1_1_session_1ab2e5e804ffa5711fbc7007f07180a0df" prot="public" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>Session</name></member>
+      <member refid="class_messaging_1_1_session_1aae95e1daf9716126c33e59d5f28d6271" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>socket</name></member>
+      <member refid="class_messaging_1_1_client_session_1abdafb1626e9eb590ae2ed984e095a490" prot="public" virt="virtual"><scope>Messaging::ClientSession</scope><name>start</name></member>
+      <member refid="class_messaging_1_1_session_1af6693149abfd302fd6285d99a0131f18" prot="protected" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>writeMessage</name></member>
+      <member refid="class_messaging_1_1_client_session_1ab4a7a99069138174beb31fd82f66ea68" prot="public" virt="non-virtual"><scope>Messaging::ClientSession</scope><name>~ClientSession</name></member>
+      <member refid="class_messaging_1_1_session_1a08a8af25b6d4def28872fca6f38d286c" prot="public" virt="virtual"><scope>Messaging::ClientSession</scope><name>~Session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

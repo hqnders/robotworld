@@ -1,0 +1,8 @@
+/.settings/
+/.autotools
+/.cproject
+/.project
+/essay/
+/.idea/
+/cmake-build-debug/
+/autom4te.cache/

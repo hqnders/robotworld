@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_view_1_1_shape_data" kind="struct" language="C++" prot="public">
+    <compoundname>View::ShapeData</compoundname>
+    <includes refid="_shape_8hpp" local="no">Shape.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="struct_view_1_1_shape_data_1ad4257ca5eca4e42f538ca228a3952761" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string View::ShapeData::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" line="34" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_view_1_1_shape_data_1a4dc05a9b25941f87edb43088215ca21c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string View::ShapeData::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" line="42" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_view_1_1_shape_data_1ab14b722119cbe49b92b5569331e25e32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual View::ShapeData::~ShapeData</definition>
+        <argsstring>()</argsstring>
+        <name>~ShapeData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" line="24" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct is a generic placeholder for any data a <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> may be displaying, </para>    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" line="20" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp" bodystart="19" bodyend="47"/>
+    <listofallmembers>
+      <member refid="struct_view_1_1_shape_data_1a4dc05a9b25941f87edb43088215ca21c" prot="public" virt="virtual"><scope>View::ShapeData</scope><name>asDebugString</name></member>
+      <member refid="struct_view_1_1_shape_data_1ad4257ca5eca4e42f538ca228a3952761" prot="public" virt="virtual"><scope>View::ShapeData</scope><name>asString</name></member>
+      <member refid="struct_view_1_1_shape_data_1ab14b722119cbe49b92b5569331e25e32" prot="public" virt="virtual"><scope>View::ShapeData</scope><name>~ShapeData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_base_1_1_queue" kind="class" language="C++" prot="public">
+    <compoundname>Base::Queue</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>QueueContentType</declname>
+        <defname>QueueContentType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_base_1_1_queue_1a6bd0d4291962d8a19e99323b1783efa0" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; QueueContentType &gt;</type>
+        <definition>std::queue&lt; QueueContentType &gt; Base::Queue&lt; QueueContentType &gt;::queue</definition>
+        <argsstring></argsstring>
+        <name>queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" line="49" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1_1_queue_1a13930367bf2d5df75f00c93aa688e9dd" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex Base::Queue&lt; QueueContentType &gt;::queueBusy</definition>
+        <argsstring></argsstring>
+        <name>queueBusy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" line="50" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1_1_queue_1a528c74df1ea9d44806aff5f3176c49bd" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable Base::Queue&lt; QueueContentType &gt;::queueFull</definition>
+        <argsstring></argsstring>
+        <name>queueFull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" line="51" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_base_1_1_queue_1a2f737b5dc4b04016bc529fdac46a59a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Base::Queue&lt; QueueContentType &gt;::enqueue</definition>
+        <argsstring>(const QueueContentType &amp;anElement)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type>const QueueContentType &amp;</type>
+          <declname>anElement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_queue_1a256b99ec524acf877586ae7450dfcb13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QueueContentType</type>
+        <definition>QueueContentType Base::Queue&lt; QueueContentType &gt;::dequeue</definition>
+        <argsstring>()</argsstring>
+        <name>dequeue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" line="30" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" bodystart="30" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_queue_1a1facbc77b95d2dc9c897f2893604b816" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Base::Queue&lt; QueueContentType &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" line="43" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" line="16" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Queue.hpp" bodystart="15" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_queue_1a256b99ec524acf877586ae7450dfcb13" prot="public" virt="non-virtual"><scope>Base::Queue</scope><name>dequeue</name></member>
+      <member refid="class_base_1_1_queue_1a2f737b5dc4b04016bc529fdac46a59a2" prot="public" virt="non-virtual"><scope>Base::Queue</scope><name>enqueue</name></member>
+      <member refid="class_base_1_1_queue_1a6bd0d4291962d8a19e99323b1783efa0" prot="private" virt="non-virtual"><scope>Base::Queue</scope><name>queue</name></member>
+      <member refid="class_base_1_1_queue_1a13930367bf2d5df75f00c93aa688e9dd" prot="private" virt="non-virtual"><scope>Base::Queue</scope><name>queueBusy</name></member>
+      <member refid="class_base_1_1_queue_1a528c74df1ea9d44806aff5f3176c49bd" prot="private" virt="non-virtual"><scope>Base::Queue</scope><name>queueFull</name></member>
+      <member refid="class_base_1_1_queue_1a1facbc77b95d2dc9c897f2893604b816" prot="public" virt="non-virtual"><scope>Base::Queue</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

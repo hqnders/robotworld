@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_widgets_8cpp" kind="file" language="C++">
+    <compoundname>Widgets.cpp</compoundname>
+    <includes refid="_widgets_8hpp" local="yes">Widgets.hpp</includes>
+    <includes refid="_point_8hpp" local="yes">Point.hpp</includes>
+    <incdepgraph>
+      <node id="2665">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="2641">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.cpp</label>
+        <link refid="Widgets.cpp"/>
+        <childnode refid="2642" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+      </node>
+      <node id="2658">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="2645">
+        <label>wx/app.h</label>
+      </node>
+      <node id="2650">
+        <label>wx/event.h</label>
+      </node>
+      <node id="2659">
+        <label>wx/font.h</label>
+      </node>
+      <node id="2647">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="2669">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="2664">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="2660">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="2675">
+        <label>wx/region.h</label>
+      </node>
+      <node id="2673">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="2652" relation="include">
+        </childnode>
+      </node>
+      <node id="2644">
+        <label>string</label>
+      </node>
+      <node id="2652">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="2642">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="2643" relation="include">
+        </childnode>
+        <childnode refid="2644" relation="include">
+        </childnode>
+        <childnode refid="2645" relation="include">
+        </childnode>
+        <childnode refid="2646" relation="include">
+        </childnode>
+        <childnode refid="2647" relation="include">
+        </childnode>
+        <childnode refid="2648" relation="include">
+        </childnode>
+        <childnode refid="2649" relation="include">
+        </childnode>
+        <childnode refid="2650" relation="include">
+        </childnode>
+        <childnode refid="2651" relation="include">
+        </childnode>
+        <childnode refid="2652" relation="include">
+        </childnode>
+        <childnode refid="2653" relation="include">
+        </childnode>
+        <childnode refid="2654" relation="include">
+        </childnode>
+        <childnode refid="2655" relation="include">
+        </childnode>
+        <childnode refid="2656" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2659" relation="include">
+        </childnode>
+        <childnode refid="2660" relation="include">
+        </childnode>
+        <childnode refid="2661" relation="include">
+        </childnode>
+        <childnode refid="2662" relation="include">
+        </childnode>
+        <childnode refid="2663" relation="include">
+        </childnode>
+        <childnode refid="2664" relation="include">
+        </childnode>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2666" relation="include">
+        </childnode>
+        <childnode refid="2667" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+        <childnode refid="2669" relation="include">
+        </childnode>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2671" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+        <childnode refid="2673" relation="include">
+        </childnode>
+        <childnode refid="2674" relation="include">
+        </childnode>
+      </node>
+      <node id="2646">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="2661">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="2653">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="2648">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="2657">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="2655">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="2670">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="2666">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="2651">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="2643">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="2668">
+        <label>wx/string.h</label>
+      </node>
+      <node id="2672">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="2652" relation="include">
+        </childnode>
+      </node>
+      <node id="2662">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="2649">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="2654">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="2667">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="2656">
+        <label>wx/button.h</label>
+      </node>
+      <node id="2674">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="2675" relation="include">
+        </childnode>
+      </node>
+      <node id="2671">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="2663">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_widgets">Widgets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Widgets.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Point.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_widgets" kindref="compound">Widgets</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>GetTextFromUser(<sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aTitleBarMessage,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aMessage,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aDefaultValue<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>&quot;&quot;<sp/>*/</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Window*<sp/>aParent<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>nullptr<sp/>*/</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UNUSEDPARAM(centre)<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>false<sp/>*/</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Point&amp;<sp/>aPoint<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>DefaultPosition<sp/>*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>text(<sp/>STDSTRING(<sp/>wxGetTextFromUser(<sp/>WXSTRING(<sp/>aTitleBarMessage),<sp/>WXSTRING(<sp/>aMessage),<sp/>WXSTRING(<sp/>aDefaultValue),<sp/>aParent,<sp/>aPoint.x,<sp/>aPoint.y)));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Widgets</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.cpp"/>
+  </compounddef>
+</doxygen>

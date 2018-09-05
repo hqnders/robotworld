@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_debug_trace_function_8hpp" kind="file" language="C++">
+    <compoundname>DebugTraceFunction.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes local="no">string</includes>
+    <includedby refid="_debug_trace_function_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.cpp</includedby>
+    <includedby refid="_logger_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.cpp</includedby>
+    <includedby refid="_widget_debug_trace_function_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp</includedby>
+    <includedby refid="_std_out_debug_trace_function_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/StdOutDebugTraceFunction.hpp</includedby>
+    <incdepgraph>
+      <node id="333">
+        <label>string</label>
+      </node>
+      <node id="331">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.hpp</label>
+        <link refid="DebugTraceFunction.hpp"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="336">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/StdOutDebugTraceFunction.hpp</label>
+        <link refid="_std_out_debug_trace_function_8hpp_source"/>
+      </node>
+      <node id="335">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp</label>
+        <link refid="_widget_debug_trace_function_8hpp_source"/>
+      </node>
+      <node id="334">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.hpp</label>
+        <link refid="DebugTraceFunction.hpp"/>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_base_1_1_debug_trace_function" prot="public">Base::DebugTraceFunction</innerclass>
+    <innernamespace refid="namespace_base">Base</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>DebugTraceFunction.hpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>22<sp/>Mar<sp/>2013</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>jkr</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DEBUGTRACEFUNCTION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUGTRACEFUNCTION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20" refid="class_base_1_1_debug_trace_function" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_base_1_1_debug_trace_function" kindref="compound">DebugTraceFunction</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_debug_trace_function_1a10bd2fd587e2312ca418f594d33c3933" kindref="member">~DebugTraceFunction</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_debug_trace_function_1a54f5a1f127e7624e50bb1a43146f8998" kindref="member">trace</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aText)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEBUGTRACEFUNCTION_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.hpp"/>
+  </compounddef>
+</doxygen>

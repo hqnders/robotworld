@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_base_1_1_observer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Base::Observer</compoundname>
+    <derivedcompoundref refid="class_model_1_1_robot" prot="public" virt="non-virtual">model::Robot</derivedcompoundref>
+    <derivedcompoundref refid="class_view_1_1_view_object" prot="public" virt="non-virtual">View::ViewObject</derivedcompoundref>
+    <includes refid="_observer_8hpp" local="no">Observer.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors and destructor</header>
+      <memberdef kind="function" id="class_base_1_1_observer_1a0b8f55248bb0b393ed760d50b7f58d21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Base::Observer::Observer</definition>
+        <argsstring>()</argsstring>
+        <name>Observer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="25" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_observer_1aca7a3c17bdc9d86a9f67519779baf2e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Base::Observer::~Observer</definition>
+        <argsstring>()</argsstring>
+        <name>~Observer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="29" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Operators</header>
+      <memberdef kind="function" id="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Base::Observer::operator==</definition>
+        <argsstring>(const Observer &amp;aObserver) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> &amp;</type>
+          <declname>aObserver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares the this pointer by default. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="38" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Base::Observer::operator&lt;</definition>
+        <argsstring>(const Observer &amp;aObserver) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> &amp;</type>
+          <declname>aObserver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compares the this pointer by default. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="42" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Observer functions</header>
+      <memberdef kind="function" id="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Observer::handleNotificationsFor</definition>
+        <argsstring>(Notifier &amp;aNotifier)</argsstring>
+        <name>handleNotificationsFor</name>
+        <param>
+          <type><ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> &amp;</type>
+          <declname>aNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aNotifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> this <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> will observe </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="52" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Observer::stopHandlingNotificationsFor</definition>
+        <argsstring>(Notifier &amp;aNotifier)</argsstring>
+        <name>stopHandlingNotificationsFor</name>
+        <param>
+          <type><ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> &amp;</type>
+          <declname>aNotifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aNotifier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> this <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> will not observe anymore </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="57" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_observer_1a37d00a5290a60aa9ab664af5d1642c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Base::Observer::handleNotification</definition>
+        <argsstring>()=0</argsstring>
+        <name>handleNotification</name>
+        <reimplementedby refid="class_view_1_1_line_shape_1a21a183cd9f63130fe48497743c2c4abb">handleNotification</reimplementedby>
+        <reimplementedby refid="class_view_1_1_rectangle_shape_1acae95cb4b05d77196451520ee7d7ca9c">handleNotification</reimplementedby>
+        <reimplementedby refid="class_view_1_1_way_point_shape_1a84f786f8027e91441c8197cdb56b3d5f">handleNotification</reimplementedby>
+        <reimplementedby refid="class_view_1_1_goal_shape_1a881cfbfd4b3d6d3b37498e12d8291f6f">handleNotification</reimplementedby>
+        <reimplementedby refid="class_view_1_1_robot_shape_1aa8e3a33d23b11a1f9c4580ff46d3d9f7">handleNotification</reimplementedby>
+        <reimplementedby refid="class_view_1_1_robot_world_canvas_1af24f07e5484dbba2edd563c826694098">handleNotification</reimplementedby>
+        <reimplementedby refid="class_model_1_1_robot_1a7629555402fa8b55658d52fdc88ab889">handleNotification</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> will call this function if this <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> will handle the notifications of that <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref>. It is the responsibility of the <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> to filter any events it is interested in. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_base_1_1_observer_1ac1a7d2e9a33255ac264c6abd1782cd8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Notifier</definition>
+        <argsstring></argsstring>
+        <name>Notifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="67" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> class is part of a straight forward implementation of the Observer/Notifier pattern</para><para><simplesect kind="see"><para><ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="595">
+        <label>View::WayPointShape</label>
+        <link refid="class_view_1_1_way_point_shape"/>
+        <childnode refid="593" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>View::GoalShape</label>
+        <link refid="class_view_1_1_goal_shape"/>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="591">
+        <label>View::LineShape</label>
+        <link refid="class_view_1_1_line_shape"/>
+        <childnode refid="590" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="587">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="586" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="592">
+        <label>View::WallShape</label>
+        <link refid="class_view_1_1_wall_shape"/>
+        <childnode refid="591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>View::Shape</label>
+        <link refid="class_view_1_1_shape"/>
+        <childnode refid="588" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>View::RectangleShape</label>
+        <link refid="class_view_1_1_rectangle_shape"/>
+        <childnode refid="590" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>View::ViewObject</label>
+        <link refid="class_view_1_1_view_object"/>
+        <childnode refid="586" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="594">
+        <label>View::RobotShape</label>
+        <link refid="class_view_1_1_robot_shape"/>
+        <childnode refid="593" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="589">
+        <label>View::RobotWorldCanvas</label>
+        <link refid="class_view_1_1_robot_world_canvas"/>
+        <childnode refid="588" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" line="16" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp" bodystart="15" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_observer_1a37d00a5290a60aa9ab664af5d1642c3e" prot="public" virt="pure-virtual"><scope>Base::Observer</scope><name>handleNotification</name></member>
+      <member refid="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" prot="public" virt="virtual"><scope>Base::Observer</scope><name>handleNotificationsFor</name></member>
+      <member refid="class_base_1_1_observer_1ac1a7d2e9a33255ac264c6abd1782cd8d" prot="private" virt="non-virtual"><scope>Base::Observer</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_observer_1a0b8f55248bb0b393ed760d50b7f58d21" prot="public" virt="non-virtual"><scope>Base::Observer</scope><name>Observer</name></member>
+      <member refid="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" prot="public" virt="non-virtual"><scope>Base::Observer</scope><name>operator&lt;</name></member>
+      <member refid="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" prot="public" virt="non-virtual"><scope>Base::Observer</scope><name>operator==</name></member>
+      <member refid="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" prot="public" virt="virtual"><scope>Base::Observer</scope><name>stopHandlingNotificationsFor</name></member>
+      <member refid="class_base_1_1_observer_1aca7a3c17bdc9d86a9f67519779baf2e9" prot="public" virt="virtual"><scope>Base::Observer</scope><name>~Observer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_steering_actuator" kind="class" language="C++" prot="public">
+    <compoundname>model::SteeringActuator</compoundname>
+    <basecompoundref refid="class_model_1_1_abstract_actuator" prot="public" virt="non-virtual">model::AbstractActuator</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_steering_actuator_1aaf5092d6bcf025cf5dbd9b8ff97feceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::SteeringActuator::SteeringActuator</definition>
+        <argsstring>()</argsstring>
+        <name>SteeringActuator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.hpp" line="16" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_steering_actuator_1a07c0d9c5de87b67039f28efd21c92e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>model::SteeringActuator::~SteeringActuator</definition>
+        <argsstring>()</argsstring>
+        <name>~SteeringActuator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.hpp" line="20" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_steering_actuator_1a24503627c8e960eb7206e785906f3ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::SteeringActuator::handleCommand</definition>
+        <argsstring>(AbstractCommand &amp;anAbstractCommand)</argsstring>
+        <name>handleCommand</name>
+        <reimplements refid="class_model_1_1_abstract_actuator_1adc357b727d6df7f1b0e0238c85fa99b2">handleCommand</reimplements>
+        <param>
+          <type><ref refid="class_model_1_1_abstract_command" kindref="compound">AbstractCommand</ref> &amp;</type>
+          <declname>anAbstractCommand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.hpp" line="24" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="700">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="701" relation="public-inheritance">
+        </childnode>
+        <childnode refid="702" relation="public-inheritance">
+        </childnode>
+        <childnode refid="703" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="702">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="703">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="698">
+        <label>model::SteeringActuator</label>
+        <link refid="class_model_1_1_steering_actuator"/>
+        <childnode refid="699" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>model::AbstractActuator</label>
+        <link refid="class_model_1_1_abstract_actuator"/>
+        <childnode refid="700" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="706">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="707" relation="public-inheritance">
+        </childnode>
+        <childnode refid="708" relation="public-inheritance">
+        </childnode>
+        <childnode refid="709" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="707">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="711">
+        <label>Base::Queue&lt; std::shared_ptr&lt; model::AbstractPercept &gt; &gt;</label>
+        <link refid="class_base_1_1_queue"/>
+      </node>
+      <node id="708">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="710">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+        <childnode refid="711" relation="usage">
+          <edgelabel>perceptQueue</edgelabel>
+        </childnode>
+      </node>
+      <node id="709">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="704">
+        <label>model::SteeringActuator</label>
+        <link refid="class_model_1_1_steering_actuator"/>
+        <childnode refid="705" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>model::AbstractActuator</label>
+        <link refid="class_model_1_1_abstract_actuator"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+        <childnode refid="710" relation="usage">
+          <edgelabel>agent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.hpp" line="11" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.hpp" bodystart="10" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_actuator_1a5bfc45537108943d67c98de7f6f25519" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>AbstractActuator</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a9137214d1e7cdb2939c90a858d451ac9" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>AbstractActuator</name></member>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>addObserver</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1ad1067c897d696580dc7bc5713d1357d7" prot="protected" virt="non-virtual"><scope>model::SteeringActuator</scope><name>agent</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1ab5199d4458a2913844459832d563f989" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a6fe9d0ac0c7c6c56176fff61a773a4b9" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>asString</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a36eb339606068a2dd22c5638628077ea" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>attachAgent</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a6499da8f728e56e4bfe6ae3b8601d2ec" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>detachAgent</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>enableNotification</name></member>
+      <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>getObjectId</name></member>
+      <member refid="class_model_1_1_steering_actuator_1a24503627c8e960eb7206e785906f3ac4" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>handleCommand</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>notifyObservers</name></member>
+      <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>operator&lt;</name></member>
+      <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>operator==</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>removeObserver</name></member>
+      <member refid="class_model_1_1_steering_actuator_1aaf5092d6bcf025cf5dbd9b8ff97feceb" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>SteeringActuator</name></member>
+      <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" prot="public" virt="non-virtual"><scope>model::SteeringActuator</scope><name>toPtr</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1ae0f8d583c4a6f252af9cf0221f69f3c9" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>~AbstractActuator</name></member>
+      <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>~ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>~Notifier</name></member>
+      <member refid="class_model_1_1_steering_actuator_1a07c0d9c5de87b67039f28efd21c92e68" prot="public" virt="virtual"><scope>model::SteeringActuator</scope><name>~SteeringActuator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

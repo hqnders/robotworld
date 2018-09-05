@@ -1,0 +1,4 @@
+<map id="Messaging::Session" name="Messaging::Session">
+<area shape="rect" id="node2" href="$class_messaging_1_1_client_session.html" title="Messaging::ClientSession" alt="" coords="5,80,180,107"/>
+<area shape="rect" id="node3" href="$class_messaging_1_1_server_session.html" title="Messaging::ServerSession" alt="" coords="205,80,383,107"/>
+</map>

@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_button_8hpp" kind="file" language="C++">
+    <compoundname>Button.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">string</includes>
+    <includes refid="_widgets_8hpp" local="yes">Widgets.hpp</includes>
+    <includedby refid="_main_frame_window_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp</includedby>
+    <incdepgraph>
+      <node id="211">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="188">
+        <label>functional</label>
+      </node>
+      <node id="204">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="191">
+        <label>wx/app.h</label>
+      </node>
+      <node id="196">
+        <label>wx/event.h</label>
+      </node>
+      <node id="205">
+        <label>wx/font.h</label>
+      </node>
+      <node id="193">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="215">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="210">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="206">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="221">
+        <label>wx/region.h</label>
+      </node>
+      <node id="219">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>string</label>
+      </node>
+      <node id="198">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="190">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="207">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="199">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="194">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="203">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="201">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="216">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="212">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="197">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="187">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="214">
+        <label>wx/string.h</label>
+      </node>
+      <node id="186">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp</label>
+        <link refid="Button.hpp"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="195">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="200">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="213">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="202">
+        <label>wx/button.h</label>
+      </node>
+      <node id="220">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="209">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>BUTTON_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUTTON_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Widgets.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Button*<sp/>makeButton(<sp/><sp/><sp/><sp/><sp/>Window*<sp/>aParent,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aLabel,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::function&lt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<sp/>CommandEvent&amp;)<sp/>&gt;&amp;<sp/>anActionFunction)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button*<sp/>button<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Button(<sp/>aParent,<sp/>DEFAULT_ID,<sp/>WXSTRING(aLabel));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>button-&gt;Bind(wxEVT_COMMAND_BUTTON_CLICKED,<sp/>anActionFunction);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>button;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DANU_BUTTON_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp"/>
+  </compounddef>
+</doxygen>

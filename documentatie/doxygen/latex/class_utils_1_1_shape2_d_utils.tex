@@ -1,0 +1,213 @@
+\hypertarget{class_utils_1_1_shape2_d_utils}{}\section{Utils\+:\+:Shape2\+D\+Utils Class Reference}
+\label{class_utils_1_1_shape2_d_utils}\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_utils_1_1_shape2_d_utils_a94cfd04764b56fdc1c43325fb8666cf5}{Compass\+Point} \{ \\*
+{\bfseries C\+P\+\_\+\+N\+O\+R\+TH}, 
+{\bfseries C\+P\+\_\+\+N\+O\+R\+T\+H\+E\+A\+ST}, 
+{\bfseries C\+P\+\_\+\+E\+A\+ST}, 
+{\bfseries C\+P\+\_\+\+S\+O\+U\+T\+H\+E\+A\+ST}, 
+\\*
+{\bfseries C\+P\+\_\+\+S\+O\+U\+TH}, 
+{\bfseries C\+P\+\_\+\+S\+O\+U\+T\+H\+W\+E\+ST}, 
+{\bfseries C\+P\+\_\+\+W\+E\+ST}, 
+{\bfseries C\+P\+\_\+\+N\+O\+R\+T\+H\+W\+E\+ST}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double {\bfseries get\+Angle} (const \hyperlink{class_model_1_1_bounded_vector}{model\+::\+Bounded\+Vector} \&a\+Vector)\hypertarget{class_utils_1_1_shape2_d_utils_a0a6d71335cddbfb02f15603a9594f3e7}{}\label{class_utils_1_1_shape2_d_utils_a0a6d71335cddbfb02f15603a9594f3e7}
+
+\item 
+static double {\bfseries get\+Angle} (const Point \&a\+Startpoint, const Point \&an\+End\+Point)\hypertarget{class_utils_1_1_shape2_d_utils_a4d91eeb6e08a2116209b69ec75bc8966}{}\label{class_utils_1_1_shape2_d_utils_a4d91eeb6e08a2116209b69ec75bc8966}
+
+\item 
+static bool {\bfseries intersect} (const Point \&a\+Start\+Line1, const Point \&a\+End\+Line1, const Point \&a\+Start\+Line2, const Point \&an\+End\+Line2)\hypertarget{class_utils_1_1_shape2_d_utils_a404882ff5a44d0cfa6500941c4b925f5}{}\label{class_utils_1_1_shape2_d_utils_a404882ff5a44d0cfa6500941c4b925f5}
+
+\item 
+static Point {\bfseries get\+Intersection} (const Point \&a\+Start\+Line1, const Point \&a\+End\+Line1, const Point \&a\+Start\+Line2, const Point \&an\+End\+Line2)\hypertarget{class_utils_1_1_shape2_d_utils_a0c1b1443dbc38bac0178ef9240270a9d}{}\label{class_utils_1_1_shape2_d_utils_a0c1b1443dbc38bac0178ef9240270a9d}
+
+\item 
+static bool \hyperlink{class_utils_1_1_shape2_d_utils_a297b88bbdc022369dbc06775878a73e5}{is\+Inside\+Polygon} (Point $\ast$a\+Polygon, int a\+Number\+Of\+Points, const Point \&a\+Point)
+\item 
+static bool \hyperlink{class_utils_1_1_shape2_d_utils_a9fea1c3cfa86f8776a2ffca0f1683c58}{is\+On\+Line} (const Point \&a\+Start\+Point, const Point \&an\+End\+Point, const Point \&a\+Point, int a\+Radius=6)
+\item 
+static bool \hyperlink{class_utils_1_1_shape2_d_utils_ab86f3e66e5a8f9bbc93e68c8ecc41f38}{is\+On\+Line} (Point $\ast$a\+Polygon, int a\+Number\+Of\+Points, const Point \&a\+Point, int a\+Radius=6, bool a\+Closed\+Shape=true)
+\item 
+static Point \hyperlink{class_utils_1_1_shape2_d_utils_a80a202c16649fa6da57343df10035f7e}{rotate} (const Point \&a\+Point, double an\+Angle)
+\item 
+static \hyperlink{class_utils_1_1_shape2_d_utils_a94cfd04764b56fdc1c43325fb8666cf5}{Compass\+Point} \hyperlink{class_utils_1_1_shape2_d_utils_ab1beebca006b82c3f78669b6a13529f8}{get\+Compass\+Point} (const Point \&a\+Point, const Size \&a\+Size, const Point \&a\+Border\+Point, int a\+Radius=6)
+\item 
+static bool \hyperlink{class_utils_1_1_shape2_d_utils_a19ef7cb8dc087ba4d9eb65c4f11fd7e3}{is\+Compass\+Point} (const Point \&a\+Point, const Size \&a\+Size, const Point \&a\+Border\+Point, \hyperlink{class_utils_1_1_shape2_d_utils_a94cfd04764b56fdc1c43325fb8666cf5}{Compass\+Point} a\+Compass\+Point, int a\+Radius=6)
+\item 
+static std\+::string {\bfseries as\+String} (const Point \&a\+Point)\hypertarget{class_utils_1_1_shape2_d_utils_a47efad1075c8fabb7af1146f17fadaa2}{}\label{class_utils_1_1_shape2_d_utils_a47efad1075c8fabb7af1146f17fadaa2}
+
+\item 
+static std\+::string {\bfseries as\+String} (const Size \&a\+Size)\hypertarget{class_utils_1_1_shape2_d_utils_a801c67d2024d833171fbb99d9ddb5cf1}{}\label{class_utils_1_1_shape2_d_utils_a801c67d2024d833171fbb99d9ddb5cf1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double {\bfseries rotateX} (const Point \&a\+Point, double an\+Angle)\hypertarget{class_utils_1_1_shape2_d_utils_a2b54dee36b497da4e9f99ce27cbc4470}{}\label{class_utils_1_1_shape2_d_utils_a2b54dee36b497da4e9f99ce27cbc4470}
+
+\item 
+static double {\bfseries rotateY} (const Point \&a\+Point, double an\+Angle)\hypertarget{class_utils_1_1_shape2_d_utils_ad09e100184c73aa040f9018d24ca5279}{}\label{class_utils_1_1_shape2_d_utils_ad09e100184c73aa040f9018d24ca5279}
+
+\item 
+static double {\bfseries rotateX} (int anX, int anY, double an\+Angle)\hypertarget{class_utils_1_1_shape2_d_utils_a961c5b62a418519b156d0fc100f03e8b}{}\label{class_utils_1_1_shape2_d_utils_a961c5b62a418519b156d0fc100f03e8b}
+
+\item 
+static double {\bfseries rotateY} (int anX, int anY, double an\+Angle)\hypertarget{class_utils_1_1_shape2_d_utils_a06068dc58423b2d9b4175d8b5584abff}{}\label{class_utils_1_1_shape2_d_utils_a06068dc58423b2d9b4175d8b5584abff}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}!Compass\+Point@{Compass\+Point}}
+\index{Compass\+Point@{Compass\+Point}!Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsubsection[{\texorpdfstring{Compass\+Point}{CompassPoint}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Utils\+::\+Shape2\+D\+Utils\+::\+Compass\+Point}}\hypertarget{class_utils_1_1_shape2_d_utils_a94cfd04764b56fdc1c43325fb8666cf5}{}\label{class_utils_1_1_shape2_d_utils_a94cfd04764b56fdc1c43325fb8666cf5}
+Enum to find the point of a rectangle 
+
+\subsection{Member Function Documentation}
+\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}!get\+Compass\+Point@{get\+Compass\+Point}}
+\index{get\+Compass\+Point@{get\+Compass\+Point}!Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsubsection[{\texorpdfstring{get\+Compass\+Point(const Point \&a\+Point, const Size \&a\+Size, const Point \&a\+Border\+Point, int a\+Radius=6)}{getCompassPoint(const Point &aPoint, const Size &aSize, const Point &aBorderPoint, int aRadius=6)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape2\+D\+Utils\+::\+Compass\+Point} Utils\+::\+Shape2\+D\+Utils\+::get\+Compass\+Point (
+\begin{DoxyParamCaption}
+\item[{const Point \&}]{a\+Point, }
+\item[{const Size \&}]{a\+Size, }
+\item[{const Point \&}]{a\+Border\+Point, }
+\item[{int}]{a\+Radius = {\ttfamily 6}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_utils_1_1_shape2_d_utils_ab1beebca006b82c3f78669b6a13529f8}{}\label{class_utils_1_1_shape2_d_utils_ab1beebca006b82c3f78669b6a13529f8}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Point} & A Point on the border of the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}!is\+Compass\+Point@{is\+Compass\+Point}}
+\index{is\+Compass\+Point@{is\+Compass\+Point}!Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsubsection[{\texorpdfstring{is\+Compass\+Point(const Point \&a\+Point, const Size \&a\+Size, const Point \&a\+Border\+Point, Compass\+Point a\+Compass\+Point, int a\+Radius=6)}{isCompassPoint(const Point &aPoint, const Size &aSize, const Point &aBorderPoint, CompassPoint aCompassPoint, int aRadius=6)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Utils\+::\+Shape2\+D\+Utils\+::is\+Compass\+Point (
+\begin{DoxyParamCaption}
+\item[{const Point \&}]{a\+Point, }
+\item[{const Size \&}]{a\+Size, }
+\item[{const Point \&}]{a\+Border\+Point, }
+\item[{{\bf Compass\+Point}}]{a\+Compass\+Point, }
+\item[{int}]{a\+Radius = {\ttfamily 6}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_utils_1_1_shape2_d_utils_a19ef7cb8dc087ba4d9eb65c4f11fd7e3}{}\label{class_utils_1_1_shape2_d_utils_a19ef7cb8dc087ba4d9eb65c4f11fd7e3}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Border\+Point} & \\
+\hline
+{\em a\+Compass\+Point} & \\
+\hline
+{\em a\+Radius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}!is\+Inside\+Polygon@{is\+Inside\+Polygon}}
+\index{is\+Inside\+Polygon@{is\+Inside\+Polygon}!Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsubsection[{\texorpdfstring{is\+Inside\+Polygon(\+Point $\ast$a\+Polygon, int a\+Number\+Of\+Points, const Point \&a\+Point)}{isInsidePolygon(Point *aPolygon, int aNumberOfPoints, const Point &aPoint)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Utils\+::\+Shape2\+D\+Utils\+::is\+Inside\+Polygon (
+\begin{DoxyParamCaption}
+\item[{Point $\ast$}]{a\+Polygon, }
+\item[{int}]{a\+Number\+Of\+Points, }
+\item[{const Point \&}]{a\+Point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_utils_1_1_shape2_d_utils_a297b88bbdc022369dbc06775878a73e5}{}\label{class_utils_1_1_shape2_d_utils_a297b88bbdc022369dbc06775878a73e5}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Polygon} & The array of points \\
+\hline
+{\em number\+Of\+Points} & The number of points in the array \\
+\hline
+{\em p} & The point for which to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is inside the polygon, false otherwise 
+\end{DoxyReturn}
+\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}!is\+On\+Line@{is\+On\+Line}}
+\index{is\+On\+Line@{is\+On\+Line}!Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsubsection[{\texorpdfstring{is\+On\+Line(const Point \&a\+Start\+Point, const Point \&an\+End\+Point, const Point \&a\+Point, int a\+Radius=6)}{isOnLine(const Point &aStartPoint, const Point &anEndPoint, const Point &aPoint, int aRadius=6)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Utils\+::\+Shape2\+D\+Utils\+::is\+On\+Line (
+\begin{DoxyParamCaption}
+\item[{const Point \&}]{a\+Start\+Point, }
+\item[{const Point \&}]{an\+End\+Point, }
+\item[{const Point \&}]{a\+Point, }
+\item[{int}]{a\+Radius = {\ttfamily 6}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_utils_1_1_shape2_d_utils_a9fea1c3cfa86f8776a2ffca0f1683c58}{}\label{class_utils_1_1_shape2_d_utils_a9fea1c3cfa86f8776a2ffca0f1683c58}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Startpoint} & \\
+\hline
+{\em an\+End\+Point} & \\
+\hline
+{\em a\+Point} & \\
+\hline
+{\em a\+Radius} & The number of pixels we can be wrong \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a\+Point is within a\+Radius of the given line 
+\end{DoxyReturn}
+\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}!is\+On\+Line@{is\+On\+Line}}
+\index{is\+On\+Line@{is\+On\+Line}!Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsubsection[{\texorpdfstring{is\+On\+Line(\+Point $\ast$a\+Polygon, int a\+Number\+Of\+Points, const Point \&a\+Point, int a\+Radius=6, bool a\+Closed\+Shape=true)}{isOnLine(Point *aPolygon, int aNumberOfPoints, const Point &aPoint, int aRadius=6, bool aClosedShape=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Utils\+::\+Shape2\+D\+Utils\+::is\+On\+Line (
+\begin{DoxyParamCaption}
+\item[{Point $\ast$}]{a\+Polygon, }
+\item[{int}]{a\+Number\+Of\+Points, }
+\item[{const Point \&}]{a\+Point, }
+\item[{int}]{a\+Radius = {\ttfamily 6}, }
+\item[{bool}]{a\+Closed\+Shape = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_utils_1_1_shape2_d_utils_ab86f3e66e5a8f9bbc93e68c8ecc41f38}{}\label{class_utils_1_1_shape2_d_utils_ab86f3e66e5a8f9bbc93e68c8ecc41f38}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Polygon} & The array of points that form a path \\
+\hline
+{\em number\+Of\+Points} & The number of points in the array \\
+\hline
+{\em a\+Point} & \\
+\hline
+{\em a\+Radius} & The number of pixels we can be wrong \\
+\hline
+{\em a\+Closed\+Shape} & True if the path is a closed, false otherwise \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a\+Point is within a\+Radius of the given path lines 
+\end{DoxyReturn}
+\index{Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}!rotate@{rotate}}
+\index{rotate@{rotate}!Utils\+::\+Shape2\+D\+Utils@{Utils\+::\+Shape2\+D\+Utils}}
+\subsubsection[{\texorpdfstring{rotate(const Point \&a\+Point, double an\+Angle)}{rotate(const Point &aPoint, double anAngle)}}]{\setlength{\rightskip}{0pt plus 5cm}Point Utils\+::\+Shape2\+D\+Utils\+::rotate (
+\begin{DoxyParamCaption}
+\item[{const Point \&}]{a\+Point, }
+\item[{double}]{an\+Angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_utils_1_1_shape2_d_utils_a80a202c16649fa6da57343df10035f7e}{}\label{class_utils_1_1_shape2_d_utils_a80a202c16649fa6da57343df10035f7e}
+The rotation will be done around (0.\+0)
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Point} & \\
+\hline
+{\em an\+Angle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotated point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Shape2\+D\+Utils.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Shape2\+D\+Utils.\+cpp\end{DoxyCompactItemize}

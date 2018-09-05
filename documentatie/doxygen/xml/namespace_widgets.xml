@@ -1,0 +1,1223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_widgets" kind="namespace" language="C++">
+    <compoundname>Widgets</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_widgets_8hpp_1ad53590659606c7e95e7a3db888138372" prot="public" static="no">
+        <name>GeometryCentre</name>
+        <enumvalue id="_widgets_8hpp_1ad53590659606c7e95e7a3db888138372a0e4eebd5d58ea84ed01b069b47d7f654" prot="public">
+          <name>CENTRE</name>
+          <initializer>= wxCENTRE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ad53590659606c7e95e7a3db888138372a9d88fb9c66852014954751cba1dadfd5" prot="public">
+          <name>CENTER</name>
+          <initializer>= CENTRE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="291" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="290" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="enum" id="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4dd" prot="public" static="no">
+        <name>Orientation</name>
+        <enumvalue id="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4dda8e2cb3aed4a57e982d38aa0d05904964" prot="public">
+          <name>HORIZONTAL</name>
+          <initializer>= wxHORIZONTAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4ddacbcbeea4aeba680b7bb37a789486530b" prot="public">
+          <name>DIR_HORIZONTAL</name>
+          <initializer>= HORIZONTAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4ddaafaf815cb36716cf1b099485a15dada1" prot="public">
+          <name>VERTICAL</name>
+          <initializer>= wxVERTICAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4ddac55643a00e8a63429a4cea0cc83ac20b" prot="public">
+          <name>DIR_VERTICAL</name>
+          <initializer>= VERTICAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4dda4d4229401731fd39ce54d26e0c32251b" prot="public">
+          <name>BOTH</name>
+          <initializer>= VERTICAL | HORIZONTAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="297" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="296" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="enum" id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03" prot="public" static="no">
+        <name>Direction</name>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a9e974bdcff84eb2df550115dcedfbe59" prot="public">
+          <name>LEFT</name>
+          <initializer>= wxLEFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a87066e0c45920075691462c43785f2db" prot="public">
+          <name>RIGHT</name>
+          <initializer>= wxRIGHT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a309e0db2995915ddcabacf3a0bca3973" prot="public">
+          <name>UP</name>
+          <initializer>= wxUP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a1d33138bddf5049d07fe2990b909ed91" prot="public">
+          <name>DOWN</name>
+          <initializer>= wxDOWN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a7e9cbfbf746593a35fd400a14841f67d" prot="public">
+          <name>TOP</name>
+          <initializer>= UP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03af292a88b0dd495731b2bf39763d37752" prot="public">
+          <name>BOTTOM</name>
+          <initializer>= DOWN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a1c78100a04e66d22c6bfb1072cfbcf3a" prot="public">
+          <name>NORTH</name>
+          <initializer>= UP</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03aa4d013ceb2129c465a9a01fb2df1650f" prot="public">
+          <name>SOUTH</name>
+          <initializer>= DOWN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a2a54a910cc523602df1006b6b4cd9527" prot="public">
+          <name>WEST</name>
+          <initializer>= LEFT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03aa08e2f1b3bef012e39e2e87dde12b531" prot="public">
+          <name>EAST</name>
+          <initializer>= RIGHT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a46ee27027a185fe0078d89d9d473fbb3" prot="public">
+          <name>ALL</name>
+          <initializer>= (UP | DOWN | RIGHT | LEFT)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="307" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="306" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="enum" id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8a" prot="public" static="no">
+        <name>Alignment</name>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aac1508de0d17ace63c54115487d366ac3" prot="public">
+          <name>ALIGN_NOT</name>
+          <initializer>= wxALIGN_NOT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa85fbdf8a6fafc49c5a6e2be86c461c7a" prot="public">
+          <name>ALIGN_CENTER_HORIZONTAL</name>
+          <initializer>= wxALIGN_CENTER_HORIZONTAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa17e6daf89b1e8c9d9303e4a0a2379b39" prot="public">
+          <name>ALIGN_CENTRE_HORIZONTAL</name>
+          <initializer>= ALIGN_CENTER_HORIZONTAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa82833948ec3c2a3cc2cd1ad3d9302315" prot="public">
+          <name>ALIGN_LEFT</name>
+          <initializer>= ALIGN_NOT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa0f775761f3a05c7024cd7c7281c7e79c" prot="public">
+          <name>ALIGN_TOP</name>
+          <initializer>= ALIGN_NOT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa3fd63a88cdecd628b49d804ccb0a2efa" prot="public">
+          <name>ALIGN_RIGHT</name>
+          <initializer>= wxALIGN_RIGHT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aad590fec812b9ba91ce860f9008da1cae" prot="public">
+          <name>ALIGN_BOTTOM</name>
+          <initializer>= wxALIGN_BOTTOM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa59246bc1d1fe8fc215d0ba0c417b1905" prot="public">
+          <name>ALIGN_CENTER_VERTICAL</name>
+          <initializer>= wxALIGN_CENTER_VERTICAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa1783a15ef497470eba8d33db58019946" prot="public">
+          <name>ALIGN_CENTRE_VERTICAL</name>
+          <initializer>= ALIGN_CENTER_VERTICAL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa21427be6bee4e1d9b533a6d703f822a0" prot="public">
+          <name>ALIGN_CENTER</name>
+          <initializer>= (ALIGN_CENTER_HORIZONTAL | ALIGN_CENTER_VERTICAL)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa4baff176970e400e5e38f6a757c7c2d5" prot="public">
+          <name>ALIGN_CENTRE</name>
+          <initializer>= ALIGN_CENTER</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa29c59995436a51ca30debe130683613e" prot="public">
+          <name>ALIGN_MASK</name>
+          <initializer>= wxALIGN_MASK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="325" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="324" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="enum" id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904a" prot="public" static="no">
+        <name>Stretch</name>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa005d2442885ef4df1b6615682fc76bc0" prot="public">
+          <name>STRETCH_NOT</name>
+          <initializer>= wxSTRETCH_NOT</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aabc6aca7e4f7d5b46bc976b25ed1e84c1" prot="public">
+          <name>SHRINK</name>
+          <initializer>= wxSHRINK</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aabe3f05d2708705876e6dacb07ba08f16" prot="public">
+          <name>GROW</name>
+          <initializer>= wxGROW</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aaa5efb1d715e213fdeec9d179025e927a" prot="public">
+          <name>EXPAND</name>
+          <initializer>= GROW</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa00a1686151a54c500d3e2c1d324eee5a" prot="public">
+          <name>SHAPED</name>
+          <initializer>= wxSHAPED</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa55e8fccd5a2ada29b5993de1d885fa58" prot="public">
+          <name>FIXED_MINSIZE</name>
+          <initializer>= wxFIXED_MINSIZE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa9360a7f574704d95f9d55c872b242037" prot="public">
+          <name>RESERVE_SPACE_EVEN_IF_HIDDEN</name>
+          <initializer>= wxRESERVE_SPACE_EVEN_IF_HIDDEN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa37845397da1777763391ad90ae9d7202" prot="public">
+          <name>TILE</name>
+          <initializer>= wxTILE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="342" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="341" bodyend="351"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_point_8hpp_1afb47421b09980be81d4c7f86ee123fa9" prot="public" static="no">
+        <type>wxPoint</type>
+        <definition>typedef wxPoint Widgets::Point</definition>
+        <argsstring></argsstring>
+        <name>Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_point">http://docs.wxwidgets.org/stable/classwx_point</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Point.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Point.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_region_8hpp_1ab6123d7605e676b8f48853f45e179ec7" prot="public" static="no">
+        <type>wxRegion</type>
+        <definition>typedef wxRegion Widgets::Region</definition>
+        <argsstring></argsstring>
+        <name>Region</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_region">http://docs.wxwidgets.org/stable/classwx_region</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Region.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Region.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_size_8hpp_1afa74c3af00b78b54299aa8e38a2578e5" prot="public" static="no">
+        <type>wxSize</type>
+        <definition>typedef wxSize Widgets::Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_size">http://docs.wxwidgets.org/stable/classwx_size</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Size.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Size.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a730a88abd6abf9a8862f90eda8dd6da3" prot="public" static="no">
+        <type>wxActivateEvent</type>
+        <definition>typedef wxActivateEvent Widgets::ActivateEvent</definition>
+        <argsstring></argsstring>
+        <name>ActivateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_activate_event">http://docs.wxwidgets.org/stable/classwx_activate_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="45" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1aea1f039f707b84c781c515f8c3b5e16d" prot="public" static="no">
+        <type>wxBoxSizer</type>
+        <definition>typedef wxBoxSizer Widgets::BoxSizer</definition>
+        <argsstring></argsstring>
+        <name>BoxSizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/">http://docs.wxwidgets.org/stable/</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="53" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a3dd28a00cd794e6b50ce2f1369c746a6" prot="public" static="no">
+        <type>wxBrush</type>
+        <definition>typedef wxBrush Widgets::Brush</definition>
+        <argsstring></argsstring>
+        <name>Brush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_brush">http://docs.wxwidgets.org/stable/classwx_brush</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="57" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1aae681b6ad2c723f66ccf07710d6edcc2" prot="public" static="no">
+        <type>wxButton</type>
+        <definition>typedef wxButton Widgets::Button</definition>
+        <argsstring></argsstring>
+        <name>Button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_button">http://docs.wxwidgets.org/stable/classwx_button</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1ab89bc9b812ebea19f4114ec10d39b1fb" prot="public" static="no">
+        <type>wxColour</type>
+        <definition>typedef wxColour Widgets::Colour</definition>
+        <argsstring></argsstring>
+        <name>Colour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_colour">http://docs.wxwidgets.org/stable/classwx_colour</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="65" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1afd1fed477f9f0fa807cf3562eec8f76b" prot="public" static="no">
+        <type>wxCursor</type>
+        <definition>typedef wxCursor Widgets::Cursor</definition>
+        <argsstring></argsstring>
+        <name>Cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_cursor">http://docs.wxwidgets.org/stable/classwx_cursor</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a03a9c49eb13e90e0760dad58f2865120" prot="public" static="no">
+        <type>wxCommandEvent</type>
+        <definition>typedef wxCommandEvent Widgets::CommandEvent</definition>
+        <argsstring></argsstring>
+        <name>CommandEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_command_event">http://docs.wxwidgets.org/stable/classwx_command_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="73" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a9344c039e5787c97efd627da26b15c51" prot="public" static="no">
+        <type>wxCloseEvent</type>
+        <definition>typedef wxCloseEvent Widgets::CloseEvent</definition>
+        <argsstring></argsstring>
+        <name>CloseEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_close_event">http://docs.wxwidgets.org/stable/classwx_close_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="77" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1adec4f92e2dc778a6bb5e313ff962a8f1" prot="public" static="no">
+        <type>wxCoord</type>
+        <definition>typedef wxCoord Widgets::Coord</definition>
+        <argsstring></argsstring>
+        <name>Coord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://http://docs.wxwidgets.org/stable/defs_8h#a11f6efc0e8d8d680f3ec8e82aa4f1770">http://http://docs.wxwidgets.org/stable/defs_8h#a11f6efc0e8d8d680f3ec8e82aa4f1770</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="85" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a67563cf0338d39e158f515a98213cbbe" prot="public" static="no">
+        <type>wxDataFormat</type>
+        <definition>typedef wxDataFormat Widgets::DataFormat</definition>
+        <argsstring></argsstring>
+        <name>DataFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_data_format">http://docs.wxwidgets.org/stable/classwx_data_format</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="89" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a9fbd4a9de97aad78842ef984baaeff23" prot="public" static="no">
+        <type>wxDragResult</type>
+        <definition>typedef wxDragResult Widgets::DragResult</definition>
+        <argsstring></argsstring>
+        <name>DragResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/overview_dnd">http://docs.wxwidgets.org/stable/overview_dnd</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="105" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1afd8af0a9a0ae45ab575e840e94d88da0" prot="public" static="no">
+        <type>wxEvent</type>
+        <definition>typedef wxEvent Widgets::Event</definition>
+        <argsstring></argsstring>
+        <name>Event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_event">http://docs.wxwidgets.org/stable/classwx_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="109" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1ac067270d0ead968213ea725a82b0d58f" prot="public" static="no">
+        <type>wxFlexGridSizer</type>
+        <definition>typedef wxFlexGridSizer Widgets::FlexGridSizer</definition>
+        <argsstring></argsstring>
+        <name>FlexGridSizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_flex_grid_sizer">http://docs.wxwidgets.org/stable/classwx_flex_grid_sizer</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="117" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a6fa85724a2ed144ec122b3aa6142c478" prot="public" static="no">
+        <type>wxFocusEvent</type>
+        <definition>typedef wxFocusEvent Widgets::FocusEvent</definition>
+        <argsstring></argsstring>
+        <name>FocusEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_focus_event">http://docs.wxwidgets.org/stable/classwx_focus_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="121" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a8885fd2cf8c118cecc35a1fc17061fa1" prot="public" static="no">
+        <type>wxFont</type>
+        <definition>typedef wxFont Widgets::Font</definition>
+        <argsstring></argsstring>
+        <name>Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_font">http://docs.wxwidgets.org/stable/classwx_font</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="125" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1adb37cbbe7efcdf272947d358b726c002" prot="public" static="no">
+        <type>wxFrame</type>
+        <definition>typedef wxFrame Widgets::Frame</definition>
+        <argsstring></argsstring>
+        <name>Frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_frame">http://docs.wxwidgets.org/stable/classwx_frame</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="129" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1ab37fd89b280028ff9ba898b9a98ee47d" prot="public" static="no">
+        <type>wxGBPosition</type>
+        <definition>typedef wxGBPosition Widgets::GBPosition</definition>
+        <argsstring></argsstring>
+        <name>GBPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://http://docs.wxwidgets.org/stable/classwx_g_b_position">http://http://docs.wxwidgets.org/stable/classwx_g_b_position</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="133" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a00583760826b6408f6f90ebbbdd2d9a3" prot="public" static="no">
+        <type>wxGBSpan</type>
+        <definition>typedef wxGBSpan Widgets::GBSpan</definition>
+        <argsstring></argsstring>
+        <name>GBSpan</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_g_b_span">http://docs.wxwidgets.org/stable/classwx_g_b_span</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="137" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1aad8a624627a2cd6059067509a4bf65b8" prot="public" static="no">
+        <type>wxGridBagSizer</type>
+        <definition>typedef wxGridBagSizer Widgets::GridBagSizer</definition>
+        <argsstring></argsstring>
+        <name>GridBagSizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_grid_bag_sizer">http://docs.wxwidgets.org/stable/classwx_grid_bag_sizer</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="141" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a48953e6a41e0c9819f7812752cc7adbf" prot="public" static="no">
+        <type>wxImageList</type>
+        <definition>typedef wxImageList Widgets::ImageList</definition>
+        <argsstring></argsstring>
+        <name>ImageList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_image_list">http://docs.wxwidgets.org/stable/classwx_image_list</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="145" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a915dd1f7c36b12a11876a507fa59121c" prot="public" static="no">
+        <type>wxKeyEvent</type>
+        <definition>typedef wxKeyEvent Widgets::KeyEvent</definition>
+        <argsstring></argsstring>
+        <name>KeyEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_key_event">http://docs.wxwidgets.org/stable/classwx_key_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="149" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a5381d7a3d3c4451368ffa74717c94579" prot="public" static="no">
+        <type>wxListEvent</type>
+        <definition>typedef wxListEvent Widgets::ListEvent</definition>
+        <argsstring></argsstring>
+        <name>ListEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_list_event">http://docs.wxwidgets.org/stable/classwx_list_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="157" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a9d64c456fd08f1dc1698ba7f775229a8" prot="public" static="no">
+        <type>wxListItem</type>
+        <definition>typedef wxListItem Widgets::ListItem</definition>
+        <argsstring></argsstring>
+        <name>ListItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_list_item">http://docs.wxwidgets.org/stable/classwx_list_item</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="165" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a890cc3496e472f744fb0bbc37121c960" prot="public" static="no">
+        <type>wxMenuBar</type>
+        <definition>typedef wxMenuBar Widgets::MenuBar</definition>
+        <argsstring></argsstring>
+        <name>MenuBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>classwx_treeevent <simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_menu_bar">http://docs.wxwidgets.org/stable/classwx_menu_bar</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="169" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a097d2a08b9d2e1bd0303ad855a3fea93" prot="public" static="no">
+        <type>wxMenu</type>
+        <definition>typedef wxMenu Widgets::Menu</definition>
+        <argsstring></argsstring>
+        <name>Menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_menu">http://docs.wxwidgets.org/stable/classwx_menu</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="173" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1af0a8f97b621b4178363283099025aaf6" prot="public" static="no">
+        <type>wxMouseEvent</type>
+        <definition>typedef wxMouseEvent Widgets::MouseEvent</definition>
+        <argsstring></argsstring>
+        <name>MouseEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_mouse_event">http://docs.wxwidgets.org/stable/classwx_mouse_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="177" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a8d00b175ac3be41b71770717259a858f" prot="public" static="no">
+        <type>wxNotifyEvent</type>
+        <definition>typedef wxNotifyEvent Widgets::NotifyEvent</definition>
+        <argsstring></argsstring>
+        <name>NotifyEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_notify_event">http://docs.wxwidgets.org/stable/classwx_notify_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="185" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1ad5e088949983dcf7e4d4895d8bd9f326" prot="public" static="no">
+        <type>wxPaintEvent</type>
+        <definition>typedef wxPaintEvent Widgets::PaintEvent</definition>
+        <argsstring></argsstring>
+        <name>PaintEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_paint_event">http://docs.wxwidgets.org/stable/classwx_paint_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="193" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1afed1043a1fa2e9003f1ace72b0c81182" prot="public" static="no">
+        <type>wxPanel</type>
+        <definition>typedef wxPanel Widgets::Panel</definition>
+        <argsstring></argsstring>
+        <name>Panel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_panel">http://docs.wxwidgets.org/stable/classwx_panel</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="201" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a6e2939386017beed2040822afb724f01" prot="public" static="no">
+        <type>wxScrolledCanvas</type>
+        <definition>typedef wxScrolledCanvas Widgets::ScrolledCanvas</definition>
+        <argsstring></argsstring>
+        <name>ScrolledCanvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_scrolled">http://docs.wxwidgets.org/stable/classwx_scrolled</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="205" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a3ae7bd2fae5212dd2886afc4ac95c9af" prot="public" static="no">
+        <type>wxScrolledWindow</type>
+        <definition>typedef wxScrolledWindow Widgets::ScrolledWindow</definition>
+        <argsstring></argsstring>
+        <name>ScrolledWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_scrolled">http://docs.wxwidgets.org/stable/classwx_scrolled</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="209" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1af5dccc605977d7ff5cef4abaa45706de" prot="public" static="no">
+        <type>wxSizeEvent</type>
+        <definition>typedef wxSizeEvent Widgets::SizeEvent</definition>
+        <argsstring></argsstring>
+        <name>SizeEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_size_event">http://docs.wxwidgets.org/stable/classwx_size_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="213" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a733e408442172fab027c41477bb81424" prot="public" static="no">
+        <type>wxSizer</type>
+        <definition>typedef wxSizer Widgets::Sizer</definition>
+        <argsstring></argsstring>
+        <name>Sizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_sizer">http://docs.wxwidgets.org/stable/classwx_sizer</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="221" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a3d6d333ef0dd0fe00597e94ade931349" prot="public" static="no">
+        <type>wxSizerFlags</type>
+        <definition>typedef wxSizerFlags Widgets::SizerFlags</definition>
+        <argsstring></argsstring>
+        <name>SizerFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_sizer_flags">http://docs.wxwidgets.org/stable/classwx_sizer_flags</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="225" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a39fd3b60ec58bf313fcf2a57765fd0d7" prot="public" static="no">
+        <type>wxSplitterWindow</type>
+        <definition>typedef wxSplitterWindow Widgets::SplitterWindow</definition>
+        <argsstring></argsstring>
+        <name>SplitterWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_splitter_window">http://docs.wxwidgets.org/stable/classwx_splitter_window</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="229" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1aa4fe9154ff3278a84b6d2e1d4c2bcd08" prot="public" static="no">
+        <type>wxStaticBoxSizer</type>
+        <definition>typedef wxStaticBoxSizer Widgets::StaticBoxSizer</definition>
+        <argsstring></argsstring>
+        <name>StaticBoxSizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_static_box_sizer">http://docs.wxwidgets.org/stable/classwx_static_box_sizer</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="233" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1aea3cd24cbfee87982cf88e5a5112464a" prot="public" static="no">
+        <type>wxStaticLine</type>
+        <definition>typedef wxStaticLine Widgets::StaticLine</definition>
+        <argsstring></argsstring>
+        <name>StaticLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_static_line">http://docs.wxwidgets.org/stable/classwx_static_line</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="237" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a358ff266e6abd0d7f01826a1adce3dd9" prot="public" static="no">
+        <type>wxTextEntryDialog</type>
+        <definition>typedef wxTextEntryDialog Widgets::TextEntryDialog</definition>
+        <argsstring></argsstring>
+        <name>TextEntryDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_text_entry_dialog">http://docs.wxwidgets.org/stable/classwx_text_entry_dialog</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="241" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a6b9b6f45b0ee8bb5beb7595160950443" prot="public" static="no">
+        <type>wxToolBar</type>
+        <definition>typedef wxToolBar Widgets::ToolBar</definition>
+        <argsstring></argsstring>
+        <name>ToolBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_tool_bar">http://docs.wxwidgets.org/stable/classwx_tool_bar</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="245" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a7e13202926f808aea743baaf9eca3677" prot="public" static="no">
+        <type>wxTreeEvent</type>
+        <definition>typedef wxTreeEvent Widgets::TreeEvent</definition>
+        <argsstring></argsstring>
+        <name>TreeEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_tree_event">http://docs.wxwidgets.org/stable/classwx_tree_event</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="249" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a431cc7037c3d35e2e316bd0f4bb5de1d" prot="public" static="no">
+        <type>wxTreeItemId</type>
+        <definition>typedef wxTreeItemId Widgets::TreeItemId</definition>
+        <argsstring></argsstring>
+        <name>TreeItemId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_tree_item_id">http://docs.wxwidgets.org/stable/classwx_tree_item_id</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="257" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1a26382e1b55fc7f8a4ece6f7222cea26f" prot="public" static="no">
+        <type>wxValidator</type>
+        <definition>typedef wxValidator Widgets::Validator</definition>
+        <argsstring></argsstring>
+        <name>Validator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_validator">http://docs.wxwidgets.org/stable/classwx_validator</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="261" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_widgets_8hpp_1aa174af27697bdfc5f9f92494672c58ca" prot="public" static="no">
+        <type>wxWindow</type>
+        <definition>typedef wxWindow Widgets::Window</definition>
+        <argsstring></argsstring>
+        <name>Window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://docs.wxwidgets.org/stable/classwx_window">http://docs.wxwidgets.org/stable/classwx_window</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="269" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_widgets_8cpp_1abc8e26670d98eeb43017b02596e870dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Widgets::GetTextFromUser</definition>
+        <argsstring>(const std::string &amp;aTitleBarMessage, const std::string &amp;aMessage, const std::string &amp;aDefaultValue, Window *aParent, bool UNUSEDPARAM(centre), const Point &amp;aPoint)</argsstring>
+        <name>GetTextFromUser</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aTitleBarMessage</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aDefaultValue</declname>
+        </param>
+        <param>
+          <type>Window *</type>
+          <declname>aParent</declname>
+        </param>
+        <param>
+          <type>bool </type>
+          <declname>UNUSEDPARAM</declname>
+          <array>centre</array>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.cpp" line="9" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.cpp" bodystart="9" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="_widgets_8hpp_1af92dace3ab6f9cbc0d9d288b8b9f7786" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>wxString</type>
+        <definition>wxString Widgets::WXSTRING</definition>
+        <argsstring>(const char *aText)</argsstring>
+        <name>WXSTRING</name>
+        <param>
+          <type>const char *</type>
+          <declname>aText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="353" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="353" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="_widgets_8hpp_1aeb9bec79b891012e84f71e668c3ff479" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>wxString</type>
+        <definition>wxString Widgets::WXSTRING</definition>
+        <argsstring>(const std::string &amp;aString)</argsstring>
+        <name>WXSTRING</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="358" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="_widgets_8hpp_1a6d2a9eb0e5b6edd12e5d8ea9bffc4044" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>wxString</type>
+        <definition>wxString Widgets::WXSTRING</definition>
+        <argsstring>(std::string &amp;aString)</argsstring>
+        <name>WXSTRING</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>aString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="363" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="_widgets_8hpp_1a2c202b9372aa11290c31f883c0ff9458" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Widgets::STDSTRING</definition>
+        <argsstring>(const wxString &amp;aString)</argsstring>
+        <name>STDSTRING</name>
+        <param>
+          <type>const wxString &amp;</type>
+          <declname>aString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="368" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="_widgets_8hpp_1a9edf6fd41a74c4181f2ac518f88b2e0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Widgets::STDSTRING</definition>
+        <argsstring>(wxString &amp;aString)</argsstring>
+        <name>STDSTRING</name>
+        <param>
+          <type>wxString &amp;</type>
+          <declname>aString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="373" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="_widgets_8hpp_1a4da1cdca53874c3dbf3ae17a8f4f7c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Widgets::GetTextFromUser</definition>
+        <argsstring>(const std::string &amp;aTitleBarMessage, const std::string &amp;aMessage, const std::string &amp;aDefaultValue=&quot;&quot;, Window *aParent=nullptr, bool centre=false, const Point &amp;aPoint=DefaultPosition)</argsstring>
+        <name>GetTextFromUser</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aTitleBarMessage</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aDefaultValue</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>Window *</type>
+          <declname>aParent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>centre</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+          <defval>DefaultPosition</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aTitleBarMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aDefaultValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp" line="388" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Point.hpp" line="14" column="1"/>
+  </compounddef>
+</doxygen>

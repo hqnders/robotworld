@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_client" kind="class" language="C++" prot="public">
+    <compoundname>Messaging::Client</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_messaging_1_1_client_1a605f2a446bfa196c0e38558ef2c4cbc1" prot="private" static="no" mutable="no">
+        <type>boost::asio::io_service &amp;</type>
+        <definition>boost::asio::io_service&amp; Messaging::Client::io_service</definition>
+        <argsstring></argsstring>
+        <name>io_service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_client_1ae1ac5668d94efd6cef31b41fb17e8ed7" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Messaging::Client::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="70" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_client_1ad9ca04d0d687573d3eff86c9e14a1a48" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Messaging::Client::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="71" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_client_1a927d7087bab6be12fff6622c6d8448c5" prot="private" static="no" mutable="no">
+        <type>ResponseHandlerPtr</type>
+        <definition>ResponseHandlerPtr Messaging::Client::responseHandler</definition>
+        <argsstring></argsstring>
+        <name>responseHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="72" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_messaging_1_1_client_1a3d9868c2817f181e38f1e50e57faa25f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Client::Client</definition>
+        <argsstring>(const std::string &amp;aHost, const std::string &amp;aPort, ResponseHandlerPtr aResponseHandler)</argsstring>
+        <name>Client</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aHost</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aPort</declname>
+        </param>
+        <param>
+          <type>ResponseHandlerPtr</type>
+          <declname>aResponseHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="18" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_client_1afedb4d9092742db81e8e76e973abda67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Client::~Client</definition>
+        <argsstring>()</argsstring>
+        <name>~Client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="30" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_client_1ad591a306de7942562e5f682d4ec3b454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Client::dispatchMessage</definition>
+        <argsstring>(Message &amp;aMessage)</argsstring>
+        <name>dispatchMessage</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="36" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="36" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_client_1a7804792b483e50df149e9e77191d5d16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Client::handleConnect</definition>
+        <argsstring>(ClientSession *aSession, const boost::system::error_code &amp;error)</argsstring>
+        <name>handleConnect</name>
+        <param>
+          <type><ref refid="class_messaging_1_1_client_session" kindref="compound">ClientSession</ref> *</type>
+          <declname>aSession</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="54" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="54" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="13" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" bodystart="12" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_client_1a3d9868c2817f181e38f1e50e57faa25f" prot="public" virt="non-virtual"><scope>Messaging::Client</scope><name>Client</name></member>
+      <member refid="class_messaging_1_1_client_1ad591a306de7942562e5f682d4ec3b454" prot="public" virt="non-virtual"><scope>Messaging::Client</scope><name>dispatchMessage</name></member>
+      <member refid="class_messaging_1_1_client_1a7804792b483e50df149e9e77191d5d16" prot="public" virt="non-virtual"><scope>Messaging::Client</scope><name>handleConnect</name></member>
+      <member refid="class_messaging_1_1_client_1ae1ac5668d94efd6cef31b41fb17e8ed7" prot="private" virt="non-virtual"><scope>Messaging::Client</scope><name>host</name></member>
+      <member refid="class_messaging_1_1_client_1a605f2a446bfa196c0e38558ef2c4cbc1" prot="private" virt="non-virtual"><scope>Messaging::Client</scope><name>io_service</name></member>
+      <member refid="class_messaging_1_1_client_1ad9ca04d0d687573d3eff86c9e14a1a48" prot="private" virt="non-virtual"><scope>Messaging::Client</scope><name>port</name></member>
+      <member refid="class_messaging_1_1_client_1a927d7087bab6be12fff6622c6d8448c5" prot="private" virt="non-virtual"><scope>Messaging::Client</scope><name>responseHandler</name></member>
+      <member refid="class_messaging_1_1_client_1afedb4d9092742db81e8e76e973abda67" prot="public" virt="non-virtual"><scope>Messaging::Client</scope><name>~Client</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,52 @@
+\hypertarget{class_messaging_1_1_communication_service}{}\section{Messaging\+:\+:Communication\+Service Class Reference}
+\label{class_messaging_1_1_communication_service}\index{Messaging\+::\+Communication\+Service@{Messaging\+::\+Communication\+Service}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::asio\+::io\+\_\+service \& \hyperlink{class_messaging_1_1_communication_service_a603bfa697fbac1d8ea95115fbc78de24}{get\+I\+O\+Service} ()
+\item 
+void \hyperlink{class_messaging_1_1_communication_service_a91ea43508fc513e2be07071314bfcad9}{run\+Request\+Handler} (Request\+Handler\+Ptr a\+Request\+Handler, short a\+Port=12345)
+\item 
+void \hyperlink{class_messaging_1_1_communication_service_aafbba827051d66b74a0d5262074a950a}{run\+Request\+Handler} (Request\+Handler\+Ptr a\+Request\+Handler, const std\+::string \&a\+Port)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_messaging_1_1_communication_service}{Communication\+Service} \& {\bfseries get\+Communication\+Service} ()\hypertarget{class_messaging_1_1_communication_service_a84eb6ffc757597611e01dfacb46c3702}{}\label{class_messaging_1_1_communication_service_a84eb6ffc757597611e01dfacb46c3702}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Messaging\+::\+Communication\+Service@{Messaging\+::\+Communication\+Service}!get\+I\+O\+Service@{get\+I\+O\+Service}}
+\index{get\+I\+O\+Service@{get\+I\+O\+Service}!Messaging\+::\+Communication\+Service@{Messaging\+::\+Communication\+Service}}
+\subsubsection[{\texorpdfstring{get\+I\+O\+Service()}{getIOService()}}]{\setlength{\rightskip}{0pt plus 5cm}boost\+::asio\+::io\+\_\+service \& Messaging\+::\+Communication\+Service\+::get\+I\+O\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_messaging_1_1_communication_service_a603bfa697fbac1d8ea95115fbc78de24}{}\label{class_messaging_1_1_communication_service_a603bfa697fbac1d8ea95115fbc78de24}
+This function is public because otherwise it the classes \hyperlink{class_messaging_1_1_session}{Session}, \hyperlink{class_messaging_1_1_server}{Server} and \hyperlink{class_messaging_1_1_client}{Client} have to be friends \index{Messaging\+::\+Communication\+Service@{Messaging\+::\+Communication\+Service}!run\+Request\+Handler@{run\+Request\+Handler}}
+\index{run\+Request\+Handler@{run\+Request\+Handler}!Messaging\+::\+Communication\+Service@{Messaging\+::\+Communication\+Service}}
+\subsubsection[{\texorpdfstring{run\+Request\+Handler(\+Request\+Handler\+Ptr a\+Request\+Handler, short a\+Port=12345)}{runRequestHandler(RequestHandlerPtr aRequestHandler, short aPort=12345)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Communication\+Service\+::run\+Request\+Handler (
+\begin{DoxyParamCaption}
+\item[{Request\+Handler\+Ptr}]{a\+Request\+Handler, }
+\item[{short}]{a\+Port = {\ttfamily 12345}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_messaging_1_1_communication_service_a91ea43508fc513e2be07071314bfcad9}{}\label{class_messaging_1_1_communication_service_a91ea43508fc513e2be07071314bfcad9}
+Runs the given a\+Request\+Handler at the given port until boost\+::asio\+::io\+\_\+service\+::io\+\_\+service.\+run() returns. In the limited context of Robot\+World this is done by sending a \char`\"{}stop\char`\"{}-\/message. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_messaging_1_1_server_session_a294d16e8d6c8839fee2358443d78dc15}{Server\+Session\+::handle\+Message\+Read( Message\& a\+Message)} for the implementation. 
+\end{DoxySeeAlso}
+\index{Messaging\+::\+Communication\+Service@{Messaging\+::\+Communication\+Service}!run\+Request\+Handler@{run\+Request\+Handler}}
+\index{run\+Request\+Handler@{run\+Request\+Handler}!Messaging\+::\+Communication\+Service@{Messaging\+::\+Communication\+Service}}
+\subsubsection[{\texorpdfstring{run\+Request\+Handler(\+Request\+Handler\+Ptr a\+Request\+Handler, const std\+::string \&a\+Port)}{runRequestHandler(RequestHandlerPtr aRequestHandler, const std::string &aPort)}}]{\setlength{\rightskip}{0pt plus 5cm}void Messaging\+::\+Communication\+Service\+::run\+Request\+Handler (
+\begin{DoxyParamCaption}
+\item[{Request\+Handler\+Ptr}]{a\+Request\+Handler, }
+\item[{const std\+::string \&}]{a\+Port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_messaging_1_1_communication_service_aafbba827051d66b74a0d5262074a950a}{}\label{class_messaging_1_1_communication_service_aafbba827051d66b74a0d5262074a950a}
+Uses \hyperlink{namespacestd_a5a4884a3b1890357be19cd6ff56179da}{std\+::stoi} for string to {\itshape int} conversion. Throws the exceptions that \hyperlink{namespacestd_a5a4884a3b1890357be19cd6ff56179da}{std\+::stoi} may throw. If int $>$ max short you lose... 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Communication\+Service.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Communication\+Service.\+cpp\end{DoxyCompactItemize}

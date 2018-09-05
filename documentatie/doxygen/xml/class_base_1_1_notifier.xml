@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_base_1_1_notifier" kind="class" language="C++" prot="public">
+    <compoundname>Base::Notifier</compoundname>
+    <derivedcompoundref refid="class_model_1_1_model_object" prot="public" virt="non-virtual">model::ModelObject</derivedcompoundref>
+    <derivedcompoundref refid="class_path_algorithm_1_1_a_star" prot="public" virt="non-virtual">PathAlgorithm::AStar</derivedcompoundref>
+    <includes refid="_notifier_8hpp" local="no">Notifier.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors and destructor</header>
+      <memberdef kind="function" id="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Base::Notifier::Notifier</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>Notifier</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor, enables notification by default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, notification is enabled. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="32" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Base::Notifier::~Notifier</definition>
+        <argsstring>()</argsstring>
+        <name>~Notifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="36" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Notifier functions</header>
+      <memberdef kind="function" id="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Notifier::enableNotification</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableNotification</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>En- or disables the notification by this <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true (default) enables the notification for this <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="48" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Notifier::disableNotification</definition>
+        <argsstring>()</argsstring>
+        <name>disableNotification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disables the notification by this <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="52" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Base::Notifier::isEnabledForNotification</definition>
+        <argsstring>() const </argsstring>
+        <name>isEnabledForNotification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>True if notification is enabled for this <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref>, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="57" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Notifier::addObserver</definition>
+        <argsstring>(Observer &amp;anObserver)</argsstring>
+        <name>addObserver</name>
+        <param>
+          <type><ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> &amp;</type>
+          <declname>anObserver</declname>
+          <defname>aObserver</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds the <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> to the list of Observers if not in the list yet</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anObserver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The observer to add</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The implementation of operator== uses pointer comparison! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="63" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="47" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Notifier::removeObserver</definition>
+        <argsstring>(Observer &amp;anObserver)</argsstring>
+        <name>removeObserver</name>
+        <param>
+          <type><ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> &amp;</type>
+          <declname>anObserver</declname>
+          <defname>aObserver</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes the <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> from the list of Observers if in the list</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anObserver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> to remove</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The implementation of operator== uses pointer comparison! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="61" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Notifier::removeAllObservers</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllObservers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes all observer from the list of Observers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="73" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Base::Notifier::notifyObservers</definition>
+        <argsstring>()</argsstring>
+        <name>notifyObservers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies all observers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="77" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="82" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_base_1_1_notifier_1a5b3d9077ee7023746a05377f2c6b192e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Base::Notifier::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplementedby refid="class_model_1_1_goal_1a3a2482cbc274b38165125a75be970f29">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_abstract_actuator_1a6fe9d0ac0c7c6c56176fff61a773a4b9">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_wall_1af537e51905929a5b583ed5f91e60096b">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_abstract_agent_1a4cee6603af332eb80d524bf3af70489a">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_way_point_1a2504ccca4e76765faaf91b85c1e0fb75">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_laser_distance_sensor_1a9403593acd21d557e5af1d79901fde34">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_model_object_1a9db00b9150a932a1637e425f24c0bdf0">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_abstract_sensor_1a85c18d6d51b8b6a3b97f682ad242be9d">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_robot_world_1a9f5a599b9d6523f45df7cbb0aafe4c08">asString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_robot_1a888add69a87a3e0f82a3f9c95140716f">asString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="87" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_notifier_1ae9189ab41334252a50dbaa82b6326c12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string Base::Notifier::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplementedby refid="class_model_1_1_goal_1a30c24f8dfe63a025222753f7d8fa8392">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_abstract_actuator_1ab5199d4458a2913844459832d563f989">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_wall_1a298bfdfe9f2d9d637d53b233ec431277">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_abstract_agent_1abcb33490b0f5761a2659bf705aff04b5">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_way_point_1aa7acf33a786c98fa593a3a38d6270723">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_laser_distance_sensor_1ab32d7cbfd19a9a5ec12a0c06ebb02b4f">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_model_object_1aced22b0b0ee637c598c463de6a1d8d03">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_abstract_sensor_1aa67bce32b6a602772773f0f23d0634f0">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_robot_world_1a9c599037d4bdc7ebd4e9138c3cf3cc82">asDebugString</reimplementedby>
+        <reimplementedby refid="class_model_1_1_robot_1aaf05b81b0aff3dac7b39effa462da04e">asDebugString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="91" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_base_1_1_notifier_1a50dc0a6b1b07ddb294a1dab8e943b0e8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Base::Notifier::notify</definition>
+        <argsstring></argsstring>
+        <name>notify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="95" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_base_1_1_notifier_1a5a7c9eb8a73cf5f2cae4599ea7931444" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> * &gt;</type>
+        <definition>std::vector&lt; Observer* &gt; Base::Notifier::observers</definition>
+        <argsstring></argsstring>
+        <name>observers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="96" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref> class is part of a straight forward implementation of the Observer/Notifier pattern</para><para><simplesect kind="see"><para><ref refid="class_base_1_1_observer" kindref="compound">Observer</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="578">
+        <label>model::WayPoint</label>
+        <link refid="class_model_1_1_way_point"/>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="569">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="568" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>model::Goal</label>
+        <link refid="class_model_1_1_goal"/>
+        <childnode refid="578" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="573">
+        <label>model::Robot</label>
+        <link refid="class_model_1_1_robot"/>
+        <childnode refid="572" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="568">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="572">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="574">
+        <label>model::AbstractSensor</label>
+        <link refid="class_model_1_1_abstract_sensor"/>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>model::SteeringActuator</label>
+        <link refid="class_model_1_1_steering_actuator"/>
+        <childnode refid="570" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="576">
+        <label>model::RobotWorld</label>
+        <link refid="class_model_1_1_robot_world"/>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="570">
+        <label>model::AbstractActuator</label>
+        <link refid="class_model_1_1_abstract_actuator"/>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="575">
+        <label>model::LaserDistanceSensor</label>
+        <link refid="class_model_1_1_laser_distance_sensor"/>
+        <childnode refid="574" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>PathAlgorithm::AStar</label>
+        <link refid="class_path_algorithm_1_1_a_star"/>
+        <childnode refid="568" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="577">
+        <label>model::Wall</label>
+        <link refid="class_model_1_1_wall"/>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp" bodystart="20" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>addObserver</name></member>
+      <member refid="class_base_1_1_notifier_1ae9189ab41334252a50dbaa82b6326c12" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>asDebugString</name></member>
+      <member refid="class_base_1_1_notifier_1a5b3d9077ee7023746a05377f2c6b192e" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>asString</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>enableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>Base::Notifier</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a50dc0a6b1b07ddb294a1dab8e943b0e8" prot="private" virt="non-virtual"><scope>Base::Notifier</scope><name>notify</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>notifyObservers</name></member>
+      <member refid="class_base_1_1_notifier_1a5a7c9eb8a73cf5f2cae4599ea7931444" prot="private" virt="non-virtual"><scope>Base::Notifier</scope><name>observers</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>removeObserver</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>Base::Notifier</scope><name>~Notifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

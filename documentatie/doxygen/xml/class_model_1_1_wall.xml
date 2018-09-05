@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_wall" kind="class" language="C++" prot="public">
+    <compoundname>model::Wall</compoundname>
+    <basecompoundref refid="class_model_1_1_model_object" prot="public" virt="non-virtual">model::ModelObject</basecompoundref>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_model_1_1_wall_1af537e51905929a5b583ed5f91e60096b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::Wall::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplements refid="class_model_1_1_model_object_1a9db00b9150a932a1637e425f24c0bdf0">asString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="60" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_wall_1a298bfdfe9f2d9d637d53b233ec431277" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::Wall::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplements refid="class_model_1_1_model_object_1aced22b0b0ee637c598c463de6a1d8d03">asDebugString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="64" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp" bodystart="67" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_model_1_1_wall_1a011d96745af39a6692e6784d253036a8" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point model::Wall::point1</definition>
+        <argsstring></argsstring>
+        <name>point1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="68" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_model_1_1_wall_1a96a5d76d18aad4769bcac309daf0f621" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point model::Wall::point2</definition>
+        <argsstring></argsstring>
+        <name>point2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_wall_1a63a42202a5fccb16a019f462b7d6d503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::Wall::Wall</definition>
+        <argsstring>()</argsstring>
+        <name>Wall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="19" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_wall_1ac0b46ab42d2beb30c8615a151e7fddf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::Wall::Wall</definition>
+        <argsstring>(const Point &amp;aPoint1, const Point &amp;aPoint2)</argsstring>
+        <name>Wall</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint1</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_wall_1ac158b1114d56d69134d71b69ae6bb9e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>model::Wall::~Wall</definition>
+        <argsstring>()</argsstring>
+        <name>~Wall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="28" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_wall_1acb2fdae8d93a301f6e2b4373abe7c07f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::Wall::getPoint1</definition>
+        <argsstring>() const </argsstring>
+        <name>getPoint1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="32" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_wall_1a33faa9568601b27a7d26b0120240aa5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Wall::setPoint1</definition>
+        <argsstring>(const Point &amp;aPoint1, bool aNotifyObservers=true)</argsstring>
+        <name>setPoint1</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint1</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="39" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_wall_1a48f2077a03eaa993c6a10df293a43147" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point model::Wall::getPoint2</definition>
+        <argsstring>() const </argsstring>
+        <name>getPoint2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="44" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_wall_1a09daf2452415fa71a038150deb4d3246" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void model::Wall::setPoint2</definition>
+        <argsstring>(const Point &amp;aPoint2, bool aNotifyObservers=true)</argsstring>
+        <name>setPoint2</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint2</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aNotifyObservers</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="51" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.cpp" bodystart="44" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="733">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+        <childnode refid="735" relation="public-inheritance">
+        </childnode>
+        <childnode refid="736" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="734">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="735">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="736">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="732">
+        <label>model::Wall</label>
+        <link refid="class_model_1_1_wall"/>
+        <childnode refid="733" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="738">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+        <childnode refid="740" relation="public-inheritance">
+        </childnode>
+        <childnode refid="741" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="740">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="741">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="737">
+        <label>model::Wall</label>
+        <link refid="class_model_1_1_wall"/>
+        <childnode refid="738" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" line="14" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp" bodystart="13" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>model::Wall</scope><name>addObserver</name></member>
+      <member refid="class_model_1_1_wall_1a298bfdfe9f2d9d637d53b233ec431277" prot="public" virt="virtual"><scope>model::Wall</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_wall_1af537e51905929a5b583ed5f91e60096b" prot="public" virt="virtual"><scope>model::Wall</scope><name>asString</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>model::Wall</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>model::Wall</scope><name>enableNotification</name></member>
+      <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>getObjectId</name></member>
+      <member refid="class_model_1_1_wall_1acb2fdae8d93a301f6e2b4373abe7c07f" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>getPoint1</name></member>
+      <member refid="class_model_1_1_wall_1a48f2077a03eaa993c6a10df293a43147" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>getPoint2</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>model::Wall</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>model::Wall</scope><name>notifyObservers</name></member>
+      <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>operator&lt;</name></member>
+      <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>operator==</name></member>
+      <member refid="class_model_1_1_wall_1a011d96745af39a6692e6784d253036a8" prot="private" virt="non-virtual"><scope>model::Wall</scope><name>point1</name></member>
+      <member refid="class_model_1_1_wall_1a96a5d76d18aad4769bcac309daf0f621" prot="private" virt="non-virtual"><scope>model::Wall</scope><name>point2</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>model::Wall</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>model::Wall</scope><name>removeObserver</name></member>
+      <member refid="class_model_1_1_wall_1a33faa9568601b27a7d26b0120240aa5d" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>setPoint1</name></member>
+      <member refid="class_model_1_1_wall_1a09daf2452415fa71a038150deb4d3246" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>setPoint2</name></member>
+      <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>toPtr</name></member>
+      <member refid="class_model_1_1_wall_1a63a42202a5fccb16a019f462b7d6d503" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>Wall</name></member>
+      <member refid="class_model_1_1_wall_1ac0b46ab42d2beb30c8615a151e7fddf9" prot="public" virt="non-virtual"><scope>model::Wall</scope><name>Wall</name></member>
+      <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" prot="public" virt="virtual"><scope>model::Wall</scope><name>~ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>model::Wall</scope><name>~Notifier</name></member>
+      <member refid="class_model_1_1_wall_1ac158b1114d56d69134d71b69ae6bb9e0" prot="public" virt="virtual"><scope>model::Wall</scope><name>~Wall</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

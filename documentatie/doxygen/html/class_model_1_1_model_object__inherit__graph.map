@@ -1,0 +1,13 @@
+<map id="model::ModelObject" name="model::ModelObject">
+<area shape="rect" id="node5" href="$class_model_1_1_abstract_actuator.html" title="model::AbstractActuator" alt="" coords="420,5,583,32"/>
+<area shape="rect" id="node7" href="$class_model_1_1_abstract_agent.html" title="model::AbstractAgent" alt="" coords="427,56,575,83"/>
+<area shape="rect" id="node9" href="$class_model_1_1_abstract_sensor.html" title="model::AbstractSensor" alt="" coords="424,107,579,133"/>
+<area shape="rect" id="node11" href="$class_model_1_1_robot_world.html" title="model::RobotWorld" alt="" coords="434,157,569,184"/>
+<area shape="rect" id="node12" href="$class_model_1_1_wall.html" title="model::Wall" alt="" coords="456,208,547,235"/>
+<area shape="rect" id="node13" href="$class_model_1_1_way_point.html" title="model::WayPoint" alt="" coords="440,259,563,285"/>
+<area shape="rect" id="node3" href="$class_base_1_1_notifier.html" title="Base::Notifier" alt="" coords="44,132,147,159"/>
+<area shape="rect" id="node6" href="$class_model_1_1_steering_actuator.html" title="model::SteeringActuator" alt="" coords="645,5,807,32"/>
+<area shape="rect" id="node8" href="$class_model_1_1_robot.html" title="model::Robot" alt="" coords="676,56,776,83"/>
+<area shape="rect" id="node10" href="$class_model_1_1_laser_distance_sensor.html" title="model::LaserDistanceSensor" alt="" coords="631,107,821,133"/>
+<area shape="rect" id="node14" href="$class_model_1_1_goal.html" title="model::Goal" alt="" coords="680,259,772,285"/>
+</map>

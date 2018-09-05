@@ -1,0 +1,8 @@
+<map id="View::RectangleShape" name="View::RectangleShape">
+<area shape="rect" id="node5" href="$class_view_1_1_robot_shape.html" title="View::RobotShape" alt="" coords="5,304,136,331"/>
+<area shape="rect" id="node6" href="$class_view_1_1_way_point_shape.html" title="View::WayPointShape" alt="" coords="159,304,313,331"/>
+<area shape="rect" id="node2" href="$class_view_1_1_shape.html" title="View::Shape" alt="" coords="105,155,201,181"/>
+<area shape="rect" id="node3" href="$class_view_1_1_view_object.html" title="View::ViewObject" alt="" coords="90,80,217,107"/>
+<area shape="rect" id="node4" href="$class_base_1_1_observer.html" title="Base::Observer" alt="" coords="97,5,210,32"/>
+<area shape="rect" id="node7" href="$class_view_1_1_goal_shape.html" title="View::GoalShape" alt="" coords="175,379,297,405"/>
+</map>

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_widget_debug_trace_function_8cpp" kind="file" language="C++">
+    <compoundname>WidgetDebugTraceFunction.cpp</compoundname>
+    <includes refid="_widget_debug_trace_function_8hpp" local="yes">WidgetDebugTraceFunction.hpp</includes>
+    <includes refid="_log_text_ctrl_8hpp" local="yes">LogTextCtrl.hpp</includes>
+    <incdepgraph>
+      <node id="2590">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="2583">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="2570">
+        <label>wx/app.h</label>
+      </node>
+      <node id="2565">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.cpp</label>
+        <link refid="WidgetDebugTraceFunction.cpp"/>
+        <childnode refid="2566" relation="include">
+        </childnode>
+        <childnode refid="2602" relation="include">
+        </childnode>
+      </node>
+      <node id="2575">
+        <label>wx/event.h</label>
+      </node>
+      <node id="2584">
+        <label>wx/font.h</label>
+      </node>
+      <node id="2572">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="2594">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="2589">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="2585">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="2600">
+        <label>wx/region.h</label>
+      </node>
+      <node id="2598">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="2577" relation="include">
+        </childnode>
+      </node>
+      <node id="2569">
+        <label>string</label>
+      </node>
+      <node id="2577">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="2568">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2569" relation="include">
+        </childnode>
+        <childnode refid="2570" relation="include">
+        </childnode>
+        <childnode refid="2571" relation="include">
+        </childnode>
+        <childnode refid="2572" relation="include">
+        </childnode>
+        <childnode refid="2573" relation="include">
+        </childnode>
+        <childnode refid="2574" relation="include">
+        </childnode>
+        <childnode refid="2575" relation="include">
+        </childnode>
+        <childnode refid="2576" relation="include">
+        </childnode>
+        <childnode refid="2577" relation="include">
+        </childnode>
+        <childnode refid="2578" relation="include">
+        </childnode>
+        <childnode refid="2579" relation="include">
+        </childnode>
+        <childnode refid="2580" relation="include">
+        </childnode>
+        <childnode refid="2581" relation="include">
+        </childnode>
+        <childnode refid="2582" relation="include">
+        </childnode>
+        <childnode refid="2583" relation="include">
+        </childnode>
+        <childnode refid="2584" relation="include">
+        </childnode>
+        <childnode refid="2585" relation="include">
+        </childnode>
+        <childnode refid="2586" relation="include">
+        </childnode>
+        <childnode refid="2587" relation="include">
+        </childnode>
+        <childnode refid="2588" relation="include">
+        </childnode>
+        <childnode refid="2589" relation="include">
+        </childnode>
+        <childnode refid="2590" relation="include">
+        </childnode>
+        <childnode refid="2591" relation="include">
+        </childnode>
+        <childnode refid="2592" relation="include">
+        </childnode>
+        <childnode refid="2593" relation="include">
+        </childnode>
+        <childnode refid="2594" relation="include">
+        </childnode>
+        <childnode refid="2595" relation="include">
+        </childnode>
+        <childnode refid="2596" relation="include">
+        </childnode>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2598" relation="include">
+        </childnode>
+        <childnode refid="2599" relation="include">
+        </childnode>
+      </node>
+      <node id="2566">
+        <label>WidgetDebugTraceFunction.hpp</label>
+        <link refid="_widget_debug_trace_function_8hpp_source"/>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2568" relation="include">
+        </childnode>
+        <childnode refid="2601" relation="include">
+        </childnode>
+      </node>
+      <node id="2571">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="2586">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="2578">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="2601">
+        <label>DebugTraceFunction.hpp</label>
+        <link refid="_debug_trace_function_8hpp_source"/>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2569" relation="include">
+        </childnode>
+      </node>
+      <node id="2573">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="2582">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="2580">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="2602">
+        <label>LogTextCtrl.hpp</label>
+        <link refid="_log_text_ctrl_8hpp_source"/>
+        <childnode refid="2567" relation="include">
+        </childnode>
+        <childnode refid="2568" relation="include">
+        </childnode>
+        <childnode refid="2597" relation="include">
+        </childnode>
+        <childnode refid="2598" relation="include">
+        </childnode>
+      </node>
+      <node id="2595">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="2591">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="2576">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="2567">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="2593">
+        <label>wx/string.h</label>
+      </node>
+      <node id="2597">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="2577" relation="include">
+        </childnode>
+      </node>
+      <node id="2587">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="2574">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="2579">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="2592">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="2581">
+        <label>wx/button.h</label>
+      </node>
+      <node id="2599">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="2600" relation="include">
+        </childnode>
+      </node>
+      <node id="2596">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="2588">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;WidgetDebugTraceFunction.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;LogTextCtrl.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_application_1_1_widget_debug_trace_function_1afcc3b377364d45d52dd5f3a580e919ff" kindref="member">WidgetDebugTraceFunction::WidgetDebugTraceFunction</ref>(<sp/><ref refid="class_application_1_1_log_text_ctrl" kindref="compound">Application::LogTextCtrl</ref>*<sp/>aLogTextCtrl)<sp/>:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputControl(<sp/>aLogTextCtrl)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WidgetDebugTraceFunction::trace(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aText)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>One<sp/>can<sp/>create<sp/>any<sp/>type<sp/>of<sp/>command<sp/>event<sp/>here<sp/>but<sp/>we<sp/>use<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LogTextControl<sp/>provided<sp/>things</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CommandEvent<sp/>event(<sp/>Application::ROBOTWORLD_TRACE_EVENT);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">.SetString(<sp/>WXSTRING(<sp/>aText));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>should<sp/>we<sp/>decide<sp/>this<sp/>runtime?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>need<sp/>synchronous<sp/>handling<sp/>of<sp/>the<sp/>trace<sp/>to<sp/>prevent<sp/>loosing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>messages<sp/>in<sp/>case<sp/>of<sp/>a<sp/>crash<sp/>we<sp/>must<sp/>use<sp/>ProcessEvent.<sp/>It<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slow<sp/>down<sp/>the<sp/>application<sp/>though.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputCtrl-&gt;ProcessEvent(event);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>case<sp/>we<sp/>can<sp/>get<sp/>away<sp/>with<sp/>asynchronous<sp/>event<sp/>handling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>do<sp/>not<sp/>want<sp/>to<sp/>recompile:<sp/>use<sp/>StdOutDebugTraceFunction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wxPostEvent(<sp/>outputControl,<sp/>event);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.cpp"/>
+  </compounddef>
+</doxygen>

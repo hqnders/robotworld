@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_notification_handler_8hpp" kind="file" language="C++">
+    <compoundname>NotificationHandler.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includes refid="_notification_event_8hpp" local="yes">NotificationEvent.hpp</includes>
+    <includes refid="_notification_function_type_traits_8hpp" local="yes">NotificationFunctionTypeTraits.hpp</includes>
+    <includes refid="_widgets_8hpp" local="yes">Widgets.hpp</includes>
+    <includedby refid="_robot_world_canvas_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</includedby>
+    <includedby refid="_notification_handler_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.cpp</includedby>
+    <incdepgraph>
+      <node id="1259">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="1271">
+        <label>functional</label>
+      </node>
+      <node id="1252">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="1234">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp</label>
+        <link refid="NotificationHandler.hpp"/>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+      </node>
+      <node id="1239">
+        <label>wx/app.h</label>
+      </node>
+      <node id="1244">
+        <label>wx/event.h</label>
+      </node>
+      <node id="1253">
+        <label>wx/font.h</label>
+      </node>
+      <node id="1241">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="1263">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="1258">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="1254">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="1269">
+        <label>wx/region.h</label>
+      </node>
+      <node id="1267">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="1246" relation="include">
+        </childnode>
+      </node>
+      <node id="1238">
+        <label>string</label>
+      </node>
+      <node id="1246">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="1237">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1238" relation="include">
+        </childnode>
+        <childnode refid="1239" relation="include">
+        </childnode>
+        <childnode refid="1240" relation="include">
+        </childnode>
+        <childnode refid="1241" relation="include">
+        </childnode>
+        <childnode refid="1242" relation="include">
+        </childnode>
+        <childnode refid="1243" relation="include">
+        </childnode>
+        <childnode refid="1244" relation="include">
+        </childnode>
+        <childnode refid="1245" relation="include">
+        </childnode>
+        <childnode refid="1246" relation="include">
+        </childnode>
+        <childnode refid="1247" relation="include">
+        </childnode>
+        <childnode refid="1248" relation="include">
+        </childnode>
+        <childnode refid="1249" relation="include">
+        </childnode>
+        <childnode refid="1250" relation="include">
+        </childnode>
+        <childnode refid="1251" relation="include">
+        </childnode>
+        <childnode refid="1252" relation="include">
+        </childnode>
+        <childnode refid="1253" relation="include">
+        </childnode>
+        <childnode refid="1254" relation="include">
+        </childnode>
+        <childnode refid="1255" relation="include">
+        </childnode>
+        <childnode refid="1256" relation="include">
+        </childnode>
+        <childnode refid="1257" relation="include">
+        </childnode>
+        <childnode refid="1258" relation="include">
+        </childnode>
+        <childnode refid="1259" relation="include">
+        </childnode>
+        <childnode refid="1260" relation="include">
+        </childnode>
+        <childnode refid="1261" relation="include">
+        </childnode>
+        <childnode refid="1262" relation="include">
+        </childnode>
+        <childnode refid="1263" relation="include">
+        </childnode>
+        <childnode refid="1264" relation="include">
+        </childnode>
+        <childnode refid="1265" relation="include">
+        </childnode>
+        <childnode refid="1266" relation="include">
+        </childnode>
+        <childnode refid="1267" relation="include">
+        </childnode>
+        <childnode refid="1268" relation="include">
+        </childnode>
+      </node>
+      <node id="1240">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="1255">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="1247">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="1242">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="1236">
+        <label>NotificationEvent.hpp</label>
+        <link refid="_notification_event_8hpp_source"/>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+      </node>
+      <node id="1251">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="1249">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="1264">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="1260">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="1245">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="1270">
+        <label>NotificationFunctionTypeTraits.hpp</label>
+        <link refid="_notification_function_type_traits_8hpp_source"/>
+        <childnode refid="1235" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1237" relation="include">
+        </childnode>
+      </node>
+      <node id="1235">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="1262">
+        <label>wx/string.h</label>
+      </node>
+      <node id="1266">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="1246" relation="include">
+        </childnode>
+      </node>
+      <node id="1256">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="1243">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="1248">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="1261">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="1250">
+        <label>wx/button.h</label>
+      </node>
+      <node id="1268">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="1269" relation="include">
+        </childnode>
+      </node>
+      <node id="1265">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="1257">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1272">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp</label>
+        <link refid="NotificationHandler.hpp"/>
+        <childnode refid="1273" relation="include">
+        </childnode>
+      </node>
+      <node id="1273">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</label>
+        <link refid="_robot_world_canvas_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_base_1_1_notification_handler" prot="public">Base::NotificationHandler</innerclass>
+    <innernamespace refid="namespace_base">Base</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NOTIFICATIONHANDLER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOTIFICATIONHANDLER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;NotificationEvent.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;NotificationFunctionTypeTraits.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Widgets.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>NotificationFunction<sp/>&gt;</highlight></codeline>
+<codeline lineno="16" refid="class_base_1_1_notification_handler" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_base_1_1_notification_handler" kindref="compound">NotificationHandler</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>EventHandler</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_base_1_1_notification_handler" kindref="compound">NotificationHandler</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>NotificationFunction&amp;<sp/>aNotificationFunction)<sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">(<sp/>aNotificationFunction)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connect(<sp/>EVT_NOTIFICATIONEVENT,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(wxObjectEventFunction)(wxEventFunction)static_cast&lt;<sp/>NotificationEventFunction<sp/>&gt;(<sp/>&amp;NotificationHandler::OnNotificationEvent));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_base_1_1_notification_handler" kindref="compound">NotificationHandler</ref>()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnNotificationEvent(<sp/>NotifyEvent&amp;<sp/>aNotifyEvent)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_base_1_1_notification_function_type_traits" kindref="compound">NotificationFunctionTypeTraits&lt; NotificationFunction &gt;</ref><sp/>caller;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>caller.call(<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">,<sp/>aNotifyEvent);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NotificationFunction<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>Base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>NOTIFICATIONHANDLER_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,775 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_robot_shape_8cpp" kind="file" language="C++">
+    <compoundname>RobotShape.cpp</compoundname>
+    <includes refid="_robot_shape_8hpp" local="yes">RobotShape.hpp</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="_notifier_8hpp" local="yes">Notifier.hpp</includes>
+    <includes refid="_robot_8hpp" local="yes">Robot.hpp</includes>
+    <includes refid="_goal_8hpp" local="yes">Goal.hpp</includes>
+    <includes refid="_logger_8hpp" local="yes">Logger.hpp</includes>
+    <includes refid="_robot_world_canvas_8hpp" local="yes">RobotWorldCanvas.hpp</includes>
+    <includes refid="_robot_world_8hpp" local="yes">RobotWorld.hpp</includes>
+    <includes refid="_shape2_d_utils_8hpp" local="yes">Shape2DUtils.hpp</includes>
+    <incdepgraph>
+      <node id="1699">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="1746">
+        <label>functional</label>
+      </node>
+      <node id="1735">
+        <label>iomanip</label>
+      </node>
+      <node id="1728">
+        <label>queue</label>
+      </node>
+      <node id="1692">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="1743">
+        <label>NotificationHandler.hpp</label>
+        <link refid="_notification_handler_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1744" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1747">
+        <label>RobotWorld.hpp</label>
+        <link refid="_robot_world_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+      </node>
+      <node id="1724">
+        <label>AbstractAgent.hpp</label>
+        <link refid="_abstract_agent_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+      </node>
+      <node id="1679">
+        <label>wx/app.h</label>
+      </node>
+      <node id="1684">
+        <label>wx/event.h</label>
+      </node>
+      <node id="1716">
+        <label>iterator</label>
+      </node>
+      <node id="1693">
+        <label>wx/font.h</label>
+      </node>
+      <node id="1681">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="1725">
+        <label>Queue.hpp</label>
+        <link refid="_queue_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+      </node>
+      <node id="1703">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="1698">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="1713">
+        <label>ObjectId.hpp</label>
+        <link refid="_object_id_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+      </node>
+      <node id="1748">
+        <label>Shape2DUtils.hpp</label>
+        <link refid="_shape2_d_utils_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+      </node>
+      <node id="1694">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="1733">
+        <label>Message.hpp</label>
+        <link refid="_message_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1734" relation="include">
+        </childnode>
+        <childnode refid="1735" relation="include">
+        </childnode>
+        <childnode refid="1736" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+      </node>
+      <node id="1738">
+        <label>cmath</label>
+      </node>
+      <node id="1709">
+        <label>wx/region.h</label>
+      </node>
+      <node id="1676">
+        <label>RectangleShape.hpp</label>
+        <link refid="_rectangle_shape_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+      </node>
+      <node id="1707">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="1686" relation="include">
+        </childnode>
+      </node>
+      <node id="1719">
+        <label>boost/noncopyable.hpp</label>
+      </node>
+      <node id="1675">
+        <label>string</label>
+      </node>
+      <node id="1686">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="1678">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1679" relation="include">
+        </childnode>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1683" relation="include">
+        </childnode>
+        <childnode refid="1684" relation="include">
+        </childnode>
+        <childnode refid="1685" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+        <childnode refid="1687" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1690" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1696" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1698" relation="include">
+        </childnode>
+        <childnode refid="1699" relation="include">
+        </childnode>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+      </node>
+      <node id="1730">
+        <label>map</label>
+      </node>
+      <node id="1680">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="1721">
+        <label>Robot.hpp</label>
+        <link refid="_robot_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+        <childnode refid="1733" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+      </node>
+      <node id="1726">
+        <label>stddef.h</label>
+      </node>
+      <node id="1695">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="1687">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="1682">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="1744">
+        <label>NotificationEvent.hpp</label>
+        <link refid="_notification_event_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1742">
+        <label>RobotWorldCanvas.hpp</label>
+        <link refid="_robot_world_canvas_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+      </node>
+      <node id="1727">
+        <label>condition_variable</label>
+      </node>
+      <node id="1691">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="1689">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="1704">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="1740">
+        <label>WayPoint.hpp</label>
+        <link refid="_way_point_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+        <childnode refid="1708" relation="include">
+        </childnode>
+      </node>
+      <node id="1700">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="1717">
+        <label>vector</label>
+      </node>
+      <node id="1711">
+        <label>ViewObject.hpp</label>
+        <link refid="_view_object_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+      </node>
+      <node id="1737">
+        <label>MessageHandler.hpp</label>
+        <link refid="_message_handler_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+      </node>
+      <node id="1685">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="1745">
+        <label>NotificationFunctionTypeTraits.hpp</label>
+        <link refid="_notification_function_type_traits_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="1710">
+        <label>Shape.hpp</label>
+        <link refid="_shape_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+      </node>
+      <node id="1736">
+        <label>sstream</label>
+      </node>
+      <node id="1702">
+        <label>wx/string.h</label>
+      </node>
+      <node id="1706">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="1686" relation="include">
+        </childnode>
+      </node>
+      <node id="1672">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.cpp</label>
+        <link refid="RobotShape.cpp"/>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1738" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1741" relation="include">
+        </childnode>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+      </node>
+      <node id="1696">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="1718">
+        <label>ModelObject.hpp</label>
+        <link refid="_model_object_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+      </node>
+      <node id="1732">
+        <label>BoundedVector.hpp</label>
+        <link refid="_bounded_vector_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+      </node>
+      <node id="1749">
+        <label>MathUtils.hpp</label>
+        <link refid="_math_utils_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+      </node>
+      <node id="1683">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="1715">
+        <label>iostream</label>
+      </node>
+      <node id="1734">
+        <label>cstddef</label>
+      </node>
+      <node id="1688">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="1701">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="1741">
+        <label>Logger.hpp</label>
+        <link refid="_logger_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+      </node>
+      <node id="1722">
+        <label>mutex</label>
+      </node>
+      <node id="1723">
+        <label>thread</label>
+      </node>
+      <node id="1739">
+        <label>Goal.hpp</label>
+        <link refid="_goal_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1740" relation="include">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>wx/button.h</label>
+      </node>
+      <node id="1731">
+        <label>set</label>
+      </node>
+      <node id="1708">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="1709" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="1714">
+        <label>algorithm</label>
+      </node>
+      <node id="1712">
+        <label>Observer.hpp</label>
+        <link refid="_observer_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+      </node>
+      <node id="1697">
+        <label>wx/statline.h</label>
+      </node>
+      <node id="1673">
+        <label>RobotShape.hpp</label>
+        <link refid="_robot_shape_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1678" relation="include">
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>AStar.hpp</label>
+        <link refid="_a_star_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1731" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1707" relation="include">
+        </childnode>
+      </node>
+      <node id="1677">
+        <label>memory</label>
+      </node>
+      <node id="1720">
+        <label>Notifier.hpp</label>
+        <link refid="_notifier_8hpp_source"/>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_view">View</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;RobotShape.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Notifier.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Robot.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Goal.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RobotWorldCanvas.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;RobotWorld.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Shape2DUtils.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_view" kindref="compound">View</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>RobotShape::RobotShape(<sp/>model::RobotPtr<sp/>aRobot)<sp/>:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RectangleShape(<sp/><ref refid="namespacestd" kindref="compound">std</ref>::dynamic_pointer_cast&lt;<ref refid="namespace_model" kindref="compound">model</ref>::ModelObject&gt;(aRobot),<sp/>aRobot-&gt;getPosition(),<sp/>aRobot-&gt;getName())</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>RobotShape::~RobotShape()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>model::RobotPtr<sp/>RobotShape::getRobot()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="30"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::dynamic_pointer_cast&lt;<ref refid="class_model_1_1_robot" kindref="compound">model::Robot</ref>&gt;(getModelObject());</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RobotShape::setRobot(<sp/>model::RobotPtr<sp/>aRobot)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setModelObject(std::dynamic_pointer_cast&lt;model::ModelObject&gt;(aRobot));</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RobotShape::handleActivated()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>model::GoalPtr<sp/>goal<sp/>=<sp/>model::RobotWorld::getRobotWorld().getGoal(<sp/></highlight><highlight class="stringliteral">&quot;Goal&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(goal)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>goalPosition<sp/>=<sp/>goal-&gt;getPosition();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>robotPosition<sp/>=<sp/>getRobot()-&gt;getPosition();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getRobot()-&gt;setFront(<sp/><ref refid="class_model_1_1_bounded_vector" kindref="compound">model::BoundedVector</ref>(<sp/>goalPosition,<sp/>robotPosition),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RobotShape::handleSelection()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(robotWorldCanvas-&gt;isShapeSelected()<sp/>&amp;&amp;<sp/>robotWorldCanvas-&gt;getSelectedShape()-&gt;getObjectId()<sp/>==<sp/>getObjectId())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setSelected();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setSelected(false);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RobotShape::handleNotification()</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCentre(<sp/>getRobot()-&gt;getPosition());</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robotWorldCanvas-&gt;handleNotification();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RobotShape::draw(<sp/>wxDC&amp;<sp/>dc)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>minimum<sp/>size<sp/>of<sp/>the<sp/>RectangleShape<sp/>is<sp/>the<sp/>size<sp/>of<sp/>the<sp/>title</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>titleSize<sp/>=<sp/>dc.GetTextExtent(<sp/>WXSTRING(<sp/>title));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size.x<sp/>&lt;<sp/>(titleSize.x<sp/>+<sp/>2<sp/>*<sp/>spacing<sp/>+<sp/>2<sp/>*<sp/>borderWidth))</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size.x<sp/>=<sp/>titleSize.x<sp/>+<sp/>2<sp/>*<sp/>spacing<sp/>+<sp/>2<sp/>*<sp/>borderWidth;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size.y<sp/>&lt;<sp/>(titleSize.y<sp/>+<sp/>2<sp/>*<sp/>spacing<sp/>+<sp/>2<sp/>*<sp/>borderWidth))</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size.y<sp/>=<sp/>titleSize.y<sp/>+<sp/>2<sp/>*<sp/>spacing<sp/>+<sp/>2<sp/>*<sp/>borderWidth;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(getRobot()-&gt;getSize()<sp/>!=<sp/>size)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getRobot()-&gt;setSize(<sp/>size,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PathAlgorithm::OpenSet<sp/>openSet<sp/>=<sp/>getRobot()-&gt;getOpenSet();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(openSet.size()<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/></highlight><highlight class="stringliteral">&quot;PALE<sp/>GREEN&quot;</highlight><highlight class="normal">),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">PathAlgorithm::Vertex</ref>&amp;<sp/>vertex<sp/>:<sp/>openSet)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawPoint(<sp/>vertex.asPoint());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PathAlgorithm::Path<sp/>path<sp/>=<sp/>getRobot()-&gt;getPath();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path.size()<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/></highlight><highlight class="stringliteral">&quot;BLACK&quot;</highlight><highlight class="normal">),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">PathAlgorithm::Vertex</ref>&amp;<sp/>vertex<sp/>:<sp/>path)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawPoint(<sp/>vertex.asPoint());</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Draws<sp/>a<sp/>rectangle<sp/>with<sp/>the<sp/>given<sp/>top<sp/>left<sp/>corner,<sp/>and<sp/>with<sp/>the<sp/>given<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetBrush(<sp/>*wxWHITE_BRUSH);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isSelected())</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/>getSelectionColour()),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/>getNormalColour()),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>cornerPoints[]<sp/>=<sp/>{<sp/>getRobot()-&gt;getFrontRight(),<sp/>getRobot()-&gt;getFrontLeft(),<sp/>getRobot()-&gt;getBackLeft(),<sp/>getRobot()-&gt;getBackRight()<sp/>};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawPolygon(<sp/>4,<sp/>cornerPoints);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/></highlight><highlight class="stringliteral">&quot;RED&quot;</highlight><highlight class="normal">),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawPoint(<sp/>cornerPoints[1]);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/></highlight><highlight class="stringliteral">&quot;GREEN&quot;</highlight><highlight class="normal">),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawPoint(<sp/>cornerPoints[0]);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/></highlight><highlight class="stringliteral">&quot;INDIAN<sp/>RED&quot;</highlight><highlight class="normal">),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawPoint(<sp/>cornerPoints[2]);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/></highlight><highlight class="stringliteral">&quot;PALE<sp/>GREEN&quot;</highlight><highlight class="normal">),<sp/>borderWidth,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawPoint(<sp/>cornerPoints[3]);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle<sp/>=<sp/>Utils::Shape2DUtils::getAngle(<sp/>getRobot()-&gt;getFront())<sp/>+<sp/>0.5<sp/>*<sp/>Utils::PI;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.SetPen(<sp/>wxPen(<sp/>WXSTRING(<sp/></highlight><highlight class="stringliteral">&quot;BLACK&quot;</highlight><highlight class="normal">),<sp/>1,<sp/>wxSOLID));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawLine(<sp/>centre.x,<sp/>centre.y,<sp/>centre.x<sp/>+<sp/>std::cos(<sp/>angle<sp/>-<sp/>0.5<sp/>*<sp/>Utils::PI)<sp/>*<sp/>25,<sp/>centre.y<sp/>+<sp/>std::sin(<sp/>angle<sp/>-<sp/>0.5<sp/>*<sp/>Utils::PI)<sp/>*<sp/>25);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Bounty<sp/>of<sp/>0.25<sp/>points<sp/>for<sp/>anyone<sp/>who<sp/>makes<sp/>the<sp/>name<sp/>turn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>front<sp/>of<sp/>the<sp/>robot,<sp/>while<sp/>text<sp/>centre<sp/>being<sp/>displayed<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>centre<sp/>of<sp/>the<sp/>robot,<sp/>bottom<sp/>of<sp/>the<sp/>text<sp/>to<sp/>the<sp/>back<sp/>of<sp/>the<sp/>robot.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dc.DrawRotatedText(<sp/>WXSTRING(<sp/>title),<sp/>centre.x<sp/>-<sp/>titleSize.x<sp/>/<sp/>2,<sp/>centre.y<sp/>-<sp/>titleSize.y<sp/>/<sp/>2,<sp/>angle<sp/>-<sp/>Utils::PI);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RobotShape::occupies(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Point&amp;<sp/>aPoint)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="150"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>cornerPoints[]<sp/>=<sp/>{<sp/>getRobot()-&gt;getFrontRight(),<sp/>getRobot()-&gt;getFrontLeft(),<sp/>getRobot()-&gt;getBackLeft(),<sp/>getRobot()-&gt;getBackRight()<sp/>};</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_utils_1_1_shape2_d_utils_1a297b88bbdc022369dbc06775878a73e5" kindref="member">Utils::Shape2DUtils::isInsidePolygon</ref>(<sp/>cornerPoints,<sp/>4,<sp/>aPoint);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RobotShape::setCentre(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Point&amp;<sp/>aPoint)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getRobot()-&gt;setPosition(<sp/>aPoint,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RectangleShape::setCentre(<sp/>getRobot()-&gt;getPosition());</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>RobotShape::asString()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="166"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>os;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;RobotShape<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>RectangleShape::asString();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os.str();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>RobotShape::asDebugString()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="177"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>os;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;RobotShape:\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>RectangleShape::asDebugString()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(getRobot())</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>getRobot()-&gt;asDebugString();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os.str();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>View</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.cpp"/>
+  </compounddef>
+</doxygen>

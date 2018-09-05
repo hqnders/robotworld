@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_path_algorithm_1_1_vertex_less_id_compare" kind="struct" language="C++" prot="public">
+    <compoundname>PathAlgorithm::VertexLessIdCompare</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_path_algorithm_1_1_vertex_less_id_compare_1adb205b9c837c7e884ccc2ec32cc69cfc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathAlgorithm::VertexLessIdCompare::operator()</definition>
+        <argsstring>(const Vertex &amp;lhs, const Vertex &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="102" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="102" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="101" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="100" bodyend="107"/>
+    <listofallmembers>
+      <member refid="struct_path_algorithm_1_1_vertex_less_id_compare_1adb205b9c837c7e884ccc2ec32cc69cfc" prot="public" virt="non-virtual"><scope>PathAlgorithm::VertexLessIdCompare</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

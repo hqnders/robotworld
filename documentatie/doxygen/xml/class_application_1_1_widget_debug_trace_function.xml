@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_application_1_1_widget_debug_trace_function" kind="class" language="C++" prot="public">
+    <compoundname>Application::WidgetDebugTraceFunction</compoundname>
+    <basecompoundref refid="class_base_1_1_debug_trace_function" prot="public" virt="non-virtual">Base::DebugTraceFunction</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_application_1_1_widget_debug_trace_function_1a1ba76e5c808fb3e48a5883d5e7ba4ea9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_application_1_1_log_text_ctrl" kindref="compound">Application::LogTextCtrl</ref> *</type>
+        <definition>Application::LogTextCtrl* Application::WidgetDebugTraceFunction::outputControl</definition>
+        <argsstring></argsstring>
+        <name>outputControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp" line="32" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1_1_widget_debug_trace_function_1afcc3b377364d45d52dd5f3a580e919ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::WidgetDebugTraceFunction::WidgetDebugTraceFunction</definition>
+        <argsstring>(Application::LogTextCtrl *aLogTextCtrl)</argsstring>
+        <name>WidgetDebugTraceFunction</name>
+        <param>
+          <type><ref refid="class_application_1_1_log_text_ctrl" kindref="compound">Application::LogTextCtrl</ref> *</type>
+          <declname>aLogTextCtrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aLogTextCtrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TextCtrl derived class that will receive the trace string as message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>useFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true the trace will also be logged in the file &quot;guitrace.log&quot;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp" line="22" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_widget_debug_trace_function_1ad4bf02cb1270957ff75fd07fe6b7f678" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Application::WidgetDebugTraceFunction::trace</definition>
+        <argsstring>(const std::string &amp;aText)</argsstring>
+        <name>trace</name>
+        <reimplements refid="class_base_1_1_debug_trace_function_1a54f5a1f127e7624e50bb1a43146f8998">trace</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aText</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text that will be send to the final trace destination. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp" line="27" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.cpp" bodystart="16" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="774">
+        <label>Application::WidgetDebugTraceFunction</label>
+        <link refid="class_application_1_1_widget_debug_trace_function"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>Base::DebugTraceFunction</label>
+        <link refid="class_base_1_1_debug_trace_function"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="776">
+        <label>Application::WidgetDebugTraceFunction</label>
+        <link refid="class_application_1_1_widget_debug_trace_function"/>
+        <childnode refid="777" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>Base::DebugTraceFunction</label>
+        <link refid="class_base_1_1_debug_trace_function"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp" line="16" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp" bodystart="15" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_widget_debug_trace_function_1a1ba76e5c808fb3e48a5883d5e7ba4ea9" prot="private" virt="non-virtual"><scope>Application::WidgetDebugTraceFunction</scope><name>outputControl</name></member>
+      <member refid="class_application_1_1_widget_debug_trace_function_1ad4bf02cb1270957ff75fd07fe6b7f678" prot="public" virt="virtual"><scope>Application::WidgetDebugTraceFunction</scope><name>trace</name></member>
+      <member refid="class_application_1_1_widget_debug_trace_function_1afcc3b377364d45d52dd5f3a580e919ff" prot="public" virt="non-virtual"><scope>Application::WidgetDebugTraceFunction</scope><name>WidgetDebugTraceFunction</name></member>
+      <member refid="class_base_1_1_debug_trace_function_1a10bd2fd587e2312ca418f594d33c3933" prot="public" virt="virtual"><scope>Application::WidgetDebugTraceFunction</scope><name>~DebugTraceFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

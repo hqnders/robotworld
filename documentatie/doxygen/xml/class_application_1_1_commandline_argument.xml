@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_application_1_1_commandline_argument" kind="class" language="C++" prot="public">
+    <compoundname>Application::CommandlineArgument</compoundname>
+    <includes refid="_commandline_argument_8hpp" local="no">CommandlineArgument.hpp</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructors and destructor</header>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1a8d1a860e8afe53e8b6f05e9f2dd4dce7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Application::CommandlineArgument::CommandlineArgument</definition>
+        <argsstring>()</argsstring>
+        <name>CommandlineArgument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1a0bfdc3e855d3eda7c231d7e6c49cf0ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Application::CommandlineArgument::CommandlineArgument</definition>
+        <argsstring>(unsigned long anArgumentNumber, const std::string &amp;aVariable, const std::string &amp;aValue)</argsstring>
+        <name>CommandlineArgument</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>anArgumentNumber</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aVariable</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anArgumentNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aVariable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="33" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1a9f540c035645fc326ffd8d25fb6dce47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Application::CommandlineArgument::CommandlineArgument</definition>
+        <argsstring>(const CommandlineArgument &amp;aCommandlineArgument)</argsstring>
+        <name>CommandlineArgument</name>
+        <param>
+          <type>const <ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &amp;</type>
+          <declname>aCommandlineArgument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aCommandlineArgument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="45" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1abfce42a49b80cb1c67d86bef4f0ac149" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Application::CommandlineArgument::~CommandlineArgument</definition>
+        <argsstring>()</argsstring>
+        <name>~CommandlineArgument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="54" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Operators</header>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1ae25c8fc78be1916eb7f1d318bcafb522" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &amp;</type>
+        <definition>CommandlineArgument&amp; Application::CommandlineArgument::operator=</definition>
+        <argsstring>(const CommandlineArgument &amp;aCommandlineArgument)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &amp;</type>
+          <declname>aCommandlineArgument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="66" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1a1c091987640031464672fa515f697d3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Application::CommandlineArgument::operator==</definition>
+        <argsstring>(const unsigned long anArgumentNumber) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const unsigned long</type>
+          <declname>anArgumentNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="79" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1afba9475a894dd299642db8d7f040a0bf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Application::CommandlineArgument::operator==</definition>
+        <argsstring>(const std::string &amp;aVariable) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aVariable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="86" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1a1e4be92ec312c792b41aab43c4e5bbc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Application::CommandlineArgument::operator==</definition>
+        <argsstring>(const CommandlineArgument &amp;aCommandlineArgument) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &amp;</type>
+          <declname>aCommandlineArgument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="93" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_commandline_argument_1a0359940fe4dae2674f7a59525809db60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Application::CommandlineArgument::operator&lt;</definition>
+        <argsstring>(const CommandlineArgument &amp;aCommandlineArgument) const </argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> &amp;</type>
+          <declname>aCommandlineArgument</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only compares the argument number. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="100" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_application_1_1_commandline_argument_1a64fd7701d510bb51ab7403ea78ef0675" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Application::CommandlineArgument::argumentNumber</definition>
+        <argsstring></argsstring>
+        <name>argumentNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="106" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_commandline_argument_1a262d2d8b034f4deb153699354aad1cf0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Application::CommandlineArgument::variable</definition>
+        <argsstring></argsstring>
+        <name>variable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="107" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_commandline_argument_1a723dac454adb5d224dcf3d5105d66abe" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Application::CommandlineArgument::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="108" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="class_application_1_1_commandline_argument" kindref="compound">CommandlineArgument</ref> class encapsulates any command line argument given to the application </para>    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" line="15" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/CommandlineArgument.hpp" bodystart="14" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_commandline_argument_1a64fd7701d510bb51ab7403ea78ef0675" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>argumentNumber</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a8d1a860e8afe53e8b6f05e9f2dd4dce7" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>CommandlineArgument</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a0bfdc3e855d3eda7c231d7e6c49cf0ef" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>CommandlineArgument</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a9f540c035645fc326ffd8d25fb6dce47" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>CommandlineArgument</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a0359940fe4dae2674f7a59525809db60" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>operator&lt;</name></member>
+      <member refid="class_application_1_1_commandline_argument_1ae25c8fc78be1916eb7f1d318bcafb522" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>operator=</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a1c091987640031464672fa515f697d3c" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>operator==</name></member>
+      <member refid="class_application_1_1_commandline_argument_1afba9475a894dd299642db8d7f040a0bf" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>operator==</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a1e4be92ec312c792b41aab43c4e5bbc5" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>operator==</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a723dac454adb5d224dcf3d5105d66abe" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>value</name></member>
+      <member refid="class_application_1_1_commandline_argument_1a262d2d8b034f4deb153699354aad1cf0" prot="public" virt="non-virtual"><scope>Application::CommandlineArgument</scope><name>variable</name></member>
+      <member refid="class_application_1_1_commandline_argument_1abfce42a49b80cb1c67d86bef4f0ac149" prot="public" virt="virtual"><scope>Application::CommandlineArgument</scope><name>~CommandlineArgument</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

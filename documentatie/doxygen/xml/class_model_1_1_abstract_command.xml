@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_abstract_command" kind="class" language="C++" prot="public">
+    <compoundname>model::AbstractCommand</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_abstract_command_1a2f559d38bb84a726f451c2e44ff69137" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual model::AbstractCommand::~AbstractCommand</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="13" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" bodystart="12" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_command_1a2f559d38bb84a726f451c2e44ff69137" prot="public" virt="virtual"><scope>model::AbstractCommand</scope><name>~AbstractCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

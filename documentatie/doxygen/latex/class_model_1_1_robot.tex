@@ -1,0 +1,268 @@
+\hypertarget{class_model_1_1_robot}{}\section{model\+:\+:Robot Class Reference}
+\label{class_model_1_1_robot}\index{model\+::\+Robot@{model\+::\+Robot}}
+
+
+Inheritance diagram for model\+:\+:Robot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_robot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for model\+:\+:Robot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_robot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Robot} (const std\+::string \&a\+Name)\hypertarget{class_model_1_1_robot_a9fb211152f3e75c65eafd1550e90203f}{}\label{class_model_1_1_robot_a9fb211152f3e75c65eafd1550e90203f}
+
+\item 
+{\bfseries Robot} (const std\+::string \&a\+Name, const Point \&a\+Position)\hypertarget{class_model_1_1_robot_ac7afa4c9bc8982bd7e5918ed4c9173d2}{}\label{class_model_1_1_robot_ac7afa4c9bc8982bd7e5918ed4c9173d2}
+
+\item 
+std\+::string {\bfseries get\+Name} () const \hypertarget{class_model_1_1_robot_acbaa390189fe54d71c5ca1db809f10b0}{}\label{class_model_1_1_robot_acbaa390189fe54d71c5ca1db809f10b0}
+
+\item 
+void {\bfseries set\+Name} (const std\+::string \&a\+Name, bool a\+Notify\+Observers=true)\hypertarget{class_model_1_1_robot_ac39ad2cbd403962eebe60fd9dd4a1171}{}\label{class_model_1_1_robot_ac39ad2cbd403962eebe60fd9dd4a1171}
+
+\item 
+Size {\bfseries get\+Size} () const \hypertarget{class_model_1_1_robot_add846e39a98489592f07b456a06396db}{}\label{class_model_1_1_robot_add846e39a98489592f07b456a06396db}
+
+\item 
+void {\bfseries set\+Size} (const Size \&a\+Size, bool a\+Notify\+Observers=true)\hypertarget{class_model_1_1_robot_aa9053536ee4aa3c58883f1fe14d46c1f}{}\label{class_model_1_1_robot_aa9053536ee4aa3c58883f1fe14d46c1f}
+
+\item 
+Point {\bfseries get\+Position} () const \hypertarget{class_model_1_1_robot_a02a103f767306bce47f60127ceddf171}{}\label{class_model_1_1_robot_a02a103f767306bce47f60127ceddf171}
+
+\item 
+void {\bfseries set\+Position} (const Point \&a\+Position, bool a\+Notify\+Observers=true)\hypertarget{class_model_1_1_robot_a2d983199228926b70bc2dfa4dbbab006}{}\label{class_model_1_1_robot_a2d983199228926b70bc2dfa4dbbab006}
+
+\item 
+\hyperlink{class_model_1_1_bounded_vector}{Bounded\+Vector} {\bfseries get\+Front} () const \hypertarget{class_model_1_1_robot_a85ab146591702b24ab8bd9b2ff960a2f}{}\label{class_model_1_1_robot_a85ab146591702b24ab8bd9b2ff960a2f}
+
+\item 
+void {\bfseries set\+Front} (const \hyperlink{class_model_1_1_bounded_vector}{Bounded\+Vector} \&a\+Vector, bool a\+Notify\+Observers=true)\hypertarget{class_model_1_1_robot_ad61c7c66fc588a7ba017cbb1f0045e2f}{}\label{class_model_1_1_robot_ad61c7c66fc588a7ba017cbb1f0045e2f}
+
+\item 
+float {\bfseries get\+Speed} () const \hypertarget{class_model_1_1_robot_a134d8fa080a68cc524f386c8662be03e}{}\label{class_model_1_1_robot_a134d8fa080a68cc524f386c8662be03e}
+
+\item 
+void {\bfseries set\+Speed} (float a\+New\+Speed, bool a\+Notify\+Observers=true)\hypertarget{class_model_1_1_robot_a7471c11187faa28369f0e3846810e128}{}\label{class_model_1_1_robot_a7471c11187faa28369f0e3846810e128}
+
+\item 
+bool \hyperlink{class_model_1_1_robot_afedfe806d9fa854cbc641691ef27aada}{is\+Acting} () const 
+\item 
+virtual void {\bfseries start\+Acting} ()\hypertarget{class_model_1_1_robot_a4cf81acadfb2bb3e92cdbbedd5e53659}{}\label{class_model_1_1_robot_a4cf81acadfb2bb3e92cdbbedd5e53659}
+
+\item 
+virtual void {\bfseries stop\+Acting} ()\hypertarget{class_model_1_1_robot_abca861407c0992ee5748b15e772f7840}{}\label{class_model_1_1_robot_abca861407c0992ee5748b15e772f7840}
+
+\item 
+bool \hyperlink{class_model_1_1_robot_a0eae3f369405de1ed7f4dcf70aedc348}{is\+Driving} () const 
+\item 
+virtual void {\bfseries start\+Driving} ()\hypertarget{class_model_1_1_robot_acedb81c962e36fbe88fdd583f6c8f696}{}\label{class_model_1_1_robot_acedb81c962e36fbe88fdd583f6c8f696}
+
+\item 
+virtual void {\bfseries stop\+Driving} ()\hypertarget{class_model_1_1_robot_afd92a5235f1a171b02031b694f9bd4e7}{}\label{class_model_1_1_robot_afd92a5235f1a171b02031b694f9bd4e7}
+
+\item 
+bool \hyperlink{class_model_1_1_robot_a9ec882e34e2aed582174c127b79c358d}{is\+Communicating} () const 
+\item 
+void \hyperlink{class_model_1_1_robot_a0178459eef83c12c50056717b3c5b8a8}{start\+Communicating} ()
+\item 
+void \hyperlink{class_model_1_1_robot_a7aabb3039cde09a96e07d900a5e19972}{stop\+Communicating} ()
+\item 
+Region {\bfseries get\+Region} () const \hypertarget{class_model_1_1_robot_a49de60413e7391b51632c3137d14d7f2}{}\label{class_model_1_1_robot_a49de60413e7391b51632c3137d14d7f2}
+
+\item 
+bool {\bfseries intersects} (const Region \&a\+Region) const \hypertarget{class_model_1_1_robot_ae33fd5aaf09cdb89e4d02b4a138ed3b0}{}\label{class_model_1_1_robot_ae33fd5aaf09cdb89e4d02b4a138ed3b0}
+
+\item 
+Point {\bfseries get\+Front\+Left} () const \hypertarget{class_model_1_1_robot_ad04268210b4531df65b17dfe425173e9}{}\label{class_model_1_1_robot_ad04268210b4531df65b17dfe425173e9}
+
+\item 
+Point {\bfseries get\+Front\+Right} () const \hypertarget{class_model_1_1_robot_adb945c72992d0fcb78dca5a9e8513e1b}{}\label{class_model_1_1_robot_adb945c72992d0fcb78dca5a9e8513e1b}
+
+\item 
+Point {\bfseries get\+Back\+Left} () const \hypertarget{class_model_1_1_robot_a2757b46172e01b641ccf6f1e7783ca4d}{}\label{class_model_1_1_robot_a2757b46172e01b641ccf6f1e7783ca4d}
+
+\item 
+Point {\bfseries get\+Back\+Right} () const \hypertarget{class_model_1_1_robot_a4761dc0e97ce402c9010ba25737f33ad}{}\label{class_model_1_1_robot_a4761dc0e97ce402c9010ba25737f33ad}
+
+\item 
+Path\+Algorithm\+::\+Open\+Set {\bfseries get\+Open\+Set} () const \hypertarget{class_model_1_1_robot_accc03064c9ae17be090629566e2b5075}{}\label{class_model_1_1_robot_accc03064c9ae17be090629566e2b5075}
+
+\item 
+Path\+Algorithm\+::\+Path {\bfseries get\+Path} () const \hypertarget{class_model_1_1_robot_a8913b96ae0804e35138ad7c9858bcb0c}{}\label{class_model_1_1_robot_a8913b96ae0804e35138ad7c9858bcb0c}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Observer functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_model_1_1_robot_a7629555402fa8b55658d52fdc88ab889}{handle\+Notification} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Messaging\+:\+:Message\+Handler functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_model_1_1_robot_a5b52eb37c4e11850c3f60263599bd79c}{handle\+Request} (\hyperlink{struct_messaging_1_1_message}{Messaging\+::\+Message} \&a\+Message)
+\item 
+virtual void \hyperlink{class_model_1_1_robot_afa5fb42fca43fdfedb08d3a7cb38c037}{handle\+Response} (const \hyperlink{struct_messaging_1_1_message}{Messaging\+::\+Message} \&a\+Message)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_robot_a888add69a87a3e0f82a3f9c95140716f}{as\+String} () const 
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_robot_aaf05b81b0aff3dac7b39effa462da04e}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{The types of messages a Robot should understand}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Message\+Type} \{ {\bfseries Echo\+Request}, 
+{\bfseries Echo\+Response}
+ \}\hypertarget{class_model_1_1_robot_aa7cede8e43e597aea298266cc747b7c5}{}\label{class_model_1_1_robot_aa7cede8e43e597aea298266cc747b7c5}
+
+\item 
+void {\bfseries drive} ()\hypertarget{class_model_1_1_robot_a25462b6b270e44638522554646dd1180}{}\label{class_model_1_1_robot_a25462b6b270e44638522554646dd1180}
+
+\item 
+void {\bfseries calculate\+Route} (Goal\+Ptr a\+Goal)\hypertarget{class_model_1_1_robot_a398f0983a93029ebe3d52a9136e46035}{}\label{class_model_1_1_robot_a398f0983a93029ebe3d52a9136e46035}
+
+\item 
+bool {\bfseries arrived} (Goal\+Ptr a\+Goal)\hypertarget{class_model_1_1_robot_a2af2ed12ab1ba7fc165c65ab960ce47f}{}\label{class_model_1_1_robot_a2af2ed12ab1ba7fc165c65ab960ce47f}
+
+\item 
+bool {\bfseries collision} ()\hypertarget{class_model_1_1_robot_a64b560d02f2b8b2ce673ae79c48efee0}{}\label{class_model_1_1_robot_a64b560d02f2b8b2ce673ae79c48efee0}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{model\+::\+Robot@{model\+::\+Robot}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+Robot\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_robot_aaf05b81b0aff3dac7b39effa462da04e}{}\label{class_model_1_1_robot_aaf05b81b0aff3dac7b39effa462da04e}
+Returns a description of the object with all data of the object usable for debugging 
+
+Reimplemented from \hyperlink{class_model_1_1_abstract_agent_abcb33490b0f5761a2659bf705aff04b5}{model\+::\+Abstract\+Agent}.
+
+\index{model\+::\+Robot@{model\+::\+Robot}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+Robot\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_robot_a888add69a87a3e0f82a3f9c95140716f}{}\label{class_model_1_1_robot_a888add69a87a3e0f82a3f9c95140716f}
+Returns a 1-\/line description of the object 
+
+Reimplemented from \hyperlink{class_model_1_1_abstract_agent_a4cee6603af332eb80d524bf3af70489a}{model\+::\+Abstract\+Agent}.
+
+\index{model\+::\+Robot@{model\+::\+Robot}!handle\+Notification@{handle\+Notification}}
+\index{handle\+Notification@{handle\+Notification}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{handle\+Notification()}{handleNotification()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+::\+Robot\+::handle\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_robot_a7629555402fa8b55658d52fdc88ab889}{}\label{class_model_1_1_robot_a7629555402fa8b55658d52fdc88ab889}
+A Notifier will call this function if this Observer will handle the notifications of that Notifier. It is the responsibility of the Observer to filter any events it is interested in. 
+
+Implements \hyperlink{class_base_1_1_observer_a37d00a5290a60aa9ab664af5d1642c3e}{Base\+::\+Observer}.
+
+\index{model\+::\+Robot@{model\+::\+Robot}!handle\+Request@{handle\+Request}}
+\index{handle\+Request@{handle\+Request}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{handle\+Request(\+Messaging\+::\+Message \&a\+Message)}{handleRequest(Messaging::Message &aMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+::\+Robot\+::handle\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Messaging\+::\+Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_robot_a5b52eb37c4e11850c3f60263599bd79c}{}\label{class_model_1_1_robot_a5b52eb37c4e11850c3f60263599bd79c}
+This function is called by a Server\+Sesssion whenever a message is received. If the request is handled, any response {\itshape must} be set in the Message argument. The message argument is then echoed back to the requester, probably a Client\+Session.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_messaging_1_1_request_handler_afa23f0ab94ae851a487173a5087da898}{Messaging\+::\+Request\+Handler\+::handle\+Request( Messaging\+::\+Message\& a\+Message)} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_messaging_1_1_request_handler_afa23f0ab94ae851a487173a5087da898}{Messaging\+::\+Request\+Handler}.
+
+\index{model\+::\+Robot@{model\+::\+Robot}!handle\+Response@{handle\+Response}}
+\index{handle\+Response@{handle\+Response}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{handle\+Response(const Messaging\+::\+Message \&a\+Message)}{handleResponse(const Messaging::Message &aMessage)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+::\+Robot\+::handle\+Response (
+\begin{DoxyParamCaption}
+\item[{const {\bf Messaging\+::\+Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_robot_afa5fb42fca43fdfedb08d3a7cb38c037}{}\label{class_model_1_1_robot_afa5fb42fca43fdfedb08d3a7cb38c037}
+This function is called by a Client\+Session whenever a response to a previous request is received.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_messaging_1_1_response_handler_a13c456a994ef15b4f7be7beed4e2f91f}{Messaging\+::\+Response\+Handler\+::handle\+Response( const Messaging\+::\+Message\& a\+Message)} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_messaging_1_1_response_handler_a13c456a994ef15b4f7be7beed4e2f91f}{Messaging\+::\+Response\+Handler}.
+
+\index{model\+::\+Robot@{model\+::\+Robot}!is\+Acting@{is\+Acting}}
+\index{is\+Acting@{is\+Acting}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{is\+Acting() const }{isActing() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+::\+Robot\+::is\+Acting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_1_1_robot_afedfe806d9fa854cbc641691ef27aada}{}\label{class_model_1_1_robot_afedfe806d9fa854cbc641691ef27aada}
+\begin{DoxyReturn}{Returns}
+true if the robot is acting, i.\+e. either planning or driving 
+\end{DoxyReturn}
+\index{model\+::\+Robot@{model\+::\+Robot}!is\+Communicating@{is\+Communicating}}
+\index{is\+Communicating@{is\+Communicating}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{is\+Communicating() const }{isCommunicating() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+::\+Robot\+::is\+Communicating (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_1_1_robot_a9ec882e34e2aed582174c127b79c358d}{}\label{class_model_1_1_robot_a9ec882e34e2aed582174c127b79c358d}
+\begin{DoxyReturn}{Returns}
+true if the robot is communicating, i.\+e. listens with an active Server\+Connection 
+\end{DoxyReturn}
+\index{model\+::\+Robot@{model\+::\+Robot}!is\+Driving@{is\+Driving}}
+\index{is\+Driving@{is\+Driving}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{is\+Driving() const }{isDriving() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool model\+::\+Robot\+::is\+Driving (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_model_1_1_robot_a0eae3f369405de1ed7f4dcf70aedc348}{}\label{class_model_1_1_robot_a0eae3f369405de1ed7f4dcf70aedc348}
+\begin{DoxyReturn}{Returns}
+true if the robot is driving 
+\end{DoxyReturn}
+\index{model\+::\+Robot@{model\+::\+Robot}!start\+Communicating@{start\+Communicating}}
+\index{start\+Communicating@{start\+Communicating}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{start\+Communicating()}{startCommunicating()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+::\+Robot\+::start\+Communicating (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_1_1_robot_a0178459eef83c12c50056717b3c5b8a8}{}\label{class_model_1_1_robot_a0178459eef83c12c50056717b3c5b8a8}
+Starts a Server\+Connection that listens at port 12345 unless given an other port by specifying a command line argument -\/local\+\_\+port=port \index{model\+::\+Robot@{model\+::\+Robot}!stop\+Communicating@{stop\+Communicating}}
+\index{stop\+Communicating@{stop\+Communicating}!model\+::\+Robot@{model\+::\+Robot}}
+\subsubsection[{\texorpdfstring{stop\+Communicating()}{stopCommunicating()}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+::\+Robot\+::stop\+Communicating (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_model_1_1_robot_a7aabb3039cde09a96e07d900a5e19972}{}\label{class_model_1_1_robot_a7aabb3039cde09a96e07d900a5e19972}
+Connects to the Server\+Connection that listens at port 12345 unless given an other port by specifying a command line argument -\/local\+\_\+port=port and sends a message with message\+Type \char`\"{}1\char`\"{} and a body with \char`\"{}stop\char`\"{} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Robot.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Robot.\+cpp\end{DoxyCompactItemize}

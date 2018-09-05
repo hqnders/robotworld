@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacestd" kind="namespace" language="C++">
+    <compoundname>std</compoundname>
+    <innernamespace refid="namespacestd_1_1chrono">std::chrono</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacestd_1af8ef78a9cf464d7f7faf334b0648cd20" prot="public" static="no">
+        <type>boost::thread</type>
+        <definition>typedef boost::thread std::thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MinGW 4.8.1 does not have a working thread support library (yet) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="34" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1a618c9b161e7909dcd32f45ed5b0d64a8" prot="public" static="no">
+        <type>boost::mutex</type>
+        <definition>typedef boost::mutex std::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="40" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1a606f872ad6ccc6988d66cd63edd591d4" prot="public" static="no">
+        <type>boost::timed_mutex</type>
+        <definition>typedef boost::timed_mutex std::timed_mutex</definition>
+        <argsstring></argsstring>
+        <name>timed_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="41" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1a2465f8ca56659ee1d8fad0119f8f1482" prot="public" static="no">
+        <type>boost::recursive_mutex</type>
+        <definition>typedef boost::recursive_mutex std::recursive_mutex</definition>
+        <argsstring></argsstring>
+        <name>recursive_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="42" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1acc8e0552c9e703cdbf7e41c8b0ae81ef" prot="public" static="no">
+        <type>boost::recursive_timed_mutex</type>
+        <definition>typedef boost::recursive_timed_mutex std::recursive_timed_mutex</definition>
+        <argsstring></argsstring>
+        <name>recursive_timed_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="43" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1aa022dc977c3236c7a8b63d344f5e165e" prot="public" static="no">
+        <type>boost::lock_guard&lt; Lockable &gt;</type>
+        <definition>using std::lock_guard = typedef boost::lock_guard&lt; Lockable &gt;</definition>
+        <argsstring></argsstring>
+        <name>lock_guard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="49" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1aa81d6994a02829ac5bd9413e427fe44c" prot="public" static="no">
+        <type>boost::unique_lock&lt; Lockable &gt;</type>
+        <definition>using std::unique_lock = typedef boost::unique_lock&lt; Lockable &gt;</definition>
+        <argsstring></argsstring>
+        <name>unique_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="52" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1a774ed93e57639ca1d08e26f22fe71a66" prot="public" static="no">
+        <type>boost::shared_lock&lt; Lockable &gt;</type>
+        <definition>using std::shared_lock = typedef boost::shared_lock&lt; Lockable &gt;</definition>
+        <argsstring></argsstring>
+        <name>shared_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="55" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1ab892e2ff6c882ab5bfec75eb202613a2" prot="public" static="no">
+        <type>boost::condition_variable</type>
+        <definition>typedef boost::condition_variable std::condition_variable</definition>
+        <argsstring></argsstring>
+        <name>condition_variable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="60" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacestd_1aa9fa80fb08efa0cb495e269b77cdfb7f" prot="public" static="no">
+        <type>boost::condition_variable_any</type>
+        <definition>typedef boost::condition_variable_any std::condition_variable_any</definition>
+        <argsstring></argsstring>
+        <name>condition_variable_any</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacestd_1ad42a977ebc90223e5dc0b424385e3f1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string std::to_string</definition>
+        <argsstring>(const T &amp;x)</argsstring>
+        <name>to_string</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mingw 4.8.1 does not have the <ref refid="namespacestd_1ad42a977ebc90223e5dc0b424385e3f1e" kindref="member">std::to_string</ref> family of functions (yet)</para><para>This template requires an implemented std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os,const T&amp; t) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="69" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacestd_1a5a4884a3b1890357be19cd6ff56179da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int std::stoi</definition>
+        <argsstring>(const std::string &amp;aString)</argsstring>
+        <name>stoi</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mingw 4.8.1 does not have the <ref refid="namespacestd_1a5a4884a3b1890357be19cd6ff56179da" kindref="member">std::stoi</ref> function (yet) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="83" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Miscellaneous fixes for missing MinGW 4.8.1 features. </para>    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MingwStd.hpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

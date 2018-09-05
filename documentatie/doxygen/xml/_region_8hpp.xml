@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_region_8hpp" kind="file" language="C++">
+    <compoundname>Region.hpp</compoundname>
+    <includes local="yes">wx/region.h</includes>
+    <includedby refid="_widgets_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp</includedby>
+    <includedby refid="_way_point_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp</includedby>
+    <includedby refid="_robot_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp</includedby>
+    <incdepgraph>
+      <node id="1530">
+        <label>wx/region.h</label>
+      </node>
+      <node id="1529">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Region.hpp</label>
+        <link refid="Region.hpp"/>
+        <childnode refid="1530" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1546">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp</label>
+        <link refid="_notification_handler_8hpp_source"/>
+        <childnode refid="1541" relation="include">
+        </childnode>
+      </node>
+      <node id="1535">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.hpp</label>
+        <link refid="_goal_shape_8hpp_source"/>
+      </node>
+      <node id="1536">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp</label>
+        <link refid="_rectangle_shape_8hpp_source"/>
+        <childnode refid="1537" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+        <childnode refid="1539" relation="include">
+        </childnode>
+      </node>
+      <node id="1532">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="1533" relation="include">
+        </childnode>
+        <childnode refid="1534" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1542" relation="include">
+        </childnode>
+        <childnode refid="1543" relation="include">
+        </childnode>
+        <childnode refid="1544" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1540" relation="include">
+        </childnode>
+      </node>
+      <node id="1542">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp</label>
+        <link refid="_main_application_8hpp_source"/>
+      </node>
+      <node id="1543">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp</label>
+        <link refid="_main_frame_window_8hpp_source"/>
+      </node>
+      <node id="1548">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp</label>
+        <link refid="_widget_debug_trace_function_8hpp_source"/>
+      </node>
+      <node id="1551">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp</label>
+        <link refid="_robot_8hpp_source"/>
+        <childnode refid="1540" relation="include">
+        </childnode>
+      </node>
+      <node id="1545">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp</label>
+        <link refid="_notification_event_8hpp_source"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+      </node>
+      <node id="1541">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</label>
+        <link refid="_robot_world_canvas_8hpp_source"/>
+      </node>
+      <node id="1544">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp</label>
+        <link refid="_log_text_ctrl_8hpp_source"/>
+      </node>
+      <node id="1549">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp</label>
+        <link refid="_way_point_8hpp_source"/>
+        <childnode refid="1550" relation="include">
+        </childnode>
+        <childnode refid="1537" relation="include">
+        </childnode>
+      </node>
+      <node id="1539">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WallShape.hpp</label>
+        <link refid="_wall_shape_8hpp_source"/>
+      </node>
+      <node id="1547">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp</label>
+        <link refid="_notification_function_type_traits_8hpp_source"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+      </node>
+      <node id="1534">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp</label>
+        <link refid="_shape_8hpp_source"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+        <childnode refid="1536" relation="include">
+        </childnode>
+        <childnode refid="1538" relation="include">
+        </childnode>
+        <childnode refid="1541" relation="include">
+        </childnode>
+      </node>
+      <node id="1533">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp</label>
+        <link refid="_button_8hpp_source"/>
+      </node>
+      <node id="1550">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Goal.hpp</label>
+        <link refid="_goal_8hpp_source"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+      </node>
+      <node id="1531">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Region.hpp</label>
+        <link refid="Region.hpp"/>
+        <childnode refid="1532" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+      </node>
+      <node id="1538">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LineShape.hpp</label>
+        <link refid="_line_shape_8hpp_source"/>
+        <childnode refid="1539" relation="include">
+        </childnode>
+      </node>
+      <node id="1540">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.hpp</label>
+        <link refid="_robot_shape_8hpp_source"/>
+      </node>
+      <node id="1537">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp</label>
+        <link refid="_way_point_shape_8hpp_source"/>
+        <childnode refid="1535" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_widgets">Widgets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>REGION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REGION_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2016<sp/>Joost<sp/>Kraaijeveld.<sp/>See<sp/>license.txt<sp/>for<sp/>details.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>For<sp/>information,<sp/>bug<sp/>reports<sp/>and<sp/>additions<sp/>send<sp/>an<sp/>e-mail<sp/>to<sp/>DistributedRobotWorld@Askesis.nl.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Author:<sp/>jkr</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wx/region.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_widgets" kindref="compound">Widgets</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxRegion<sp/>Region;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Widgets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_widgets" kindref="compound">Widgets</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SIZE_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Region.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,181 @@
+\hypertarget{class_base_1_1_notifier}{}\section{Base\+:\+:Notifier Class Reference}
+\label{class_base_1_1_notifier}\index{Base\+::\+Notifier@{Base\+::\+Notifier}}
+
+
+{\ttfamily \#include $<$Notifier.\+hpp$>$}
+
+
+
+Inheritance diagram for Base\+:\+:Notifier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_1_1_notifier__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Constructors and destructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_1_1_notifier_ade4bd558bcb722ae11f2dc9b9e0af0a3}{Notifier} (bool enable=true)
+\item 
+virtual {\bfseries $\sim$\+Notifier} ()\hypertarget{class_base_1_1_notifier_ada72bc1d08008fedeaab951a820717ab}{}\label{class_base_1_1_notifier_ada72bc1d08008fedeaab951a820717ab}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Notifier functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_base_1_1_notifier_abed77da5cd65a9a37a3b066aaa02e21d}{enable\+Notification} (bool enable=true)
+\item 
+virtual void \hyperlink{class_base_1_1_notifier_a050d0bbcf113f31cc16cd3b5229c7576}{disable\+Notification} ()
+\item 
+virtual bool \hyperlink{class_base_1_1_notifier_a2dfb91da06e2150d8b263b804ff93cac}{is\+Enabled\+For\+Notification} () const 
+\item 
+virtual void \hyperlink{class_base_1_1_notifier_a5c4e89f48f9688c71ffec225717dd79e}{add\+Observer} (\hyperlink{class_base_1_1_observer}{Observer} \&an\+Observer)
+\item 
+virtual void \hyperlink{class_base_1_1_notifier_abd13a6f822088d759f4464dbe2e6bb88}{remove\+Observer} (\hyperlink{class_base_1_1_observer}{Observer} \&an\+Observer)
+\item 
+virtual void \hyperlink{class_base_1_1_notifier_a54d234bcf2531b2a96333f8d3876d485}{remove\+All\+Observers} ()
+\item 
+virtual void \hyperlink{class_base_1_1_notifier_a9a3df81524d8db68dd64f9a26575c6b4}{notify\+Observers} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_base_1_1_notifier_a5b3d9077ee7023746a05377f2c6b192e}{as\+String} () const 
+\item 
+virtual std\+::string \hyperlink{class_base_1_1_notifier_ae9189ab41334252a50dbaa82b6326c12}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_base_1_1_notifier}{Notifier} class is part of a straight forward implementation of the Observer/\+Notifier pattern
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_base_1_1_observer}{Observer} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Base\+::\+Notifier@{Base\+::\+Notifier}!Notifier@{Notifier}}
+\index{Notifier@{Notifier}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{Notifier(bool enable=true)}{Notifier(bool enable=true)}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+::\+Notifier\+::\+Notifier (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_base_1_1_notifier_ade4bd558bcb722ae11f2dc9b9e0af0a3}{}\label{class_base_1_1_notifier_ade4bd558bcb722ae11f2dc9b9e0af0a3}
+Default constructor, enables notification by default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & If true, notification is enabled. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Base\+::\+Notifier@{Base\+::\+Notifier}!add\+Observer@{add\+Observer}}
+\index{add\+Observer@{add\+Observer}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{add\+Observer(\+Observer \&an\+Observer)}{addObserver(Observer &anObserver)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Notifier\+::add\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf Observer} \&}]{a\+Observer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_a5c4e89f48f9688c71ffec225717dd79e}{}\label{class_base_1_1_notifier_a5c4e89f48f9688c71ffec225717dd79e}
+Adds the \hyperlink{class_base_1_1_observer}{Observer} to the list of Observers if not in the list yet
+
+
+\begin{DoxyParams}{Parameters}
+{\em an\+Observer} & The observer to add\\
+\hline
+\end{DoxyParams}
+The implementation of operator== uses pointer comparison! \index{Base\+::\+Notifier@{Base\+::\+Notifier}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+::\+Notifier\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_ae9189ab41334252a50dbaa82b6326c12}{}\label{class_base_1_1_notifier_ae9189ab41334252a50dbaa82b6326c12}
+Returns a description of the object with all data of the object usable for debugging 
+
+Reimplemented in \hyperlink{class_model_1_1_robot_aaf05b81b0aff3dac7b39effa462da04e}{model\+::\+Robot}, \hyperlink{class_model_1_1_robot_world_a9c599037d4bdc7ebd4e9138c3cf3cc82}{model\+::\+Robot\+World}, \hyperlink{class_model_1_1_abstract_sensor_aa67bce32b6a602772773f0f23d0634f0}{model\+::\+Abstract\+Sensor}, \hyperlink{class_model_1_1_model_object_aced22b0b0ee637c598c463de6a1d8d03}{model\+::\+model\+Object}, \hyperlink{class_model_1_1_laser_distance_sensor_ab32d7cbfd19a9a5ec12a0c06ebb02b4f}{model\+::\+Laser\+Distance\+Sensor}, \hyperlink{class_model_1_1_way_point_aa7acf33a786c98fa593a3a38d6270723}{model\+::\+Way\+Point}, \hyperlink{class_model_1_1_abstract_agent_abcb33490b0f5761a2659bf705aff04b5}{model\+::\+Abstract\+Agent}, \hyperlink{class_model_1_1_wall_a298bfdfe9f2d9d637d53b233ec431277}{model\+::\+Wall}, \hyperlink{class_model_1_1_abstract_actuator_ab5199d4458a2913844459832d563f989}{model\+::\+Abstract\+Actuator}, and \hyperlink{class_model_1_1_goal_a30c24f8dfe63a025222753f7d8fa8392}{model\+::\+Goal}.
+
+\index{Base\+::\+Notifier@{Base\+::\+Notifier}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+::\+Notifier\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_a5b3d9077ee7023746a05377f2c6b192e}{}\label{class_base_1_1_notifier_a5b3d9077ee7023746a05377f2c6b192e}
+Returns a 1-\/line description of the object 
+
+Reimplemented in \hyperlink{class_model_1_1_robot_a888add69a87a3e0f82a3f9c95140716f}{model\+::\+Robot}, \hyperlink{class_model_1_1_robot_world_a9f5a599b9d6523f45df7cbb0aafe4c08}{model\+::\+Robot\+World}, \hyperlink{class_model_1_1_abstract_sensor_a85c18d6d51b8b6a3b97f682ad242be9d}{model\+::\+Abstract\+Sensor}, \hyperlink{class_model_1_1_model_object_a9db00b9150a932a1637e425f24c0bdf0}{model\+::\+model\+Object}, \hyperlink{class_model_1_1_laser_distance_sensor_a9403593acd21d557e5af1d79901fde34}{model\+::\+Laser\+Distance\+Sensor}, \hyperlink{class_model_1_1_way_point_a2504ccca4e76765faaf91b85c1e0fb75}{model\+::\+Way\+Point}, \hyperlink{class_model_1_1_abstract_agent_a4cee6603af332eb80d524bf3af70489a}{model\+::\+Abstract\+Agent}, \hyperlink{class_model_1_1_wall_af537e51905929a5b583ed5f91e60096b}{model\+::\+Wall}, \hyperlink{class_model_1_1_abstract_actuator_a6fe9d0ac0c7c6c56176fff61a773a4b9}{model\+::\+Abstract\+Actuator}, and \hyperlink{class_model_1_1_goal_a3a2482cbc274b38165125a75be970f29}{model\+::\+Goal}.
+
+\index{Base\+::\+Notifier@{Base\+::\+Notifier}!disable\+Notification@{disable\+Notification}}
+\index{disable\+Notification@{disable\+Notification}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{disable\+Notification()}{disableNotification()}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Notifier\+::disable\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_a050d0bbcf113f31cc16cd3b5229c7576}{}\label{class_base_1_1_notifier_a050d0bbcf113f31cc16cd3b5229c7576}
+Disables the notification by this \hyperlink{class_base_1_1_notifier}{Notifier} \index{Base\+::\+Notifier@{Base\+::\+Notifier}!enable\+Notification@{enable\+Notification}}
+\index{enable\+Notification@{enable\+Notification}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{enable\+Notification(bool enable=true)}{enableNotification(bool enable=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Notifier\+::enable\+Notification (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_abed77da5cd65a9a37a3b066aaa02e21d}{}\label{class_base_1_1_notifier_abed77da5cd65a9a37a3b066aaa02e21d}
+En-\/ or disables the notification by this \hyperlink{class_base_1_1_notifier}{Notifier}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & If true (default) enables the notification for this \hyperlink{class_base_1_1_notifier}{Notifier} \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Notifier@{Base\+::\+Notifier}!is\+Enabled\+For\+Notification@{is\+Enabled\+For\+Notification}}
+\index{is\+Enabled\+For\+Notification@{is\+Enabled\+For\+Notification}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{is\+Enabled\+For\+Notification() const }{isEnabledForNotification() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+::\+Notifier\+::is\+Enabled\+For\+Notification (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_a2dfb91da06e2150d8b263b804ff93cac}{}\label{class_base_1_1_notifier_a2dfb91da06e2150d8b263b804ff93cac}
+\begin{DoxyReturn}{Returns}
+True if notification is enabled for this \hyperlink{class_base_1_1_notifier}{Notifier}, false otherwise 
+\end{DoxyReturn}
+\index{Base\+::\+Notifier@{Base\+::\+Notifier}!notify\+Observers@{notify\+Observers}}
+\index{notify\+Observers@{notify\+Observers}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{notify\+Observers()}{notifyObservers()}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Notifier\+::notify\+Observers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_a9a3df81524d8db68dd64f9a26575c6b4}{}\label{class_base_1_1_notifier_a9a3df81524d8db68dd64f9a26575c6b4}
+Notifies all observers \index{Base\+::\+Notifier@{Base\+::\+Notifier}!remove\+All\+Observers@{remove\+All\+Observers}}
+\index{remove\+All\+Observers@{remove\+All\+Observers}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{remove\+All\+Observers()}{removeAllObservers()}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Notifier\+::remove\+All\+Observers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_a54d234bcf2531b2a96333f8d3876d485}{}\label{class_base_1_1_notifier_a54d234bcf2531b2a96333f8d3876d485}
+Removes all observer from the list of Observers \index{Base\+::\+Notifier@{Base\+::\+Notifier}!remove\+Observer@{remove\+Observer}}
+\index{remove\+Observer@{remove\+Observer}!Base\+::\+Notifier@{Base\+::\+Notifier}}
+\subsubsection[{\texorpdfstring{remove\+Observer(\+Observer \&an\+Observer)}{removeObserver(Observer &anObserver)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Notifier\+::remove\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf Observer} \&}]{a\+Observer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_notifier_abd13a6f822088d759f4464dbe2e6bb88}{}\label{class_base_1_1_notifier_abd13a6f822088d759f4464dbe2e6bb88}
+Removes the \hyperlink{class_base_1_1_observer}{Observer} from the list of Observers if in the list
+
+
+\begin{DoxyParams}{Parameters}
+{\em an\+Observer} & The \hyperlink{class_base_1_1_observer}{Observer} to remove\\
+\hline
+\end{DoxyParams}
+The implementation of operator== uses pointer comparison! 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Notifier.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Notifier.\+cpp\end{DoxyCompactItemize}

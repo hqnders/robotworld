@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_observer_8hpp" kind="file" language="C++">
+    <compoundname>Observer.hpp</compoundname>
+    <includes refid="_config_8hpp" local="yes">Config.hpp</includes>
+    <includedby refid="_notifier_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp</includedby>
+    <includedby refid="_view_object_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp</includedby>
+    <includedby refid="_robot_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp</includedby>
+    <includedby refid="_notifier_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.cpp</includedby>
+    <includedby refid="_observer_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.cpp</includedby>
+    <incdepgraph>
+      <node id="1361">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="1360">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp</label>
+        <link refid="Observer.hpp"/>
+        <childnode refid="1361" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1382">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp</label>
+        <link refid="_robot_world_8hpp_source"/>
+        <childnode refid="1381" relation="include">
+        </childnode>
+      </node>
+      <node id="1367">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp</label>
+        <link refid="_abstract_agent_8hpp_source"/>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1371">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp</label>
+        <link refid="_laser_distance_sensor_8hpp_source"/>
+      </node>
+      <node id="1383">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp</label>
+        <link refid="_wall_8hpp_source"/>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+      <node id="1365">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp</label>
+        <link refid="_abstract_actuator_8hpp_source"/>
+        <childnode refid="1366" relation="include">
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.hpp</label>
+        <link refid="_goal_shape_8hpp_source"/>
+      </node>
+      <node id="1370">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractSensor.hpp</label>
+        <link refid="_abstract_sensor_8hpp_source"/>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1378">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp</label>
+        <link refid="_rectangle_shape_8hpp_source"/>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+      <node id="1368">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp</label>
+        <link refid="_robot_8hpp_source"/>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+      <node id="1381">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</label>
+        <link refid="_robot_world_canvas_8hpp_source"/>
+      </node>
+      <node id="1372">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp</label>
+        <link refid="_way_point_8hpp_source"/>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+      </node>
+      <node id="1380">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WallShape.hpp</label>
+        <link refid="_wall_shape_8hpp_source"/>
+      </node>
+      <node id="1376">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp</label>
+        <link refid="_view_object_8hpp_source"/>
+        <childnode refid="1377" relation="include">
+        </childnode>
+        <childnode refid="1381" relation="include">
+        </childnode>
+      </node>
+      <node id="1377">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp</label>
+        <link refid="_shape_8hpp_source"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1379" relation="include">
+        </childnode>
+        <childnode refid="1381" relation="include">
+        </childnode>
+      </node>
+      <node id="1364">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/ModelObject.hpp</label>
+        <link refid="_model_object_8hpp_source"/>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
+        </childnode>
+      </node>
+      <node id="1373">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Goal.hpp</label>
+        <link refid="_goal_8hpp_source"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+      </node>
+      <node id="1366">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/SteeringActuator.hpp</label>
+        <link refid="_steering_actuator_8hpp_source"/>
+      </node>
+      <node id="1379">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LineShape.hpp</label>
+        <link refid="_line_shape_8hpp_source"/>
+        <childnode refid="1380" relation="include">
+        </childnode>
+      </node>
+      <node id="1362">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp</label>
+        <link refid="Observer.hpp"/>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.hpp</label>
+        <link refid="_robot_shape_8hpp_source"/>
+      </node>
+      <node id="1384">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp</label>
+        <link refid="_a_star_8hpp_source"/>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1375">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp</label>
+        <link refid="_way_point_shape_8hpp_source"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Notifier.hpp</label>
+        <link refid="_notifier_8hpp_source"/>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_base_1_1_observer" prot="public">Base::Observer</innerclass>
+    <innernamespace refid="namespace_base">Base</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OBSERVER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OBSERVER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_base" kindref="compound">Base</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Notifier;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_base_1_1_observer" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_base_1_1_observer" kindref="compound">Observer</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_base_1_1_observer" kindref="compound">Observer</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_base_1_1_observer" kindref="compound">Observer</ref>();</highlight></codeline>
+<codeline lineno="31"></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" kindref="member">operator==</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_observer" kindref="compound">Observer</ref>&amp;<sp/>aObserver)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" kindref="member">operator&lt;</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_observer" kindref="compound">Observer</ref>&amp;<sp/>aObserver)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" kindref="member">handleNotificationsFor</ref>(<sp/><ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref>&amp;<sp/>aNotifier);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" kindref="member">stopHandlingNotificationsFor</ref>(<sp/><ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref>&amp;<sp/>aNotifier);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_base_1_1_observer_1a37d00a5290a60aa9ab664af5d1642c3e" kindref="member">handleNotification</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_base_1_1_notifier" kindref="compound">Notifier</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>class<sp/>Observer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Base</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DANU_OBSERVER_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Observer.hpp"/>
+  </compounddef>
+</doxygen>

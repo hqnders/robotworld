@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_path_algorithm_1_1_edge" kind="struct" language="C++" prot="public">
+    <compoundname>PathAlgorithm::Edge</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_path_algorithm_1_1_edge_1ab655d5ef6c7022bc87520c4e751b4dcf" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex PathAlgorithm::Edge::vertex1</definition>
+        <argsstring></argsstring>
+        <name>vertex1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="153" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_path_algorithm_1_1_edge_1ab8d28fabc8b10986f4e4d915f0b6f16a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref></type>
+        <definition>Vertex PathAlgorithm::Edge::vertex2</definition>
+        <argsstring></argsstring>
+        <name>vertex2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="154" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_path_algorithm_1_1_edge_1a4378105bc5d8b8b2fd147cb8b5a62662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PathAlgorithm::Edge::Edge</definition>
+        <argsstring>(const Vertex &amp;aVertex1, const Vertex &amp;aVertex2)</argsstring>
+        <name>Edge</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="123" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_edge_1a2a1cfa63c51fac6e9c7385ab6b0b0b0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PathAlgorithm::Edge::Edge</definition>
+        <argsstring>(const Edge &amp;anEdge)</argsstring>
+        <name>Edge</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_edge" kindref="compound">Edge</ref> &amp;</type>
+          <declname>anEdge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="129" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_edge_1a0a987c8705e5e41f890fb4f222243af8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>const Vertex&amp; PathAlgorithm::Edge::thisSide</definition>
+        <argsstring>(const Vertex &amp;aVertex) const </argsstring>
+        <name>thisSide</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="135" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="135" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_edge_1a204de7bc294af2cd5df73c29b2587345" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+        <definition>const Vertex&amp; PathAlgorithm::Edge::otherSide</definition>
+        <argsstring>(const Vertex &amp;aVertex) const </argsstring>
+        <name>otherSide</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="144" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="144" bodyend="151"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="465">
+        <label>PathAlgorithm::Vertex</label>
+        <link refid="struct_path_algorithm_1_1_vertex"/>
+      </node>
+      <node id="464">
+        <label>PathAlgorithm::Edge</label>
+        <link refid="struct_path_algorithm_1_1_edge"/>
+        <childnode refid="465" relation="usage">
+          <edgelabel>vertex1</edgelabel>
+          <edgelabel>vertex2</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="122" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="121" bodyend="155"/>
+    <listofallmembers>
+      <member refid="struct_path_algorithm_1_1_edge_1a4378105bc5d8b8b2fd147cb8b5a62662" prot="public" virt="non-virtual"><scope>PathAlgorithm::Edge</scope><name>Edge</name></member>
+      <member refid="struct_path_algorithm_1_1_edge_1a2a1cfa63c51fac6e9c7385ab6b0b0b0c" prot="public" virt="non-virtual"><scope>PathAlgorithm::Edge</scope><name>Edge</name></member>
+      <member refid="struct_path_algorithm_1_1_edge_1a204de7bc294af2cd5df73c29b2587345" prot="public" virt="non-virtual"><scope>PathAlgorithm::Edge</scope><name>otherSide</name></member>
+      <member refid="struct_path_algorithm_1_1_edge_1a0a987c8705e5e41f890fb4f222243af8" prot="public" virt="non-virtual"><scope>PathAlgorithm::Edge</scope><name>thisSide</name></member>
+      <member refid="struct_path_algorithm_1_1_edge_1ab655d5ef6c7022bc87520c4e751b4dcf" prot="public" virt="non-virtual"><scope>PathAlgorithm::Edge</scope><name>vertex1</name></member>
+      <member refid="struct_path_algorithm_1_1_edge_1ab8d28fabc8b10986f4e4d915f0b6f16a" prot="public" virt="non-virtual"><scope>PathAlgorithm::Edge</scope><name>vertex2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

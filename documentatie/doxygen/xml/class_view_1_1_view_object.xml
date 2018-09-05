@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_view_1_1_view_object" kind="class" language="C++" prot="public">
+    <compoundname>View::ViewObject</compoundname>
+    <basecompoundref refid="class_base_1_1_observer" prot="public" virt="non-virtual">Base::Observer</basecompoundref>
+    <derivedcompoundref refid="class_view_1_1_robot_world_canvas" prot="public" virt="non-virtual">View::RobotWorldCanvas</derivedcompoundref>
+    <derivedcompoundref refid="class_view_1_1_shape" prot="public" virt="non-virtual">View::Shape</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <header>Constructors and destructor</header>
+      <memberdef kind="function" id="class_view_1_1_view_object_1aa54c31897c07be82e15f595736f4ebe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>View::ViewObject::ViewObject</definition>
+        <argsstring>()</argsstring>
+        <name>ViewObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_view_object_1abbc94f6ef3de75d64602e4d26694f2cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>View::ViewObject::ViewObject</definition>
+        <argsstring>(model::ModelObjectPtr aModelObject)</argsstring>
+        <name>ViewObject</name>
+        <param>
+          <type>model::ModelObjectPtr</type>
+          <declname>aModelObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ModelObject constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="35" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.cpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_view_object_1aeece80891c9da5b57181e3c42ce25eec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>View::ViewObject::~ViewObject</definition>
+        <argsstring>()</argsstring>
+        <name>~ViewObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="39" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Accessors and mutators</header>
+      <memberdef kind="function" id="class_view_1_1_view_object_1af1779cd5a68017ff5a1ece2afec8ddc0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_base_1_1_object_id" kindref="compound">Base::ObjectId</ref> &amp;</type>
+        <definition>const Base::ObjectId &amp; View::ViewObject::getObjectId</definition>
+        <argsstring>() const </argsstring>
+        <name>getObjectId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accessor for the <ref refid="class_view_1_1_view_object" kindref="compound">ViewObject</ref> objectId </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="49" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_view_object_1a84ff0c9baf21a4736dacaf0811ea0851" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>model::ModelObjectPtr</type>
+        <definition>model::ModelObjectPtr View::ViewObject::getModelObject</definition>
+        <argsstring>() const </argsstring>
+        <name>getModelObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accessor for the ModelObject </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="53" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_view_object_1aff22ce3c0e7d0db12837f16902595c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::ViewObject::setModelObject</definition>
+        <argsstring>(model::ModelObjectPtr aModelObject)</argsstring>
+        <name>setModelObject</name>
+        <param>
+          <type>model::ModelObjectPtr</type>
+          <declname>aModelObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mutator for the ModelObject</para><para>See rebindModelObject and resetViewObject </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="59" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>ViewObject implementation</header>
+      <memberdef kind="function" id="class_view_1_1_view_object_1a7b0dee4ac27877d28968858214e708e3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::ViewObject::rebindModelObject</definition>
+        <argsstring>(model::ModelObjectPtr aModelObject)</argsstring>
+        <name>rebindModelObject</name>
+        <param>
+          <type>model::ModelObjectPtr</type>
+          <declname>aModelObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stops observing the current ModelObject, starts observing the new ModelObjects and displays it by calling ViewObject::resetViewObject</para><para>This function will call ModelObject::addReference. It will stop handling the notifications for the old object, start handling the notifications for the new object and reset this <ref refid="class_view_1_1_view_object" kindref="compound">ViewObject</ref> (derived) class.</para><para>See ViewObject::resetViewObject </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="70" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.cpp" bodystart="59" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_view_1_1_view_object_1a4b318169444ddeb6abb3beb73189dc9a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_base_1_1_object_id" kindref="compound">Base::ObjectId</ref></type>
+        <definition>Base::ObjectId View::ViewObject::objectId</definition>
+        <argsstring></argsstring>
+        <name>objectId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="74" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_view_object_1ad31e4de28d22e2d0c2f28ec1c4afc682" prot="private" static="no" mutable="no">
+        <type>model::ModelObjectPtr</type>
+        <definition>model::ModelObjectPtr View::ViewObject::modelObject</definition>
+        <argsstring></argsstring>
+        <name>modelObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="75" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="728">
+        <label>View::WayPointShape</label>
+        <link refid="class_view_1_1_way_point_shape"/>
+        <childnode refid="726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="729">
+        <label>View::GoalShape</label>
+        <link refid="class_view_1_1_goal_shape"/>
+        <childnode refid="728" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="724">
+        <label>View::LineShape</label>
+        <link refid="class_view_1_1_line_shape"/>
+        <childnode refid="723" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="721">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="725">
+        <label>View::WallShape</label>
+        <link refid="class_view_1_1_wall_shape"/>
+        <childnode refid="724" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="723">
+        <label>View::Shape</label>
+        <link refid="class_view_1_1_shape"/>
+        <childnode refid="720" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="726">
+        <label>View::RectangleShape</label>
+        <link refid="class_view_1_1_rectangle_shape"/>
+        <childnode refid="723" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="720">
+        <label>View::ViewObject</label>
+        <link refid="class_view_1_1_view_object"/>
+        <childnode refid="721" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="727">
+        <label>View::RobotShape</label>
+        <link refid="class_view_1_1_robot_shape"/>
+        <childnode refid="726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="722">
+        <label>View::RobotWorldCanvas</label>
+        <link refid="class_view_1_1_robot_world_canvas"/>
+        <childnode refid="720" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="731">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="730">
+        <label>View::ViewObject</label>
+        <link refid="class_view_1_1_view_object"/>
+        <childnode refid="731" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" line="22" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ViewObject.hpp" bodystart="21" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_view_1_1_view_object_1a84ff0c9baf21a4736dacaf0811ea0851" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>getModelObject</name></member>
+      <member refid="class_view_1_1_view_object_1af1779cd5a68017ff5a1ece2afec8ddc0" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>getObjectId</name></member>
+      <member refid="class_base_1_1_observer_1a37d00a5290a60aa9ab664af5d1642c3e" prot="public" virt="pure-virtual"><scope>View::ViewObject</scope><name>handleNotification</name></member>
+      <member refid="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" prot="public" virt="virtual"><scope>View::ViewObject</scope><name>handleNotificationsFor</name></member>
+      <member refid="class_view_1_1_view_object_1ad31e4de28d22e2d0c2f28ec1c4afc682" prot="private" virt="non-virtual"><scope>View::ViewObject</scope><name>modelObject</name></member>
+      <member refid="class_view_1_1_view_object_1a4b318169444ddeb6abb3beb73189dc9a" prot="private" virt="non-virtual"><scope>View::ViewObject</scope><name>objectId</name></member>
+      <member refid="class_base_1_1_observer_1a0b8f55248bb0b393ed760d50b7f58d21" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>Observer</name></member>
+      <member refid="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>operator&lt;</name></member>
+      <member refid="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>operator==</name></member>
+      <member refid="class_view_1_1_view_object_1a7b0dee4ac27877d28968858214e708e3" prot="protected" virt="virtual"><scope>View::ViewObject</scope><name>rebindModelObject</name></member>
+      <member refid="class_view_1_1_view_object_1aff22ce3c0e7d0db12837f16902595c24" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>setModelObject</name></member>
+      <member refid="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" prot="public" virt="virtual"><scope>View::ViewObject</scope><name>stopHandlingNotificationsFor</name></member>
+      <member refid="class_view_1_1_view_object_1aa54c31897c07be82e15f595736f4ebe9" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>ViewObject</name></member>
+      <member refid="class_view_1_1_view_object_1abbc94f6ef3de75d64602e4d26694f2cc" prot="public" virt="non-virtual"><scope>View::ViewObject</scope><name>ViewObject</name></member>
+      <member refid="class_base_1_1_observer_1aca7a3c17bdc9d86a9f67519779baf2e9" prot="public" virt="virtual"><scope>View::ViewObject</scope><name>~Observer</name></member>
+      <member refid="class_view_1_1_view_object_1aeece80891c9da5b57181e3c42ce25eec" prot="public" virt="virtual"><scope>View::ViewObject</scope><name>~ViewObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

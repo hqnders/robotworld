@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_view" kind="namespace" language="C++">
+    <compoundname>View</compoundname>
+    <innerclass refid="class_view_1_1_goal_shape" prot="public">View::GoalShape</innerclass>
+    <innerclass refid="class_view_1_1_line_shape" prot="public">View::LineShape</innerclass>
+    <innerclass refid="class_view_1_1_rectangle_shape" prot="public">View::RectangleShape</innerclass>
+    <innerclass refid="class_view_1_1_robot_shape" prot="public">View::RobotShape</innerclass>
+    <innerclass refid="class_view_1_1_robot_world_canvas" prot="public">View::RobotWorldCanvas</innerclass>
+    <innerclass refid="class_view_1_1_shape" prot="public">View::Shape</innerclass>
+    <innerclass refid="struct_view_1_1_shape_data" prot="public">View::ShapeData</innerclass>
+    <innerclass refid="class_view_1_1_view_object" prot="public">View::ViewObject</innerclass>
+    <innerclass refid="class_view_1_1_wall_shape" prot="public">View::WallShape</innerclass>
+    <innerclass refid="class_view_1_1_way_point_shape" prot="public">View::WayPointShape</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a42a57f972819256bd909ea81df3f0a9c" prot="public">
+          <name>ID_ABOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a5e377abdc46a44f896a6da15b8182f6d" prot="public">
+          <name>ID_ADD_ROBOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984ae6f8f63bd4e664c3db1e97cd991c2c8e" prot="public">
+          <name>ID_EDIT_ROBOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a6b83bebc21f708271406e62afcf36167" prot="public">
+          <name>ID_DELETE_ROBOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a3b4e153757608e3ecaa849643db64ec3" prot="public">
+          <name>ID_ADD_WAYPOINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984ae85f1b44f456e236e8774b6610e22ac3" prot="public">
+          <name>ID_EDIT_WAYPOINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a5286e086c840fd0a458d1599992cc078" prot="public">
+          <name>ID_DELETE_WAYPOINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a22aca026a2dc2729a416db3210da846b" prot="public">
+          <name>ID_ADD_GOAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a2f646fb08cb39a40f106cfaf06b946e5" prot="public">
+          <name>ID_EDIT_GOAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a3e13f54a05865c07c85ee04a8cf9a6a0" prot="public">
+          <name>ID_DELETE_GOAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a1cd20bd50c474f78dce6075e6011c4a3" prot="public">
+          <name>ID_ADD_WALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984ae98d8042150c462d70f0376b23ac1358" prot="public">
+          <name>ID_EDIT_WALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a3c37f4bebe18cef5b83079c695cd1efd" prot="public">
+          <name>ID_DELETE_WALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984aeb1ce9c19a6d6dba9cdd0f28b03c18d9" prot="public">
+          <name>ID_SHAPE_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a34bfead827fa85d05122e05dbf2d1d18" prot="public">
+          <name>ID_WORLD_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" line="20" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="19" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_rectangle_shape_8hpp_1ac39e178aae949bd44854deb0188d8526" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_view_1_1_rectangle_shape" kindref="compound">RectangleShape</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;RectangleShape&gt; View::RectangleShapePtr</definition>
+        <argsstring></argsstring>
+        <name>RectangleShapePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp" line="15" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_canvas_8hpp_1a6f1629bb62cc78eeec2905fe72a79a99" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; Shape &gt; View::ShapePtr</definition>
+        <argsstring></argsstring>
+        <name>ShapePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="16" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_canvas_8hpp_1afa058b750f6506eeab999b01439b3101" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_view_1_1_robot_shape" kindref="compound">RobotShape</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;RobotShape&gt; View::RobotShapePtr</definition>
+        <argsstring></argsstring>
+        <name>RobotShapePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_canvas_8hpp_1a640101d7336b1fd8cb3d14a5724b8467" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_view_1_1_goal_shape" kindref="compound">GoalShape</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;GoalShape&gt; View::GoalShapePtr</definition>
+        <argsstring></argsstring>
+        <name>GoalShapePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="20" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_canvas_8hpp_1a0362b34a539ee8249dc409c9b4912fa7" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_view_1_1_way_point_shape" kindref="compound">WayPointShape</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;WayPointShape&gt; View::WayPointShapePtr</definition>
+        <argsstring></argsstring>
+        <name>WayPointShapePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="22" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_canvas_8hpp_1acfed3a70d74ee3830ed484f1512e7710" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_view_1_1_wall_shape" kindref="compound">WallShape</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;WallShape&gt; View::WallShapePtr</definition>
+        <argsstring></argsstring>
+        <name>WallShapePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="24" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.cpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

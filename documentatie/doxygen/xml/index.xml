@@ -1,0 +1,1345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="class_model_1_1_abstract_actuator" kind="class"><name>model::AbstractActuator</name>
+    <member refid="class_model_1_1_abstract_actuator_1a6fe9d0ac0c7c6c56176fff61a773a4b9" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1ab5199d4458a2913844459832d563f989" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1ad1067c897d696580dc7bc5713d1357d7" kind="variable"><name>agent</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1a5bfc45537108943d67c98de7f6f25519" kind="function"><name>AbstractActuator</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1a9137214d1e7cdb2939c90a858d451ac9" kind="function"><name>AbstractActuator</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1ae0f8d583c4a6f252af9cf0221f69f3c9" kind="function"><name>~AbstractActuator</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1adc357b727d6df7f1b0e0238c85fa99b2" kind="function"><name>handleCommand</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1a36eb339606068a2dd22c5638628077ea" kind="function"><name>attachAgent</name></member>
+    <member refid="class_model_1_1_abstract_actuator_1a6499da8f728e56e4bfe6ae3b8601d2ec" kind="function"><name>detachAgent</name></member>
+  </compound>
+  <compound refid="class_model_1_1_abstract_agent" kind="class"><name>model::AbstractAgent</name>
+    <member refid="class_model_1_1_abstract_agent_1a4cee6603af332eb80d524bf3af70489a" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_abstract_agent_1abcb33490b0f5761a2659bf705aff04b5" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_abstract_agent_1a0235b5c010dedd813b12ae7e97cc4e2e" kind="variable"><name>sensors</name></member>
+    <member refid="class_model_1_1_abstract_agent_1a23cd2a046e9e782f44a3dc0685fa84ca" kind="variable"><name>actuators</name></member>
+    <member refid="class_model_1_1_abstract_agent_1ae49bfbbddb9c9a76478ec12f4760d127" kind="variable"><name>perceptQueue</name></member>
+    <member refid="class_model_1_1_abstract_agent_1ae08b5a6acb4f8192a55817fdcf6505e0" kind="function"><name>AbstractAgent</name></member>
+    <member refid="class_model_1_1_abstract_agent_1a3b826d63673dea922f69855333752519" kind="function"><name>~AbstractAgent</name></member>
+    <member refid="class_model_1_1_abstract_agent_1a9e9a85420a923bb7d68acbda8208e2ad" kind="function"><name>attachSensor</name></member>
+    <member refid="class_model_1_1_abstract_agent_1a87cba14848a2ef4ec831ed2e44e85b63" kind="function"><name>attachActuator</name></member>
+    <member refid="class_model_1_1_abstract_agent_1ab8fb558bec05bc1a7ea5402bf996705f" kind="function"><name>addPercept</name></member>
+    <member refid="class_model_1_1_abstract_agent_1a783133675cf1d592a95eadcbded59d2e" kind="function"><name>startActing</name></member>
+    <member refid="class_model_1_1_abstract_agent_1a369070540beac48686890b06d831fabe" kind="function"><name>stopActing</name></member>
+  </compound>
+  <compound refid="class_model_1_1_abstract_command" kind="class"><name>model::AbstractCommand</name>
+    <member refid="class_model_1_1_abstract_command_1a2f559d38bb84a726f451c2e44ff69137" kind="function"><name>~AbstractCommand</name></member>
+  </compound>
+  <compound refid="class_model_1_1_abstract_percept" kind="class"><name>model::AbstractPercept</name>
+    <member refid="class_model_1_1_abstract_percept_1a8f1128645f41927d6696260b2131eb4e" kind="function"><name>~AbstractPercept</name></member>
+  </compound>
+  <compound refid="class_model_1_1_abstract_sensor" kind="class"><name>model::AbstractSensor</name>
+    <member refid="class_model_1_1_abstract_sensor_1a85c18d6d51b8b6a3b97f682ad242be9d" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1aa67bce32b6a602772773f0f23d0634f0" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1acc26be4569ca92c524e3759f8bda8e36" kind="variable"><name>agent</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1ad4cbae39fd0117e9917c33a6a7f09fa5" kind="variable"><name>running</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1a7de4321e9fa04d352cd42b7f33e2ce9c" kind="variable"><name>sensorThread</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1ab8de89a6213d2a76d930e02a3cac3947" kind="variable"><name>sensorMutex</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1aac26d87792344b5422af0c8ea681c558" kind="function"><name>AbstractSensor</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1a787a53fde6320acca0a3500221f11bf4" kind="function"><name>AbstractSensor</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1a3fc48cedbf4c5083b1b90da3d704ba5a" kind="function"><name>~AbstractSensor</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1a958bad26decf903bb28fd45bc835c7bb" kind="function"><name>setOn</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1a31f0eb53ed8252c45e4ac64ea328d7b9" kind="function"><name>setOff</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1a63ae4aa9e8ac1592f48dbdb1b734ddde" kind="function"><name>getStimulus</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1ac9254468d847d18b0895b9fa29fb7871" kind="function"><name>getPerceptFor</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1a2b0fb54fe519b4c58187b939ec612eb0" kind="function"><name>sendPercept</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1ab85ffa9f6dbdf249681ed95a052bf017" kind="function"><name>run</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1ad78d0c553f653f564fbbe222a1a8bd81" kind="function"><name>attachAgent</name></member>
+    <member refid="class_model_1_1_abstract_sensor_1ab6bc01195b77d486d7ea628f731416db" kind="function"><name>detachAgent</name></member>
+  </compound>
+  <compound refid="class_model_1_1_abstract_stimulus" kind="class"><name>model::AbstractStimulus</name>
+    <member refid="class_model_1_1_abstract_stimulus_1aeba7837d89968081ec337d80e59562fe" kind="function"><name>~AbstractStimulus</name></member>
+  </compound>
+  <compound refid="class_path_algorithm_1_1_a_star" kind="class"><name>PathAlgorithm::AStar</name>
+    <member refid="class_path_algorithm_1_1_a_star_1ac30f7714d07594a6b75516daa0a26da7" kind="variable"><name>closedSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a51ac9d9ef516c2317c2c77a919b64532" kind="variable"><name>openSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a0fb8d0d9ad9822987926c815c9d4353d" kind="variable"><name>predecessorMap</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a2352488a734c820b77410b1ed7914a49" kind="variable"><name>openSetMutex</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a1c8d2da0af60b0857bfd0abd3fa057ac" kind="variable"><name>closedSetMutex</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1ac69b08a85dfe16b7571b33fb9231f9c1" kind="variable"><name>predecessorMapMutex</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a9112cf1a7a2e991046d88a1f5cba8925" kind="function"><name>search</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a08d4471b622ff7cef2d6a65af869ceb3" kind="function"><name>search</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a63f88f24acf7bf34cd060051134c9190" kind="function"><name>addToOpenSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1afcc23a676145d6e280d1c3430af5380a" kind="function"><name>removeFromOpenSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1aba29c2585fbf49880cf5e8b9bf6d3eb5" kind="function"><name>removeFromOpenSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1ae78bfebdee31135fdfb2f302347f962f" kind="function"><name>findInOpenSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a657aaaf577ca25e68e6a5af57214e7d4" kind="function"><name>findRemoveInOpenSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a5bb18edbbd54833aac9eddfe63ba652d" kind="function"><name>removeFirstFromOpenSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a53139e4b3cd3971a2bf85a430e83378f" kind="function"><name>addToClosedSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a1b6971a9c5878e859cbdb3270dda93b4" kind="function"><name>removeFromClosedSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a799953993c1255f0ce559f7233d3c926" kind="function"><name>removeFromClosedSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a73d9639e838fd55bb392d01238fc967a" kind="function"><name>findInClosedSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a843db81c9950c0184ee31627313f5793" kind="function"><name>findRemoveClosedSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a94fcc29f04e6398edbd58effbf59b49a" kind="function"><name>getClosedSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1ae419f2d019378d9b4435d862b70da72f" kind="function"><name>getOpenSet</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1ac4ce233712c0f7aac44d029e61888581" kind="function"><name>getPredecessorMap</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a4cb2a6c928a01fcac02533500bd8ace5" kind="function"><name>getCS</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a420e1ac8824a265dc2272c7e50899322" kind="function"><name>getCS</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a48e23107ffca02392bdf2439775baecf" kind="function"><name>getOS</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1af5ea4271f9318edaa68d8030e35d0cf1" kind="function"><name>getOS</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a4bb6718fd07f503ff836c5cdccd74236" kind="function"><name>getPM</name></member>
+    <member refid="class_path_algorithm_1_1_a_star_1a021ff514f018ce9ec7db705578a210d4" kind="function"><name>getPM</name></member>
+  </compound>
+  <compound refid="class_model_1_1_bounded_vector" kind="class"><name>model::BoundedVector</name>
+    <member refid="class_model_1_1_bounded_vector_1a5a0115cf9e87c118474d507efcbaddfb" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_bounded_vector_1aa04899e137a269e9ab116535c4fadc07" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a0d837ee4acabf638003a62c9d50a9935" kind="variable"><name>x</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a627a1a0ab97bd13e2d1b6ec179ad58ca" kind="variable"><name>y</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a6f9c2ace8143904b8b39c85c7e7c2f25" kind="function"><name>BoundedVector</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a55d60da08dc45930fe4b7db6aca8a55d" kind="function"><name>BoundedVector</name></member>
+    <member refid="class_model_1_1_bounded_vector_1ab769d7fcd9ca402df947e5515c929515" kind="function"><name>BoundedVector</name></member>
+    <member refid="class_model_1_1_bounded_vector_1ab39ae90320b2e9e3f12ef25322620b18" kind="function"><name>BoundedVector</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a6c3a027447297bcc67b8aa5180b1629a" kind="function"><name>~BoundedVector</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a9cd9a0c3001c9a717b9fe7c38c4a791a" kind="function"><name>getMagnitude</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a063e74d97117138fc2ed5fe7e007f133" kind="function"><name>normalise</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a6a4148a2cf2298951d0b2469c33d799f" kind="function"><name>getNormalised</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a29b4dd3c012309ccdb622fab46da50cb" kind="function"><name>reverse</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a6f707a9499dc1a1a4051fa2b40f8d40d" kind="function"><name>operator+=</name></member>
+    <member refid="class_model_1_1_bounded_vector_1ae1cb231bfe977d563eebfd47526cb1c0" kind="function"><name>operator-=</name></member>
+    <member refid="class_model_1_1_bounded_vector_1aeed3b7e66556126aee3478daa6f9199b" kind="function"><name>operator*=</name></member>
+    <member refid="class_model_1_1_bounded_vector_1ac949b337eed72116f01507c7bba5820a" kind="function"><name>operator/=</name></member>
+    <member refid="class_model_1_1_bounded_vector_1a05b571d646e8c226c3bef443cbdb00f7" kind="function"><name>operator-</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_client" kind="class"><name>Messaging::Client</name>
+    <member refid="class_messaging_1_1_client_1a605f2a446bfa196c0e38558ef2c4cbc1" kind="variable"><name>io_service</name></member>
+    <member refid="class_messaging_1_1_client_1ae1ac5668d94efd6cef31b41fb17e8ed7" kind="variable"><name>host</name></member>
+    <member refid="class_messaging_1_1_client_1ad9ca04d0d687573d3eff86c9e14a1a48" kind="variable"><name>port</name></member>
+    <member refid="class_messaging_1_1_client_1a927d7087bab6be12fff6622c6d8448c5" kind="variable"><name>responseHandler</name></member>
+    <member refid="class_messaging_1_1_client_1a3d9868c2817f181e38f1e50e57faa25f" kind="function"><name>Client</name></member>
+    <member refid="class_messaging_1_1_client_1afedb4d9092742db81e8e76e973abda67" kind="function"><name>~Client</name></member>
+    <member refid="class_messaging_1_1_client_1ad591a306de7942562e5f682d4ec3b454" kind="function"><name>dispatchMessage</name></member>
+    <member refid="class_messaging_1_1_client_1a7804792b483e50df149e9e77191d5d16" kind="function"><name>handleConnect</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_client_session" kind="class"><name>Messaging::ClientSession</name>
+    <member refid="class_messaging_1_1_client_session_1a2e58350c4dff5e9cacedddbd4d0f833d" kind="variable"><name>message</name></member>
+    <member refid="class_messaging_1_1_client_session_1a26faa3b7d3e3e6628b3ff88748243067" kind="variable"><name>responseHandler</name></member>
+    <member refid="class_messaging_1_1_client_session_1adad9b3dc7dfa45237cb53784f1710906" kind="function"><name>ClientSession</name></member>
+    <member refid="class_messaging_1_1_client_session_1ab4a7a99069138174beb31fd82f66ea68" kind="function"><name>~ClientSession</name></member>
+    <member refid="class_messaging_1_1_client_session_1abdafb1626e9eb590ae2ed984e095a490" kind="function"><name>start</name></member>
+    <member refid="class_messaging_1_1_client_session_1a0539a7c332de1b853fd3405ac23b696c" kind="function"><name>handleMessageRead</name></member>
+    <member refid="class_messaging_1_1_client_session_1a9bfa2e2edfe325487ee04b046fdc4604" kind="function"><name>handleMessageWritten</name></member>
+  </compound>
+  <compound refid="class_application_1_1_commandline_argument" kind="class"><name>Application::CommandlineArgument</name>
+    <member refid="class_application_1_1_commandline_argument_1a8d1a860e8afe53e8b6f05e9f2dd4dce7" kind="function"><name>CommandlineArgument</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a0bfdc3e855d3eda7c231d7e6c49cf0ef" kind="function"><name>CommandlineArgument</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a9f540c035645fc326ffd8d25fb6dce47" kind="function"><name>CommandlineArgument</name></member>
+    <member refid="class_application_1_1_commandline_argument_1abfce42a49b80cb1c67d86bef4f0ac149" kind="function"><name>~CommandlineArgument</name></member>
+    <member refid="class_application_1_1_commandline_argument_1ae25c8fc78be1916eb7f1d318bcafb522" kind="function"><name>operator=</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a1c091987640031464672fa515f697d3c" kind="function"><name>operator==</name></member>
+    <member refid="class_application_1_1_commandline_argument_1afba9475a894dd299642db8d7f040a0bf" kind="function"><name>operator==</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a1e4be92ec312c792b41aab43c4e5bbc5" kind="function"><name>operator==</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a0359940fe4dae2674f7a59525809db60" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a64fd7701d510bb51ab7403ea78ef0675" kind="variable"><name>argumentNumber</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a262d2d8b034f4deb153699354aad1cf0" kind="variable"><name>variable</name></member>
+    <member refid="class_application_1_1_commandline_argument_1a723dac454adb5d224dcf3d5105d66abe" kind="variable"><name>value</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_communication_service" kind="class"><name>Messaging::CommunicationService</name>
+    <member refid="class_messaging_1_1_communication_service_1adfecdaa0092561cf3d727ead644f9648" kind="variable"><name>requestHandlerThread</name></member>
+    <member refid="class_messaging_1_1_communication_service_1a0db30c408ea15a514aaf975c36253d15" kind="variable"><name>io_service</name></member>
+    <member refid="class_messaging_1_1_communication_service_1a84eb6ffc757597611e01dfacb46c3702" kind="function"><name>getCommunicationService</name></member>
+    <member refid="class_messaging_1_1_communication_service_1a603bfa697fbac1d8ea95115fbc78de24" kind="function"><name>getIOService</name></member>
+    <member refid="class_messaging_1_1_communication_service_1a91ea43508fc513e2be07071314bfcad9" kind="function"><name>runRequestHandler</name></member>
+    <member refid="class_messaging_1_1_communication_service_1aafbba827051d66b74a0d5262074a950a" kind="function"><name>runRequestHandler</name></member>
+    <member refid="class_messaging_1_1_communication_service_1afb31be6dc4b3de3ed9eec1c07547adba" kind="function"><name>CommunicationService</name></member>
+    <member refid="class_messaging_1_1_communication_service_1ae22bcd4ff3ac89f349f6673526066624" kind="function"><name>~CommunicationService</name></member>
+    <member refid="class_messaging_1_1_communication_service_1a2904df0ff0c7edf0e8a3e319ab7d0d72" kind="function"><name>runRequestHandlerWorker</name></member>
+  </compound>
+  <compound refid="class_base_1_1_debug_trace_function" kind="class"><name>Base::DebugTraceFunction</name>
+    <member refid="class_base_1_1_debug_trace_function_1a10bd2fd587e2312ca418f594d33c3933" kind="function"><name>~DebugTraceFunction</name></member>
+    <member refid="class_base_1_1_debug_trace_function_1a54f5a1f127e7624e50bb1a43146f8998" kind="function"><name>trace</name></member>
+  </compound>
+  <compound refid="class_model_1_1_distance_percept" kind="class"><name>model::DistancePercept</name>
+    <member refid="class_model_1_1_distance_percept_1a8e4a64e9c3844e42a211a0aa945f7998" kind="variable"><name>angle</name></member>
+    <member refid="class_model_1_1_distance_percept_1a83e7312e3ed47d97c6bfc41b9e0c0e4a" kind="variable"><name>distance</name></member>
+    <member refid="class_model_1_1_distance_percept_1ab3cca9b4d5a5b837124688f9bab2e7f7" kind="function"><name>DistancePercept</name></member>
+    <member refid="class_model_1_1_distance_percept_1a476417dd79dead365451b522d40a6995" kind="function"><name>DistancePercept</name></member>
+  </compound>
+  <compound refid="class_model_1_1_distance_stimulus" kind="class"><name>model::DistanceStimulus</name>
+    <member refid="class_model_1_1_distance_stimulus_1ac2a26e553ae72f4cdb28147cbac38bc4" kind="variable"><name>angle</name></member>
+    <member refid="class_model_1_1_distance_stimulus_1a509312aa1c6cc55236a3b81014ea6d7c" kind="variable"><name>distance</name></member>
+    <member refid="class_model_1_1_distance_stimulus_1a5ec267e4e945106911cd9fff534e2b07" kind="function"><name>DistanceStimulus</name></member>
+  </compound>
+  <compound refid="struct_path_algorithm_1_1_edge" kind="struct"><name>PathAlgorithm::Edge</name>
+    <member refid="struct_path_algorithm_1_1_edge_1ab655d5ef6c7022bc87520c4e751b4dcf" kind="variable"><name>vertex1</name></member>
+    <member refid="struct_path_algorithm_1_1_edge_1ab8d28fabc8b10986f4e4d915f0b6f16a" kind="variable"><name>vertex2</name></member>
+    <member refid="struct_path_algorithm_1_1_edge_1a4378105bc5d8b8b2fd147cb8b5a62662" kind="function"><name>Edge</name></member>
+    <member refid="struct_path_algorithm_1_1_edge_1a2a1cfa63c51fac6e9c7385ab6b0b0b0c" kind="function"><name>Edge</name></member>
+    <member refid="struct_path_algorithm_1_1_edge_1a0a987c8705e5e41f890fb4f222243af8" kind="function"><name>thisSide</name></member>
+    <member refid="struct_path_algorithm_1_1_edge_1a204de7bc294af2cd5df73c29b2587345" kind="function"><name>otherSide</name></member>
+  </compound>
+  <compound refid="class_model_1_1_goal" kind="class"><name>model::Goal</name>
+    <member refid="class_model_1_1_goal_1a3a2482cbc274b38165125a75be970f29" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_goal_1a30c24f8dfe63a025222753f7d8fa8392" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_goal_1ac3d0f023f46635eedf80b44de357239f" kind="function"><name>Goal</name></member>
+    <member refid="class_model_1_1_goal_1a942dd4460b918de703e7a39723b310e4" kind="function"><name>Goal</name></member>
+    <member refid="class_model_1_1_goal_1a04afed8db36d97690a46e764d0d56964" kind="function"><name>Goal</name></member>
+    <member refid="class_model_1_1_goal_1a2f0d7d8d04760c474e199a94a73b13cf" kind="function"><name>~Goal</name></member>
+  </compound>
+  <compound refid="class_view_1_1_goal_shape" kind="class"><name>View::GoalShape</name>
+    <member refid="class_view_1_1_goal_shape_1a8c0c1cce167a4e8a0cf085f676c213a0" kind="function"><name>getGoal</name></member>
+    <member refid="class_view_1_1_goal_shape_1a2e8149d939f204e0cc0efc2488af8fb2" kind="function"><name>setGoal</name></member>
+    <member refid="class_view_1_1_goal_shape_1a881cfbfd4b3d6d3b37498e12d8291f6f" kind="function"><name>handleNotification</name></member>
+    <member refid="class_view_1_1_goal_shape_1a7f6c2c9c9502d264657a0b688e3d5e86" kind="function"><name>asString</name></member>
+    <member refid="class_view_1_1_goal_shape_1a7d88c0780ae52278bacb44f4a6c79da5" kind="function"><name>asDebugString</name></member>
+    <member refid="class_view_1_1_goal_shape_1ac2dc0283bbdefcc5886f985f04611ffb" kind="function"><name>GoalShape</name></member>
+    <member refid="class_view_1_1_goal_shape_1aea5a6d3f33a0719cc715a8a53e7b67a2" kind="function"><name>~GoalShape</name></member>
+    <member refid="class_view_1_1_goal_shape_1a31a8bb188f7870024c168529e8788673" kind="function"><name>getNormalColour</name></member>
+    <member refid="class_view_1_1_goal_shape_1a9b0b0c7aa41bfe75723e847a4a57173e" kind="function"><name>getSelectionColour</name></member>
+    <member refid="class_view_1_1_goal_shape_1a5f3f650fd43dc5ba30518deec6859506" kind="function"><name>getActivationColour</name></member>
+  </compound>
+  <compound refid="class_model_1_1_laser_distance_sensor" kind="class"><name>model::LaserDistanceSensor</name>
+    <member refid="class_model_1_1_laser_distance_sensor_1a9403593acd21d557e5af1d79901fde34" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_laser_distance_sensor_1ab32d7cbfd19a9a5ec12a0c06ebb02b4f" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_laser_distance_sensor_1a43150f12636692438c32e7cf957410fe" kind="function"><name>LaserDistanceSensor</name></member>
+    <member refid="class_model_1_1_laser_distance_sensor_1aa9686c425108f245858bb281acf15346" kind="function"><name>LaserDistanceSensor</name></member>
+    <member refid="class_model_1_1_laser_distance_sensor_1aa2128778239d19d47c113515d3b75063" kind="function"><name>~LaserDistanceSensor</name></member>
+    <member refid="class_model_1_1_laser_distance_sensor_1a532a168e8d0f7f6986075e83ba58de3e" kind="function"><name>getStimulus</name></member>
+    <member refid="class_model_1_1_laser_distance_sensor_1af3dc2140292c2e3def32b89e3e0a5e87" kind="function"><name>getPerceptFor</name></member>
+  </compound>
+  <compound refid="class_view_1_1_line_shape" kind="class"><name>View::LineShape</name>
+    <member refid="class_view_1_1_line_shape_1a21a183cd9f63130fe48497743c2c4abb" kind="function"><name>handleNotification</name></member>
+    <member refid="class_view_1_1_line_shape_1a84f369c61a8f0f05d84410c240390493" kind="function"><name>draw</name></member>
+    <member refid="class_view_1_1_line_shape_1a746b918386d398654f3471af760878ef" kind="function"><name>occupies</name></member>
+    <member refid="class_view_1_1_line_shape_1a0973ec253864af16021f34633fe9fd9f" kind="function"><name>getCentre</name></member>
+    <member refid="class_view_1_1_line_shape_1a17d23477829fad85416320b734aa77ad" kind="function"><name>setCentre</name></member>
+    <member refid="class_view_1_1_line_shape_1a814f67ef4b420635f5a71309c4d20a04" kind="function"><name>asString</name></member>
+    <member refid="class_view_1_1_line_shape_1a625bf67fd65a8258d6186ec9e350cc45" kind="function"><name>asDebugString</name></member>
+    <member refid="class_view_1_1_line_shape_1abbc53b4b42df008db1a628bf3bb8516a" kind="variable"><name>node1</name></member>
+    <member refid="class_view_1_1_line_shape_1ad22a21c0532765d6398ad1a1fe0c47a1" kind="variable"><name>node2</name></member>
+    <member refid="class_view_1_1_line_shape_1a11f8fc45687ed64d7be4f536e12a7447" kind="variable"><name>title</name></member>
+    <member refid="class_view_1_1_line_shape_1a8ed04c6ed07de54e4107330fb474dce9" kind="variable"><name>lineWidth</name></member>
+    <member refid="class_view_1_1_line_shape_1abd0e65ae3b6cf181355a84bb7b73c1ca" kind="variable"><name>arrowHeadSize</name></member>
+    <member refid="class_view_1_1_line_shape_1a5148bf5ea3bbcdf6fff27d0826b800b0" kind="variable"><name>top</name></member>
+    <member refid="class_view_1_1_line_shape_1a15b05a14a3c47ba9c9ac1e50f3cc70d2" kind="variable"><name>right</name></member>
+    <member refid="class_view_1_1_line_shape_1ad1057fe115d65782df12fcff76173ea9" kind="variable"><name>left</name></member>
+    <member refid="class_view_1_1_line_shape_1ab558c4ee9f3ee29a1b9bcee37e29354a" kind="function"><name>LineShape</name></member>
+    <member refid="class_view_1_1_line_shape_1a8f8bfaac1fb3f6925d7d3eb40f94d4c8" kind="function"><name>LineShape</name></member>
+    <member refid="class_view_1_1_line_shape_1abf23022df7fda3cf91c8eaec259ad95e" kind="function"><name>~LineShape</name></member>
+    <member refid="class_view_1_1_line_shape_1a2fe3effe9eff5bd00fe495e0f1c39606" kind="function"><name>drawHead</name></member>
+    <member refid="class_view_1_1_line_shape_1af83c7add92fbad90624d57dd3b7abc6a" kind="function"><name>getTitle</name></member>
+    <member refid="class_view_1_1_line_shape_1a913834fd48496cc0bea586fcdcce86ad" kind="function"><name>setTitle</name></member>
+    <member refid="class_view_1_1_line_shape_1a96e2e0cea7dc8dbbb82e22b538e324f3" kind="function"><name>getLineWidth</name></member>
+    <member refid="class_view_1_1_line_shape_1a44f4b897aaaed84f5746898983d4da05" kind="function"><name>setLineWidth</name></member>
+    <member refid="class_view_1_1_line_shape_1a69e09bc46d6653c7569ec10495238cce" kind="function"><name>getArrowHeadSize</name></member>
+    <member refid="class_view_1_1_line_shape_1a3984d3a088b05bfcd42b0dc6bd25ad05" kind="function"><name>setArrowHeadSize</name></member>
+    <member refid="class_view_1_1_line_shape_1afd1c59f2e5d16ea338cb13bcee7238e0" kind="function"><name>getBegin</name></member>
+    <member refid="class_view_1_1_line_shape_1a80ae31b43cd8370771a900e4f9aee883" kind="function"><name>getEnd</name></member>
+    <member refid="class_view_1_1_line_shape_1ae42912ba4477d893a5d21b65410d9053" kind="function"><name>getLength</name></member>
+    <member refid="class_view_1_1_line_shape_1afb683de0d0b2218330ce566fe29baa2d" kind="function"><name>connects</name></member>
+    <member refid="class_view_1_1_line_shape_1a377b62d54ef2aa35fb325fed70dc8863" kind="function"><name>handleActivated</name></member>
+    <member refid="class_view_1_1_line_shape_1a26cc81c55e98316763ddb33b227e80ae" kind="function"><name>handleSelection</name></member>
+    <member refid="class_view_1_1_line_shape_1a0c24c5c1d322a05f0ff54878e21de6e8" kind="function"><name>setNode1</name></member>
+    <member refid="class_view_1_1_line_shape_1a65512e5a2c699118bdd2813056d13fa4" kind="function"><name>setNode2</name></member>
+    <member refid="class_view_1_1_line_shape_1a82b50c636d3bd4c9857e557d9652eba6" kind="function"><name>getNode1</name></member>
+    <member refid="class_view_1_1_line_shape_1adefdad302f5f46beb45894022d06161a" kind="function"><name>getNode1</name></member>
+    <member refid="class_view_1_1_line_shape_1a02f9d9ec648b6da68b3d11e782377b04" kind="function"><name>getNode2</name></member>
+    <member refid="class_view_1_1_line_shape_1a9f1d8709cc442af41daddb9abdbdedb8" kind="function"><name>getNode2</name></member>
+  </compound>
+  <compound refid="class_application_1_1_logger" kind="class"><name>Application::Logger</name>
+    <member refid="class_application_1_1_logger_1aad5585d2787cbd8f19eea0fc753657dc" kind="variable"><name>disable</name></member>
+    <member refid="class_application_1_1_logger_1a0fa1454fb35f3e6980ba46801437f37e" kind="function"><name>log</name></member>
+    <member refid="class_application_1_1_logger_1a5440358021658e1f42b19c0fbddd6c41" kind="function"><name>setDisable</name></member>
+    <member refid="class_application_1_1_logger_1a0dea306413cd0a5d7680a10419007e33" kind="function"><name>isEnabled</name></member>
+  </compound>
+  <compound refid="class_application_1_1_log_text_ctrl" kind="class"><name>Application::LogTextCtrl</name>
+    <member refid="class_application_1_1_log_text_ctrl_1aded0f03a723158ab1a3d2de74a3c8262" kind="function"><name>LogTextCtrl</name></member>
+    <member refid="class_application_1_1_log_text_ctrl_1a02828be6cb16c6c772f881757f61c7af" kind="function"><name>~LogTextCtrl</name></member>
+    <member refid="class_application_1_1_log_text_ctrl_1aecf20eb2fc19af8632542de0166a050e" kind="function"><name>log</name></member>
+    <member refid="class_application_1_1_log_text_ctrl_1af03d3d9049d7a9c13de10d249751fc5e" kind="function"><name>OnCommandEvent</name></member>
+  </compound>
+  <compound refid="class_application_1_1_main_application" kind="class"><name>Application::MainApplication</name>
+    <member refid="class_application_1_1_main_application_1abdb7b37eb40ea2884233907a0fc39849" kind="function"><name>setCommandlineArguments</name></member>
+    <member refid="class_application_1_1_main_application_1a973c9c83d80717041866159f1f64609e" kind="function"><name>isArgGiven</name></member>
+    <member refid="class_application_1_1_main_application_1ad696027fcd46221aa7897b8d3e970c83" kind="function"><name>getArg</name></member>
+    <member refid="class_application_1_1_main_application_1aac4212439e07c828329b701af43b7c6a" kind="function"><name>getArg</name></member>
+    <member refid="class_application_1_1_main_application_1a042c7143dd9517896ba9926b43ffeafd" kind="function"><name>getCommandlineFiles</name></member>
+    <member refid="class_application_1_1_main_application_1aba7767fc1d07f3b314501091aab39300" kind="variable"><name>commandlineArguments</name></member>
+    <member refid="class_application_1_1_main_application_1a2e308317d29f933b7b50159a08ffc250" kind="variable"><name>commandlineFiles</name></member>
+    <member refid="class_application_1_1_main_application_1ac9714c4b1debf0d532e2b30224833b53" kind="function"><name>OnInit</name></member>
+  </compound>
+  <compound refid="class_application_1_1_main_frame_window" kind="class"><name>Application::MainFrameWindow</name>
+    <member refid="class_application_1_1_main_frame_window_1a63f2bb0df57ff914a06ecb9023530185" kind="variable"><name>clientPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1ad3441b124b2a0e8d437f1b0dfd4d8531" kind="variable"><name>menuBar</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a57fc51a0a6d021fb5ab42bf5f349fcae" kind="variable"><name>splitterWindow</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a0a67fe0298aded3b7daff71d17a6ff62" kind="variable"><name>lhsPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1aed9d10e1a7931542a42b683df51690bc" kind="variable"><name>robotWorldCanvas</name></member>
+    <member refid="class_application_1_1_main_frame_window_1ab11850fa7d5e4291b347a511f5b5dc51" kind="variable"><name>rhsPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a77fd43db9dae01aae9c0c388d9110ecc" kind="variable"><name>logTextCtrl</name></member>
+    <member refid="class_application_1_1_main_frame_window_1aa7a9052b453794fa2b76f6c019f91ab1" kind="variable"><name>buttonPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a10058131d0a56df8e8444d9a2eef137c" kind="variable"><name>debugTraceFunction</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a6cd8f5a881e4589dc8afa01d5f7ed4ba" kind="function"><name>MainFrameWindow</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a72cb92828187b461ed9034d002bd1b51" kind="function"><name>~MainFrameWindow</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a2ab17ead4b86890ec440398eda10273b" kind="function"><name>getTraceFunction</name></member>
+    <member refid="class_application_1_1_main_frame_window_1afbe4226dcd70f22c2ae32062881ceca6" kind="function"><name>initialise</name></member>
+    <member refid="class_application_1_1_main_frame_window_1abdb6890f8b5edd930f93f2fe51a5e181" kind="function"><name>initialiseMenuBar</name></member>
+    <member refid="class_application_1_1_main_frame_window_1aa9064ca4429720b231234fba743c4b0f" kind="function"><name>initialiseClientPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a88ea2a7e70bcd1a650c3834883d3deef" kind="function"><name>initialiseSplitterWindow</name></member>
+    <member refid="class_application_1_1_main_frame_window_1ac0a4ced572ac913cdc441d1a35e97842" kind="function"><name>initialiseLhsPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a9d9bf15eb75cbce36bca4e22ba144161" kind="function"><name>initialiseRhsPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1acc4b68465595b19ab6d23762b7ce1907" kind="function"><name>initialiseButtonPanel</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a12f7f14da09aeb9c2c110f2ed3992ed1" kind="function"><name>OnQuit</name></member>
+    <member refid="class_application_1_1_main_frame_window_1aefa56845d94cb62767b88a8669758689" kind="function"><name>OnWidgetDebugTraceFunction</name></member>
+    <member refid="class_application_1_1_main_frame_window_1abff72c49273f4a00ebe1ddb5ee593af1" kind="function"><name>OnStdOutDebugTraceFunction</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a66aa2b2bb59f5c3063c066ab184107ea" kind="function"><name>OnAbout</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a16487fa34813b964e28611d557d494ec" kind="function"><name>OnStartRobot</name></member>
+    <member refid="class_application_1_1_main_frame_window_1ac02ee686ee02942bbcaa0611dc113030" kind="function"><name>OnStopRobot</name></member>
+    <member refid="class_application_1_1_main_frame_window_1acbf20602a39e5663b4feb92f27fb461a" kind="function"><name>OnPopulate</name></member>
+    <member refid="class_application_1_1_main_frame_window_1ac659cf7fa25849b4ee41272ea32d8b98" kind="function"><name>OnUnpopulate</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a68de56a22de15f26bd20c4d2d44f1501" kind="function"><name>OnStartListening</name></member>
+    <member refid="class_application_1_1_main_frame_window_1af0d8ead18bb30139e1d9c8458648a4cc" kind="function"><name>OnSendMessage</name></member>
+    <member refid="class_application_1_1_main_frame_window_1a94468ec60eec818598ac26ddd2e6bc11" kind="function"><name>OnStopListening</name></member>
+  </compound>
+  <compound refid="class_utils_1_1_math_utils" kind="class"><name>Utils::MathUtils</name>
+    <member refid="class_utils_1_1_math_utils_1a1c1f12a1367c1bb5370e03228f0f7e76" kind="function"><name>toRadians</name></member>
+    <member refid="class_utils_1_1_math_utils_1a375dca50afb40203156c8e1e30354659" kind="function"><name>toDegrees</name></member>
+  </compound>
+  <compound refid="struct_messaging_1_1_message" kind="struct"><name>Messaging::Message</name>
+    <member refid="struct_messaging_1_1_message_1ac20fb163de9035e2050a04de9ad176d5" kind="function"><name>asString</name></member>
+    <member refid="struct_messaging_1_1_message_1a179ec6c4dc374ca0035aa5141522756f" kind="function"><name>asDebugString</name></member>
+    <member refid="struct_messaging_1_1_message_1a6e58a0f71d17a8950334fca1383fd514" kind="typedef"><name>MessageBody</name></member>
+    <member refid="struct_messaging_1_1_message_1a3a27bf3f32d43a3a9f3980a408ba5061" kind="variable"><name>messageType</name></member>
+    <member refid="struct_messaging_1_1_message_1ae6af5cd6b85d80ff2769f94be6bf02da" kind="variable"><name>message</name></member>
+    <member refid="struct_messaging_1_1_message_1ab82047a9ae2234f2f46669cd09d6dae9" kind="function"><name>Message</name></member>
+    <member refid="struct_messaging_1_1_message_1ae70b36c0c4ec25e5e622202efaf82513" kind="function"><name>Message</name></member>
+    <member refid="struct_messaging_1_1_message_1a0771c811ee4035a8fea938b1e79fbfce" kind="function"><name>Message</name></member>
+    <member refid="struct_messaging_1_1_message_1ad8b7c8ca68f83e15e37d8caf28797cbf" kind="function"><name>Message</name></member>
+    <member refid="struct_messaging_1_1_message_1aff063181ce86ac088456349ef3205c01" kind="function"><name>~Message</name></member>
+    <member refid="struct_messaging_1_1_message_1abb173c7d9557a5dc08aae8e7b114d87d" kind="function"><name>getHeader</name></member>
+    <member refid="struct_messaging_1_1_message_1aa5d6274a086f01a52853a0536316402e" kind="function"><name>setHeader</name></member>
+    <member refid="struct_messaging_1_1_message_1af035748b0a1426a8b73f74d85f120be0" kind="function"><name>getMessageType</name></member>
+    <member refid="struct_messaging_1_1_message_1a9a63d50cbf443564d6092d532495f95f" kind="function"><name>setMessageType</name></member>
+    <member refid="struct_messaging_1_1_message_1a83ac5ea677d87bc22d56c545bf61127e" kind="function"><name>getBody</name></member>
+    <member refid="struct_messaging_1_1_message_1abedc9083e15715ad417043e6c483818e" kind="function"><name>setBody</name></member>
+    <member refid="struct_messaging_1_1_message_1a61baa8ab016b7b6d07ceade6268db5af" kind="function"><name>length</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_message_handler" kind="class"><name>Messaging::MessageHandler</name>
+  </compound>
+  <compound refid="struct_messaging_1_1_message_1_1_message_header" kind="struct"><name>Messaging::Message::MessageHeader</name>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1acdae8972e623d75bd1c7f84e9bf88112" kind="function"><name>asString</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1ab7d9a533bcbcc875e0c71a854a8d3d7f" kind="variable"><name>magicNumber1</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1abfc4eabe7cc23af31fcf67be7d3f71bd" kind="variable"><name>magicNumber2</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a24692db229162cdaf60b3b7ec52a98f2" kind="variable"><name>magicNumber3</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a59e0cecbb4cb66668d6a75cc57c884c8" kind="variable"><name>magicNumber4</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1aa5c450f8bd19792759093880a748c014" kind="variable"><name>majorVersion</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1ad4d770dcf9125f64181d9373c9a324fd" kind="variable"><name>minorVersion</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a6a51bcb96a297b4c089379b3726689d7" kind="variable"><name>messageType</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a3aeb117ad4e013955cf32cf217ade75a" kind="variable"><name>messageLength</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a0da4d891f5b39f92011244b6d5715f21" kind="function"><name>MessageHeader</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a4c1145a87de865721d59faba878540fe" kind="function"><name>MessageHeader</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1acc197565a5646945320b275fc7432757" kind="function"><name>MessageHeader</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a116958570c3ee6e61949d3f25c58d0d6" kind="function"><name>toString</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a2d6cc32d14554859cc042ae608daee6e" kind="function"><name>fromString</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1a0d33aa180bd6d8dc9e34b02b4fe3e492" kind="function"><name>getHeaderLength</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1aef4edcff25790eb3120399b96f8c88d1" kind="function"><name>getMessageType</name></member>
+    <member refid="struct_messaging_1_1_message_1_1_message_header_1aa89056eba883f701deb9a9fe12b27ffa" kind="function"><name>getMessageLength</name></member>
+  </compound>
+  <compound refid="class_model_1_1_model_object" kind="class"><name>model::ModelObject</name>
+    <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" kind="function"><name>ModelObject</name></member>
+    <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" kind="function"><name>~ModelObject</name></member>
+    <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" kind="function"><name>operator==</name></member>
+    <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_model_1_1_model_object_1a9db00b9150a932a1637e425f24c0bdf0" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_model_object_1aced22b0b0ee637c598c463de6a1d8d03" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_model_object_1a682a288324ff7046b7c7a8c6ccfd8e1f" kind="variable"><name>objectId</name></member>
+    <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" kind="function"><name>getObjectId</name></member>
+    <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" kind="function"><name>toPtr</name></member>
+  </compound>
+  <compound refid="struct_base_1_1_notification_function_type_traits" kind="struct"><name>Base::NotificationFunctionTypeTraits</name>
+    <member refid="struct_base_1_1_notification_function_type_traits_1aec5d2dfeb9d2c47940f7a6e09b81362b" kind="function"><name>call</name></member>
+  </compound>
+  <compound refid="struct_base_1_1_notification_function_type_traits_3_01std_1_1function_3_01void_07_notify_event_01_6_08_01_4_01_4" kind="struct"><name>Base::NotificationFunctionTypeTraits&lt; std::function&lt; void(NotifyEvent &amp;) &gt; &gt;</name>
+    <member refid="struct_base_1_1_notification_function_type_traits_3_01std_1_1function_3_01void_07_notify_event_01_6_08_01_4_01_4_1a4afd550536d560f3e74fd65452b454d2" kind="function"><name>call</name></member>
+  </compound>
+  <compound refid="struct_base_1_1_notification_function_type_traits_tracing" kind="struct"><name>Base::NotificationFunctionTypeTraitsTracing</name>
+  </compound>
+  <compound refid="class_base_1_1_notification_handler" kind="class"><name>Base::NotificationHandler</name>
+    <member refid="class_base_1_1_notification_handler_1a7d10294da7546bf101f33ad453bbd07e" kind="variable"><name>function</name></member>
+    <member refid="class_base_1_1_notification_handler_1afcd3ef66adda7297131dc6abdef0122e" kind="function"><name>NotificationHandler</name></member>
+    <member refid="class_base_1_1_notification_handler_1a7af6b53ab8be95c95d65e4af80e469ac" kind="function"><name>~NotificationHandler</name></member>
+    <member refid="class_base_1_1_notification_handler_1a1071e6455f5e96e93f1b6645f7d9bcde" kind="function"><name>OnNotificationEvent</name></member>
+  </compound>
+  <compound refid="class_base_1_1_notifier" kind="class"><name>Base::Notifier</name>
+    <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" kind="function"><name>Notifier</name></member>
+    <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" kind="function"><name>~Notifier</name></member>
+    <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" kind="function"><name>enableNotification</name></member>
+    <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" kind="function"><name>disableNotification</name></member>
+    <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" kind="function"><name>isEnabledForNotification</name></member>
+    <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" kind="function"><name>addObserver</name></member>
+    <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" kind="function"><name>removeObserver</name></member>
+    <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" kind="function"><name>removeAllObservers</name></member>
+    <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" kind="function"><name>notifyObservers</name></member>
+    <member refid="class_base_1_1_notifier_1a5b3d9077ee7023746a05377f2c6b192e" kind="function"><name>asString</name></member>
+    <member refid="class_base_1_1_notifier_1ae9189ab41334252a50dbaa82b6326c12" kind="function"><name>asDebugString</name></member>
+    <member refid="class_base_1_1_notifier_1a50dc0a6b1b07ddb294a1dab8e943b0e8" kind="variable"><name>notify</name></member>
+    <member refid="class_base_1_1_notifier_1a5a7c9eb8a73cf5f2cae4599ea7931444" kind="variable"><name>observers</name></member>
+  </compound>
+  <compound refid="class_base_1_1_object_id" kind="class"><name>Base::ObjectId</name>
+    <member refid="class_base_1_1_object_id_1a3028106d58f6db9df06c2faf797f30f8" kind="function"><name>allocbuf</name></member>
+    <member refid="class_base_1_1_object_id_1a2a50ef3cccf4fd20fd17f2c52fd00c9d" kind="function"><name>freebuf</name></member>
+    <member refid="class_base_1_1_object_id_1a62a23904516e14dbef8fee4e5804fa6c" kind="function"><name>ObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1a198bf2ac34a1ab0150a43c97d8002cec" kind="function"><name>ObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1a4f0abd7ada085282e495d1a5fab3ea43" kind="function"><name>ObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1abdd4924553c835229354677dad7c3c26" kind="function"><name>ObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1a62fd29d91e79c3c9130f45cbb32275fc" kind="function"><name>~ObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1a4a48d8c6f85bd9fd2991710635d316d8" kind="function"><name>maximum</name></member>
+    <member refid="class_base_1_1_object_id_1a2eae06c2581239d292ea3467c3cfdfba" kind="function"><name>length</name></member>
+    <member refid="class_base_1_1_object_id_1aad6bf09824bc18612fa6654cb5f0bb0f" kind="function"><name>length</name></member>
+    <member refid="class_base_1_1_object_id_1a518d985d2a670fdcb6ef360e2655e44b" kind="function"><name>operator[]</name></member>
+    <member refid="class_base_1_1_object_id_1a8a1c7b67bea028bf2073f81751fc3f94" kind="function"><name>operator[]</name></member>
+    <member refid="class_base_1_1_object_id_1a27eb724a90e960cdf691c76391cc786d" kind="function"><name>release</name></member>
+    <member refid="class_base_1_1_object_id_1a5469cb64007c5007be8ab2893fb3848a" kind="function"><name>replace</name></member>
+    <member refid="class_base_1_1_object_id_1aa91cd5a6d4b78734f903138614098868" kind="function"><name>get_buffer</name></member>
+    <member refid="class_base_1_1_object_id_1a0f4d8c05f11d882598daf15c2c1cd714" kind="function"><name>get_buffer</name></member>
+    <member refid="class_base_1_1_object_id_1afdc5a733d73342473fec933503e49a6e" kind="function"><name>asString</name></member>
+    <member refid="class_base_1_1_object_id_1a38e6fd78d084461a0535bd86b998db56" kind="function"><name>asDebugString</name></member>
+    <member refid="class_base_1_1_object_id_1a2a6b8719e9bd362d3cae8a901d238f6f" kind="typedef"><name>value_type</name></member>
+    <member refid="class_base_1_1_object_id_1a36a06bae51c88c5893592b28bd9311e5" kind="typedef"><name>pointer</name></member>
+    <member refid="class_base_1_1_object_id_1a1ce45b4d8cec8780cf96e8aa9b921930" kind="typedef"><name>const_pointer</name></member>
+    <member refid="class_base_1_1_object_id_1a486ec6587bbbd140dd776281788e98ee" kind="typedef"><name>reference</name></member>
+    <member refid="class_base_1_1_object_id_1a0a971f0617804dc1e107865f3bb473d3" kind="typedef"><name>const_reference</name></member>
+    <member refid="class_base_1_1_object_id_1af6e0e53cd168c8de532d458eedefba53" kind="typedef"><name>base</name></member>
+    <member refid="class_base_1_1_object_id_1a8ccba80236842b454cf6e7dda04e12f5" kind="variable"><name>objectIdNamespace</name></member>
+    <member refid="class_base_1_1_object_id_1a5ec6e05d2302d16274d66c815e43baf9" kind="function"><name>newObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1a96f9abac9baddbf62eaad80bd1499e72" kind="function"><name>ObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1aca3e55b04c30d9f939f04b2de5aa25c5" kind="function"><name>ObjectId</name></member>
+    <member refid="class_base_1_1_object_id_1a449f58cf08f6684639023708b882a00e" kind="function"><name>operator=</name></member>
+    <member refid="class_base_1_1_object_id_1abe7eb5f3190496d40e1f364b6145e4b2" kind="function"><name>operator==</name></member>
+    <member refid="class_base_1_1_object_id_1ad69ac55dac3aafd3ea38281ae7d762c0" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_base_1_1_object_id_1af3e9b3d04e1628fa6c1973920fabcd14" kind="function"><name>toString</name></member>
+    <member refid="class_base_1_1_object_id_1ae32c9ac9ee69665fed2771854da880b6" kind="function"><name>fromString</name></member>
+    <member refid="class_base_1_1_object_id_1a113567944442dcaebfbb8abe2e8952fb" kind="function"><name>isNull</name></member>
+    <member refid="class_base_1_1_object_id_1a7b5254288f7bf70ed7a6268abc3b930b" kind="function"><name>isValid</name></member>
+  </compound>
+  <compound refid="class_base_1_1_observer" kind="class"><name>Base::Observer</name>
+    <member refid="class_base_1_1_observer_1a0b8f55248bb0b393ed760d50b7f58d21" kind="function"><name>Observer</name></member>
+    <member refid="class_base_1_1_observer_1aca7a3c17bdc9d86a9f67519779baf2e9" kind="function"><name>~Observer</name></member>
+    <member refid="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" kind="function"><name>operator==</name></member>
+    <member refid="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" kind="function"><name>handleNotificationsFor</name></member>
+    <member refid="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" kind="function"><name>stopHandlingNotificationsFor</name></member>
+    <member refid="class_base_1_1_observer_1a37d00a5290a60aa9ab664af5d1642c3e" kind="function"><name>handleNotification</name></member>
+    <member refid="class_base_1_1_observer_1ac1a7d2e9a33255ac264c6abd1782cd8d" kind="friend"><name>Notifier</name></member>
+  </compound>
+  <compound refid="class_base_1_1_queue" kind="class"><name>Base::Queue</name>
+    <member refid="class_base_1_1_queue_1a6bd0d4291962d8a19e99323b1783efa0" kind="variable"><name>queue</name></member>
+    <member refid="class_base_1_1_queue_1a13930367bf2d5df75f00c93aa688e9dd" kind="variable"><name>queueBusy</name></member>
+    <member refid="class_base_1_1_queue_1a528c74df1ea9d44806aff5f3176c49bd" kind="variable"><name>queueFull</name></member>
+    <member refid="class_base_1_1_queue_1a2f737b5dc4b04016bc529fdac46a59a2" kind="function"><name>enqueue</name></member>
+    <member refid="class_base_1_1_queue_1a256b99ec524acf877586ae7450dfcb13" kind="function"><name>dequeue</name></member>
+    <member refid="class_base_1_1_queue_1a1facbc77b95d2dc9c897f2893604b816" kind="function"><name>size</name></member>
+  </compound>
+  <compound refid="class_view_1_1_rectangle_shape" kind="class"><name>View::RectangleShape</name>
+    <member refid="class_view_1_1_rectangle_shape_1acae95cb4b05d77196451520ee7d7ca9c" kind="function"><name>handleNotification</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a430ce6f93a932205861ec0327df3ca42" kind="function"><name>draw</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1ac736dfe69f1a3633696d8c663cd49b51" kind="function"><name>occupies</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a82517a7fb6b1b0331efaa79f306ecc38" kind="function"><name>asString</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1ae46b92ba72ec4a590afbd106ced79c98" kind="function"><name>asDebugString</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a12930d710b0629b49c95c86d686291a3" kind="variable"><name>centre</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a92563881c24a730b99d600b39558ebfc" kind="variable"><name>size</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1af9f808c588d4c618d857dcd46e27073f" kind="variable"><name>title</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1aff10ae7e56d55aca3f4accd7386e6e4f" kind="variable"><name>titleSize</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1ac32ad0276db89433370ad4a50752b734" kind="variable"><name>borderWidth</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1ab2330833ac41ecb5233ce20728450a7b" kind="variable"><name>spacing</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a6fc6a32c159acc4ef318564996fa0965" kind="function"><name>RectangleShape</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a9625cfce67d2df4c22014467a3dbc0e0" kind="function"><name>RectangleShape</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a3203649d35ff84e9b5523d16832c757e" kind="function"><name>RectangleShape</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1aa4b0226be14f29bde34290b72cdecde6" kind="function"><name>~RectangleShape</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a7c1339a9ae1096201bfdc9b8a0802a48" kind="function"><name>operator=</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a69be3838db55e8557e6cb1e767ed0aab" kind="function"><name>isBorderPoint</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a075d237a4c4bad46346e9305fd9f60d7" kind="function"><name>getCentre</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a905817abb1294f0e83f1ecdb065cc994" kind="function"><name>setCentre</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a6f431ce0f2f8436c8071eb7d07f198aa" kind="function"><name>getTitle</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a1014ef91f3ffb2b7da225293051cda8a" kind="function"><name>getNormalColour</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a2d0161c7d5a84cf2305b41f8b14f7573" kind="function"><name>getSelectionColour</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a30ef8c82bf9c40d0f39ce9568c7027f7" kind="function"><name>getActivationColour</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a21019b56d4ddb7d582e7bd3ee13f8973" kind="function"><name>setTitle</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1abbc036fe705e1766ec6294707eac1567" kind="function"><name>getSize</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a1750f2d2258a33f149764d2df471a7ae" kind="function"><name>setSize</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1acc3ec065295ec50ae74e1a6546ea97dc" kind="function"><name>getBorderWidth</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a5cc335ae000fa88ef759b89a8b83acd0" kind="function"><name>setBorderWidth</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a892ec0b500eaa885ee4514d1775a37e9" kind="function"><name>getSpacing</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1aa1d0774ba0de3aeb2acdc6b4af528fd5" kind="function"><name>setSpacing</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a6e075b3fda71d5dd4fbd3f3f9ff42126" kind="function"><name>handleActivated</name></member>
+    <member refid="class_view_1_1_rectangle_shape_1a15a3cd81166a65e5734b79c87552db00" kind="function"><name>handleSelection</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_request_handler" kind="class"><name>Messaging::RequestHandler</name>
+    <member refid="class_messaging_1_1_request_handler_1a78b960d598da57f343b4942436353d61" kind="function"><name>~RequestHandler</name></member>
+    <member refid="class_messaging_1_1_request_handler_1afa23f0ab94ae851a487173a5087da898" kind="function"><name>handleRequest</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_response_handler" kind="class"><name>Messaging::ResponseHandler</name>
+    <member refid="class_messaging_1_1_response_handler_1a0020294e74e5b60aaeef4d703f66cd7a" kind="function"><name>~ResponseHandler</name></member>
+    <member refid="class_messaging_1_1_response_handler_1a13c456a994ef15b4f7be7beed4e2f91f" kind="function"><name>handleResponse</name></member>
+  </compound>
+  <compound refid="class_model_1_1_robot" kind="class"><name>model::Robot</name>
+    <member refid="class_model_1_1_robot_1a7629555402fa8b55658d52fdc88ab889" kind="function"><name>handleNotification</name></member>
+    <member refid="class_model_1_1_robot_1a5b52eb37c4e11850c3f60263599bd79c" kind="function"><name>handleRequest</name></member>
+    <member refid="class_model_1_1_robot_1afa5fb42fca43fdfedb08d3a7cb38c037" kind="function"><name>handleResponse</name></member>
+    <member refid="class_model_1_1_robot_1a888add69a87a3e0f82a3f9c95140716f" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_robot_1aaf05b81b0aff3dac7b39effa462da04e" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5" kind="enum"><name>MessageType</name></member>
+    <member refid="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5a61a265eb7382841535498df9ac3070f5" kind="enumvalue"><name>EchoRequest</name></member>
+    <member refid="class_model_1_1_robot_1aa7cede8e43e597aea298266cc747b7c5ac27c38db9cf9ec53e65fd11fc8d98b74" kind="enumvalue"><name>EchoResponse</name></member>
+    <member refid="class_model_1_1_robot_1a0662da2861fd3153d95c58429fdc4ddc" kind="variable"><name>name</name></member>
+    <member refid="class_model_1_1_robot_1aa97b8df50213ea94ed458febb4196ec7" kind="variable"><name>size</name></member>
+    <member refid="class_model_1_1_robot_1a0912ea257e2be1752b6b16b578138298" kind="variable"><name>position</name></member>
+    <member refid="class_model_1_1_robot_1a2a9862f0595251a2e2b992e46c65d47a" kind="variable"><name>front</name></member>
+    <member refid="class_model_1_1_robot_1ad947acb96165c77daf4b745306340dd4" kind="variable"><name>speed</name></member>
+    <member refid="class_model_1_1_robot_1a239e53600d3e9748c8a95b675b614438" kind="variable"><name>goal</name></member>
+    <member refid="class_model_1_1_robot_1ab986a36dbfe5b72af7763883a316d30f" kind="variable"><name>astar</name></member>
+    <member refid="class_model_1_1_robot_1ac0c75cf0d1be32340cc93b152cd70901" kind="variable"><name>path</name></member>
+    <member refid="class_model_1_1_robot_1ac954e8cc205017a0034a9d1ac474ac61" kind="variable"><name>acting</name></member>
+    <member refid="class_model_1_1_robot_1a201c166c775e9c3caf550b763b9ef65a" kind="variable"><name>driving</name></member>
+    <member refid="class_model_1_1_robot_1a0e31a83bf7ad7cc274f5eaf79cb47cd7" kind="variable"><name>communicating</name></member>
+    <member refid="class_model_1_1_robot_1ae16224e79ce707ecd66a5e392d89cff3" kind="variable"><name>robotThread</name></member>
+    <member refid="class_model_1_1_robot_1a1e9dbd900868136e02f169059a41d38e" kind="variable"><name>robotMutex</name></member>
+    <member refid="class_model_1_1_robot_1a25462b6b270e44638522554646dd1180" kind="function"><name>drive</name></member>
+    <member refid="class_model_1_1_robot_1a398f0983a93029ebe3d52a9136e46035" kind="function"><name>calculateRoute</name></member>
+    <member refid="class_model_1_1_robot_1a2af2ed12ab1ba7fc165c65ab960ce47f" kind="function"><name>arrived</name></member>
+    <member refid="class_model_1_1_robot_1a64b560d02f2b8b2ce673ae79c48efee0" kind="function"><name>collision</name></member>
+    <member refid="class_model_1_1_robot_1a690a348e58682f1529f2e45a5b050a15" kind="function"><name>Robot</name></member>
+    <member refid="class_model_1_1_robot_1a9fb211152f3e75c65eafd1550e90203f" kind="function"><name>Robot</name></member>
+    <member refid="class_model_1_1_robot_1ac7afa4c9bc8982bd7e5918ed4c9173d2" kind="function"><name>Robot</name></member>
+    <member refid="class_model_1_1_robot_1a38d95cd9941ac61090d33e1e1d9f67a0" kind="function"><name>~Robot</name></member>
+    <member refid="class_model_1_1_robot_1acbaa390189fe54d71c5ca1db809f10b0" kind="function"><name>getName</name></member>
+    <member refid="class_model_1_1_robot_1ac39ad2cbd403962eebe60fd9dd4a1171" kind="function"><name>setName</name></member>
+    <member refid="class_model_1_1_robot_1add846e39a98489592f07b456a06396db" kind="function"><name>getSize</name></member>
+    <member refid="class_model_1_1_robot_1aa9053536ee4aa3c58883f1fe14d46c1f" kind="function"><name>setSize</name></member>
+    <member refid="class_model_1_1_robot_1a02a103f767306bce47f60127ceddf171" kind="function"><name>getPosition</name></member>
+    <member refid="class_model_1_1_robot_1a2d983199228926b70bc2dfa4dbbab006" kind="function"><name>setPosition</name></member>
+    <member refid="class_model_1_1_robot_1a85ab146591702b24ab8bd9b2ff960a2f" kind="function"><name>getFront</name></member>
+    <member refid="class_model_1_1_robot_1ad61c7c66fc588a7ba017cbb1f0045e2f" kind="function"><name>setFront</name></member>
+    <member refid="class_model_1_1_robot_1a134d8fa080a68cc524f386c8662be03e" kind="function"><name>getSpeed</name></member>
+    <member refid="class_model_1_1_robot_1a7471c11187faa28369f0e3846810e128" kind="function"><name>setSpeed</name></member>
+    <member refid="class_model_1_1_robot_1afedfe806d9fa854cbc641691ef27aada" kind="function"><name>isActing</name></member>
+    <member refid="class_model_1_1_robot_1a4cf81acadfb2bb3e92cdbbedd5e53659" kind="function"><name>startActing</name></member>
+    <member refid="class_model_1_1_robot_1abca861407c0992ee5748b15e772f7840" kind="function"><name>stopActing</name></member>
+    <member refid="class_model_1_1_robot_1a0eae3f369405de1ed7f4dcf70aedc348" kind="function"><name>isDriving</name></member>
+    <member refid="class_model_1_1_robot_1acedb81c962e36fbe88fdd583f6c8f696" kind="function"><name>startDriving</name></member>
+    <member refid="class_model_1_1_robot_1afd92a5235f1a171b02031b694f9bd4e7" kind="function"><name>stopDriving</name></member>
+    <member refid="class_model_1_1_robot_1a9ec882e34e2aed582174c127b79c358d" kind="function"><name>isCommunicating</name></member>
+    <member refid="class_model_1_1_robot_1a0178459eef83c12c50056717b3c5b8a8" kind="function"><name>startCommunicating</name></member>
+    <member refid="class_model_1_1_robot_1a7aabb3039cde09a96e07d900a5e19972" kind="function"><name>stopCommunicating</name></member>
+    <member refid="class_model_1_1_robot_1a49de60413e7391b51632c3137d14d7f2" kind="function"><name>getRegion</name></member>
+    <member refid="class_model_1_1_robot_1ae33fd5aaf09cdb89e4d02b4a138ed3b0" kind="function"><name>intersects</name></member>
+    <member refid="class_model_1_1_robot_1ad04268210b4531df65b17dfe425173e9" kind="function"><name>getFrontLeft</name></member>
+    <member refid="class_model_1_1_robot_1adb945c72992d0fcb78dca5a9e8513e1b" kind="function"><name>getFrontRight</name></member>
+    <member refid="class_model_1_1_robot_1a2757b46172e01b641ccf6f1e7783ca4d" kind="function"><name>getBackLeft</name></member>
+    <member refid="class_model_1_1_robot_1a4761dc0e97ce402c9010ba25737f33ad" kind="function"><name>getBackRight</name></member>
+    <member refid="class_model_1_1_robot_1accc03064c9ae17be090629566e2b5075" kind="function"><name>getOpenSet</name></member>
+    <member refid="class_model_1_1_robot_1a8913b96ae0804e35138ad7c9858bcb0c" kind="function"><name>getPath</name></member>
+  </compound>
+  <compound refid="class_view_1_1_robot_shape" kind="class"><name>View::RobotShape</name>
+    <member refid="class_view_1_1_robot_shape_1a23eca8fea0a58ba16b405b0f0eadf5da" kind="function"><name>getRobot</name></member>
+    <member refid="class_view_1_1_robot_shape_1a96002bd3f90ced18aa3f0ab9b57902a3" kind="function"><name>setRobot</name></member>
+    <member refid="class_view_1_1_robot_shape_1aa8e3a33d23b11a1f9c4580ff46d3d9f7" kind="function"><name>handleNotification</name></member>
+    <member refid="class_view_1_1_robot_shape_1a9f12f9abfa2d4ebfa47b06e02c71d23c" kind="function"><name>draw</name></member>
+    <member refid="class_view_1_1_robot_shape_1aff3acf7b0326d17f5cabdc19c7164095" kind="function"><name>occupies</name></member>
+    <member refid="class_view_1_1_robot_shape_1a4b12a96d27b17153069e8864258f52df" kind="function"><name>setCentre</name></member>
+    <member refid="class_view_1_1_robot_shape_1a2af7fa2dfdf390213a921751fb144afa" kind="function"><name>asString</name></member>
+    <member refid="class_view_1_1_robot_shape_1afb69a3cb5c895002b054807d26291579" kind="function"><name>asDebugString</name></member>
+    <member refid="class_view_1_1_robot_shape_1a5cca6a556ef1f016a2d7ee5e154d782c" kind="variable"><name>robotWorldCanvas</name></member>
+    <member refid="class_view_1_1_robot_shape_1aec0d01a762c2113a506948b65adea65d" kind="function"><name>RobotShape</name></member>
+    <member refid="class_view_1_1_robot_shape_1ac088ac2b6b02c9e97eaefbf39085717a" kind="function"><name>~RobotShape</name></member>
+    <member refid="class_view_1_1_robot_shape_1a5a7682a891c8b4bef7304894d2ab2737" kind="function"><name>getNormalColour</name></member>
+    <member refid="class_view_1_1_robot_shape_1a33ac56f82802eb45edaf2fada9635fad" kind="function"><name>getSelectionColour</name></member>
+    <member refid="class_view_1_1_robot_shape_1a41320fd63ea2f27563c65953d012899a" kind="function"><name>getActivationColour</name></member>
+    <member refid="class_view_1_1_robot_shape_1ab07702949d9d374331a17db4759f0762" kind="function"><name>handleActivated</name></member>
+    <member refid="class_view_1_1_robot_shape_1a8983c43b4ec8cd9eda0f4e32a8f69b19" kind="function"><name>handleSelection</name></member>
+    <member refid="class_view_1_1_robot_shape_1a95202f41f8b9d066be8625cf6aae0fcb" kind="function"><name>setRobotWorldCanvas</name></member>
+  </compound>
+  <compound refid="class_model_1_1_robot_world" kind="class"><name>model::RobotWorld</name>
+    <member refid="class_model_1_1_robot_world_1a9f5a599b9d6523f45df7cbb0aafe4c08" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_robot_world_1a9c599037d4bdc7ebd4e9138c3cf3cc82" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_robot_world_1a5019cd139c3d2e9aa10bd07b565d835a" kind="variable"><name>robots</name></member>
+    <member refid="class_model_1_1_robot_world_1a265deae54f92d839882a4472630adb36" kind="variable"><name>wayPoints</name></member>
+    <member refid="class_model_1_1_robot_world_1a35470d30ffdbce51b22ed9a2f3c0a0be" kind="variable"><name>goals</name></member>
+    <member refid="class_model_1_1_robot_world_1aa5dab80b57998a5a47aa65599ff0c41a" kind="variable"><name>walls</name></member>
+    <member refid="class_model_1_1_robot_world_1a3129fe115ffa78851d1d81e62a87bfa0" kind="function"><name>getRobotWorld</name></member>
+    <member refid="class_model_1_1_robot_world_1af0d58001395b3b375c2a98b28f2f3ef2" kind="function"><name>newRobot</name></member>
+    <member refid="class_model_1_1_robot_world_1a45272003383e53e4d8273e83a3e7dc7f" kind="function"><name>newWayPoint</name></member>
+    <member refid="class_model_1_1_robot_world_1afc21f82cc1c2c65655da7ef6a7e0f6e5" kind="function"><name>newGoal</name></member>
+    <member refid="class_model_1_1_robot_world_1a8b3d9243b9550a6fe01bc3b880fadec5" kind="function"><name>newWall</name></member>
+    <member refid="class_model_1_1_robot_world_1aa6d7a030f609d6b1187b1c5e93469695" kind="function"><name>deleteRobot</name></member>
+    <member refid="class_model_1_1_robot_world_1afbb97c93d8d68e6e624af6fc988b57ca" kind="function"><name>deleteWayPoint</name></member>
+    <member refid="class_model_1_1_robot_world_1a5208d73a57a8b663f4de407150fb8379" kind="function"><name>deleteGoal</name></member>
+    <member refid="class_model_1_1_robot_world_1a25c789a5165ee686ef21e1492aace738" kind="function"><name>deleteWall</name></member>
+    <member refid="class_model_1_1_robot_world_1aa65fc818fe12a23953ac53f7f62705fb" kind="function"><name>getRobot</name></member>
+    <member refid="class_model_1_1_robot_world_1ac7897e5aa501752e5e93b555efbf752a" kind="function"><name>getRobot</name></member>
+    <member refid="class_model_1_1_robot_world_1a4ec5350ad359e9b37bd2f5606a86fea1" kind="function"><name>getWayPoint</name></member>
+    <member refid="class_model_1_1_robot_world_1a6ce03ec6f6f106172053cdd789844347" kind="function"><name>getWayPoint</name></member>
+    <member refid="class_model_1_1_robot_world_1aae1b5a0410c5ae207cd8b7525e204cc0" kind="function"><name>getGoal</name></member>
+    <member refid="class_model_1_1_robot_world_1a3a678aa437a062c21acccf9ed105a3ec" kind="function"><name>getGoal</name></member>
+    <member refid="class_model_1_1_robot_world_1a8d6dab46a8c89a42f101f4548e4b3da6" kind="function"><name>getWall</name></member>
+    <member refid="class_model_1_1_robot_world_1a657cbe460deb2057521ae51dc5327fe7" kind="function"><name>getRobots</name></member>
+    <member refid="class_model_1_1_robot_world_1a1bbc183d9e63ae142bcbc0373aa06e78" kind="function"><name>getWayPoints</name></member>
+    <member refid="class_model_1_1_robot_world_1a6bac601255c803cc88cc145da2aa1ff0" kind="function"><name>getGoals</name></member>
+    <member refid="class_model_1_1_robot_world_1a6751f9fe7b9e33047a6d518f5a2f819b" kind="function"><name>getWalls</name></member>
+    <member refid="class_model_1_1_robot_world_1afe09ff15bf8a4cbed1222baa065107d9" kind="function"><name>populate</name></member>
+    <member refid="class_model_1_1_robot_world_1aa54ca5337df73d34be09a2c3b9a66c37" kind="function"><name>unpopulate</name></member>
+    <member refid="class_model_1_1_robot_world_1a4a62b951e0cdab0ce60f0189442481f8" kind="function"><name>unpopulate</name></member>
+    <member refid="class_model_1_1_robot_world_1a0c67a71c8dec8eda6d182666d7e629ba" kind="function"><name>RobotWorld</name></member>
+    <member refid="class_model_1_1_robot_world_1abbcd88bc3659fe2a57328f0d8be440ad" kind="function"><name>~RobotWorld</name></member>
+  </compound>
+  <compound refid="class_view_1_1_robot_world_canvas" kind="class"><name>View::RobotWorldCanvas</name>
+    <member refid="class_view_1_1_robot_world_canvas_1ac74704c6f3337c017a338aa60ac550a6" kind="function"><name>enableHandlePaint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a9a85f803ceea25f82b6dab3a68b51915" kind="function"><name>enableHandleSize</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aff53f317176e354f858710ad334473b1" kind="function"><name>enableLeftDownHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1adae323b06595ebe6c203beedd1f88594" kind="function"><name>enableLeftUpHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ad34bec03c60bc74967da0815bfc3decb" kind="function"><name>enableLeftDClickHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a2cf15bd7f032378476292e4ef4baeb60" kind="function"><name>enableMiddleDownHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aff0f17e087d0c16b61fc3fa4664d9280" kind="function"><name>enableMiddleUpHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abbf14eaa663020a5c28ddc34b04a7d93" kind="function"><name>enableMiddleDClickHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a8b249411be7ea966eb7ad01698d30ff4" kind="function"><name>enableRightDownHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ade500a4e9585a02b05f3c2bdcca59b39" kind="function"><name>enableRightUpHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1addbc170d9d9c998af49ffca65ed6216a" kind="function"><name>enableRightDClickHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a6decd9bcd3acac80852476fc30f5df8e" kind="function"><name>enableMouseMotionHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a531ca3c86af833a551ad9f3606cd4c9f" kind="function"><name>enableKeyHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a652f1eec754019d4d8e3c32a7749545f" kind="function"><name>enableActivationHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a6e0de11c21b2b482c440cc3b1dfc70ca" kind="function"><name>enableSelectionHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ad030befe82d71f44547da7c180427367" kind="function"><name>enableItemMenuHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a923d937443987722653140d1f22e16b9" kind="function"><name>enableDragAndDropHandling</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ae82885a5dd5ce493c8b3df3a7d0385a4" kind="function"><name>getRobotWorld</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a2829529a8b4221f072aeac196bbc9b17" kind="function"><name>setRobotWorld</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1af24f07e5484dbba2edd563c826694098" kind="function"><name>handleNotification</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a77d292863075ab2e7a51148c86e794b5" kind="function"><name>handlePaint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a9e87fc8cfc5d45de10c5b44bdcf32974" kind="function"><name>handleSize</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a6f01a640b1d11b8a5c399ec1beb5d9dd" kind="function"><name>handleLeftDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a652bd5372da5fd21ecc2379faf7d5c62" kind="function"><name>handleLeftUp</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a6287e395342c737724bebbeb56de826d" kind="function"><name>handleLeftDClick</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1af4e64974c6b76b7fa3107694d2a895b8" kind="function"><name>handleMiddleDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a23f3eb4db9fd3b72872f3f8e74425816" kind="function"><name>handleMiddleUp</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a1509cf3de672c05fac25b9a63dbd719a" kind="function"><name>handleMiddleDClick</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aa0063e9b90265e676d0069dbe6e392ac" kind="function"><name>handleRightDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a18873d7781c08653b14c9d3a9a0a8346" kind="function"><name>handleRightUp</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a97c26bc9722ced6706681077b68dcd20" kind="function"><name>handleRightDClick</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1af636158a32890d6f44b5e93c4e8bf760" kind="function"><name>handleMouseMotion</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ad9b2185e171a240bd9bf54266526d2bc" kind="function"><name>handleKey</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a4724659516bdc8572f585073009f5c40" kind="function"><name>handleBeginLeftDrag</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aee572b2a63b6a8b1577ee7b69bf90b87" kind="function"><name>handleEndDrag</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abd7db9facf18e6cadd54c2f681df7c66" kind="function"><name>handleAddRobot</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a57692f00a4e5fb281fc7baf1920f6430" kind="function"><name>handleEditRobot</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a0d1aeab78b87c7ac297fa877d63d4509" kind="function"><name>handleDeleteRobot</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a27d9c2435d11a4a25ba545b2dedb7942" kind="function"><name>handleAddWayPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a28b10cb19c0c0810c329f8730dd26da3" kind="function"><name>handleEditWayPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a59a9e54e21bd5bd93bf67b8ea53776c0" kind="function"><name>handleDeleteWayPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aec6ff89595e1a7acc7d52617e7382a9d" kind="function"><name>handleAddGoal</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a02faf3e677c578a817e6c3e071c40fbd" kind="function"><name>handleEditGoal</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a373e72f2cda977a78ef7c9dae4fea0e5" kind="function"><name>handleDeleteGoal</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aa95a5735508bdba10ee833be5b9d2052" kind="function"><name>handleAddWall</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a6c69668363176d9e81579fef5e30ba9e" kind="function"><name>handleEditWall</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a61e2fb050d5df8647ec9d9cf0ea8310b" kind="function"><name>handleDeleteWall</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a028920fed66e9f764d55ae894e62b782" kind="function"><name>handleShapeInfo</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aff306f1468df26b730806dfa81180578" kind="function"><name>handleNotification</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a136eef101bb94f4e8ecdc28843a3c2b0" kind="function"><name>OnPaint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a9c4ebc560a601db8e049ccfaf1d11592" kind="function"><name>OnSize</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a998a0178eb3c30386eeea48044c42b6d" kind="function"><name>OnLeftDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ac0b304b2731408ab461ef4a9ab270796" kind="function"><name>OnLeftUp</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1afb11e5ee028da0df3f2795f4903d9738" kind="function"><name>OnLeftDClick</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aa1e1ac2e86c74a8d050ed842a8f65489" kind="function"><name>OnMiddleDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ad954c2928c692e7e51d832f6a544f95e" kind="function"><name>OnMiddleUp</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a7015657b025f6e28e97e12ab999a871f" kind="function"><name>OnMiddleDClick</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aee2eaf6ba039d01d273e8ade934d9b67" kind="function"><name>OnRightDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1acd77d27fafbab31d1b946485cc86ce5c" kind="function"><name>OnRightUp</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1add1acc11ff6342a4d811bbd6b8801c11" kind="function"><name>OnRightDClick</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a067985975dced40b93d9b1a075114f7f" kind="function"><name>OnMouseMotion</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a4ba6efb5ffc379abfa7c7a91d5e417e7" kind="function"><name>OnKeyDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a67eb0fe5a7c7e7708f9c637d6c4884ac" kind="function"><name>OnCharDown</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a81a7de7b346f638314cd5b7a15136007" kind="function"><name>OnAddRobot</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ae8be7638cfec3a3f37f6695dc5f9a56c" kind="function"><name>OnEditRobot</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ab384cf53bba49a603ea3935111469c5b" kind="function"><name>OnDeleteRobot</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a36510c551f4f930f80dcf6120415a455" kind="function"><name>OnAddWayPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a6a6490871621fe69c86792236653f301" kind="function"><name>OnEditWayPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aeb53258a027811a3f03d9b3fb391f557" kind="function"><name>OnDeleteWayPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ae615652173f9ac620a638fee82ad890d" kind="function"><name>OnAddGoal</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc3ee1d04e0db44df5a8e8272992df0f" kind="function"><name>OnEditGoal</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a684ff91d432d16d0f3703a2663514ab6" kind="function"><name>OnDeleteGoal</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aa3a7b6583f90ff721a8b4d8c2b31cb38" kind="function"><name>OnAddWall</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a71c8af71b6e954bdab62674ffbe9f57f" kind="function"><name>OnEditWall</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a360232701f9e5011f3a269f9936abcfa" kind="function"><name>OnDeleteWall</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aa61a36d6071cdad287af904b793a708f" kind="function"><name>OnShapeInfo</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a19f7ecff2bf134165eb9cd20ba5fe773" kind="function"><name>OnWorldInfo</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a88ab35d12f8386d8080e0702aeb4c9b8" kind="function"><name>OnNotificationEvent</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470" kind="enum"><name>@2</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470af86165d4ac2b80865c8ce42441d9c25c" kind="enumvalue"><name>IDLE</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a3431974f7af8e139dcfaedb465325571" kind="enumvalue"><name>DRAWING</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ad521919ed8f73a8af6cbbd389b92a80a" kind="enumvalue"><name>CANCELDRAWING</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ac099d559d44c8cd12a90aa55c4d5e8aa" kind="enumvalue"><name>RESIZING</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a0cba3777342af3550fd8f2aa74af2e05" kind="enumvalue"><name>CANCELRESIZING</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ad239f54ddcd5d10a92a589f6ae5d28a8" kind="enumvalue"><name>STARTDRAGGING</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a208614e2dbb0752c04f800222069ef4f" kind="enumvalue"><name>DRAGGING</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a5cecd98cfb003b73d7aaca3f3168c042" kind="enumvalue"><name>CANCELDRAGGING</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ab2367237b4f1a96d0094f06156a828f9" kind="variable"><name>shapes</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a6f87e8ae3c91d96bb1e3db3b573ff8a6" kind="variable"><name>actionStatus</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1acc557a1e3add81ad5d045a05a0ad1a8f" kind="variable"><name>popupPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a9cf3f42564d08cbe1af69125719c0608" kind="variable"><name>startActionPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ac84999956cee4587ccf4b4614843d241" kind="variable"><name>endActionPoint</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a7798cb0f96767edbf604851ff784090d" kind="variable"><name>actionOffset</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a8090bb95c46c33f685d681a7e5d7d23f" kind="variable"><name>startActionSize</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aa1027eb995295f928f8bef3a1a097005" kind="variable"><name>startActionShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a778265cdede2356051453fa3a09ca034" kind="variable"><name>endActionShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ac864fac72e4714ddcc88400c3d0a2568" kind="variable"><name>selectedShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abda0beec0d9e990883c51f95284504f1" kind="variable"><name>activationEnabled</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a9451f60f588b0c4b4d27bed85b0e41ac" kind="variable"><name>selectionEnabled</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a708199300dcee86c87f8faf9a3ab88ac" kind="variable"><name>menuItemEnabled</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ae5563ab5d9bd251057b666eb35f6cf7b" kind="variable"><name>dandEnabled</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aedb2a9ac8f01fb3e82d176c03509822d" kind="variable"><name>notificationHandler</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1afc6ffd527bcd9970f12e5fd70a841782" kind="function"><name>RobotWorldCanvas</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aff3e613f2782874b4560a015be7b6180" kind="function"><name>RobotWorldCanvas</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a1ee3d62d9f1333010356dc6a8c9044e1" kind="function"><name>~RobotWorldCanvas</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a7cffeb2971aaac6039398b6d896fd3b1" kind="function"><name>devicePointFor</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a0f505fef4f08daaa9ebd21ff392c698f" kind="function"><name>screenPointFor</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ac4fefdf43774d0f90c469527b1d27fd3" kind="function"><name>isShapeSelected</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aefd5c6dc27fe807047996443797594a0" kind="function"><name>getSelectedShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a51477f3840089817d00ed6f2dee7c69e" kind="function"><name>setSelectedShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a38bc5c3dd6eb99504fc1ada58ed39a14" kind="function"><name>isShapeAt</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a625bdb271e6426cc7c228c4c71eebedf" kind="function"><name>getShapeAt</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a91fc7b9d37d228ba9285fe82dab04fbb" kind="function"><name>selectShapeAt</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a19aa6f46000f7f7db267f6aec911f25f" kind="function"><name>handleBackGroundNotification</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ab498b81c0619bc6109548582addc7e02" kind="function"><name>populate</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a20eb2ae3ba32d1a1b8994025e0c6bc39" kind="function"><name>unpopulate</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a976c8eb03167bf9c9b0f911ff3e0fa9e" kind="function"><name>initialise</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a9cc3e904305ee1e99f916ecdcbd757b7" kind="function"><name>render</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a29d4e61d22b79fedaee17411b5f6b3c7" kind="function"><name>handleActivation</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a955374b23557c1459b597e457d68cf57" kind="function"><name>handleSelection</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a11ae3a4bc7c60fb560d42c1f63b8955b" kind="function"><name>handleMenu</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a29edcdeeea1b21b5626b1f47fbe43871" kind="function"><name>handleItemMenu</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a3156a2e906d30e96f9bf7ef9ff731b06" kind="function"><name>addShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1afaa1fc0f2e6e76653ef7022853318646" kind="function"><name>addShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1abb5dee13a6e25baf0980129cfb1780d3" kind="function"><name>addShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a51c5fac3c75b4ebc258511bf00c93863" kind="function"><name>addShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ac40c2e62c75618d63e09a0d4f0ca4bb4" kind="function"><name>removeShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a274b8ff8d7d6bfe6e40c04cbd1c526de" kind="function"><name>removeShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1ae94d4410e1250dfc2c2221265be10c24" kind="function"><name>removeShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a14bd783613cbd6aa65eaabfe873d7369" kind="function"><name>removeShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1af3ba30c00eaedf7bbb67b731f12d1af7" kind="function"><name>removeGenericShape</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1aeeab76a7ea395d141ef6860d74088521" kind="function"><name>remove</name></member>
+    <member refid="class_view_1_1_robot_world_canvas_1a7ff3ff2c7f329c3659f8420bd9ee8479" kind="function"><name>add</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_server" kind="class"><name>Messaging::Server</name>
+    <member refid="class_messaging_1_1_server_1a248edc6d35bb39ff332f32145013cf66" kind="variable"><name>io_service</name></member>
+    <member refid="class_messaging_1_1_server_1ab2d32a71de425766f800e7c9896a0e9f" kind="variable"><name>acceptor</name></member>
+    <member refid="class_messaging_1_1_server_1aed7d6b019e82a75c982ccc56629cee6c" kind="variable"><name>requestHandler</name></member>
+    <member refid="class_messaging_1_1_server_1a8f618713380149543f0817e2675d81aa" kind="function"><name>Server</name></member>
+    <member refid="class_messaging_1_1_server_1afd2d80942cfce9e61abda7bec21b5833" kind="function"><name>~Server</name></member>
+    <member refid="class_messaging_1_1_server_1a7af1a9647f151e832c274d3674b6845f" kind="function"><name>handleAccept</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_server_session" kind="class"><name>Messaging::ServerSession</name>
+    <member refid="class_messaging_1_1_server_session_1aa8809afe33a07cf0c66735902f6f15e8" kind="variable"><name>requestHandler</name></member>
+    <member refid="class_messaging_1_1_server_session_1ab6a8bbfeebf3809ed251d5fe6dd6d93f" kind="function"><name>ServerSession</name></member>
+    <member refid="class_messaging_1_1_server_session_1a0b4a4b895a1dba815a81747dc29b26e2" kind="function"><name>~ServerSession</name></member>
+    <member refid="class_messaging_1_1_server_session_1a5b700fe14c9ec5fc54fde5a8eab22da6" kind="function"><name>start</name></member>
+    <member refid="class_messaging_1_1_server_session_1a294d16e8d6c8839fee2358443d78dc15" kind="function"><name>handleMessageRead</name></member>
+    <member refid="class_messaging_1_1_server_session_1ac48678f3522a20d7b6b3aac02ed3e100" kind="function"><name>handleMessageWritten</name></member>
+  </compound>
+  <compound refid="class_messaging_1_1_session" kind="class"><name>Messaging::Session</name>
+    <member refid="class_messaging_1_1_session_1aae95e1daf9716126c33e59d5f28d6271" kind="variable"><name>socket</name></member>
+    <member refid="class_messaging_1_1_session_1a4a88bd6b136ddf540e0230c0c71a97a1" kind="variable"><name>headerBuffer</name></member>
+    <member refid="class_messaging_1_1_session_1a1a1a1351d07b456e3a9c229d94e143d0" kind="variable"><name>bodyBuffer</name></member>
+    <member refid="class_messaging_1_1_session_1ab2e5e804ffa5711fbc7007f07180a0df" kind="function"><name>Session</name></member>
+    <member refid="class_messaging_1_1_session_1a08a8af25b6d4def28872fca6f38d286c" kind="function"><name>~Session</name></member>
+    <member refid="class_messaging_1_1_session_1a89cbd6e05fdbbe1c9e26cbcab92d6044" kind="function"><name>start</name></member>
+    <member refid="class_messaging_1_1_session_1ac2fbf589586288cee9b408514907d044" kind="function"><name>handleMessageRead</name></member>
+    <member refid="class_messaging_1_1_session_1afcf204df8f7e67e470d454d9de561515" kind="function"><name>handleMessageWritten</name></member>
+    <member refid="class_messaging_1_1_session_1aedafb8b5c664cd9d2d86b90b863bde77" kind="function"><name>getSocket</name></member>
+    <member refid="class_messaging_1_1_session_1a9b5aa90c447db3b432751f453565e84b" kind="function"><name>readMessage</name></member>
+    <member refid="class_messaging_1_1_session_1a1ce6c51bea887b0745318de8de202af7" kind="function"><name>handleHeaderRead</name></member>
+    <member refid="class_messaging_1_1_session_1a9b2379db03dd4b22896df3b6891509a9" kind="function"><name>handleBodyRead</name></member>
+    <member refid="class_messaging_1_1_session_1a224c7c9cc62b4b9e3ccd21c3121f9b03" kind="function"><name>handleMessageRead</name></member>
+    <member refid="class_messaging_1_1_session_1af6693149abfd302fd6285d99a0131f18" kind="function"><name>writeMessage</name></member>
+    <member refid="class_messaging_1_1_session_1aa6bb0133b721e77c31411cccc1eb6c40" kind="function"><name>handleHeaderWritten</name></member>
+    <member refid="class_messaging_1_1_session_1a42e7eb7f1e5d41861417d03dcb5419e7" kind="function"><name>handleBodyWritten</name></member>
+    <member refid="class_messaging_1_1_session_1a4ad739e7dea45e860feae03c2ae728b2" kind="function"><name>handleMessageWritten</name></member>
+  </compound>
+  <compound refid="class_view_1_1_shape" kind="class"><name>View::Shape</name>
+    <member refid="class_view_1_1_shape_1a47a18af27ae3664dd61b56a52a61dd05" kind="function"><name>draw</name></member>
+    <member refid="class_view_1_1_shape_1a7a202614a593376dcfae7baf892604b1" kind="function"><name>occupies</name></member>
+    <member refid="class_view_1_1_shape_1a4f958c233208b77c7f5aa2c380b27b3f" kind="function"><name>getCentre</name></member>
+    <member refid="class_view_1_1_shape_1af833b07b29d58eb0538f88aefdef29bc" kind="function"><name>setCentre</name></member>
+    <member refid="class_view_1_1_shape_1a537df4d4736c76092f66d24c1205704d" kind="function"><name>getData</name></member>
+    <member refid="class_view_1_1_shape_1abc73bac8ae94ccbb8228410367091575" kind="function"><name>setData</name></member>
+    <member refid="class_view_1_1_shape_1af9e1799d43f25355d04f95c1f4e75277" kind="function"><name>isSelected</name></member>
+    <member refid="class_view_1_1_shape_1a44eacfc99c6a81016afecd06731eedb0" kind="function"><name>setSelected</name></member>
+    <member refid="class_view_1_1_shape_1aa698e74f91344d0d0dee2c3273c1ec07" kind="function"><name>setSelectedAt</name></member>
+    <member refid="class_view_1_1_shape_1af5616956f613db8a30a65b12914ccd8c" kind="function"><name>getSelectedPoint</name></member>
+    <member refid="class_view_1_1_shape_1a54231a2190a7244fdbd1b66900acf162" kind="function"><name>asString</name></member>
+    <member refid="class_view_1_1_shape_1a47a54c2594bad3a5a26ed5aabf9c3f7c" kind="function"><name>asDebugString</name></member>
+    <member refid="class_view_1_1_shape_1a908c1351b226965a5d120ec6e052fd83" kind="variable"><name>data</name></member>
+    <member refid="class_view_1_1_shape_1a25d3dd34b510d5b29862411b9ab77113" kind="variable"><name>selected</name></member>
+    <member refid="class_view_1_1_shape_1a9740ec703e12e87ac1a49023b3bcd507" kind="function"><name>Shape</name></member>
+    <member refid="class_view_1_1_shape_1afb97a8a335b877e5541c3c9844e5959c" kind="function"><name>Shape</name></member>
+    <member refid="class_view_1_1_shape_1a4169e646865eb9f6c248087d13f236de" kind="function"><name>~Shape</name></member>
+    <member refid="class_view_1_1_shape_1ac128288b584db6de840f7ec20493aafd" kind="function"><name>handleActivated</name></member>
+    <member refid="class_view_1_1_shape_1a62035e3329fede659614b5ce2060a0f3" kind="function"><name>handleSelection</name></member>
+    <member refid="class_view_1_1_shape_1abfe27e44508e837d8d62de605b32dd61" kind="function"><name>handleBeginLeftDrag</name></member>
+    <member refid="class_view_1_1_shape_1a0ffded9065c593ce94e3db4d27078bec" kind="function"><name>handleEndDrag</name></member>
+  </compound>
+  <compound refid="class_utils_1_1_shape2_d_utils" kind="class"><name>Utils::Shape2DUtils</name>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5" kind="enum"><name>CompassPoint</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a294454a735757c76bf535dfcb34c8dd3" kind="enumvalue"><name>CP_NORTH</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0ac28a9bd47cc98c5983a3ddefd46fee" kind="enumvalue"><name>CP_NORTHEAST</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0a4a30e036fe6bd33cebd2adb1803c81" kind="enumvalue"><name>CP_EAST</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5aab475ba787ebe431af7c7db64708dd6f" kind="enumvalue"><name>CP_SOUTHEAST</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a51c0d0e44374c0912d4811d3720e9b05" kind="enumvalue"><name>CP_SOUTH</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a0419db439e1ee90b70095ace31d423f3" kind="enumvalue"><name>CP_SOUTHWEST</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5a475280eaba356cd18ba98f254f95d462" kind="enumvalue"><name>CP_WEST</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a94cfd04764b56fdc1c43325fb8666cf5acc2b65f1404a1a8af47c676345cdbe44" kind="enumvalue"><name>CP_NORTHWEST</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a0a6d71335cddbfb02f15603a9594f3e7" kind="function"><name>getAngle</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a4d91eeb6e08a2116209b69ec75bc8966" kind="function"><name>getAngle</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a404882ff5a44d0cfa6500941c4b925f5" kind="function"><name>intersect</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a0c1b1443dbc38bac0178ef9240270a9d" kind="function"><name>getIntersection</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a297b88bbdc022369dbc06775878a73e5" kind="function"><name>isInsidePolygon</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a9fea1c3cfa86f8776a2ffca0f1683c58" kind="function"><name>isOnLine</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1ab86f3e66e5a8f9bbc93e68c8ecc41f38" kind="function"><name>isOnLine</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a80a202c16649fa6da57343df10035f7e" kind="function"><name>rotate</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1ab1beebca006b82c3f78669b6a13529f8" kind="function"><name>getCompassPoint</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a19ef7cb8dc087ba4d9eb65c4f11fd7e3" kind="function"><name>isCompassPoint</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a47efad1075c8fabb7af1146f17fadaa2" kind="function"><name>asString</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a801c67d2024d833171fbb99d9ddb5cf1" kind="function"><name>asString</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a2b54dee36b497da4e9f99ce27cbc4470" kind="function"><name>rotateX</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1ad09e100184c73aa040f9018d24ca5279" kind="function"><name>rotateY</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a961c5b62a418519b156d0fc100f03e8b" kind="function"><name>rotateX</name></member>
+    <member refid="class_utils_1_1_shape2_d_utils_1a06068dc58423b2d9b4175d8b5584abff" kind="function"><name>rotateY</name></member>
+  </compound>
+  <compound refid="struct_view_1_1_shape_data" kind="struct"><name>View::ShapeData</name>
+    <member refid="struct_view_1_1_shape_data_1ad4257ca5eca4e42f538ca228a3952761" kind="function"><name>asString</name></member>
+    <member refid="struct_view_1_1_shape_data_1a4dc05a9b25941f87edb43088215ca21c" kind="function"><name>asDebugString</name></member>
+    <member refid="struct_view_1_1_shape_data_1ab14b722119cbe49b92b5569331e25e32" kind="function"><name>~ShapeData</name></member>
+  </compound>
+  <compound refid="class_base_1_1_std_out_debug_trace_function" kind="class"><name>Base::StdOutDebugTraceFunction</name>
+    <member refid="class_base_1_1_std_out_debug_trace_function_1a28cdac2a99589f238350d78743b920be" kind="function"><name>trace</name></member>
+  </compound>
+  <compound refid="class_model_1_1_steering_actuator" kind="class"><name>model::SteeringActuator</name>
+    <member refid="class_model_1_1_steering_actuator_1aaf5092d6bcf025cf5dbd9b8ff97feceb" kind="function"><name>SteeringActuator</name></member>
+    <member refid="class_model_1_1_steering_actuator_1a07c0d9c5de87b67039f28efd21c92e68" kind="function"><name>~SteeringActuator</name></member>
+    <member refid="class_model_1_1_steering_actuator_1a24503627c8e960eb7206e785906f3ac4" kind="function"><name>handleCommand</name></member>
+  </compound>
+  <compound refid="struct_path_algorithm_1_1_vertex" kind="struct"><name>PathAlgorithm::Vertex</name>
+    <member refid="struct_path_algorithm_1_1_vertex_1afe7ba337aa9af618c18c7ab19da65ea9" kind="variable"><name>x</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1ae6428b0c59bbbcd5aad9cf244a38bef2" kind="variable"><name>y</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1a8bac4752dead7e6f0eb4fe099eae1eaf" kind="variable"><name>actualCost</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1a316a72f6d405096010224df1a78b8c4d" kind="variable"><name>heuristicCost</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1a6a84a2bea6bf4728fb66b0ca6ed80966" kind="function"><name>Vertex</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1ae471ae74a4bf26951391741d2f58d6b2" kind="function"><name>Vertex</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1a226fcb1a96402593bf0ce3bfede2157a" kind="function"><name>asPoint</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1afe13add443706b4fb534fbc0af5b0bfc" kind="function"><name>lessCost</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1aea5063979800ccbd795fed9f33cbb483" kind="function"><name>lessId</name></member>
+    <member refid="struct_path_algorithm_1_1_vertex_1a64aa2913bc0e1d1511a452c5d800803a" kind="function"><name>equalPoint</name></member>
+  </compound>
+  <compound refid="struct_path_algorithm_1_1_vertex_equal_point_compare" kind="struct"><name>PathAlgorithm::VertexEqualPointCompare</name>
+    <member refid="struct_path_algorithm_1_1_vertex_equal_point_compare_1a3e17720ca1b633beb65c6f353145765d" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="struct_path_algorithm_1_1_vertex_less_cost_compare" kind="struct"><name>PathAlgorithm::VertexLessCostCompare</name>
+    <member refid="struct_path_algorithm_1_1_vertex_less_cost_compare_1a3fc58f67297b1342d575dde2c275dd48" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="struct_path_algorithm_1_1_vertex_less_id_compare" kind="struct"><name>PathAlgorithm::VertexLessIdCompare</name>
+    <member refid="struct_path_algorithm_1_1_vertex_less_id_compare_1adb205b9c837c7e884ccc2ec32cc69cfc" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="class_view_1_1_view_object" kind="class"><name>View::ViewObject</name>
+    <member refid="class_view_1_1_view_object_1aa54c31897c07be82e15f595736f4ebe9" kind="function"><name>ViewObject</name></member>
+    <member refid="class_view_1_1_view_object_1abbc94f6ef3de75d64602e4d26694f2cc" kind="function"><name>ViewObject</name></member>
+    <member refid="class_view_1_1_view_object_1aeece80891c9da5b57181e3c42ce25eec" kind="function"><name>~ViewObject</name></member>
+    <member refid="class_view_1_1_view_object_1af1779cd5a68017ff5a1ece2afec8ddc0" kind="function"><name>getObjectId</name></member>
+    <member refid="class_view_1_1_view_object_1a84ff0c9baf21a4736dacaf0811ea0851" kind="function"><name>getModelObject</name></member>
+    <member refid="class_view_1_1_view_object_1aff22ce3c0e7d0db12837f16902595c24" kind="function"><name>setModelObject</name></member>
+    <member refid="class_view_1_1_view_object_1a7b0dee4ac27877d28968858214e708e3" kind="function"><name>rebindModelObject</name></member>
+    <member refid="class_view_1_1_view_object_1a4b318169444ddeb6abb3beb73189dc9a" kind="variable"><name>objectId</name></member>
+    <member refid="class_view_1_1_view_object_1ad31e4de28d22e2d0c2f28ec1c4afc682" kind="variable"><name>modelObject</name></member>
+  </compound>
+  <compound refid="class_model_1_1_wall" kind="class"><name>model::Wall</name>
+    <member refid="class_model_1_1_wall_1af537e51905929a5b583ed5f91e60096b" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_wall_1a298bfdfe9f2d9d637d53b233ec431277" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_wall_1a011d96745af39a6692e6784d253036a8" kind="variable"><name>point1</name></member>
+    <member refid="class_model_1_1_wall_1a96a5d76d18aad4769bcac309daf0f621" kind="variable"><name>point2</name></member>
+    <member refid="class_model_1_1_wall_1a63a42202a5fccb16a019f462b7d6d503" kind="function"><name>Wall</name></member>
+    <member refid="class_model_1_1_wall_1ac0b46ab42d2beb30c8615a151e7fddf9" kind="function"><name>Wall</name></member>
+    <member refid="class_model_1_1_wall_1ac158b1114d56d69134d71b69ae6bb9e0" kind="function"><name>~Wall</name></member>
+    <member refid="class_model_1_1_wall_1acb2fdae8d93a301f6e2b4373abe7c07f" kind="function"><name>getPoint1</name></member>
+    <member refid="class_model_1_1_wall_1a33faa9568601b27a7d26b0120240aa5d" kind="function"><name>setPoint1</name></member>
+    <member refid="class_model_1_1_wall_1a48f2077a03eaa993c6a10df293a43147" kind="function"><name>getPoint2</name></member>
+    <member refid="class_model_1_1_wall_1a09daf2452415fa71a038150deb4d3246" kind="function"><name>setPoint2</name></member>
+  </compound>
+  <compound refid="class_view_1_1_wall_shape" kind="class"><name>View::WallShape</name>
+    <member refid="class_view_1_1_wall_shape_1a61554729a6afeececccff6ad23bf0924" kind="function"><name>getWall</name></member>
+    <member refid="class_view_1_1_wall_shape_1a0b34f9a058db38586162d63c3950b6d0" kind="function"><name>setWall</name></member>
+    <member refid="class_view_1_1_wall_shape_1a1da863c9f5b02edf721f173fef2903d8" kind="function"><name>draw</name></member>
+    <member refid="class_view_1_1_wall_shape_1ab71871a176a8d08210513d2ce920c176" kind="function"><name>occupies</name></member>
+    <member refid="class_view_1_1_wall_shape_1a1d93e20e10199c6a550c29cd3f88349b" kind="function"><name>asString</name></member>
+    <member refid="class_view_1_1_wall_shape_1a0b24f24720b2870e6d71e316842bf57f" kind="function"><name>asDebugString</name></member>
+    <member refid="class_view_1_1_wall_shape_1a79daa25e2a0c2cc670569fd071c95d25" kind="function"><name>WallShape</name></member>
+    <member refid="class_view_1_1_wall_shape_1a4056d010b2966b184a722eacbf97cf83" kind="function"><name>WallShape</name></member>
+    <member refid="class_view_1_1_wall_shape_1ab675137b6ed85f29eab93b18003f06bd" kind="function"><name>~WallShape</name></member>
+    <member refid="class_view_1_1_wall_shape_1afb594e5259f6ce9c57fc6516db138716" kind="function"><name>setSelectedAt</name></member>
+    <member refid="class_view_1_1_wall_shape_1ac53998b44692cb6d51e57db6d32b9fa2" kind="function"><name>hasEndPointAt</name></member>
+    <member refid="class_view_1_1_wall_shape_1a75b8d2472e424677fb2b3eec03e62273" kind="function"><name>hasEndPoint</name></member>
+    <member refid="class_view_1_1_wall_shape_1aac9b0aacd63e785094059297b12689fe" kind="function"><name>updateEndPoint</name></member>
+  </compound>
+  <compound refid="class_model_1_1_way_point" kind="class"><name>model::WayPoint</name>
+    <member refid="class_model_1_1_way_point_1a2504ccca4e76765faaf91b85c1e0fb75" kind="function"><name>asString</name></member>
+    <member refid="class_model_1_1_way_point_1aa7acf33a786c98fa593a3a38d6270723" kind="function"><name>asDebugString</name></member>
+    <member refid="class_model_1_1_way_point_1a80d8ba3cece904b354052bbe8de0da93" kind="variable"><name>name</name></member>
+    <member refid="class_model_1_1_way_point_1a134b6b0327cfa4205999769924d184ea" kind="variable"><name>size</name></member>
+    <member refid="class_model_1_1_way_point_1a0ceb77692b7e7647e6e9af4e007bc464" kind="variable"><name>position</name></member>
+    <member refid="class_model_1_1_way_point_1a89c58be0f5c9629aac90e96612fb7f6c" kind="function"><name>WayPoint</name></member>
+    <member refid="class_model_1_1_way_point_1a70f8825f3cd0071c61be7dbabd957334" kind="function"><name>WayPoint</name></member>
+    <member refid="class_model_1_1_way_point_1a4c4b8340bf9b9553f411a337a3d11466" kind="function"><name>WayPoint</name></member>
+    <member refid="class_model_1_1_way_point_1a6470dfb5a5d1dae54b53b1d0e071d614" kind="function"><name>~WayPoint</name></member>
+    <member refid="class_model_1_1_way_point_1ad941861604a21f01e2c6c3836aaecc50" kind="function"><name>getName</name></member>
+    <member refid="class_model_1_1_way_point_1a436222b246b29ca5af7a6b56ca983435" kind="function"><name>setName</name></member>
+    <member refid="class_model_1_1_way_point_1a4c8a6165c661efd3182d58174f00c4f3" kind="function"><name>getSize</name></member>
+    <member refid="class_model_1_1_way_point_1ab21868d4ea0aaca73130b8195482a711" kind="function"><name>setSize</name></member>
+    <member refid="class_model_1_1_way_point_1a75120951ffb56d4f4cafb042013c757f" kind="function"><name>getPosition</name></member>
+    <member refid="class_model_1_1_way_point_1a174d63b3a9b11d03ec31ed3841280814" kind="function"><name>setPosition</name></member>
+    <member refid="class_model_1_1_way_point_1a383c2c26ff883a788f3829c66929b4b7" kind="function"><name>getRegion</name></member>
+    <member refid="class_model_1_1_way_point_1a6ba9b3c6eae47ebf8943862619a4c435" kind="function"><name>intersects</name></member>
+  </compound>
+  <compound refid="class_view_1_1_way_point_shape" kind="class"><name>View::WayPointShape</name>
+    <member refid="class_view_1_1_way_point_shape_1ad5ae425bed0688bd0d51f5ddbc8d4dc1" kind="function"><name>getWayPoint</name></member>
+    <member refid="class_view_1_1_way_point_shape_1ad75feefcec15d7c2ea7de8d1fea71fe9" kind="function"><name>setWayPoint</name></member>
+    <member refid="class_view_1_1_way_point_shape_1a84f786f8027e91441c8197cdb56b3d5f" kind="function"><name>handleNotification</name></member>
+    <member refid="class_view_1_1_way_point_shape_1ac8e4cd575b74030ac9931f64bba16e1f" kind="function"><name>draw</name></member>
+    <member refid="class_view_1_1_way_point_shape_1a2fa9c9ec63a43d61ed5356060cab8cc7" kind="function"><name>setCentre</name></member>
+    <member refid="class_view_1_1_way_point_shape_1a89bbc1a878732d81245c5b5b6c5f035a" kind="function"><name>asString</name></member>
+    <member refid="class_view_1_1_way_point_shape_1a0f21e281b69fe62eb8728ad5dc28fce6" kind="function"><name>asDebugString</name></member>
+    <member refid="class_view_1_1_way_point_shape_1a580fc67d3d92b31572b783ad31fdc523" kind="function"><name>WayPointShape</name></member>
+    <member refid="class_view_1_1_way_point_shape_1ab6ebc2c5d9d740d63ffd2ffcaf1f9fb4" kind="function"><name>~WayPointShape</name></member>
+    <member refid="class_view_1_1_way_point_shape_1adf7ab3f773081c4797f9e9e9aa2a0e6e" kind="function"><name>getNormalColour</name></member>
+    <member refid="class_view_1_1_way_point_shape_1a94efb36c66c4ef2ac2bd8a7130abb11c" kind="function"><name>getSelectionColour</name></member>
+    <member refid="class_view_1_1_way_point_shape_1a768899743f4d76d0f6c907db9234823c" kind="function"><name>getActivationColour</name></member>
+  </compound>
+  <compound refid="class_application_1_1_widget_debug_trace_function" kind="class"><name>Application::WidgetDebugTraceFunction</name>
+    <member refid="class_application_1_1_widget_debug_trace_function_1a1ba76e5c808fb3e48a5883d5e7ba4ea9" kind="variable"><name>outputControl</name></member>
+    <member refid="class_application_1_1_widget_debug_trace_function_1afcc3b377364d45d52dd5f3a580e919ff" kind="function"><name>WidgetDebugTraceFunction</name></member>
+    <member refid="class_application_1_1_widget_debug_trace_function_1ad4bf02cb1270957ff75fd07fe6b7f678" kind="function"><name>trace</name></member>
+  </compound>
+  <compound refid="namespace_application" kind="namespace"><name>Application</name>
+    <member refid="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3" kind="enum"><name>@0</name></member>
+    <member refid="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a1f96fdf720c73686bf1a682308d59170" kind="enumvalue"><name>ID_QUIT</name></member>
+    <member refid="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3ae7a32495bcea0e5809ac2ddc6c722a65" kind="enumvalue"><name>ID_OPTIONS</name></member>
+    <member refid="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a1e31762522225ea8bacbfaed2c3b3669" kind="enumvalue"><name>ID_ABOUT</name></member>
+    <member refid="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a24c7e4a180139f76890cbfbc92e02183" kind="enumvalue"><name>ID_WIDGET_DEBUG_TRACE_FUNCTION</name></member>
+    <member refid="_main_frame_window_8cpp_1a56b9957edb3afdbb91d0064e31a945a3a8c9a121bb8e9e5cd08fdc570d9c390bc" kind="enumvalue"><name>ID_STDCOUT_DEBUG_TRACE_FUNCTION</name></member>
+    <member refid="_button_8hpp_1a238e70f3615d9645caabec1494c99c4a" kind="function"><name>makeButton</name></member>
+    <member refid="_log_text_ctrl_8cpp_1aaf13f5448a1eb83054c69d4fc0f29585" kind="function"><name>wxDEFINE_EVENT</name></member>
+    <member refid="_log_text_ctrl_8hpp_1a6173c1f7d3465a5e56be197f842bc41e" kind="function"><name>wxDECLARE_EVENT</name></member>
+    <member refid="_main_application_8cpp_1a1f6ab8acf93267dddfdfb9d2500204a3" kind="function"><name>wxIMPLEMENT_APP_NO_MAIN</name></member>
+    <member refid="_main_application_8cpp_1a8385de8a3bbb35a3b7cfee9b16835ee9" kind="function"><name>TheApp</name></member>
+  </compound>
+  <compound refid="namespace_base" kind="namespace"><name>Base</name>
+    <member refid="_notification_event_8hpp_1ab45a962abc3f0bcf97e68d8cb3bd3ed2" kind="typedef"><name>NotificationEventFunction</name></member>
+    <member refid="_notification_event_8hpp_1a3c927384acd34593c1043539c229e42b" kind="variable"><name>EVT_NOTIFICATIONEVENT</name></member>
+    <member refid="_object_id_8cpp_1ae9ce16182a2c76bddfdf2ee942367114" kind="variable"><name>newObjectIdMutex</name></member>
+    <member refid="_notification_function_type_traits_8hpp_1acc547fe112dfe8e6787a9b9edd68ad9e" kind="function"><name>Ooops</name></member>
+    <member refid="_object_id_8cpp_1a7917d08dbad925ca11aa559946aba05b" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespace_messaging" kind="namespace"><name>Messaging</name>
+    <member refid="_message_handler_8hpp_1a729e475a2f25128ecf098fc3f474964e" kind="typedef"><name>RequestHandlerPtr</name></member>
+    <member refid="_message_handler_8hpp_1ac0fbd8e70f73f8491fefb7a00dd58f16" kind="typedef"><name>ResponseHandlerPtr</name></member>
+  </compound>
+  <compound refid="namespace_model" kind="namespace"><name>model</name>
+    <member refid="_abstract_agent_8hpp_1a22a97db314dd07671a56a526cb2bdd72" kind="typedef"><name>AbstractSensorPtr</name></member>
+    <member refid="_abstract_agent_8hpp_1a1947f8df39571eb46a03407c109fa550" kind="typedef"><name>AbstractStimulusPtr</name></member>
+    <member refid="_abstract_agent_8hpp_1aea5e8e3a0aff47464a340830fea9cbd7" kind="typedef"><name>AbstractActuatorPtr</name></member>
+    <member refid="_abstract_agent_8hpp_1aff678da5bce2ce139b593ae2d28909fe" kind="typedef"><name>AbstractPerceptPtr</name></member>
+    <member refid="_abstract_agent_8hpp_1a00eed6b606994d3740d21956a1e2737f" kind="typedef"><name>AbstractAgentPtr</name></member>
+    <member refid="_goal_8hpp_1a5e6050c016c3ff606861a2d57d6e0fbd" kind="typedef"><name>GoalPtr</name></member>
+    <member refid="_laser_distance_sensor_8hpp_1a4fd1b6002d8fbf84011494deeea7227b" kind="typedef"><name>RobotPtr</name></member>
+    <member refid="_model_object_8hpp_1a097cdbf1f408bab08aa786d4494533f0" kind="typedef"><name>ModelObjectPtr</name></member>
+    <member refid="_robot_world_8hpp_1acca87a0066497ceb612cda7c97340f14" kind="typedef"><name>WayPointPtr</name></member>
+    <member refid="_robot_world_8hpp_1ae0172732e3c438a16a828bcf44ae6c91" kind="typedef"><name>WallPtr</name></member>
+    <member refid="_robot_world_8hpp_1a7e6b3f1b0db04d9e75a26cf80033c369" kind="typedef"><name>RobotWorldPtr</name></member>
+  </compound>
+  <compound refid="namespace_path_algorithm" kind="namespace"><name>PathAlgorithm</name>
+    <member refid="_a_star_8hpp_1a712799bf38597f8a9f49d50b4ce40a68" kind="typedef"><name>Path</name></member>
+    <member refid="_a_star_8hpp_1a5ce0f313f57dc2864facb12ebdfbace7" kind="typedef"><name>OpenSet</name></member>
+    <member refid="_a_star_8hpp_1ab0ab7b8215eb0f12dab66e5a5ff69195" kind="typedef"><name>ClosedSet</name></member>
+    <member refid="_a_star_8hpp_1a890f8ceb65b467d318f221689f3a64bc" kind="typedef"><name>VertexMap</name></member>
+    <member refid="_a_star_8cpp_1a303daba8d3a083b341d1f4a799c3d5e4" kind="function"><name>ActualCost</name></member>
+    <member refid="_a_star_8cpp_1a2e4474691c7ebd46c7238f2c53b0e543" kind="function"><name>HeuristicCost</name></member>
+    <member refid="_a_star_8cpp_1a1b72e8125a5f9fa31d3130c816f1a03f" kind="function"><name>ConstructPath</name></member>
+    <member refid="_a_star_8cpp_1a3d21ddadecb334e9b58d77711ec03564" kind="function"><name>GetNeighbours</name></member>
+    <member refid="_a_star_8cpp_1ad1b6d6f8e5c2b5fba2679997520d30b7" kind="function"><name>GetNeighbourConnections</name></member>
+    <member refid="_a_star_8hpp_1a7570fe9b9ed95b023311d0b9ef75b7ea" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="_a_star_8hpp_1a4d00bd2dacc6db331429deab0d46cbf3" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+    <member refid="namespacestd_1af8ef78a9cf464d7f7faf334b0648cd20" kind="typedef"><name>thread</name></member>
+    <member refid="namespacestd_1a618c9b161e7909dcd32f45ed5b0d64a8" kind="typedef"><name>mutex</name></member>
+    <member refid="namespacestd_1a606f872ad6ccc6988d66cd63edd591d4" kind="typedef"><name>timed_mutex</name></member>
+    <member refid="namespacestd_1a2465f8ca56659ee1d8fad0119f8f1482" kind="typedef"><name>recursive_mutex</name></member>
+    <member refid="namespacestd_1acc8e0552c9e703cdbf7e41c8b0ae81ef" kind="typedef"><name>recursive_timed_mutex</name></member>
+    <member refid="namespacestd_1aa022dc977c3236c7a8b63d344f5e165e" kind="typedef"><name>lock_guard</name></member>
+    <member refid="namespacestd_1aa81d6994a02829ac5bd9413e427fe44c" kind="typedef"><name>unique_lock</name></member>
+    <member refid="namespacestd_1a774ed93e57639ca1d08e26f22fe71a66" kind="typedef"><name>shared_lock</name></member>
+    <member refid="namespacestd_1ab892e2ff6c882ab5bfec75eb202613a2" kind="typedef"><name>condition_variable</name></member>
+    <member refid="namespacestd_1aa9fa80fb08efa0cb495e269b77cdfb7f" kind="typedef"><name>condition_variable_any</name></member>
+    <member refid="namespacestd_1ad42a977ebc90223e5dc0b424385e3f1e" kind="function"><name>to_string</name></member>
+    <member refid="namespacestd_1a5a4884a3b1890357be19cd6ff56179da" kind="function"><name>stoi</name></member>
+  </compound>
+  <compound refid="namespacestd_1_1chrono" kind="namespace"><name>std::chrono</name>
+    <member refid="_mingw_std_8hpp_1afaefde6e554881cfe743874c308733e7" kind="typedef"><name>duration</name></member>
+    <member refid="_mingw_std_8hpp_1a63a8315bbc47454d8d07bd0c1a1b2fa9" kind="typedef"><name>milliseconds</name></member>
+  </compound>
+  <compound refid="namespace_utils" kind="namespace"><name>Utils</name>
+    <member refid="_math_utils_8hpp_1a1b0f2a3f78effad68e3b1003a2c699f6" kind="variable"><name>PI</name></member>
+    <member refid="_math_utils_8hpp_1a4632e2dcb0af2e65ee8edd6487186df3" kind="variable"><name>ALMOST_ZERO</name></member>
+    <member refid="_shape2_d_utils_8cpp_1a96137dcc99a51f57ebc9aa4a597ee1ea" kind="function"><name>GetAngle</name></member>
+    <member refid="_type_info_8hpp_1aef99b198a8c5ac81903a56f6a375ae69" kind="function"><name>demangleTypeInfo</name></member>
+    <member refid="_type_info_8hpp_1ace270973b04e2d1c0569cb856e325c12" kind="function"><name>demangleTypeInfo</name></member>
+    <member refid="_type_info_8hpp_1ac11b6f353edfdb84d1a9790379fe84b3" kind="function"><name>typeinfoFor</name></member>
+    <member refid="_type_info_8hpp_1a71b374aa8ba7082470150ebcc88f8b1b" kind="function"><name>typeinfoFor</name></member>
+  </compound>
+  <compound refid="namespace_view" kind="namespace"><name>View</name>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984" kind="enum"><name>@1</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a42a57f972819256bd909ea81df3f0a9c" kind="enumvalue"><name>ID_ABOUT</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a5e377abdc46a44f896a6da15b8182f6d" kind="enumvalue"><name>ID_ADD_ROBOT</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984ae6f8f63bd4e664c3db1e97cd991c2c8e" kind="enumvalue"><name>ID_EDIT_ROBOT</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a6b83bebc21f708271406e62afcf36167" kind="enumvalue"><name>ID_DELETE_ROBOT</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a3b4e153757608e3ecaa849643db64ec3" kind="enumvalue"><name>ID_ADD_WAYPOINT</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984ae85f1b44f456e236e8774b6610e22ac3" kind="enumvalue"><name>ID_EDIT_WAYPOINT</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a5286e086c840fd0a458d1599992cc078" kind="enumvalue"><name>ID_DELETE_WAYPOINT</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a22aca026a2dc2729a416db3210da846b" kind="enumvalue"><name>ID_ADD_GOAL</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a2f646fb08cb39a40f106cfaf06b946e5" kind="enumvalue"><name>ID_EDIT_GOAL</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a3e13f54a05865c07c85ee04a8cf9a6a0" kind="enumvalue"><name>ID_DELETE_GOAL</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a1cd20bd50c474f78dce6075e6011c4a3" kind="enumvalue"><name>ID_ADD_WALL</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984ae98d8042150c462d70f0376b23ac1358" kind="enumvalue"><name>ID_EDIT_WALL</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a3c37f4bebe18cef5b83079c695cd1efd" kind="enumvalue"><name>ID_DELETE_WALL</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984aeb1ce9c19a6d6dba9cdd0f28b03c18d9" kind="enumvalue"><name>ID_SHAPE_INFO</name></member>
+    <member refid="_robot_world_canvas_8cpp_1a878119979b17751ef7e995d2fe71b984a34bfead827fa85d05122e05dbf2d1d18" kind="enumvalue"><name>ID_WORLD_INFO</name></member>
+    <member refid="_rectangle_shape_8hpp_1ac39e178aae949bd44854deb0188d8526" kind="typedef"><name>RectangleShapePtr</name></member>
+    <member refid="_robot_world_canvas_8hpp_1a6f1629bb62cc78eeec2905fe72a79a99" kind="typedef"><name>ShapePtr</name></member>
+    <member refid="_robot_world_canvas_8hpp_1afa058b750f6506eeab999b01439b3101" kind="typedef"><name>RobotShapePtr</name></member>
+    <member refid="_robot_world_canvas_8hpp_1a640101d7336b1fd8cb3d14a5724b8467" kind="typedef"><name>GoalShapePtr</name></member>
+    <member refid="_robot_world_canvas_8hpp_1a0362b34a539ee8249dc409c9b4912fa7" kind="typedef"><name>WayPointShapePtr</name></member>
+    <member refid="_robot_world_canvas_8hpp_1acfed3a70d74ee3830ed484f1512e7710" kind="typedef"><name>WallShapePtr</name></member>
+  </compound>
+  <compound refid="namespace_widgets" kind="namespace"><name>Widgets</name>
+    <member refid="_widgets_8hpp_1ad53590659606c7e95e7a3db888138372" kind="enum"><name>GeometryCentre</name></member>
+    <member refid="_widgets_8hpp_1ad53590659606c7e95e7a3db888138372a0e4eebd5d58ea84ed01b069b47d7f654" kind="enumvalue"><name>CENTRE</name></member>
+    <member refid="_widgets_8hpp_1ad53590659606c7e95e7a3db888138372a9d88fb9c66852014954751cba1dadfd5" kind="enumvalue"><name>CENTER</name></member>
+    <member refid="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4dd" kind="enum"><name>Orientation</name></member>
+    <member refid="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4dda8e2cb3aed4a57e982d38aa0d05904964" kind="enumvalue"><name>HORIZONTAL</name></member>
+    <member refid="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4ddacbcbeea4aeba680b7bb37a789486530b" kind="enumvalue"><name>DIR_HORIZONTAL</name></member>
+    <member refid="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4ddaafaf815cb36716cf1b099485a15dada1" kind="enumvalue"><name>VERTICAL</name></member>
+    <member refid="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4ddac55643a00e8a63429a4cea0cc83ac20b" kind="enumvalue"><name>DIR_VERTICAL</name></member>
+    <member refid="_widgets_8hpp_1ac956fc71ef7580e962381edcd901a4dda4d4229401731fd39ce54d26e0c32251b" kind="enumvalue"><name>BOTH</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03" kind="enum"><name>Direction</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a9e974bdcff84eb2df550115dcedfbe59" kind="enumvalue"><name>LEFT</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a87066e0c45920075691462c43785f2db" kind="enumvalue"><name>RIGHT</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a309e0db2995915ddcabacf3a0bca3973" kind="enumvalue"><name>UP</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a1d33138bddf5049d07fe2990b909ed91" kind="enumvalue"><name>DOWN</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a7e9cbfbf746593a35fd400a14841f67d" kind="enumvalue"><name>TOP</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03af292a88b0dd495731b2bf39763d37752" kind="enumvalue"><name>BOTTOM</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a1c78100a04e66d22c6bfb1072cfbcf3a" kind="enumvalue"><name>NORTH</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03aa4d013ceb2129c465a9a01fb2df1650f" kind="enumvalue"><name>SOUTH</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a2a54a910cc523602df1006b6b4cd9527" kind="enumvalue"><name>WEST</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03aa08e2f1b3bef012e39e2e87dde12b531" kind="enumvalue"><name>EAST</name></member>
+    <member refid="_widgets_8hpp_1a463cba2b0c8bbd03aca40bc334d77f03a46ee27027a185fe0078d89d9d473fbb3" kind="enumvalue"><name>ALL</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8a" kind="enum"><name>Alignment</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aac1508de0d17ace63c54115487d366ac3" kind="enumvalue"><name>ALIGN_NOT</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa85fbdf8a6fafc49c5a6e2be86c461c7a" kind="enumvalue"><name>ALIGN_CENTER_HORIZONTAL</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa17e6daf89b1e8c9d9303e4a0a2379b39" kind="enumvalue"><name>ALIGN_CENTRE_HORIZONTAL</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa82833948ec3c2a3cc2cd1ad3d9302315" kind="enumvalue"><name>ALIGN_LEFT</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa0f775761f3a05c7024cd7c7281c7e79c" kind="enumvalue"><name>ALIGN_TOP</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa3fd63a88cdecd628b49d804ccb0a2efa" kind="enumvalue"><name>ALIGN_RIGHT</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aad590fec812b9ba91ce860f9008da1cae" kind="enumvalue"><name>ALIGN_BOTTOM</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa59246bc1d1fe8fc215d0ba0c417b1905" kind="enumvalue"><name>ALIGN_CENTER_VERTICAL</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa1783a15ef497470eba8d33db58019946" kind="enumvalue"><name>ALIGN_CENTRE_VERTICAL</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa21427be6bee4e1d9b533a6d703f822a0" kind="enumvalue"><name>ALIGN_CENTER</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa4baff176970e400e5e38f6a757c7c2d5" kind="enumvalue"><name>ALIGN_CENTRE</name></member>
+    <member refid="_widgets_8hpp_1ac598174915bb0296d962bb79e3dd8a8aa29c59995436a51ca30debe130683613e" kind="enumvalue"><name>ALIGN_MASK</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904a" kind="enum"><name>Stretch</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa005d2442885ef4df1b6615682fc76bc0" kind="enumvalue"><name>STRETCH_NOT</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aabc6aca7e4f7d5b46bc976b25ed1e84c1" kind="enumvalue"><name>SHRINK</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aabe3f05d2708705876e6dacb07ba08f16" kind="enumvalue"><name>GROW</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aaa5efb1d715e213fdeec9d179025e927a" kind="enumvalue"><name>EXPAND</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa00a1686151a54c500d3e2c1d324eee5a" kind="enumvalue"><name>SHAPED</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa55e8fccd5a2ada29b5993de1d885fa58" kind="enumvalue"><name>FIXED_MINSIZE</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa9360a7f574704d95f9d55c872b242037" kind="enumvalue"><name>RESERVE_SPACE_EVEN_IF_HIDDEN</name></member>
+    <member refid="_widgets_8hpp_1a34c4fb11c6e1532b9678f24c666f904aa37845397da1777763391ad90ae9d7202" kind="enumvalue"><name>TILE</name></member>
+    <member refid="_point_8hpp_1afb47421b09980be81d4c7f86ee123fa9" kind="typedef"><name>Point</name></member>
+    <member refid="_region_8hpp_1ab6123d7605e676b8f48853f45e179ec7" kind="typedef"><name>Region</name></member>
+    <member refid="_size_8hpp_1afa74c3af00b78b54299aa8e38a2578e5" kind="typedef"><name>Size</name></member>
+    <member refid="_widgets_8hpp_1a730a88abd6abf9a8862f90eda8dd6da3" kind="typedef"><name>ActivateEvent</name></member>
+    <member refid="_widgets_8hpp_1aea1f039f707b84c781c515f8c3b5e16d" kind="typedef"><name>BoxSizer</name></member>
+    <member refid="_widgets_8hpp_1a3dd28a00cd794e6b50ce2f1369c746a6" kind="typedef"><name>Brush</name></member>
+    <member refid="_widgets_8hpp_1aae681b6ad2c723f66ccf07710d6edcc2" kind="typedef"><name>Button</name></member>
+    <member refid="_widgets_8hpp_1ab89bc9b812ebea19f4114ec10d39b1fb" kind="typedef"><name>Colour</name></member>
+    <member refid="_widgets_8hpp_1afd1fed477f9f0fa807cf3562eec8f76b" kind="typedef"><name>Cursor</name></member>
+    <member refid="_widgets_8hpp_1a03a9c49eb13e90e0760dad58f2865120" kind="typedef"><name>CommandEvent</name></member>
+    <member refid="_widgets_8hpp_1a9344c039e5787c97efd627da26b15c51" kind="typedef"><name>CloseEvent</name></member>
+    <member refid="_widgets_8hpp_1adec4f92e2dc778a6bb5e313ff962a8f1" kind="typedef"><name>Coord</name></member>
+    <member refid="_widgets_8hpp_1a67563cf0338d39e158f515a98213cbbe" kind="typedef"><name>DataFormat</name></member>
+    <member refid="_widgets_8hpp_1a9fbd4a9de97aad78842ef984baaeff23" kind="typedef"><name>DragResult</name></member>
+    <member refid="_widgets_8hpp_1afd8af0a9a0ae45ab575e840e94d88da0" kind="typedef"><name>Event</name></member>
+    <member refid="_widgets_8hpp_1ac067270d0ead968213ea725a82b0d58f" kind="typedef"><name>FlexGridSizer</name></member>
+    <member refid="_widgets_8hpp_1a6fa85724a2ed144ec122b3aa6142c478" kind="typedef"><name>FocusEvent</name></member>
+    <member refid="_widgets_8hpp_1a8885fd2cf8c118cecc35a1fc17061fa1" kind="typedef"><name>Font</name></member>
+    <member refid="_widgets_8hpp_1adb37cbbe7efcdf272947d358b726c002" kind="typedef"><name>Frame</name></member>
+    <member refid="_widgets_8hpp_1ab37fd89b280028ff9ba898b9a98ee47d" kind="typedef"><name>GBPosition</name></member>
+    <member refid="_widgets_8hpp_1a00583760826b6408f6f90ebbbdd2d9a3" kind="typedef"><name>GBSpan</name></member>
+    <member refid="_widgets_8hpp_1aad8a624627a2cd6059067509a4bf65b8" kind="typedef"><name>GridBagSizer</name></member>
+    <member refid="_widgets_8hpp_1a48953e6a41e0c9819f7812752cc7adbf" kind="typedef"><name>ImageList</name></member>
+    <member refid="_widgets_8hpp_1a915dd1f7c36b12a11876a507fa59121c" kind="typedef"><name>KeyEvent</name></member>
+    <member refid="_widgets_8hpp_1a5381d7a3d3c4451368ffa74717c94579" kind="typedef"><name>ListEvent</name></member>
+    <member refid="_widgets_8hpp_1a9d64c456fd08f1dc1698ba7f775229a8" kind="typedef"><name>ListItem</name></member>
+    <member refid="_widgets_8hpp_1a890cc3496e472f744fb0bbc37121c960" kind="typedef"><name>MenuBar</name></member>
+    <member refid="_widgets_8hpp_1a097d2a08b9d2e1bd0303ad855a3fea93" kind="typedef"><name>Menu</name></member>
+    <member refid="_widgets_8hpp_1af0a8f97b621b4178363283099025aaf6" kind="typedef"><name>MouseEvent</name></member>
+    <member refid="_widgets_8hpp_1a8d00b175ac3be41b71770717259a858f" kind="typedef"><name>NotifyEvent</name></member>
+    <member refid="_widgets_8hpp_1ad5e088949983dcf7e4d4895d8bd9f326" kind="typedef"><name>PaintEvent</name></member>
+    <member refid="_widgets_8hpp_1afed1043a1fa2e9003f1ace72b0c81182" kind="typedef"><name>Panel</name></member>
+    <member refid="_widgets_8hpp_1a6e2939386017beed2040822afb724f01" kind="typedef"><name>ScrolledCanvas</name></member>
+    <member refid="_widgets_8hpp_1a3ae7bd2fae5212dd2886afc4ac95c9af" kind="typedef"><name>ScrolledWindow</name></member>
+    <member refid="_widgets_8hpp_1af5dccc605977d7ff5cef4abaa45706de" kind="typedef"><name>SizeEvent</name></member>
+    <member refid="_widgets_8hpp_1a733e408442172fab027c41477bb81424" kind="typedef"><name>Sizer</name></member>
+    <member refid="_widgets_8hpp_1a3d6d333ef0dd0fe00597e94ade931349" kind="typedef"><name>SizerFlags</name></member>
+    <member refid="_widgets_8hpp_1a39fd3b60ec58bf313fcf2a57765fd0d7" kind="typedef"><name>SplitterWindow</name></member>
+    <member refid="_widgets_8hpp_1aa4fe9154ff3278a84b6d2e1d4c2bcd08" kind="typedef"><name>StaticBoxSizer</name></member>
+    <member refid="_widgets_8hpp_1aea3cd24cbfee87982cf88e5a5112464a" kind="typedef"><name>StaticLine</name></member>
+    <member refid="_widgets_8hpp_1a358ff266e6abd0d7f01826a1adce3dd9" kind="typedef"><name>TextEntryDialog</name></member>
+    <member refid="_widgets_8hpp_1a6b9b6f45b0ee8bb5beb7595160950443" kind="typedef"><name>ToolBar</name></member>
+    <member refid="_widgets_8hpp_1a7e13202926f808aea743baaf9eca3677" kind="typedef"><name>TreeEvent</name></member>
+    <member refid="_widgets_8hpp_1a431cc7037c3d35e2e316bd0f4bb5de1d" kind="typedef"><name>TreeItemId</name></member>
+    <member refid="_widgets_8hpp_1a26382e1b55fc7f8a4ece6f7222cea26f" kind="typedef"><name>Validator</name></member>
+    <member refid="_widgets_8hpp_1aa174af27697bdfc5f9f92494672c58ca" kind="typedef"><name>Window</name></member>
+    <member refid="_widgets_8cpp_1abc8e26670d98eeb43017b02596e870dd" kind="function"><name>GetTextFromUser</name></member>
+    <member refid="_widgets_8hpp_1af92dace3ab6f9cbc0d9d288b8b9f7786" kind="function"><name>WXSTRING</name></member>
+    <member refid="_widgets_8hpp_1aeb9bec79b891012e84f71e668c3ff479" kind="function"><name>WXSTRING</name></member>
+    <member refid="_widgets_8hpp_1a6d2a9eb0e5b6edd12e5d8ea9bffc4044" kind="function"><name>WXSTRING</name></member>
+    <member refid="_widgets_8hpp_1a2c202b9372aa11290c31f883c0ff9458" kind="function"><name>STDSTRING</name></member>
+    <member refid="_widgets_8hpp_1a9edf6fd41a74c4181f2ac518f88b2e0d" kind="function"><name>STDSTRING</name></member>
+    <member refid="_widgets_8hpp_1a4da1cdca53874c3dbf3ae17a8f4f7c69" kind="function"><name>GetTextFromUser</name></member>
+  </compound>
+  <compound refid="_abstract_actuator_8cpp" kind="file"><name>AbstractActuator.cpp</name>
+  </compound>
+  <compound refid="_abstract_actuator_8hpp" kind="file"><name>AbstractActuator.hpp</name>
+  </compound>
+  <compound refid="_abstract_agent_8cpp" kind="file"><name>AbstractAgent.cpp</name>
+  </compound>
+  <compound refid="_abstract_agent_8hpp" kind="file"><name>AbstractAgent.hpp</name>
+  </compound>
+  <compound refid="_abstract_sensor_8cpp" kind="file"><name>AbstractSensor.cpp</name>
+  </compound>
+  <compound refid="_abstract_sensor_8hpp" kind="file"><name>AbstractSensor.hpp</name>
+  </compound>
+  <compound refid="_a_star_8cpp" kind="file"><name>AStar.cpp</name>
+  </compound>
+  <compound refid="_a_star_8hpp" kind="file"><name>AStar.hpp</name>
+  </compound>
+  <compound refid="_bounded_vector_8cpp" kind="file"><name>BoundedVector.cpp</name>
+    <member refid="_bounded_vector_8cpp_1a047f01d1a39fd1eb111624bb6ecffed6" kind="function"><name>operator+</name></member>
+    <member refid="_bounded_vector_8cpp_1a6a521c20fb110c91538d6a0726125b6e" kind="function"><name>operator-</name></member>
+    <member refid="_bounded_vector_8cpp_1a358612355ba2ae87e7dac54385aff2d3" kind="function"><name>operator*</name></member>
+    <member refid="_bounded_vector_8cpp_1a6802b54891c6cfbb892f2dbd3779b19f" kind="function"><name>operator*</name></member>
+    <member refid="_bounded_vector_8cpp_1aa236edefe243fb99f206fd931815a77e" kind="function"><name>operator*</name></member>
+    <member refid="_bounded_vector_8cpp_1ae465adab3a75784ec04a4c8d822dd4af" kind="function"><name>operator/</name></member>
+  </compound>
+  <compound refid="_bounded_vector_8hpp" kind="file"><name>BoundedVector.hpp</name>
+    <member refid="_bounded_vector_8hpp_1a047f01d1a39fd1eb111624bb6ecffed6" kind="function"><name>operator+</name></member>
+    <member refid="_bounded_vector_8hpp_1a6a521c20fb110c91538d6a0726125b6e" kind="function"><name>operator-</name></member>
+    <member refid="_bounded_vector_8hpp_1a358612355ba2ae87e7dac54385aff2d3" kind="function"><name>operator*</name></member>
+    <member refid="_bounded_vector_8hpp_1a6802b54891c6cfbb892f2dbd3779b19f" kind="function"><name>operator*</name></member>
+    <member refid="_bounded_vector_8hpp_1aa236edefe243fb99f206fd931815a77e" kind="function"><name>operator*</name></member>
+    <member refid="_bounded_vector_8hpp_1ae465adab3a75784ec04a4c8d822dd4af" kind="function"><name>operator/</name></member>
+  </compound>
+  <compound refid="_button_8hpp" kind="file"><name>Button.hpp</name>
+  </compound>
+  <compound refid="_client_8hpp" kind="file"><name>Client.hpp</name>
+  </compound>
+  <compound refid="_commandline_argument_8hpp" kind="file"><name>CommandlineArgument.hpp</name>
+  </compound>
+  <compound refid="_communication_service_8cpp" kind="file"><name>CommunicationService.cpp</name>
+  </compound>
+  <compound refid="_communication_service_8hpp" kind="file"><name>CommunicationService.hpp</name>
+  </compound>
+  <compound refid="_config_8hpp" kind="file"><name>Config.hpp</name>
+    <member refid="_config_8hpp_1a12a6d9c3a113ec2c952f1eeb3bea832f" kind="define"><name>UNUSEDPARAM</name></member>
+    <member refid="_config_8hpp_1a4d8d5ff468736874a6b51ae97d1936b0" kind="define"><name>UNUSEDCAST</name></member>
+    <member refid="_config_8hpp_1a09ecca53f2cd1b8d1c566bedb245e141" kind="define"><name>UNICODE</name></member>
+    <member refid="_config_8hpp_1a78880e1abcefc90f14185aee93ad0e20" kind="define"><name>_UNICODE</name></member>
+  </compound>
+  <compound refid="_debug_trace_function_8cpp" kind="file"><name>DebugTraceFunction.cpp</name>
+  </compound>
+  <compound refid="_debug_trace_function_8hpp" kind="file"><name>DebugTraceFunction.hpp</name>
+  </compound>
+  <compound refid="_goal_8cpp" kind="file"><name>Goal.cpp</name>
+  </compound>
+  <compound refid="_goal_8hpp" kind="file"><name>Goal.hpp</name>
+  </compound>
+  <compound refid="_goal_shape_8cpp" kind="file"><name>GoalShape.cpp</name>
+  </compound>
+  <compound refid="_goal_shape_8hpp" kind="file"><name>GoalShape.hpp</name>
+  </compound>
+  <compound refid="_laser_distance_sensor_8cpp" kind="file"><name>LaserDistanceSensor.cpp</name>
+  </compound>
+  <compound refid="_laser_distance_sensor_8hpp" kind="file"><name>LaserDistanceSensor.hpp</name>
+  </compound>
+  <compound refid="_line_shape_8cpp" kind="file"><name>LineShape.cpp</name>
+  </compound>
+  <compound refid="_line_shape_8hpp" kind="file"><name>LineShape.hpp</name>
+  </compound>
+  <compound refid="_logger_8cpp" kind="file"><name>Logger.cpp</name>
+  </compound>
+  <compound refid="_logger_8hpp" kind="file"><name>Logger.hpp</name>
+  </compound>
+  <compound refid="_log_text_ctrl_8cpp" kind="file"><name>LogTextCtrl.cpp</name>
+  </compound>
+  <compound refid="_log_text_ctrl_8hpp" kind="file"><name>LogTextCtrl.hpp</name>
+  </compound>
+  <compound refid="_main_8cpp" kind="file"><name>Main.cpp</name>
+    <member refid="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_main_application_8cpp" kind="file"><name>MainApplication.cpp</name>
+  </compound>
+  <compound refid="_main_application_8hpp" kind="file"><name>MainApplication.hpp</name>
+    <member refid="_main_application_8hpp_1a05c155bde9faeffb2add53aa8a060c58" kind="define"><name>runGUI</name></member>
+  </compound>
+  <compound refid="_main_frame_window_8cpp" kind="file"><name>MainFrameWindow.cpp</name>
+  </compound>
+  <compound refid="_main_frame_window_8hpp" kind="file"><name>MainFrameWindow.hpp</name>
+  </compound>
+  <compound refid="_math_utils_8cpp" kind="file"><name>MathUtils.cpp</name>
+  </compound>
+  <compound refid="_math_utils_8hpp" kind="file"><name>MathUtils.hpp</name>
+  </compound>
+  <compound refid="_message_8hpp" kind="file"><name>Message.hpp</name>
+  </compound>
+  <compound refid="_message_handler_8hpp" kind="file"><name>MessageHandler.hpp</name>
+  </compound>
+  <compound refid="_mingw_std_8hpp" kind="file"><name>MingwStd.hpp</name>
+  </compound>
+  <compound refid="_model_object_8cpp" kind="file"><name>ModelObject.cpp</name>
+  </compound>
+  <compound refid="_model_object_8hpp" kind="file"><name>ModelObject.hpp</name>
+  </compound>
+  <compound refid="_notification_event_8hpp" kind="file"><name>NotificationEvent.hpp</name>
+  </compound>
+  <compound refid="_notification_function_type_traits_8hpp" kind="file"><name>NotificationFunctionTypeTraits.hpp</name>
+  </compound>
+  <compound refid="_notification_handler_8cpp" kind="file"><name>NotificationHandler.cpp</name>
+  </compound>
+  <compound refid="_notification_handler_8hpp" kind="file"><name>NotificationHandler.hpp</name>
+  </compound>
+  <compound refid="_notifier_8cpp" kind="file"><name>Notifier.cpp</name>
+  </compound>
+  <compound refid="_notifier_8hpp" kind="file"><name>Notifier.hpp</name>
+  </compound>
+  <compound refid="_object_id_8cpp" kind="file"><name>ObjectId.cpp</name>
+  </compound>
+  <compound refid="_object_id_8hpp" kind="file"><name>ObjectId.hpp</name>
+  </compound>
+  <compound refid="_observer_8cpp" kind="file"><name>Observer.cpp</name>
+  </compound>
+  <compound refid="_observer_8hpp" kind="file"><name>Observer.hpp</name>
+  </compound>
+  <compound refid="_point_8hpp" kind="file"><name>Point.hpp</name>
+  </compound>
+  <compound refid="_queue_8hpp" kind="file"><name>Queue.hpp</name>
+  </compound>
+  <compound refid="_rectangle_shape_8cpp" kind="file"><name>RectangleShape.cpp</name>
+  </compound>
+  <compound refid="_rectangle_shape_8hpp" kind="file"><name>RectangleShape.hpp</name>
+  </compound>
+  <compound refid="_region_8hpp" kind="file"><name>Region.hpp</name>
+  </compound>
+  <compound refid="_robot_8cpp" kind="file"><name>Robot.cpp</name>
+  </compound>
+  <compound refid="_robot_8hpp" kind="file"><name>Robot.hpp</name>
+  </compound>
+  <compound refid="_robot_shape_8cpp" kind="file"><name>RobotShape.cpp</name>
+  </compound>
+  <compound refid="_robot_shape_8hpp" kind="file"><name>RobotShape.hpp</name>
+  </compound>
+  <compound refid="_robot_world_8cpp" kind="file"><name>RobotWorld.cpp</name>
+  </compound>
+  <compound refid="_robot_world_8hpp" kind="file"><name>RobotWorld.hpp</name>
+  </compound>
+  <compound refid="_robot_world_canvas_8cpp" kind="file"><name>RobotWorldCanvas.cpp</name>
+  </compound>
+  <compound refid="_robot_world_canvas_8hpp" kind="file"><name>RobotWorldCanvas.hpp</name>
+  </compound>
+  <compound refid="_server_8hpp" kind="file"><name>Server.hpp</name>
+  </compound>
+  <compound refid="_session_8hpp" kind="file"><name>Session.hpp</name>
+  </compound>
+  <compound refid="_shape_8hpp" kind="file"><name>Shape.hpp</name>
+  </compound>
+  <compound refid="_shape2_d_utils_8cpp" kind="file"><name>Shape2DUtils.cpp</name>
+  </compound>
+  <compound refid="_shape2_d_utils_8hpp" kind="file"><name>Shape2DUtils.hpp</name>
+  </compound>
+  <compound refid="_size_8hpp" kind="file"><name>Size.hpp</name>
+  </compound>
+  <compound refid="_std_out_debug_trace_function_8cpp" kind="file"><name>StdOutDebugTraceFunction.cpp</name>
+  </compound>
+  <compound refid="_std_out_debug_trace_function_8hpp" kind="file"><name>StdOutDebugTraceFunction.hpp</name>
+  </compound>
+  <compound refid="_steering_actuator_8cpp" kind="file"><name>SteeringActuator.cpp</name>
+  </compound>
+  <compound refid="_steering_actuator_8hpp" kind="file"><name>SteeringActuator.hpp</name>
+  </compound>
+  <compound refid="_thread_8hpp" kind="file"><name>Thread.hpp</name>
+  </compound>
+  <compound refid="_type_info_8hpp" kind="file"><name>TypeInfo.hpp</name>
+  </compound>
+  <compound refid="_view_object_8cpp" kind="file"><name>ViewObject.cpp</name>
+  </compound>
+  <compound refid="_view_object_8hpp" kind="file"><name>ViewObject.hpp</name>
+  </compound>
+  <compound refid="_wall_8cpp" kind="file"><name>Wall.cpp</name>
+  </compound>
+  <compound refid="_wall_8hpp" kind="file"><name>Wall.hpp</name>
+  </compound>
+  <compound refid="_wall_shape_8cpp" kind="file"><name>WallShape.cpp</name>
+  </compound>
+  <compound refid="_wall_shape_8hpp" kind="file"><name>WallShape.hpp</name>
+  </compound>
+  <compound refid="_way_point_8cpp" kind="file"><name>WayPoint.cpp</name>
+  </compound>
+  <compound refid="_way_point_8hpp" kind="file"><name>WayPoint.hpp</name>
+  </compound>
+  <compound refid="_way_point_shape_8cpp" kind="file"><name>WayPointShape.cpp</name>
+  </compound>
+  <compound refid="_way_point_shape_8hpp" kind="file"><name>WayPointShape.hpp</name>
+  </compound>
+  <compound refid="_widget_debug_trace_function_8cpp" kind="file"><name>WidgetDebugTraceFunction.cpp</name>
+  </compound>
+  <compound refid="_widget_debug_trace_function_8hpp" kind="file"><name>WidgetDebugTraceFunction.hpp</name>
+  </compound>
+  <compound refid="_widgets_8cpp" kind="file"><name>Widgets.cpp</name>
+  </compound>
+  <compound refid="_widgets_8hpp" kind="file"><name>Widgets.hpp</name>
+    <member refid="_widgets_8hpp_1a9cfb4a036ae0f13fbbe4bc744385a78b" kind="define"><name>ActivateEventHandler</name></member>
+    <member refid="_widgets_8hpp_1a5b85ba9e93ef5e4db35cd8435255c922" kind="define"><name>CommandEventHandler</name></member>
+    <member refid="_widgets_8hpp_1a5c118a78fde16235921129f96ebd0bd6" kind="define"><name>DefaultPosition</name></member>
+    <member refid="_widgets_8hpp_1a657655c9d6484a163a04f7294eef41a9" kind="define"><name>DefaultSize</name></member>
+    <member refid="_widgets_8hpp_1aee22abdedd52e733642452599e4fc9d9" kind="define"><name>DefaultValidator</name></member>
+    <member refid="_widgets_8hpp_1a41c44c425813371b4e2dc7d0a9417498" kind="define"><name>EventHandler</name></member>
+    <member refid="_widgets_8hpp_1a480724eaea11e00528f1dd3fe08baf1f" kind="define"><name>KeyEventHandler</name></member>
+    <member refid="_widgets_8hpp_1ae65a317fec935a685c2fc5b377811897" kind="define"><name>ListEventHandler</name></member>
+    <member refid="_widgets_8hpp_1a2315a392e3d9cea6bee6e304a648d102" kind="define"><name>MouseEventHandler</name></member>
+    <member refid="_widgets_8hpp_1a05369d9c3987caef88fea950ec7dac42" kind="define"><name>NullColour</name></member>
+    <member refid="_widgets_8hpp_1a8389e9d7a03cb4fbd7171c5b39a9b222" kind="define"><name>PaintEventHandler</name></member>
+    <member refid="_widgets_8hpp_1a16cf9b415cefa19d424163a3e942e4c7" kind="define"><name>SizeEventHandler</name></member>
+    <member refid="_widgets_8hpp_1a80fddf652cab35aa75ccde85da45002a" kind="define"><name>TreeEventHandler</name></member>
+    <member refid="_widgets_8hpp_1af33bef1503f247339e615a9912923337" kind="define"><name>WindowId</name></member>
+    <member refid="_widgets_8hpp_1a50f28d60b2b6da9c769708953aaa34d0" kind="define"><name>DEFAULT_ID</name></member>
+    <member refid="_widgets_8hpp_1af2bb1c1737739b051deb69773ef0c841" kind="define"><name>FOCUS_COLOUR</name></member>
+    <member refid="_widgets_8hpp_1a36b36953427b96dbdefa9ca87241813e" kind="define"><name>DEFAULT_FRAME_STYLE</name></member>
+    <member refid="_widgets_8hpp_1a92dafb332f94c22638d6fb1814930289" kind="define"><name>DEFAULT_DIALOG_STYLE</name></member>
+    <member refid="_widgets_8hpp_1a97dac97a9d62cab329ae223cac5e3143" kind="define"><name>CROSS_CURSOR</name></member>
+    <member refid="_widgets_8hpp_1aa3d76f1301b09b8e7be9e84ac14c1665" kind="define"><name>HOURGLASS_CURSOR</name></member>
+    <member refid="_widgets_8hpp_1a1e696e60a54196535539b97ff36a96b0" kind="define"><name>STANDARD_CURSOR</name></member>
+    <member refid="_widgets_8hpp_1a08c5a854755afba2080c91c1ddff3e7b" kind="define"><name>TAB_TRAVERSAL</name></member>
+    <member refid="_widgets_8hpp_1a8a83ed9cfd3999a57d92156a56ce6b01" kind="define"><name>LC_LIST</name></member>
+    <member refid="_widgets_8hpp_1a4f57b4608c8ac84e5e0abf3b00cd76d6" kind="define"><name>LC_REPORT</name></member>
+    <member refid="_widgets_8hpp_1a7a2e9b467810589dafdd57d15ace37c3" kind="define"><name>LC_SINGLE_SEL</name></member>
+    <member refid="_widgets_8hpp_1ad585f2f410610dba5f8212c5241cc3a0" kind="define"><name>TR_HAS_BUTTONS</name></member>
+    <member refid="_widgets_8hpp_1ac90e9d2dc9ed7b9db6b57f9059ee9440" kind="define"><name>TR_HIDE_ROOT</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/hqnders/Documents/han/osm/software/robotworld/src</name>
+  </compound>
+</doxygenindex>

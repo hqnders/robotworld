@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_path_algorithm" kind="namespace" language="C++">
+    <compoundname>PathAlgorithm</compoundname>
+    <innerclass refid="class_path_algorithm_1_1_a_star" prot="public">PathAlgorithm::AStar</innerclass>
+    <innerclass refid="struct_path_algorithm_1_1_edge" prot="public">PathAlgorithm::Edge</innerclass>
+    <innerclass refid="struct_path_algorithm_1_1_vertex" prot="public">PathAlgorithm::Vertex</innerclass>
+    <innerclass refid="struct_path_algorithm_1_1_vertex_equal_point_compare" prot="public">PathAlgorithm::VertexEqualPointCompare</innerclass>
+    <innerclass refid="struct_path_algorithm_1_1_vertex_less_cost_compare" prot="public">PathAlgorithm::VertexLessCostCompare</innerclass>
+    <innerclass refid="struct_path_algorithm_1_1_vertex_less_id_compare" prot="public">PathAlgorithm::VertexLessIdCompare</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_a_star_8hpp_1a712799bf38597f8a9f49d50b4ce40a68" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>typedef std::vector&lt; Vertex &gt; PathAlgorithm::Path</definition>
+        <argsstring></argsstring>
+        <name>Path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="181" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_a_star_8hpp_1a5ce0f313f57dc2864facb12ebdfbace7" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>typedef std::vector&lt; Vertex &gt; PathAlgorithm::OpenSet</definition>
+        <argsstring></argsstring>
+        <name>OpenSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="182" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_a_star_8hpp_1ab0ab7b8215eb0f12dab66e5a5ff69195" prot="public" static="no">
+        <type>std::set&lt; <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref>, <ref refid="struct_path_algorithm_1_1_vertex_less_id_compare" kindref="compound">VertexLessIdCompare</ref> &gt;</type>
+        <definition>typedef std::set&lt; Vertex, VertexLessIdCompare &gt; PathAlgorithm::ClosedSet</definition>
+        <argsstring></argsstring>
+        <name>ClosedSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="183" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_a_star_8hpp_1a890f8ceb65b467d318f221689f3a64bc" prot="public" static="no">
+        <type>std::map&lt; <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref>, <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref>, <ref refid="struct_path_algorithm_1_1_vertex_less_id_compare" kindref="compound">VertexLessIdCompare</ref> &gt;</type>
+        <definition>typedef std::map&lt; Vertex, Vertex, VertexLessIdCompare &gt; PathAlgorithm::VertexMap</definition>
+        <argsstring></argsstring>
+        <name>VertexMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="184" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_star_8cpp_1a303daba8d3a083b341d1f4a799c3d5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PathAlgorithm::ActualCost</definition>
+        <argsstring>(const Vertex &amp;aStart, const Vertex &amp;aGoal)</argsstring>
+        <name>ActualCost</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aStart</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aGoal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" line="17" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_star_8cpp_1a2e4474691c7ebd46c7238f2c53b0e543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PathAlgorithm::HeuristicCost</definition>
+        <argsstring>(const Vertex &amp;aStart, const Vertex &amp;aGoal)</argsstring>
+        <name>HeuristicCost</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aStart</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aGoal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" line="25" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_star_8cpp_1a1b72e8125a5f9fa31d3130c816f1a03f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path PathAlgorithm::ConstructPath</definition>
+        <argsstring>(VertexMap &amp;aPredecessorMap, const Vertex &amp;aCurrentNode)</argsstring>
+        <name>ConstructPath</name>
+        <param>
+          <type>VertexMap &amp;</type>
+          <declname>aPredecessorMap</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aCurrentNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" line="33" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="33" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_star_8cpp_1a3d21ddadecb334e9b58d77711ec03564" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt; Vertex &gt; PathAlgorithm::GetNeighbours</definition>
+        <argsstring>(const Vertex &amp;aVertex, int aFreeRadius)</argsstring>
+        <name>GetNeighbours</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aFreeRadius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" line="52" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="52" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_star_8cpp_1ad1b6d6f8e5c2b5fba2679997520d30b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_path_algorithm_1_1_edge" kindref="compound">Edge</ref> &gt;</type>
+        <definition>std::vector&lt; Edge &gt; PathAlgorithm::GetNeighbourConnections</definition>
+        <argsstring>(const Vertex &amp;aVertex, int aFreeRadius)</argsstring>
+        <name>GetNeighbourConnections</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aFreeRadius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" line="84" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="84" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_star_8hpp_1a7570fe9b9ed95b023311d0b9ef75b7ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; PathAlgorithm::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vertex &amp;aVertex)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aVertex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="162" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_star_8hpp_1a4d00bd2dacc6db331429deab0d46cbf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; PathAlgorithm::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Edge &amp;anEdge)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_edge" kindref="compound">Edge</ref> &amp;</type>
+          <declname>anEdge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anEdge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="173" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="173" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" line="13" column="1"/>
+  </compounddef>
+</doxygen>

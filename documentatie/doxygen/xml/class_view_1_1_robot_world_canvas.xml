@@ -1,0 +1,2396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_view_1_1_robot_world_canvas" kind="class" language="C++" prot="public">
+    <compoundname>View::RobotWorldCanvas</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ScrolledCanvas</basecompoundref>
+    <basecompoundref refid="class_view_1_1_view_object" prot="public" virt="non-virtual">View::ViewObject</basecompoundref>
+      <sectiondef kind="user-defined">
+      <header>Event handling enabling functions</header>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ac74704c6f3337c017a338aa60ac550a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableHandlePaint</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableHandlePaint</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="64" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="119" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a9a85f803ceea25f82b6dab3a68b51915" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableHandleSize</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableHandleSize</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="65" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="132" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aff53f317176e354f858710ad334473b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableLeftDownHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableLeftDownHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="67" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="145" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1adae323b06595ebe6c203beedd1f88594" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableLeftUpHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableLeftUpHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="68" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="158" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ad34bec03c60bc74967da0815bfc3decb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableLeftDClickHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableLeftDClickHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="171" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a2cf15bd7f032378476292e4ef4baeb60" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableMiddleDownHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableMiddleDownHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="71" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="184" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aff0f17e087d0c16b61fc3fa4664d9280" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableMiddleUpHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableMiddleUpHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="72" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="197" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1abbf14eaa663020a5c28ddc34b04a7d93" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableMiddleDClickHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableMiddleDClickHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="73" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="210" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a8b249411be7ea966eb7ad01698d30ff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableRightDownHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableRightDownHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="75" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="223" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ade500a4e9585a02b05f3c2bdcca59b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableRightUpHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableRightUpHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="76" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="236" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1addbc170d9d9c998af49ffca65ed6216a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableRightDClickHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableRightDClickHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="77" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="249" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a6decd9bcd3acac80852476fc30f5df8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableMouseMotionHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableMouseMotionHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="79" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="262" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a531ca3c86af833a551ad9f3606cd4c9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableKeyHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableKeyHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="81" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="275" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a652f1eec754019d4d8e3c32a7749545f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableActivationHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableActivationHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="83" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="290" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a6e0de11c21b2b482c440cc3b1dfc70ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableSelectionHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableSelectionHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="84" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="297" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ad030befe82d71f44547da7c180427367" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableItemMenuHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableItemMenuHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="86" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="304" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a923d937443987722653140d1f22e16b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::enableDragAndDropHandling</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableDragAndDropHandling</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="88" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="311" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Type safe accessors and mutators</header>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ae82885a5dd5ce493c8b3df3a7d0385a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>model::RobotWorldPtr</type>
+        <definition>model::RobotWorldPtr View::RobotWorldCanvas::getRobotWorld</definition>
+        <argsstring>() const </argsstring>
+        <name>getRobotWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type safe accessor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="139" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="405" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a2829529a8b4221f072aeac196bbc9b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::setRobotWorld</definition>
+        <argsstring>(model::RobotWorldPtr aRobotWorld)</argsstring>
+        <name>setRobotWorld</name>
+        <param>
+          <type>model::RobotWorldPtr</type>
+          <declname>aRobotWorld</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Type safe mutator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="143" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="412" bodyend="415"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Observer functions</header>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1af24f07e5484dbba2edd563c826694098" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleNotification</definition>
+        <argsstring>()</argsstring>
+        <name>handleNotification</name>
+        <reimplements refid="class_base_1_1_observer_1a37d00a5290a60aa9ab664af5d1642c3e">handleNotification</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A Notifier will call this function if this Observer will handle the notifications of that Notifier. It is the responsibility of the Observer to filter any events it is interested in. This function should only be called from the main thread because wxWidgets does not allow for painting widgets in a background thread: all painting should be done in the main thread. Therefore all notifications are routed to <ref refid="class_view_1_1_robot_world_canvas_1a19aa6f46000f7f7db267f6aec911f25f" kindref="member">handleBackGroundNotification()</ref> as a convenience. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="157" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="419" bodyend="422"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Event handling functions</header>
+      <description><para>Override these functions if the default handling is not what you want </para></description>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a77d292863075ab2e7a51148c86e794b5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handlePaint</definition>
+        <argsstring>(PaintEvent &amp;event)</argsstring>
+        <name>handlePaint</name>
+        <param>
+          <type>PaintEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="187" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="513" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a9e87fc8cfc5d45de10c5b44bdcf32974" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleSize</definition>
+        <argsstring>(SizeEvent &amp;event)</argsstring>
+        <name>handleSize</name>
+        <param>
+          <type>SizeEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="188" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="521" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a6f01a640b1d11b8a5c399ec1beb5d9dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleLeftDown</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleLeftDown</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="190" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="531" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a652bd5372da5fd21ecc2379faf7d5c62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleLeftUp</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleLeftUp</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="191" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="580" bodyend="629"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a6287e395342c737724bebbeb56de826d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleLeftDClick</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleLeftDClick</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="192" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="633" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1af4e64974c6b76b7fa3107694d2a895b8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleMiddleDown</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleMiddleDown</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="194" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="649" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a23f3eb4db9fd3b72872f3f8e74425816" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleMiddleUp</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleMiddleUp</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="195" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="659" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a1509cf3de672c05fac25b9a63dbd719a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleMiddleDClick</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleMiddleDClick</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="196" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="666" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aa0063e9b90265e676d0069dbe6e392ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleRightDown</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleRightDown</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="198" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="673" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a18873d7781c08653b14c9d3a9a0a8346" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleRightUp</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleRightUp</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="199" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="689" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a97c26bc9722ced6706681077b68dcd20" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleRightDClick</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleRightDClick</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="200" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="711" bodyend="714"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1af636158a32890d6f44b5e93c4e8bf760" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleMouseMotion</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>handleMouseMotion</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="202" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="718" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ad9b2185e171a240bd9bf54266526d2bc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleKey</definition>
+        <argsstring>(KeyEvent &amp;event)</argsstring>
+        <name>handleKey</name>
+        <param>
+          <type>KeyEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="204" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="782" bodyend="824"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a4724659516bdc8572f585073009f5c40" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleBeginLeftDrag</definition>
+        <argsstring>(ShapePtr aShape)</argsstring>
+        <name>handleBeginLeftDrag</name>
+        <param>
+          <type>ShapePtr</type>
+          <declname>aShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="206" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="828" bodyend="831"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aee572b2a63b6a8b1577ee7b69bf90b87" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleEndDrag</definition>
+        <argsstring>(ShapePtr aShape)</argsstring>
+        <name>handleEndDrag</name>
+        <param>
+          <type>ShapePtr</type>
+          <declname>aShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="207" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="835" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1abd7db9facf18e6cadd54c2f681df7c66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleAddRobot</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleAddRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="209" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="872" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a57692f00a4e5fb281fc7baf1920f6430" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleEditRobot</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleEditRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="210" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="881" bodyend="895"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a0d1aeab78b87c7ac297fa877d63d4509" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleDeleteRobot</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleDeleteRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="211" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="899" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a27d9c2435d11a4a25ba545b2dedb7942" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleAddWayPoint</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleAddWayPoint</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="213" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="911" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a28b10cb19c0c0810c329f8730dd26da3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleEditWayPoint</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleEditWayPoint</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="214" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="920" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a59a9e54e21bd5bd93bf67b8ea53776c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleDeleteWayPoint</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleDeleteWayPoint</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="215" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="938" bodyend="946"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aec6ff89595e1a7acc7d52617e7382a9d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleAddGoal</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleAddGoal</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="217" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="950" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a02faf3e677c578a817e6c3e071c40fbd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleEditGoal</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleEditGoal</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="218" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="959" bodyend="973"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a373e72f2cda977a78ef7c9dae4fea0e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleDeleteGoal</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleDeleteGoal</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="219" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="977" bodyend="985"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aa95a5735508bdba10ee833be5b9d2052" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleAddWall</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleAddWall</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="221" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="989" bodyend="1003"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a6c69668363176d9e81579fef5e30ba9e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleEditWall</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleEditWall</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="222" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1007" bodyend="1010"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a61e2fb050d5df8647ec9d9cf0ea8310b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleDeleteWall</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleDeleteWall</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="223" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1014" bodyend="1022"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a028920fed66e9f764d55ae894e62b782" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleShapeInfo</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>handleShapeInfo</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="225" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1026" bodyend="1032"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aff306f1468df26b730806dfa81180578" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void View::RobotWorldCanvas::handleNotification</definition>
+        <argsstring>(NotifyEvent &amp;aNotifyEvent)</argsstring>
+        <name>handleNotification</name>
+        <param>
+          <type>NotifyEvent &amp;</type>
+          <declname>aNotifyEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="227" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Event handlers</header>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a136eef101bb94f4e8ecdc28843a3c2b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnPaint</definition>
+        <argsstring>(PaintEvent &amp;event)</argsstring>
+        <name>OnPaint</name>
+        <param>
+          <type>PaintEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="283" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1232" bodyend="1235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a9c4ebc560a601db8e049ccfaf1d11592" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnSize</definition>
+        <argsstring>(SizeEvent &amp;event)</argsstring>
+        <name>OnSize</name>
+        <param>
+          <type>SizeEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="284" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1239" bodyend="1242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a998a0178eb3c30386eeea48044c42b6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnLeftDown</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnLeftDown</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="286" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1246" bodyend="1249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ac0b304b2731408ab461ef4a9ab270796" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnLeftUp</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnLeftUp</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="287" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1253" bodyend="1256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1afb11e5ee028da0df3f2795f4903d9738" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnLeftDClick</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnLeftDClick</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="288" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1260" bodyend="1263"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aa1e1ac2e86c74a8d050ed842a8f65489" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnMiddleDown</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnMiddleDown</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="290" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1267" bodyend="1270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ad954c2928c692e7e51d832f6a544f95e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnMiddleUp</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnMiddleUp</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="291" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1274" bodyend="1277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a7015657b025f6e28e97e12ab999a871f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnMiddleDClick</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnMiddleDClick</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="292" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1281" bodyend="1284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aee2eaf6ba039d01d273e8ade934d9b67" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnRightDown</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnRightDown</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="294" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1288" bodyend="1291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1acd77d27fafbab31d1b946485cc86ce5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnRightUp</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnRightUp</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="295" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1295" bodyend="1298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1add1acc11ff6342a4d811bbd6b8801c11" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnRightDClick</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnRightDClick</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="296" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1302" bodyend="1305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a067985975dced40b93d9b1a075114f7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnMouseMotion</definition>
+        <argsstring>(MouseEvent &amp;event)</argsstring>
+        <name>OnMouseMotion</name>
+        <param>
+          <type>MouseEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="298" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1309" bodyend="1312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a4ba6efb5ffc379abfa7c7a91d5e417e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnKeyDown</definition>
+        <argsstring>(KeyEvent &amp;event)</argsstring>
+        <name>OnKeyDown</name>
+        <param>
+          <type>KeyEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="300" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1316" bodyend="1319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a67eb0fe5a7c7e7708f9c637d6c4884ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnCharDown</definition>
+        <argsstring>(KeyEvent &amp;event)</argsstring>
+        <name>OnCharDown</name>
+        <param>
+          <type>KeyEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="301" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1323" bodyend="1326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a81a7de7b346f638314cd5b7a15136007" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnAddRobot</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnAddRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="303" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1330" bodyend="1333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ae8be7638cfec3a3f37f6695dc5f9a56c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnEditRobot</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnEditRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="304" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1337" bodyend="1340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ab384cf53bba49a603ea3935111469c5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnDeleteRobot</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnDeleteRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="305" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1344" bodyend="1347"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a36510c551f4f930f80dcf6120415a455" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnAddWayPoint</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnAddWayPoint</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="307" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1351" bodyend="1354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a6a6490871621fe69c86792236653f301" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnEditWayPoint</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnEditWayPoint</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="308" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1358" bodyend="1361"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aeb53258a027811a3f03d9b3fb391f557" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnDeleteWayPoint</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnDeleteWayPoint</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="309" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1365" bodyend="1368"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ae615652173f9ac620a638fee82ad890d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnAddGoal</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnAddGoal</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="311" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1372" bodyend="1375"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1abc3ee1d04e0db44df5a8e8272992df0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnEditGoal</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnEditGoal</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="312" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1379" bodyend="1382"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a684ff91d432d16d0f3703a2663514ab6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnDeleteGoal</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnDeleteGoal</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="313" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1386" bodyend="1389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aa3a7b6583f90ff721a8b4d8c2b31cb38" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnAddWall</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnAddWall</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="315" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1393" bodyend="1396"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a71c8af71b6e954bdab62674ffbe9f57f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnEditWall</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnEditWall</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="316" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1400" bodyend="1403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a360232701f9e5011f3a269f9936abcfa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnDeleteWall</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnDeleteWall</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="317" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1407" bodyend="1410"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aa61a36d6071cdad287af904b793a708f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnShapeInfo</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnShapeInfo</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="319" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1414" bodyend="1417"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a19f7ecff2bf134165eb9cd20ba5fe773" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnWorldInfo</definition>
+        <argsstring>(CommandEvent &amp;event)</argsstring>
+        <name>OnWorldInfo</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="321" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1422" bodyend="1425"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a88ab35d12f8386d8080e0702aeb4c9b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::OnNotificationEvent</definition>
+        <argsstring>(NotifyEvent &amp;aNotifyEvent)</argsstring>
+        <name>OnNotificationEvent</name>
+        <param>
+          <type>NotifyEvent &amp;</type>
+          <declname>aNotifyEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="323" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1429" bodyend="1432"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470" prot="private" static="no">
+        <name>@2</name>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470af86165d4ac2b80865c8ce42441d9c25c" prot="private">
+          <name>IDLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a3431974f7af8e139dcfaedb465325571" prot="private">
+          <name>DRAWING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ad521919ed8f73a8af6cbbd389b92a80a" prot="private">
+          <name>CANCELDRAWING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ac099d559d44c8cd12a90aa55c4d5e8aa" prot="private">
+          <name>RESIZING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a0cba3777342af3550fd8f2aa74af2e05" prot="private">
+          <name>CANCELRESIZING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ad239f54ddcd5d10a92a589f6ae5d28a8" prot="private">
+          <name>STARTDRAGGING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a208614e2dbb0752c04f800222069ef4f" prot="private">
+          <name>DRAGGING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a5cecd98cfb003b73d7aaca3f3168c042" prot="private">
+          <name>CANCELDRAGGING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="329" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="328" bodyend="338"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1ab2367237b4f1a96d0094f06156a828f9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ShapePtr &gt;</type>
+        <definition>std::vector&lt; ShapePtr &gt; View::RobotWorldCanvas::shapes</definition>
+        <argsstring></argsstring>
+        <name>shapes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="326" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1a6f87e8ae3c91d96bb1e3db3b573ff8a6" prot="private" static="no" mutable="no">
+        <type>enum View::RobotWorldCanvas::@2</type>
+        <definition>enum View::RobotWorldCanvas::@2  View::RobotWorldCanvas::actionStatus</definition>
+        <argsstring></argsstring>
+        <name>actionStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1acc557a1e3add81ad5d045a05a0ad1a8f" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point View::RobotWorldCanvas::popupPoint</definition>
+        <argsstring></argsstring>
+        <name>popupPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="340" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1a9cf3f42564d08cbe1af69125719c0608" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point View::RobotWorldCanvas::startActionPoint</definition>
+        <argsstring></argsstring>
+        <name>startActionPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="341" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1ac84999956cee4587ccf4b4614843d241" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point View::RobotWorldCanvas::endActionPoint</definition>
+        <argsstring></argsstring>
+        <name>endActionPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="342" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1a7798cb0f96767edbf604851ff784090d" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point View::RobotWorldCanvas::actionOffset</definition>
+        <argsstring></argsstring>
+        <name>actionOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="343" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1a8090bb95c46c33f685d681a7e5d7d23f" prot="private" static="no" mutable="no">
+        <type>Size</type>
+        <definition>Size View::RobotWorldCanvas::startActionSize</definition>
+        <argsstring></argsstring>
+        <name>startActionSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="344" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1aa1027eb995295f928f8bef3a1a097005" prot="private" static="no" mutable="no">
+        <type>ShapePtr</type>
+        <definition>ShapePtr View::RobotWorldCanvas::startActionShape</definition>
+        <argsstring></argsstring>
+        <name>startActionShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="346" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1a778265cdede2356051453fa3a09ca034" prot="private" static="no" mutable="no">
+        <type>ShapePtr</type>
+        <definition>ShapePtr View::RobotWorldCanvas::endActionShape</definition>
+        <argsstring></argsstring>
+        <name>endActionShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="347" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1ac864fac72e4714ddcc88400c3d0a2568" prot="private" static="no" mutable="no">
+        <type>ShapePtr</type>
+        <definition>ShapePtr View::RobotWorldCanvas::selectedShape</definition>
+        <argsstring></argsstring>
+        <name>selectedShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="349" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1abda0beec0d9e990883c51f95284504f1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool View::RobotWorldCanvas::activationEnabled</definition>
+        <argsstring></argsstring>
+        <name>activationEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="351" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1a9451f60f588b0c4b4d27bed85b0e41ac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool View::RobotWorldCanvas::selectionEnabled</definition>
+        <argsstring></argsstring>
+        <name>selectionEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="352" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1a708199300dcee86c87f8faf9a3ab88ac" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool View::RobotWorldCanvas::menuItemEnabled</definition>
+        <argsstring></argsstring>
+        <name>menuItemEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="353" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1ae5563ab5d9bd251057b666eb35f6cf7b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool View::RobotWorldCanvas::dandEnabled</definition>
+        <argsstring></argsstring>
+        <name>dandEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="354" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_view_1_1_robot_world_canvas_1aedb2a9ac8f01fb3e82d176c03509822d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_base_1_1_notification_handler" kindref="compound">Base::NotificationHandler</ref>&lt; std::function&lt; void(NotifyEvent &amp;) &gt; &gt; *</type>
+        <definition>Base::NotificationHandler&lt; std::function&lt; void( NotifyEvent&amp;) &gt; &gt;* View::RobotWorldCanvas::notificationHandler</definition>
+        <argsstring></argsstring>
+        <name>notificationHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="356" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1afc6ffd527bcd9970f12e5fd70a841782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>View::RobotWorldCanvas::RobotWorldCanvas</definition>
+        <argsstring>(Window *anOwner)</argsstring>
+        <name>RobotWorldCanvas</name>
+        <param>
+          <type>Window *</type>
+          <declname>anOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="36" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="41" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aff3e613f2782874b4560a015be7b6180" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>View::RobotWorldCanvas::RobotWorldCanvas</definition>
+        <argsstring>(Window *anOwner, model::ModelObjectPtr aModelObject)</argsstring>
+        <name>RobotWorldCanvas</name>
+        <param>
+          <type>Window *</type>
+          <declname>anOwner</declname>
+        </param>
+        <param>
+          <type>model::ModelObjectPtr</type>
+          <declname>aModelObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="40" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="63" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a1ee3d62d9f1333010356dc6a8c9044e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>View::RobotWorldCanvas::~RobotWorldCanvas</definition>
+        <argsstring>()</argsstring>
+        <name>~RobotWorldCanvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="45" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="87" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a7cffeb2971aaac6039398b6d896fd3b1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point View::RobotWorldCanvas::devicePointFor</definition>
+        <argsstring>(const Point &amp;aScreenPoint) const </argsstring>
+        <name>devicePointFor</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aScreenPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The canvas is partially displayed in a scrolling window. Hence, the user viewable part of this window is probably just a part of this window. This function takes a point in the (visible) scrolling window coordinates and translates it to this canvas windows coordinates. It takes into account the number of lines and number of pixels between lines. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="52" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a0f505fef4f08daaa9ebd21ff392c698f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point View::RobotWorldCanvas::screenPointFor</definition>
+        <argsstring>(const Point &amp;aDevicePoint) const </argsstring>
+        <name>screenPointFor</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aDevicePoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is the opposite of <ref refid="class_view_1_1_robot_world_canvas_1a7cffeb2971aaac6039398b6d896fd3b1" kindref="member">devicePointFor()</ref>: it translates canvas coordinates to scrolling window coordinates</para><para><simplesect kind="see"><para>devicePointFor( const Point&amp;) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="58" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="110" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ac4fefdf43774d0f90c469527b1d27fd3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool View::RobotWorldCanvas::isShapeSelected</definition>
+        <argsstring>() const </argsstring>
+        <name>isShapeSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if any shape is selected, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="94" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aefd5c6dc27fe807047996443797594a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ShapePtr</type>
+        <definition>ShapePtr View::RobotWorldCanvas::getSelectedShape</definition>
+        <argsstring>() const </argsstring>
+        <name>getSelectedShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A selected <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> if any, nullptr otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="99" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="325" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a51477f3840089817d00ed6f2dee7c69e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::setSelectedShape</definition>
+        <argsstring>(ShapePtr aSelectedShape)</argsstring>
+        <name>setSelectedShape</name>
+        <param>
+          <type>ShapePtr</type>
+          <declname>aSelectedShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the given <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> as the selected shape. If selectionEnabled is set to true, handleSelection() of both the old and new selected shape will be called after setting their selection as appropriate.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aSelectedShape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> that will be selected. If a nullptr is passed it acts as a mere de-selection of the current selected shape </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="108" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="332" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a38bc5c3dd6eb99504fc1ada58ed39a14" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool View::RobotWorldCanvas::isShapeAt</definition>
+        <argsstring>(const Point &amp;aPoint) const </argsstring>
+        <name>isShapeAt</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if any <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> returns true for Shape.ocuppies(aPoint), false otherwise.</para></simplesect>
+<simplesect kind="see"><para>Shape::occupies(const Point&amp;) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="117" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="362" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a625bdb271e6426cc7c228c4c71eebedf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>ShapePtr</type>
+        <definition>ShapePtr View::RobotWorldCanvas::getShapeAt</definition>
+        <argsstring>(const Point &amp;aPoint) const </argsstring>
+        <name>getShapeAt</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A screen point, i.e. a point on the screen, not on the (scrollable) canvas. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The first <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> in iteration order that returns true for Shape.ocuppies(aPoint). If no such <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> exists nullptr will be returned. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="124" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="376" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a91fc7b9d37d228ba9285fe82dab04fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool View::RobotWorldCanvas::selectShapeAt</definition>
+        <argsstring>(const Point &amp;aPoint)</argsstring>
+        <name>selectShapeAt</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Selects the <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> that returns true for Shape.ocuppies(aPoint). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="130" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="390" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a19aa6f46000f7f7db267f6aec911f25f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleBackGroundNotification</definition>
+        <argsstring>()</argsstring>
+        <name>handleBackGroundNotification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A Notifier that runs in a background thread should call this function instead of <ref refid="class_view_1_1_robot_world_canvas_1af24f07e5484dbba2edd563c826694098" kindref="member">handleNotification()</ref>. <ref refid="class_view_1_1_robot_world_canvas_1af24f07e5484dbba2edd563c826694098" kindref="member">handleNotification()</ref> is routed to this function as a convenience. Bad for performance though. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="163" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="426" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ab498b81c0619bc6109548582addc7e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::populate</definition>
+        <argsstring>(int aNumberOfWalls=2)</argsstring>
+        <name>populate</name>
+        <param>
+          <type>int</type>
+          <declname>aNumberOfWalls</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Asks the world to populates itself with a robot, a goal and the given number of walls </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="167" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="438" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a20eb2ae3ba32d1a1b8994025e0c6bc39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::unpopulate</definition>
+        <argsstring>()</argsstring>
+        <name>unpopulate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes everything from the world </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="171" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="445" bodyend="449"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a976c8eb03167bf9c9b0f911ff3e0fa9e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::initialise</definition>
+        <argsstring>()</argsstring>
+        <name>initialise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Common initialise function </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="176" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="454" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a9cc3e904305ee1e99f916ecdcbd757b7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::render</definition>
+        <argsstring>(wxDC &amp;dc)</argsstring>
+        <name>render</name>
+        <param>
+          <type>wxDC &amp;</type>
+          <declname>dc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="180" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="496" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a29d4e61d22b79fedaee17411b5f6b3c7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleActivation</definition>
+        <argsstring>(ShapePtr aShape)</argsstring>
+        <name>handleActivation</name>
+        <param>
+          <type>ShapePtr</type>
+          <declname>aShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="230" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1055" bodyend="1058"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a955374b23557c1459b597e457d68cf57" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleSelection</definition>
+        <argsstring>(ShapePtr aShape)</argsstring>
+        <name>handleSelection</name>
+        <param>
+          <type>ShapePtr</type>
+          <declname>aShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="231" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1062" bodyend="1065"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a11ae3a4bc7c60fb560d42c1f63b8955b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleMenu</definition>
+        <argsstring>(const Point &amp;aScreenPoint)</argsstring>
+        <name>handleMenu</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aScreenPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="235" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1069" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a29edcdeeea1b21b5626b1f47fbe43871" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::handleItemMenu</definition>
+        <argsstring>(ShapePtr aSelectedShape, const Point &amp;aPoint)</argsstring>
+        <name>handleItemMenu</name>
+        <param>
+          <type>ShapePtr</type>
+          <declname>aSelectedShape</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="239" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1094" bodyend="1131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a3156a2e906d30e96f9bf7ef9ff731b06" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::addShape</definition>
+        <argsstring>(RobotShapePtr aRobotShape)</argsstring>
+        <name>addShape</name>
+        <param>
+          <type>RobotShapePtr</type>
+          <declname>aRobotShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="244" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1135" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1afaa1fc0f2e6e76653ef7022853318646" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::addShape</definition>
+        <argsstring>(GoalShapePtr aGoalShape)</argsstring>
+        <name>addShape</name>
+        <param>
+          <type>GoalShapePtr</type>
+          <declname>aGoalShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="248" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1144" bodyend="1148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1abb5dee13a6e25baf0980129cfb1780d3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::addShape</definition>
+        <argsstring>(WayPointShapePtr aWayPointShape)</argsstring>
+        <name>addShape</name>
+        <param>
+          <type>WayPointShapePtr</type>
+          <declname>aWayPointShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="252" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1152" bodyend="1156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a51c5fac3c75b4ebc258511bf00c93863" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::addShape</definition>
+        <argsstring>(WallShapePtr aWallShape)</argsstring>
+        <name>addShape</name>
+        <param>
+          <type>WallShapePtr</type>
+          <declname>aWallShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="256" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1160" bodyend="1173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ac40c2e62c75618d63e09a0d4f0ca4bb4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::removeShape</definition>
+        <argsstring>(RobotShapePtr aRobotShape)</argsstring>
+        <name>removeShape</name>
+        <param>
+          <type>RobotShapePtr</type>
+          <declname>aRobotShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="260" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1177" bodyend="1182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a274b8ff8d7d6bfe6e40c04cbd1c526de" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::removeShape</definition>
+        <argsstring>(GoalShapePtr aGoalShape)</argsstring>
+        <name>removeShape</name>
+        <param>
+          <type>GoalShapePtr</type>
+          <declname>aGoalShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="264" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1186" bodyend="1191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1ae94d4410e1250dfc2c2221265be10c24" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::removeShape</definition>
+        <argsstring>(WayPointShapePtr aWayPointShape)</argsstring>
+        <name>removeShape</name>
+        <param>
+          <type>WayPointShapePtr</type>
+          <declname>aWayPointShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="268" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1195" bodyend="1200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a14bd783613cbd6aa65eaabfe873d7369" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::removeShape</definition>
+        <argsstring>(WallShapePtr aWallShape)</argsstring>
+        <name>removeShape</name>
+        <param>
+          <type>WallShapePtr</type>
+          <declname>aWallShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="272" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1204" bodyend="1212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1af3ba30c00eaedf7bbb67b731f12d1af7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::removeGenericShape</definition>
+        <argsstring>(ShapePtr aShape)</argsstring>
+        <name>removeGenericShape</name>
+        <param>
+          <type>ShapePtr</type>
+          <declname>aShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="276" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.cpp" bodystart="1216" bodyend="1228"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1aeeab76a7ea395d141ef6860d74088521" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::remove</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; T &gt; &gt; &amp;aTs)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; T &gt; &gt; &amp;</type>
+          <declname>aTs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function removes all Shapes that look at a ModelObject that is not longer in RobotWorld </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="362" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="362" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_view_1_1_robot_world_canvas_1a7ff3ff2c7f329c3659f8420bd9ee8479" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename S</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void View::RobotWorldCanvas::add</definition>
+        <argsstring>(const std::vector&lt; std::shared_ptr&lt; T &gt; &gt; &amp;aTs)</argsstring>
+        <name>add</name>
+        <param>
+          <type>const std::vector&lt; std::shared_ptr&lt; T &gt; &gt; &amp;</type>
+          <declname>aTs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function add Shapes for ModelObjects that are in RobotWorld but that have no <ref refid="class_view_1_1_shape" kindref="compound">Shape</ref> yet </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="391" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="391" bodyend="410"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="661">
+        <label>ScrolledCanvas</label>
+      </node>
+      <node id="663">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="662">
+        <label>View::ViewObject</label>
+        <link refid="class_view_1_1_view_object"/>
+        <childnode refid="663" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="660">
+        <label>View::RobotWorldCanvas</label>
+        <link refid="class_view_1_1_robot_world_canvas"/>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+        <childnode refid="662" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="665">
+        <label>ScrolledCanvas</label>
+      </node>
+      <node id="667">
+        <label>Base::Observer</label>
+        <link refid="class_base_1_1_observer"/>
+      </node>
+      <node id="666">
+        <label>View::ViewObject</label>
+        <link refid="class_view_1_1_view_object"/>
+        <childnode refid="667" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>View::RobotWorldCanvas</label>
+        <link refid="class_view_1_1_robot_world_canvas"/>
+        <childnode refid="665" relation="public-inheritance">
+        </childnode>
+        <childnode refid="666" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp" bodystart="29" bodyend="411"/>
+    <listofallmembers>
+      <member refid="class_view_1_1_robot_world_canvas_1a7798cb0f96767edbf604851ff784090d" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>actionOffset</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a6f87e8ae3c91d96bb1e3db3b573ff8a6" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>actionStatus</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abda0beec0d9e990883c51f95284504f1" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>activationEnabled</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a7ff3ff2c7f329c3659f8420bd9ee8479" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>add</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a3156a2e906d30e96f9bf7ef9ff731b06" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>addShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1afaa1fc0f2e6e76653ef7022853318646" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>addShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abb5dee13a6e25baf0980129cfb1780d3" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>addShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a51c5fac3c75b4ebc258511bf00c93863" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>addShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a5cecd98cfb003b73d7aaca3f3168c042" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>CANCELDRAGGING</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ad521919ed8f73a8af6cbbd389b92a80a" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>CANCELDRAWING</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a0cba3777342af3550fd8f2aa74af2e05" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>CANCELRESIZING</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ae5563ab5d9bd251057b666eb35f6cf7b" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>dandEnabled</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a7cffeb2971aaac6039398b6d896fd3b1" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>devicePointFor</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a208614e2dbb0752c04f800222069ef4f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>DRAGGING</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470a3431974f7af8e139dcfaedb465325571" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>DRAWING</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a652f1eec754019d4d8e3c32a7749545f" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableActivationHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a923d937443987722653140d1f22e16b9" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableDragAndDropHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ac74704c6f3337c017a338aa60ac550a6" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableHandlePaint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a9a85f803ceea25f82b6dab3a68b51915" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableHandleSize</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ad030befe82d71f44547da7c180427367" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableItemMenuHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a531ca3c86af833a551ad9f3606cd4c9f" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableKeyHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ad34bec03c60bc74967da0815bfc3decb" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableLeftDClickHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aff53f317176e354f858710ad334473b1" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableLeftDownHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1adae323b06595ebe6c203beedd1f88594" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableLeftUpHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abbf14eaa663020a5c28ddc34b04a7d93" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableMiddleDClickHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a2cf15bd7f032378476292e4ef4baeb60" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableMiddleDownHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aff0f17e087d0c16b61fc3fa4664d9280" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableMiddleUpHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a6decd9bcd3acac80852476fc30f5df8e" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableMouseMotionHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1addbc170d9d9c998af49ffca65ed6216a" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableRightDClickHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a8b249411be7ea966eb7ad01698d30ff4" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableRightDownHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ade500a4e9585a02b05f3c2bdcca59b39" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableRightUpHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a6e0de11c21b2b482c440cc3b1dfc70ca" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>enableSelectionHandling</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ac84999956cee4587ccf4b4614843d241" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>endActionPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a778265cdede2356051453fa3a09ca034" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>endActionShape</name></member>
+      <member refid="class_view_1_1_view_object_1a84ff0c9baf21a4736dacaf0811ea0851" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>getModelObject</name></member>
+      <member refid="class_view_1_1_view_object_1af1779cd5a68017ff5a1ece2afec8ddc0" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>getObjectId</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ae82885a5dd5ce493c8b3df3a7d0385a4" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>getRobotWorld</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aefd5c6dc27fe807047996443797594a0" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>getSelectedShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a625bdb271e6426cc7c228c4c71eebedf" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>getShapeAt</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a29d4e61d22b79fedaee17411b5f6b3c7" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleActivation</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aec6ff89595e1a7acc7d52617e7382a9d" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleAddGoal</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abd7db9facf18e6cadd54c2f681df7c66" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleAddRobot</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aa95a5735508bdba10ee833be5b9d2052" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleAddWall</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a27d9c2435d11a4a25ba545b2dedb7942" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleAddWayPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a19aa6f46000f7f7db267f6aec911f25f" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleBackGroundNotification</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a4724659516bdc8572f585073009f5c40" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleBeginLeftDrag</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a373e72f2cda977a78ef7c9dae4fea0e5" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleDeleteGoal</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a0d1aeab78b87c7ac297fa877d63d4509" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleDeleteRobot</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a61e2fb050d5df8647ec9d9cf0ea8310b" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleDeleteWall</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a59a9e54e21bd5bd93bf67b8ea53776c0" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleDeleteWayPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a02faf3e677c578a817e6c3e071c40fbd" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleEditGoal</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a57692f00a4e5fb281fc7baf1920f6430" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleEditRobot</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a6c69668363176d9e81579fef5e30ba9e" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleEditWall</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a28b10cb19c0c0810c329f8730dd26da3" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleEditWayPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aee572b2a63b6a8b1577ee7b69bf90b87" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleEndDrag</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a29edcdeeea1b21b5626b1f47fbe43871" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleItemMenu</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ad9b2185e171a240bd9bf54266526d2bc" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleKey</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a6287e395342c737724bebbeb56de826d" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleLeftDClick</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a6f01a640b1d11b8a5c399ec1beb5d9dd" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleLeftDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a652bd5372da5fd21ecc2379faf7d5c62" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleLeftUp</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a11ae3a4bc7c60fb560d42c1f63b8955b" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleMenu</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a1509cf3de672c05fac25b9a63dbd719a" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleMiddleDClick</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1af4e64974c6b76b7fa3107694d2a895b8" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleMiddleDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a23f3eb4db9fd3b72872f3f8e74425816" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleMiddleUp</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1af636158a32890d6f44b5e93c4e8bf760" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleMouseMotion</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1af24f07e5484dbba2edd563c826694098" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleNotification</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aff306f1468df26b730806dfa81180578" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleNotification</name></member>
+      <member refid="class_base_1_1_observer_1a805cc1ddc6526d692af81d76ae29d802" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleNotificationsFor</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a77d292863075ab2e7a51148c86e794b5" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handlePaint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a97c26bc9722ced6706681077b68dcd20" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleRightDClick</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aa0063e9b90265e676d0069dbe6e392ac" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleRightDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a18873d7781c08653b14c9d3a9a0a8346" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleRightUp</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a955374b23557c1459b597e457d68cf57" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleSelection</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a028920fed66e9f764d55ae894e62b782" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleShapeInfo</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a9e87fc8cfc5d45de10c5b44bdcf32974" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>handleSize</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470af86165d4ac2b80865c8ce42441d9c25c" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>IDLE</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a976c8eb03167bf9c9b0f911ff3e0fa9e" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>initialise</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a38bc5c3dd6eb99504fc1ada58ed39a14" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>isShapeAt</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ac4fefdf43774d0f90c469527b1d27fd3" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>isShapeSelected</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a708199300dcee86c87f8faf9a3ab88ac" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>menuItemEnabled</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aedb2a9ac8f01fb3e82d176c03509822d" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>notificationHandler</name></member>
+      <member refid="class_base_1_1_observer_1a0b8f55248bb0b393ed760d50b7f58d21" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>Observer</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ae615652173f9ac620a638fee82ad890d" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnAddGoal</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a81a7de7b346f638314cd5b7a15136007" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnAddRobot</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aa3a7b6583f90ff721a8b4d8c2b31cb38" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnAddWall</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a36510c551f4f930f80dcf6120415a455" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnAddWayPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a67eb0fe5a7c7e7708f9c637d6c4884ac" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnCharDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a684ff91d432d16d0f3703a2663514ab6" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnDeleteGoal</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ab384cf53bba49a603ea3935111469c5b" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnDeleteRobot</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a360232701f9e5011f3a269f9936abcfa" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnDeleteWall</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aeb53258a027811a3f03d9b3fb391f557" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnDeleteWayPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc3ee1d04e0db44df5a8e8272992df0f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnEditGoal</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ae8be7638cfec3a3f37f6695dc5f9a56c" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnEditRobot</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a71c8af71b6e954bdab62674ffbe9f57f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnEditWall</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a6a6490871621fe69c86792236653f301" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnEditWayPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a4ba6efb5ffc379abfa7c7a91d5e417e7" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnKeyDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1afb11e5ee028da0df3f2795f4903d9738" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnLeftDClick</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a998a0178eb3c30386eeea48044c42b6d" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnLeftDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ac0b304b2731408ab461ef4a9ab270796" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnLeftUp</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a7015657b025f6e28e97e12ab999a871f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnMiddleDClick</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aa1e1ac2e86c74a8d050ed842a8f65489" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnMiddleDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ad954c2928c692e7e51d832f6a544f95e" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnMiddleUp</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a067985975dced40b93d9b1a075114f7f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnMouseMotion</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a88ab35d12f8386d8080e0702aeb4c9b8" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnNotificationEvent</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a136eef101bb94f4e8ecdc28843a3c2b0" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnPaint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1add1acc11ff6342a4d811bbd6b8801c11" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnRightDClick</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aee2eaf6ba039d01d273e8ade934d9b67" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnRightDown</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1acd77d27fafbab31d1b946485cc86ce5c" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnRightUp</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aa61a36d6071cdad287af904b793a708f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnShapeInfo</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a9c4ebc560a601db8e049ccfaf1d11592" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnSize</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a19f7ecff2bf134165eb9cd20ba5fe773" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>OnWorldInfo</name></member>
+      <member refid="class_base_1_1_observer_1aeabd57c2929d345f45132d4c0c1c6c58" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>operator&lt;</name></member>
+      <member refid="class_base_1_1_observer_1aca74f78fc397401d5e90cd85193bd84c" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>operator==</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ab498b81c0619bc6109548582addc7e02" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>populate</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1acc557a1e3add81ad5d045a05a0ad1a8f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>popupPoint</name></member>
+      <member refid="class_view_1_1_view_object_1a7b0dee4ac27877d28968858214e708e3" prot="protected" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>rebindModelObject</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aeeab76a7ea395d141ef6860d74088521" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>remove</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1af3ba30c00eaedf7bbb67b731f12d1af7" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>removeGenericShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ac40c2e62c75618d63e09a0d4f0ca4bb4" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>removeShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a274b8ff8d7d6bfe6e40c04cbd1c526de" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>removeShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ae94d4410e1250dfc2c2221265be10c24" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>removeShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a14bd783613cbd6aa65eaabfe873d7369" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>removeShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a9cc3e904305ee1e99f916ecdcbd757b7" prot="protected" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>render</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ac099d559d44c8cd12a90aa55c4d5e8aa" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>RESIZING</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1afc6ffd527bcd9970f12e5fd70a841782" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>RobotWorldCanvas</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aff3e613f2782874b4560a015be7b6180" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>RobotWorldCanvas</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a0f505fef4f08daaa9ebd21ff392c698f" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>screenPointFor</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ac864fac72e4714ddcc88400c3d0a2568" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>selectedShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a9451f60f588b0c4b4d27bed85b0e41ac" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>selectionEnabled</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a91fc7b9d37d228ba9285fe82dab04fbb" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>selectShapeAt</name></member>
+      <member refid="class_view_1_1_view_object_1aff22ce3c0e7d0db12837f16902595c24" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>setModelObject</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a2829529a8b4221f072aeac196bbc9b17" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>setRobotWorld</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a51477f3840089817d00ed6f2dee7c69e" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>setSelectedShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1ab2367237b4f1a96d0094f06156a828f9" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>shapes</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a9cf3f42564d08cbe1af69125719c0608" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>startActionPoint</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1aa1027eb995295f928f8bef3a1a097005" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>startActionShape</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a8090bb95c46c33f685d681a7e5d7d23f" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>startActionSize</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1abc67062a4462aa11fab88321c13bc470ad239f54ddcd5d10a92a589f6ae5d28a8" prot="private" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>STARTDRAGGING</name></member>
+      <member refid="class_base_1_1_observer_1a0646f881f6716ab7be41ecefa74b5071" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>stopHandlingNotificationsFor</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a20eb2ae3ba32d1a1b8994025e0c6bc39" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>unpopulate</name></member>
+      <member refid="class_view_1_1_view_object_1aa54c31897c07be82e15f595736f4ebe9" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>ViewObject</name></member>
+      <member refid="class_view_1_1_view_object_1abbc94f6ef3de75d64602e4d26694f2cc" prot="public" virt="non-virtual"><scope>View::RobotWorldCanvas</scope><name>ViewObject</name></member>
+      <member refid="class_base_1_1_observer_1aca7a3c17bdc9d86a9f67519779baf2e9" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>~Observer</name></member>
+      <member refid="class_view_1_1_robot_world_canvas_1a1ee3d62d9f1333010356dc6a8c9044e1" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>~RobotWorldCanvas</name></member>
+      <member refid="class_view_1_1_view_object_1aeece80891c9da5b57181e3c42ce25eec" prot="public" virt="virtual"><scope>View::RobotWorldCanvas</scope><name>~ViewObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

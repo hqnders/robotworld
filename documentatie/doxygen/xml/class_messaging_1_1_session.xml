@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_messaging_1_1_session" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Messaging::Session</compoundname>
+    <derivedcompoundref refid="class_messaging_1_1_client_session" prot="public" virt="virtual">Messaging::ClientSession</derivedcompoundref>
+    <derivedcompoundref refid="class_messaging_1_1_server_session" prot="public" virt="virtual">Messaging::ServerSession</derivedcompoundref>
+    <includes refid="_session_8hpp" local="no">Session.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_messaging_1_1_session_1aae95e1daf9716126c33e59d5f28d6271" prot="protected" static="no" mutable="no">
+        <type>boost::asio::ip::tcp::socket</type>
+        <definition>boost::asio::ip::tcp::socket Messaging::Session::socket</definition>
+        <argsstring></argsstring>
+        <name>socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="210" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_session_1a4a88bd6b136ddf540e0230c0c71a97a1" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt; char &gt; Messaging::Session::headerBuffer</definition>
+        <argsstring></argsstring>
+        <name>headerBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="211" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_messaging_1_1_session_1a1a1a1351d07b456e3a9c229d94e143d0" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt; char &gt; Messaging::Session::bodyBuffer</definition>
+        <argsstring></argsstring>
+        <name>bodyBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="212" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_messaging_1_1_session_1ab2e5e804ffa5711fbc7007f07180a0df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Session::Session</definition>
+        <argsstring>(boost::asio::io_service &amp;io_service)</argsstring>
+        <name>Session</name>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>io_service</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="29" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1a08a8af25b6d4def28872fca6f38d286c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Messaging::Session::~Session</definition>
+        <argsstring>()</argsstring>
+        <name>~Session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="36" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1a89cbd6e05fdbbe1c9e26cbcab92d6044" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::Session::start</definition>
+        <argsstring>()=0</argsstring>
+        <name>start</name>
+        <reimplementedby refid="class_messaging_1_1_server_session_1a5b700fe14c9ec5fc54fde5a8eab22da6">start</reimplementedby>
+        <reimplementedby refid="class_messaging_1_1_client_session_1abdafb1626e9eb590ae2ed984e095a490">start</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typically a <ref refid="class_messaging_1_1_server_session" kindref="compound">ServerSession</ref> has a read/write sequence, a <ref refid="class_messaging_1_1_client_session" kindref="compound">ClientSession</ref> a write/read sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1ac2fbf589586288cee9b408514907d044" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::Session::handleMessageRead</definition>
+        <argsstring>(Message &amp;aMessage)=0</argsstring>
+        <name>handleMessageRead</name>
+        <reimplementedby refid="class_messaging_1_1_server_session_1a294d16e8d6c8839fee2358443d78dc15">handleMessageRead</reimplementedby>
+        <reimplementedby refid="class_messaging_1_1_client_session_1a0539a7c332de1b853fd3405ac23b696c">handleMessageRead</reimplementedby>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the fact that a message is read. This function is called by the framework after the message (header + body) is read. Normally this is the only function that a <ref refid="class_messaging_1_1_server_session" kindref="compound">ServerSession</ref> or <ref refid="class_messaging_1_1_client_session" kindref="compound">ClientSession</ref> has to implement. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1afcf204df8f7e67e470d454d9de561515" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Messaging::Session::handleMessageWritten</definition>
+        <argsstring>(Message &amp;aMessage)=0</argsstring>
+        <name>handleMessageWritten</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Handle the fact that a message is written. This function is called by the framework after the message (header + body) is written. Normally this is the only function that a <ref refid="class_messaging_1_1_server_session" kindref="compound">ServerSession</ref> or <ref refid="class_messaging_1_1_client_session" kindref="compound">ClientSession</ref> has to implement. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1aedafb8b5c664cd9d2d86b90b863bde77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boost::asio::ip::tcp::socket &amp;</type>
+        <definition>boost::asio::ip::tcp::socket&amp; Messaging::Session::getSocket</definition>
+        <argsstring>()</argsstring>
+        <name>getSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function must be public or <ref refid="class_messaging_1_1_client" kindref="compound">Client</ref> and <ref refid="class_messaging_1_1_server" kindref="compound">Server</ref> should be friend of <ref refid="class_messaging_1_1_session" kindref="compound">Session</ref></para><para><simplesect kind="return"><para>the socket of this <ref refid="class_messaging_1_1_session" kindref="compound">Session</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_messaging_1_1_session_1a9b5aa90c447db3b432751f453565e84b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::readMessage</definition>
+        <argsstring>()</argsstring>
+        <name>readMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>readMessage will read the message in 2 a-sync reads, 1 for the header and 1 for the body. After each read a callback will be called that should handle the stuff just read. After reading the full message handleMessageRead will be called whose responsibility it is to handle the message as a whole.</para><para><simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1a1ce6c51bea887b0745318de8de202af7" kindref="member">Session::handleHeaderRead</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1a9b2379db03dd4b22896df3b6891509a9" kindref="member">Session::handleBodyRead</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1ac2fbf589586288cee9b408514907d044" kindref="member">Session::handleMessageRead</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="76" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="76" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1a1ce6c51bea887b0745318de8de202af7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::handleHeaderRead</definition>
+        <argsstring>(Message &amp;aMessage, const boost::system::error_code &amp;error, size_t UNUSEDPARAM(bytes_transferred))</argsstring>
+        <name>handleHeaderRead</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>size_t </type>
+          <declname>UNUSEDPARAM</declname>
+          <array>bytes_transferred</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called after the header bytes are read. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="87" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="87" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1a9b2379db03dd4b22896df3b6891509a9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::handleBodyRead</definition>
+        <argsstring>(Message &amp;aMessage, const boost::system::error_code &amp;error, size_t bytes_transferred)</argsstring>
+        <name>handleBodyRead</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bytes_transferred</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function as called after the body bytes are read.</para><para>Any error handling (throwing an exception ;-)) is done in this function and then the function with the same name but without the error is called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="110" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="110" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1a224c7c9cc62b4b9e3ccd21c3121f9b03" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::handleMessageRead</definition>
+        <argsstring>(Message &amp;aMessage, const boost::system::error_code &amp;error, size_t UNUSEDPARAM(bytes_transferred))</argsstring>
+        <name>handleMessageRead</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <param>
+          <type>size_t </type>
+          <declname>UNUSEDPARAM</declname>
+          <array>bytes_transferred</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called after both the header and body bytes are read. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="131" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="131" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1af6693149abfd302fd6285d99a0131f18" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::writeMessage</definition>
+        <argsstring>(Message &amp;aMessage)</argsstring>
+        <name>writeMessage</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>writeMessage will write the message in 2 a-sync writes, 1 for the header and 1 for the body. After each write a callback will be called that should handle the stuff just read. After writing the full message handleMessageWritten will be called.</para><para><simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1aa6bb0133b721e77c31411cccc1eb6c40" kindref="member">Session::handleHeaderWritten</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1a42e7eb7f1e5d41861417d03dcb5419e7" kindref="member">Session::handleBodyWritten</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_messaging_1_1_session_1afcf204df8f7e67e470d454d9de561515" kindref="member">Session::handleMessageWritten</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="153" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="153" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1aa6bb0133b721e77c31411cccc1eb6c40" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::handleHeaderWritten</definition>
+        <argsstring>(Message &amp;aMessage, const boost::system::error_code &amp;error)</argsstring>
+        <name>handleHeaderWritten</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called after the header bytes are written. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="162" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="162" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1a42e7eb7f1e5d41861417d03dcb5419e7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::handleBodyWritten</definition>
+        <argsstring>(Message &amp;aMessage, const boost::system::error_code &amp;error)</argsstring>
+        <name>handleBodyWritten</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called after the body bytes are written. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="179" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="179" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_messaging_1_1_session_1a4ad739e7dea45e860feae03c2ae728b2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Session::handleMessageWritten</definition>
+        <argsstring>(Message &amp;aMessage, const boost::system::error_code &amp;error)</argsstring>
+        <name>handleMessageWritten</name>
+        <param>
+          <type><ref refid="struct_messaging_1_1_message" kindref="compound">Message</ref> &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <param>
+          <type>const boost::system::error_code &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called after both the header and body bytes are written.</para><para>Any error handling (throwing an exception ;-)) is done in this function and then the function with the same name but without the error is called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="197" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="197" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A session is an encapsulation of a request/response transaction sequence. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="676">
+        <label>Messaging::ServerSession</label>
+        <link refid="class_messaging_1_1_server_session"/>
+        <childnode refid="674" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="675">
+        <label>Messaging::ClientSession</label>
+        <link refid="class_messaging_1_1_client_session"/>
+        <childnode refid="674" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="674">
+        <label>Messaging::Session</label>
+        <link refid="class_messaging_1_1_session"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Session.hpp" bodystart="22" bodyend="213"/>
+    <listofallmembers>
+      <member refid="class_messaging_1_1_session_1a1a1a1351d07b456e3a9c229d94e143d0" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>bodyBuffer</name></member>
+      <member refid="class_messaging_1_1_session_1aedafb8b5c664cd9d2d86b90b863bde77" prot="public" virt="non-virtual"><scope>Messaging::Session</scope><name>getSocket</name></member>
+      <member refid="class_messaging_1_1_session_1a9b2379db03dd4b22896df3b6891509a9" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>handleBodyRead</name></member>
+      <member refid="class_messaging_1_1_session_1a42e7eb7f1e5d41861417d03dcb5419e7" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>handleBodyWritten</name></member>
+      <member refid="class_messaging_1_1_session_1a1ce6c51bea887b0745318de8de202af7" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>handleHeaderRead</name></member>
+      <member refid="class_messaging_1_1_session_1aa6bb0133b721e77c31411cccc1eb6c40" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>handleHeaderWritten</name></member>
+      <member refid="class_messaging_1_1_session_1ac2fbf589586288cee9b408514907d044" prot="public" virt="pure-virtual"><scope>Messaging::Session</scope><name>handleMessageRead</name></member>
+      <member refid="class_messaging_1_1_session_1a224c7c9cc62b4b9e3ccd21c3121f9b03" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>handleMessageRead</name></member>
+      <member refid="class_messaging_1_1_session_1afcf204df8f7e67e470d454d9de561515" prot="public" virt="pure-virtual"><scope>Messaging::Session</scope><name>handleMessageWritten</name></member>
+      <member refid="class_messaging_1_1_session_1a4ad739e7dea45e860feae03c2ae728b2" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>handleMessageWritten</name></member>
+      <member refid="class_messaging_1_1_session_1a4a88bd6b136ddf540e0230c0c71a97a1" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>headerBuffer</name></member>
+      <member refid="class_messaging_1_1_session_1a9b5aa90c447db3b432751f453565e84b" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>readMessage</name></member>
+      <member refid="class_messaging_1_1_session_1ab2e5e804ffa5711fbc7007f07180a0df" prot="public" virt="non-virtual"><scope>Messaging::Session</scope><name>Session</name></member>
+      <member refid="class_messaging_1_1_session_1aae95e1daf9716126c33e59d5f28d6271" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>socket</name></member>
+      <member refid="class_messaging_1_1_session_1a89cbd6e05fdbbe1c9e26cbcab92d6044" prot="public" virt="pure-virtual"><scope>Messaging::Session</scope><name>start</name></member>
+      <member refid="class_messaging_1_1_session_1af6693149abfd302fd6285d99a0131f18" prot="protected" virt="non-virtual"><scope>Messaging::Session</scope><name>writeMessage</name></member>
+      <member refid="class_messaging_1_1_session_1a08a8af25b6d4def28872fca6f38d286c" prot="public" virt="virtual"><scope>Messaging::Session</scope><name>~Session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

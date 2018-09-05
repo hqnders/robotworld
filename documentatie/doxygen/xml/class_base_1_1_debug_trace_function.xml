@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_base_1_1_debug_trace_function" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Base::DebugTraceFunction</compoundname>
+    <derivedcompoundref refid="class_application_1_1_widget_debug_trace_function" prot="public" virt="non-virtual">Application::WidgetDebugTraceFunction</derivedcompoundref>
+    <derivedcompoundref refid="class_base_1_1_std_out_debug_trace_function" prot="public" virt="non-virtual">Base::StdOutDebugTraceFunction</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_base_1_1_debug_trace_function_1a10bd2fd587e2312ca418f594d33c3933" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Base::DebugTraceFunction::~DebugTraceFunction</definition>
+        <argsstring>()</argsstring>
+        <name>~DebugTraceFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Virtual dtor as this is meant as a base class </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.hpp" line="26" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_base_1_1_debug_trace_function_1a54f5a1f127e7624e50bb1a43146f8998" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Base::DebugTraceFunction::trace</definition>
+        <argsstring>(const std::string &amp;aText)=0</argsstring>
+        <name>trace</name>
+        <reimplementedby refid="class_base_1_1_std_out_debug_trace_function_1a28cdac2a99589f238350d78743b920be">trace</reimplementedby>
+        <reimplementedby refid="class_application_1_1_widget_debug_trace_function_1ad4bf02cb1270957ff75fd07fe6b7f678">trace</reimplementedby>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aText</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text that will be send to the final trace destination. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.hpp" line="31" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="452">
+        <label>Application::WidgetDebugTraceFunction</label>
+        <link refid="class_application_1_1_widget_debug_trace_function"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>Base::DebugTraceFunction</label>
+        <link refid="class_base_1_1_debug_trace_function"/>
+      </node>
+      <node id="453">
+        <label>Base::StdOutDebugTraceFunction</label>
+        <link refid="class_base_1_1_std_out_debug_trace_function"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/DebugTraceFunction.hpp" bodystart="20" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_debug_trace_function_1a54f5a1f127e7624e50bb1a43146f8998" prot="public" virt="pure-virtual"><scope>Base::DebugTraceFunction</scope><name>trace</name></member>
+      <member refid="class_base_1_1_debug_trace_function_1a10bd2fd587e2312ca418f594d33c3933" prot="public" virt="virtual"><scope>Base::DebugTraceFunction</scope><name>~DebugTraceFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

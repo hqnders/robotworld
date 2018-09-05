@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_utils_1_1_math_utils" kind="class" language="C++" prot="public">
+    <compoundname>Utils::MathUtils</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_utils_1_1_math_utils_1a1c1f12a1367c1bb5370e03228f0f7e76" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Utils::MathUtils::toRadians</definition>
+        <argsstring>(float aDegrees)</argsstring>
+        <name>toRadians</name>
+        <param>
+          <type>float</type>
+          <declname>aDegrees</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.hpp" line="26" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1_1_math_utils_1a375dca50afb40203156c8e1e30354659" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Utils::MathUtils::toDegrees</definition>
+        <argsstring>(float aRadian)</argsstring>
+        <name>toDegrees</name>
+        <param>
+          <type>float</type>
+          <declname>aRadian</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.hpp" line="30" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MathUtils.hpp" bodystart="20" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_utils_1_1_math_utils_1a375dca50afb40203156c8e1e30354659" prot="public" virt="non-virtual"><scope>Utils::MathUtils</scope><name>toDegrees</name></member>
+      <member refid="class_utils_1_1_math_utils_1a1c1f12a1367c1bb5370e03228f0f7e76" prot="public" virt="non-virtual"><scope>Utils::MathUtils</scope><name>toRadians</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

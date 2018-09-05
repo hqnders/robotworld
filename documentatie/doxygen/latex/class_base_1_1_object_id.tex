@@ -1,0 +1,435 @@
+\hypertarget{class_base_1_1_object_id}{}\section{Base\+:\+:Object\+Id Class Reference}
+\label{class_base_1_1_object_id}\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+
+
+{\ttfamily \#include $<$Object\+Id.\+hpp$>$}
+
+
+
+Inheritance diagram for Base\+:\+:Object\+Id\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_base_1_1_object_id__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+:\+:Object\+Id\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_base_1_1_object_id__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char {\bfseries value\+\_\+type}\hypertarget{class_base_1_1_object_id_a2a6b8719e9bd362d3cae8a901d238f6f}{}\label{class_base_1_1_object_id_a2a6b8719e9bd362d3cae8a901d238f6f}
+
+\item 
+typedef unsigned char $\ast$ {\bfseries pointer}\hypertarget{class_base_1_1_object_id_a36a06bae51c88c5893592b28bd9311e5}{}\label{class_base_1_1_object_id_a36a06bae51c88c5893592b28bd9311e5}
+
+\item 
+typedef const unsigned char $\ast$ {\bfseries const\+\_\+pointer}\hypertarget{class_base_1_1_object_id_a1ce45b4d8cec8780cf96e8aa9b921930}{}\label{class_base_1_1_object_id_a1ce45b4d8cec8780cf96e8aa9b921930}
+
+\item 
+typedef unsigned char \& {\bfseries reference}\hypertarget{class_base_1_1_object_id_a486ec6587bbbd140dd776281788e98ee}{}\label{class_base_1_1_object_id_a486ec6587bbbd140dd776281788e98ee}
+
+\item 
+typedef const unsigned char \& {\bfseries const\+\_\+reference}\hypertarget{class_base_1_1_object_id_a0a971f0617804dc1e107865f3bb473d3}{}\label{class_base_1_1_object_id_a0a971f0617804dc1e107865f3bb473d3}
+
+\item 
+typedef std\+::vector$<$ unsigned char $>$ {\bfseries base}\hypertarget{class_base_1_1_object_id_af6e0e53cd168c8de532d458eedefba53}{}\label{class_base_1_1_object_id_af6e0e53cd168c8de532d458eedefba53}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Iterator $>$ }\\{\bfseries Object\+Id} (Input\+Iterator first, Input\+Iterator last)\hypertarget{class_base_1_1_object_id_a96f9abac9baddbf62eaad80bd1499e72}{}\label{class_base_1_1_object_id_a96f9abac9baddbf62eaad80bd1499e72}
+
+\item 
+{\bfseries Object\+Id} (const std\+::string \&an\+Object\+Id\+String)\hypertarget{class_base_1_1_object_id_aca3e55b04c30d9f939f04b2de5aa25c5}{}\label{class_base_1_1_object_id_aca3e55b04c30d9f939f04b2de5aa25c5}
+
+\item 
+\hyperlink{class_base_1_1_object_id}{Object\+Id} \& {\bfseries operator=} (const \hyperlink{class_base_1_1_object_id}{Object\+Id} \&an\+Object\+Id)\hypertarget{class_base_1_1_object_id_a449f58cf08f6684639023708b882a00e}{}\label{class_base_1_1_object_id_a449f58cf08f6684639023708b882a00e}
+
+\item 
+bool \hyperlink{class_base_1_1_object_id_abe7eb5f3190496d40e1f364b6145e4b2}{operator==} (const \hyperlink{class_base_1_1_object_id}{Object\+Id} \&an\+Object\+Id) const 
+\item 
+bool \hyperlink{class_base_1_1_object_id_ad69ac55dac3aafd3ea38281ae7d762c0}{operator$<$} (const \hyperlink{class_base_1_1_object_id}{Object\+Id} \&an\+Object\+Id) const 
+\item 
+std\+::string \hyperlink{class_base_1_1_object_id_af3e9b3d04e1628fa6c1973920fabcd14}{to\+String} () const 
+\item 
+void \hyperlink{class_base_1_1_object_id_ae32c9ac9ee69665fed2771854da880b6}{from\+String} (const std\+::string \&an\+Object\+Id\+String)
+\item 
+bool {\bfseries is\+Null} () const \hypertarget{class_base_1_1_object_id_a113567944442dcaebfbb8abe2e8952fb}{}\label{class_base_1_1_object_id_a113567944442dcaebfbb8abe2e8952fb}
+
+\item 
+bool {\bfseries is\+Valid} () const \hypertarget{class_base_1_1_object_id_a7b5254288f7bf70ed7a6268abc3b930b}{}\label{class_base_1_1_object_id_a7b5254288f7bf70ed7a6268abc3b930b}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_base_1_1_object_id_afdc5a733d73342473fec933503e49a6e}{as\+String} () const 
+\item 
+std\+::string \hyperlink{class_base_1_1_object_id_a38e6fd78d084461a0535bd86b998db56}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_base_1_1_object_id}{Object\+Id} \hyperlink{class_base_1_1_object_id_a5ec6e05d2302d16274d66c815e43baf9}{new\+Object\+Id} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{class_base_1_1_object_id_a8ccba80236842b454cf6e7dda04e12f5}{object\+Id\+Namespace} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{C\+O\+R\+BA required interface for Portable\+Server\+:\+:Object\+Id and sequence$<$ T $>$}
+\begin{DoxyCompactItemize}
+\item 
+static pointer \hyperlink{class_base_1_1_object_id_a3028106d58f6db9df06c2faf797f30f8}{allocbuf} (unsigned long nelems)
+\item 
+static void \hyperlink{class_base_1_1_object_id_a2a50ef3cccf4fd20fd17f2c52fd00c9d}{freebuf} (pointer aT)
+\item 
+\hyperlink{class_base_1_1_object_id_a62a23904516e14dbef8fee4e5804fa6c}{Object\+Id} ()
+\item 
+\hyperlink{class_base_1_1_object_id_a198bf2ac34a1ab0150a43c97d8002cec}{Object\+Id} (unsigned long max)
+\item 
+\hyperlink{class_base_1_1_object_id_a4f0abd7ada085282e495d1a5fab3ea43}{Object\+Id} (unsigned long, unsigned long len, unsigned char $\ast$a\+Data\+Pointer, bool)
+\item 
+\hyperlink{class_base_1_1_object_id_abdd4924553c835229354677dad7c3c26}{Object\+Id} (const \hyperlink{class_base_1_1_object_id}{Object\+Id} \&an\+Object\+Id)
+\item 
+virtual \hyperlink{class_base_1_1_object_id_a62fd29d91e79c3c9130f45cbb32275fc}{$\sim$\+Object\+Id} ()
+\item 
+unsigned long \hyperlink{class_base_1_1_object_id_a4a48d8c6f85bd9fd2991710635d316d8}{maximum} () const 
+\item 
+void \hyperlink{class_base_1_1_object_id_a2eae06c2581239d292ea3467c3cfdfba}{length} (unsigned long len)
+\item 
+unsigned long \hyperlink{class_base_1_1_object_id_aad6bf09824bc18612fa6654cb5f0bb0f}{length} () const 
+\item 
+reference \hyperlink{class_base_1_1_object_id_a518d985d2a670fdcb6ef360e2655e44b}{operator\mbox{[}$\,$\mbox{]}} (unsigned long index)
+\item 
+const\+\_\+reference \hyperlink{class_base_1_1_object_id_a8a1c7b67bea028bf2073f81751fc3f94}{operator\mbox{[}$\,$\mbox{]}} (unsigned long index) const 
+\item 
+bool \hyperlink{class_base_1_1_object_id_a27eb724a90e960cdf691c76391cc786d}{release} () const 
+\item 
+void \hyperlink{class_base_1_1_object_id_a5469cb64007c5007be8ab2893fb3848a}{replace} (unsigned long, unsigned long len, pointer new\+Data, bool)
+\item 
+pointer \hyperlink{class_base_1_1_object_id_aa91cd5a6d4b78734f903138614098868}{get\+\_\+buffer} (bool orphan=false)
+\item 
+const\+\_\+pointer \hyperlink{class_base_1_1_object_id_a0f4d8c05f11d882598daf15c2c1cd714}{get\+\_\+buffer} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_base_1_1_object_id}{Object\+Id} class is also used in Dagda. Therefore it has the required Portable\+Server\+::\+Object\+Id / unbounded sequence interface.
+
+The O\+ID class is 16 bytes, this class is 24 bytes. If one is memory constraint the O\+ID class may be of some help. Be warned\+: the O\+ID class is not actively maintained anymore (but than, who reeds this besides me, the maintainer). 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!Object\+Id@{Object\+Id}}
+\index{Object\+Id@{Object\+Id}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{Object\+Id()}{ObjectId()}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+::\+Object\+Id\+::\+Object\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a62a23904516e14dbef8fee4e5804fa6c}{}\label{class_base_1_1_object_id_a62a23904516e14dbef8fee4e5804fa6c}
+Default ctor.
+
+Also specified by \index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!Object\+Id@{Object\+Id}}
+\index{Object\+Id@{Object\+Id}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{Object\+Id(unsigned long max)}{ObjectId(unsigned long max)}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+::\+Object\+Id\+::\+Object\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a198bf2ac34a1ab0150a43c97d8002cec}{}\label{class_base_1_1_object_id_a198bf2ac34a1ab0150a43c97d8002cec}
+Maximum ctor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Initial elements reservation \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!Object\+Id@{Object\+Id}}
+\index{Object\+Id@{Object\+Id}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{Object\+Id(unsigned long, unsigned long len, unsigned char $\ast$a\+Data\+Pointer, bool)}{ObjectId(unsigned long, unsigned long len, unsigned char *aDataPointer, bool)}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+::\+Object\+Id\+::\+Object\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{long, }
+\item[{unsigned long}]{len, }
+\item[{unsigned char $\ast$}]{a\+Data\+Pointer, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a4f0abd7ada085282e495d1a5fab3ea43}{}\label{class_base_1_1_object_id_a4f0abd7ada085282e495d1a5fab3ea43}
+Data ctor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Initial elements reservation. Is actually ignored \\
+\hline
+{\em length} & Length of the data \\
+\hline
+{\em data} & Start of the data \\
+\hline
+{\em release} & If true the sequences owns and manages any containing pointers Is actually ignored and always true. \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!Object\+Id@{Object\+Id}}
+\index{Object\+Id@{Object\+Id}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{Object\+Id(const Object\+Id \&an\+Object\+Id)}{ObjectId(const ObjectId &anObjectId)}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+::\+Object\+Id\+::\+Object\+Id (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object\+Id} \&}]{an\+Object\+Id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_abdd4924553c835229354677dad7c3c26}{}\label{class_base_1_1_object_id_abdd4924553c835229354677dad7c3c26}
+Makes a deep copy. \index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!````~Object\+Id@{$\sim$\+Object\+Id}}
+\index{````~Object\+Id@{$\sim$\+Object\+Id}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{$\sim$\+Object\+Id()}{~ObjectId()}}]{\setlength{\rightskip}{0pt plus 5cm}Base\+::\+Object\+Id\+::$\sim$\+Object\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_base_1_1_object_id_a62fd29d91e79c3c9130f45cbb32275fc}{}\label{class_base_1_1_object_id_a62fd29d91e79c3c9130f45cbb32275fc}
+Also specified by Portable\+Server\+::\+Object\+Id and sequence$<$ T $>$ 
+
+\subsection{Member Function Documentation}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!allocbuf@{allocbuf}}
+\index{allocbuf@{allocbuf}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{allocbuf(unsigned long nelems)}{allocbuf(unsigned long nelems)}}]{\setlength{\rightskip}{0pt plus 5cm}static pointer Base\+::\+Object\+Id\+::allocbuf (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{nelems}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_base_1_1_object_id_a3028106d58f6db9df06c2faf797f30f8}{}\label{class_base_1_1_object_id_a3028106d58f6db9df06c2faf797f30f8}
+Do not use. It always throws an Danu\+::\+Invalid\+Request exception.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nelems} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a new-\/ed buffer 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+::\+Object\+Id\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_base_1_1_object_id_a38e6fd78d084461a0535bd86b998db56}{}\label{class_base_1_1_object_id_a38e6fd78d084461a0535bd86b998db56}
+Returns a description of the object with all data of the object usable for debugging \index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+::\+Object\+Id\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_base_1_1_object_id_afdc5a733d73342473fec933503e49a6e}{}\label{class_base_1_1_object_id_afdc5a733d73342473fec933503e49a6e}
+Returns a 1-\/line description of the object \index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!freebuf@{freebuf}}
+\index{freebuf@{freebuf}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{freebuf(pointer a\+T)}{freebuf(pointer aT)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Base\+::\+Object\+Id\+::freebuf (
+\begin{DoxyParamCaption}
+\item[{pointer}]{aT}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_base_1_1_object_id_a2a50ef3cccf4fd20fd17f2c52fd00c9d}{}\label{class_base_1_1_object_id_a2a50ef3cccf4fd20fd17f2c52fd00c9d}
+Do not use. It always throws an Danu\+::\+Invalid\+Request exception.
+
+
+\begin{DoxyParams}{Parameters}
+{\em aT} & The buffer to free \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!from\+String@{from\+String}}
+\index{from\+String@{from\+String}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{from\+String(const std\+::string \&an\+Object\+Id\+String)}{fromString(const std::string &anObjectIdString)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Object\+Id\+::from\+String (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{an\+Object\+Id\+String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_ae32c9ac9ee69665fed2771854da880b6}{}\label{class_base_1_1_object_id_ae32c9ac9ee69665fed2771854da880b6}
+Calling obj1.\+from\+String( obj2.\+to\+String()) has the same effect as assignment, obj1 = obj2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em an\+Object\+Id\+String} & A string representation of an \hyperlink{class_base_1_1_object_id}{Object\+Id}. \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!get\+\_\+buffer@{get\+\_\+buffer}}
+\index{get\+\_\+buffer@{get\+\_\+buffer}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{get\+\_\+buffer(bool orphan=false)}{get_buffer(bool orphan=false)}}]{\setlength{\rightskip}{0pt plus 5cm}pointer Base\+::\+Object\+Id\+::get\+\_\+buffer (
+\begin{DoxyParamCaption}
+\item[{bool}]{orphan = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_aa91cd5a6d4b78734f903138614098868}{}\label{class_base_1_1_object_id_aa91cd5a6d4b78734f903138614098868}
+
+\begin{DoxyParams}{Parameters}
+{\em orphan} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_base_1_1_object_id}{Object\+Id} as a modifyable continues buffer. If the buffer is modified as that it expands the buffer this  lead to failure eventually 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!get\+\_\+buffer@{get\+\_\+buffer}}
+\index{get\+\_\+buffer@{get\+\_\+buffer}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{get\+\_\+buffer() const }{get_buffer() const }}]{\setlength{\rightskip}{0pt plus 5cm}const\+\_\+pointer Base\+::\+Object\+Id\+::get\+\_\+buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a0f4d8c05f11d882598daf15c2c1cd714}{}\label{class_base_1_1_object_id_a0f4d8c05f11d882598daf15c2c1cd714}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{class_base_1_1_object_id}{Object\+Id} as a readonly continues buffer. 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!length@{length}}
+\index{length@{length}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{length(unsigned long len)}{length(unsigned long len)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Object\+Id\+::length (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a2eae06c2581239d292ea3467c3cfdfba}{}\label{class_base_1_1_object_id_a2eae06c2581239d292ea3467c3cfdfba}
+If the current length of the sequence is less than the new length we append new elements which are created by calling the default constructor. If the current length is more than the new length we just cut of the tail of the sequence.
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The new length of the sequence \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!length@{length}}
+\index{length@{length}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{length() const }{length() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Base\+::\+Object\+Id\+::length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_aad6bf09824bc18612fa6654cb5f0bb0f}{}\label{class_base_1_1_object_id_aad6bf09824bc18612fa6654cb5f0bb0f}
+\begin{DoxyReturn}{Returns}
+The current length of the \hyperlink{class_base_1_1_object_id}{Object\+Id} 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!maximum@{maximum}}
+\index{maximum@{maximum}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{maximum() const }{maximum() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Base\+::\+Object\+Id\+::maximum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a4a48d8c6f85bd9fd2991710635d316d8}{}\label{class_base_1_1_object_id_a4a48d8c6f85bd9fd2991710635d316d8}
+\begin{DoxyReturn}{Returns}
+The virtual maximum of bytes for this \hyperlink{class_base_1_1_object_id}{Object\+Id}. This maximum can safely be ignored. 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!new\+Object\+Id@{new\+Object\+Id}}
+\index{new\+Object\+Id@{new\+Object\+Id}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{new\+Object\+Id()}{newObjectId()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Id} Base\+::\+Object\+Id\+::new\+Object\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_base_1_1_object_id_a5ec6e05d2302d16274d66c815e43baf9}{}\label{class_base_1_1_object_id_a5ec6e05d2302d16274d66c815e43baf9}
+This function returns an \hyperlink{class_base_1_1_object_id}{Object\+Id} that is guaranteed to be unique in the application it is generated in. If multiple application use the same library it is the responsibility of the applications to ensure uniqueness between applications. \index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{operator$<$(const Object\+Id \&an\+Object\+Id) const }{operator<(const ObjectId &anObjectId) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+::\+Object\+Id\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object\+Id} \&}]{an\+Object\+Id}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_base_1_1_object_id_ad69ac55dac3aafd3ea38281ae7d762c0}{}\label{class_base_1_1_object_id_ad69ac55dac3aafd3ea38281ae7d762c0}
+
+\begin{DoxyParams}{Parameters}
+{\em an\+Object\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Danu\+::\+Object\+Id part is less 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!operator==@{operator==}}
+\index{operator==@{operator==}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{operator==(const Object\+Id \&an\+Object\+Id) const }{operator==(const ObjectId &anObjectId) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+::\+Object\+Id\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object\+Id} \&}]{an\+Object\+Id}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_base_1_1_object_id_abe7eb5f3190496d40e1f364b6145e4b2}{}\label{class_base_1_1_object_id_abe7eb5f3190496d40e1f364b6145e4b2}
+
+\begin{DoxyParams}{Parameters}
+{\em an\+Object\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the Danu\+::\+Object\+Id part is the same 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{operator[](unsigned long index)}{operator[](unsigned long index)}}]{\setlength{\rightskip}{0pt plus 5cm}reference Base\+::\+Object\+Id\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a518d985d2a670fdcb6ef360e2655e44b}{}\label{class_base_1_1_object_id_a518d985d2a670fdcb6ef360e2655e44b}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The mutable character at index. 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{operator[](unsigned long index) const }{operator[](unsigned long index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const\+\_\+reference Base\+::\+Object\+Id\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a8a1c7b67bea028bf2073f81751fc3f94}{}\label{class_base_1_1_object_id_a8a1c7b67bea028bf2073f81751fc3f94}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The non-\/mutable character at index. 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!release@{release}}
+\index{release@{release}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{release() const }{release() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Base\+::\+Object\+Id\+::release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a27eb724a90e960cdf691c76391cc786d}{}\label{class_base_1_1_object_id_a27eb724a90e960cdf691c76391cc786d}
+This returns always true for a value container
+
+\begin{DoxyReturn}{Returns}
+true if this container owns the data. 
+\end{DoxyReturn}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!replace@{replace}}
+\index{replace@{replace}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{replace(unsigned long, unsigned long len, pointer new\+Data, bool)}{replace(unsigned long, unsigned long len, pointer newData, bool)}}]{\setlength{\rightskip}{0pt plus 5cm}void Base\+::\+Object\+Id\+::replace (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{long, }
+\item[{unsigned long}]{len, }
+\item[{pointer}]{new\+Data, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_a5469cb64007c5007be8ab2893fb3848a}{}\label{class_base_1_1_object_id_a5469cb64007c5007be8ab2893fb3848a}
+
+\begin{DoxyParams}{Parameters}
+{\em max} & Is ignored \\
+\hline
+{\em rel} & Is ignored and is treated as true \\
+\hline
+\end{DoxyParams}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{to\+String() const }{toString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+::\+Object\+Id\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_base_1_1_object_id_af3e9b3d04e1628fa6c1973920fabcd14}{}\label{class_base_1_1_object_id_af3e9b3d04e1628fa6c1973920fabcd14}
+Calling obj1.\+from\+String( obj2.\+to\+String()) has the same effect as assignment, obj1 = obj2.
+
+\begin{DoxyReturn}{Returns}
+std\+::string 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Base\+::\+Object\+Id@{Base\+::\+Object\+Id}!object\+Id\+Namespace@{object\+Id\+Namespace}}
+\index{object\+Id\+Namespace@{object\+Id\+Namespace}!Base\+::\+Object\+Id@{Base\+::\+Object\+Id}}
+\subsubsection[{\texorpdfstring{object\+Id\+Namespace}{objectIdNamespace}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Base\+::\+Object\+Id\+::object\+Id\+Namespace = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_base_1_1_object_id_a8ccba80236842b454cf6e7dda04e12f5}{}\label{class_base_1_1_object_id_a8ccba80236842b454cf6e7dda04e12f5}
+If an \hyperlink{class_base_1_1_object_id}{Object\+Id} should be {\itshape really} universal unique every application should have its own namespace 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Object\+Id.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Object\+Id.\+cpp\end{DoxyCompactItemize}

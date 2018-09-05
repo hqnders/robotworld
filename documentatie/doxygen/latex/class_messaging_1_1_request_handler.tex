@@ -1,0 +1,50 @@
+\hypertarget{class_messaging_1_1_request_handler}{}\section{Messaging\+:\+:Request\+Handler Class Reference}
+\label{class_messaging_1_1_request_handler}\index{Messaging\+::\+Request\+Handler@{Messaging\+::\+Request\+Handler}}
+
+
+{\ttfamily \#include $<$Message\+Handler.\+hpp$>$}
+
+
+
+Inheritance diagram for Messaging\+:\+:Request\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_messaging_1_1_request_handler__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_messaging_1_1_request_handler_afa23f0ab94ae851a487173a5087da898}{handle\+Request} (\hyperlink{struct_messaging_1_1_message}{Message} \&a\+Message)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base server interface for handling remote requests Classes derived from this interface can serve as server in the Messaging protocol by implementing this interface. 
+
+\subsection{Member Function Documentation}
+\index{Messaging\+::\+Request\+Handler@{Messaging\+::\+Request\+Handler}!handle\+Request@{handle\+Request}}
+\index{handle\+Request@{handle\+Request}!Messaging\+::\+Request\+Handler@{Messaging\+::\+Request\+Handler}}
+\subsubsection[{\texorpdfstring{handle\+Request(\+Message \&a\+Message)=0}{handleRequest(Message &aMessage)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Messaging\+::\+Request\+Handler\+::handle\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf Message} \&}]{a\+Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_messaging_1_1_request_handler_afa23f0ab94ae851a487173a5087da898}{}\label{class_messaging_1_1_request_handler_afa23f0ab94ae851a487173a5087da898}
+After this function is called a\+Message is returned as response to the requesting client, i.\+e. it should contain the result/response of/to the request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_model_1_1_robot_a5b52eb37c4e11850c3f60263599bd79c}{model\+::\+Robot}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Message\+Handler.\+hpp\end{DoxyCompactItemize}

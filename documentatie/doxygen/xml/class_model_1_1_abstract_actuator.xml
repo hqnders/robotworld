@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_model_1_1_abstract_actuator" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>model::AbstractActuator</compoundname>
+    <basecompoundref refid="class_model_1_1_model_object" prot="public" virt="non-virtual">model::ModelObject</basecompoundref>
+    <derivedcompoundref refid="class_model_1_1_steering_actuator" prot="public" virt="non-virtual">model::SteeringActuator</derivedcompoundref>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1a6fe9d0ac0c7c6c56176fff61a773a4b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::AbstractActuator::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <reimplements refid="class_model_1_1_model_object_1a9db00b9150a932a1637e425f24c0bdf0">asString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="55" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1ab5199d4458a2913844459832d563f989" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string model::AbstractActuator::asDebugString</definition>
+        <argsstring>() const </argsstring>
+        <name>asDebugString</name>
+        <reimplements refid="class_model_1_1_model_object_1aced22b0b0ee637c598c463de6a1d8d03">asDebugString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a description of the object with all data of the object usable for debugging </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="59" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_model_1_1_abstract_actuator_1ad1067c897d696580dc7bc5713d1357d7" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_model_1_1_abstract_agent" kindref="compound">AbstractAgent</ref> *</type>
+        <definition>AbstractAgent* model::AbstractActuator::agent</definition>
+        <argsstring></argsstring>
+        <name>agent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="62" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1a5bfc45537108943d67c98de7f6f25519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::AbstractActuator::AbstractActuator</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractActuator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="27" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1a9137214d1e7cdb2939c90a858d451ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>model::AbstractActuator::AbstractActuator</definition>
+        <argsstring>(AbstractAgent *anAgent)</argsstring>
+        <name>AbstractActuator</name>
+        <param>
+          <type><ref refid="class_model_1_1_abstract_agent" kindref="compound">AbstractAgent</ref> *</type>
+          <declname>anAgent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1ae0f8d583c4a6f252af9cf0221f69f3c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>model::AbstractActuator::~AbstractActuator</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractActuator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="35" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1adc357b727d6df7f1b0e0238c85fa99b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void model::AbstractActuator::handleCommand</definition>
+        <argsstring>(AbstractCommand &amp;anAbstractCommand)=0</argsstring>
+        <name>handleCommand</name>
+        <reimplementedby refid="class_model_1_1_steering_actuator_1a24503627c8e960eb7206e785906f3ac4">handleCommand</reimplementedby>
+        <param>
+          <type><ref refid="class_model_1_1_abstract_command" kindref="compound">AbstractCommand</ref> &amp;</type>
+          <declname>anAbstractCommand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1a36eb339606068a2dd22c5638628077ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::AbstractActuator::attachAgent</definition>
+        <argsstring>(AbstractAgent *anAgent)</argsstring>
+        <name>attachAgent</name>
+        <param>
+          <type><ref refid="class_model_1_1_abstract_agent" kindref="compound">AbstractAgent</ref> *</type>
+          <declname>anAgent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="43" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_model_1_1_abstract_actuator_1a6499da8f728e56e4bfe6ae3b8601d2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void model::AbstractActuator::detachAgent</definition>
+        <argsstring>()</argsstring>
+        <name>detachAgent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="47" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="390">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="392">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="393">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="394">
+        <label>model::SteeringActuator</label>
+        <link refid="class_model_1_1_steering_actuator"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>model::AbstractActuator</label>
+        <link refid="class_model_1_1_abstract_actuator"/>
+        <childnode refid="390" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="396">
+        <label>model::ModelObject</label>
+        <link refid="class_model_1_1_model_object"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>boost::noncopyable</label>
+      </node>
+      <node id="401">
+        <label>Base::Queue&lt; std::shared_ptr&lt; model::AbstractPercept &gt; &gt;</label>
+        <link refid="class_base_1_1_queue"/>
+      </node>
+      <node id="398">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="400">
+        <label>model::AbstractAgent</label>
+        <link refid="class_model_1_1_abstract_agent"/>
+        <childnode refid="396" relation="public-inheritance">
+        </childnode>
+        <childnode refid="401" relation="usage">
+          <edgelabel>perceptQueue</edgelabel>
+        </childnode>
+      </node>
+      <node id="399">
+        <label>std::enable_shared_from_this&lt; ModelObject &gt;</label>
+      </node>
+      <node id="395">
+        <label>model::AbstractActuator</label>
+        <link refid="class_model_1_1_abstract_actuator"/>
+        <childnode refid="396" relation="public-inheritance">
+        </childnode>
+        <childnode refid="400" relation="usage">
+          <edgelabel>agent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" line="25" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.hpp" bodystart="24" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_model_1_1_abstract_actuator_1a5bfc45537108943d67c98de7f6f25519" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>AbstractActuator</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a9137214d1e7cdb2939c90a858d451ac9" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>AbstractActuator</name></member>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>addObserver</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1ad1067c897d696580dc7bc5713d1357d7" prot="protected" virt="non-virtual"><scope>model::AbstractActuator</scope><name>agent</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1ab5199d4458a2913844459832d563f989" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>asDebugString</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a6fe9d0ac0c7c6c56176fff61a773a4b9" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>asString</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a36eb339606068a2dd22c5638628077ea" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>attachAgent</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1a6499da8f728e56e4bfe6ae3b8601d2ec" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>detachAgent</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>enableNotification</name></member>
+      <member refid="class_model_1_1_model_object_1afc50aa1e512814a9b6c37a4d3f8b4a97" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>getObjectId</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1adc357b727d6df7f1b0e0238c85fa99b2" prot="public" virt="pure-virtual"><scope>model::AbstractActuator</scope><name>handleCommand</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_model_1_1_model_object_1aec6051457cc42ff15ad76dea42278cec" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>notifyObservers</name></member>
+      <member refid="class_model_1_1_model_object_1a8f5b0be9dabedf96e17cf26dfaa58109" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>operator&lt;</name></member>
+      <member refid="class_model_1_1_model_object_1a4dd43ca01fedf5452e9990c1954ada7b" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>operator==</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>removeAllObservers</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>removeObserver</name></member>
+      <member refid="class_model_1_1_model_object_1a5330f9a80aeecb0ffe5110fc74258dcb" prot="public" virt="non-virtual"><scope>model::AbstractActuator</scope><name>toPtr</name></member>
+      <member refid="class_model_1_1_abstract_actuator_1ae0f8d583c4a6f252af9cf0221f69f3c9" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>~AbstractActuator</name></member>
+      <member refid="class_model_1_1_model_object_1a83cf28d0263fca8bbb4003253f767d22" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>~ModelObject</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>model::AbstractActuator</scope><name>~Notifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

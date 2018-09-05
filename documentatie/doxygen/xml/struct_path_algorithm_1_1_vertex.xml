@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_path_algorithm_1_1_vertex" kind="struct" language="C++" prot="public">
+    <compoundname>PathAlgorithm::Vertex</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_path_algorithm_1_1_vertex_1afe7ba337aa9af618c18c7ab19da65ea9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathAlgorithm::Vertex::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="77" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_path_algorithm_1_1_vertex_1ae6428b0c59bbbcd5aad9cf244a38bef2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PathAlgorithm::Vertex::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="78" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_path_algorithm_1_1_vertex_1a8bac4752dead7e6f0eb4fe099eae1eaf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PathAlgorithm::Vertex::actualCost</definition>
+        <argsstring></argsstring>
+        <name>actualCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="80" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_path_algorithm_1_1_vertex_1a316a72f6d405096010224df1a78b8c4d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PathAlgorithm::Vertex::heuristicCost</definition>
+        <argsstring></argsstring>
+        <name>heuristicCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="81" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_path_algorithm_1_1_vertex_1a6a84a2bea6bf4728fb66b0ca6ed80966" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PathAlgorithm::Vertex::Vertex</definition>
+        <argsstring>(int anX, int anY)</argsstring>
+        <name>Vertex</name>
+        <param>
+          <type>int</type>
+          <declname>anX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="23" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_vertex_1ae471ae74a4bf26951391741d2f58d6b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PathAlgorithm::Vertex::Vertex</definition>
+        <argsstring>(const Point &amp;aPoint)</argsstring>
+        <name>Vertex</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aPoint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="34" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_vertex_1a226fcb1a96402593bf0ce3bfede2157a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point</type>
+        <definition>Point PathAlgorithm::Vertex::asPoint</definition>
+        <argsstring>() const </argsstring>
+        <name>asPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="44" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_vertex_1afe13add443706b4fb534fbc0af5b0bfc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathAlgorithm::Vertex::lessCost</definition>
+        <argsstring>(const Vertex &amp;aVertex) const </argsstring>
+        <name>lessCost</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="51" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_vertex_1aea5063979800ccbd795fed9f33cbb483" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathAlgorithm::Vertex::lessId</definition>
+        <argsstring>(const Vertex &amp;aVertex) const </argsstring>
+        <name>lessId</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="63" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="63" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_path_algorithm_1_1_vertex_1a64aa2913bc0e1d1511a452c5d800803a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathAlgorithm::Vertex::equalPoint</definition>
+        <argsstring>(const Vertex &amp;aVertex) const </argsstring>
+        <name>equalPoint</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="72" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="19" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="18" bodyend="82"/>
+    <listofallmembers>
+      <member refid="struct_path_algorithm_1_1_vertex_1a8bac4752dead7e6f0eb4fe099eae1eaf" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>actualCost</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1a226fcb1a96402593bf0ce3bfede2157a" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>asPoint</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1a64aa2913bc0e1d1511a452c5d800803a" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>equalPoint</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1a316a72f6d405096010224df1a78b8c4d" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>heuristicCost</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1afe13add443706b4fb534fbc0af5b0bfc" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>lessCost</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1aea5063979800ccbd795fed9f33cbb483" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>lessId</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1a6a84a2bea6bf4728fb66b0ca6ed80966" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>Vertex</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1ae471ae74a4bf26951391741d2f58d6b2" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>Vertex</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1afe7ba337aa9af618c18c7ab19da65ea9" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>x</name></member>
+      <member refid="struct_path_algorithm_1_1_vertex_1ae6428b0c59bbbcd5aad9cf244a38bef2" prot="public" virt="non-virtual"><scope>PathAlgorithm::Vertex</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

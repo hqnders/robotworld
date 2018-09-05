@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_messaging" kind="namespace" language="C++">
+    <compoundname>Messaging</compoundname>
+    <innerclass refid="class_messaging_1_1_client" prot="public">Messaging::Client</innerclass>
+    <innerclass refid="class_messaging_1_1_client_session" prot="public">Messaging::ClientSession</innerclass>
+    <innerclass refid="class_messaging_1_1_communication_service" prot="public">Messaging::CommunicationService</innerclass>
+    <innerclass refid="struct_messaging_1_1_message" prot="public">Messaging::Message</innerclass>
+    <innerclass refid="class_messaging_1_1_message_handler" prot="public">Messaging::MessageHandler</innerclass>
+    <innerclass refid="class_messaging_1_1_request_handler" prot="public">Messaging::RequestHandler</innerclass>
+    <innerclass refid="class_messaging_1_1_response_handler" prot="public">Messaging::ResponseHandler</innerclass>
+    <innerclass refid="class_messaging_1_1_server" prot="public">Messaging::Server</innerclass>
+    <innerclass refid="class_messaging_1_1_server_session" prot="public">Messaging::ServerSession</innerclass>
+    <innerclass refid="class_messaging_1_1_session" prot="public">Messaging::Session</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_message_handler_8hpp_1a729e475a2f25128ecf098fc3f474964e" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_messaging_1_1_request_handler" kindref="compound">RequestHandler</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; RequestHandler &gt; Messaging::RequestHandlerPtr</definition>
+        <argsstring></argsstring>
+        <name>RequestHandlerPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="32" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_message_handler_8hpp_1ac0fbd8e70f73f8491fefb7a00dd58f16" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_messaging_1_1_response_handler" kindref="compound">ResponseHandler</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; ResponseHandler &gt; Messaging::ResponseHandlerPtr</definition>
+        <argsstring></argsstring>
+        <name>ResponseHandlerPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" line="50" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MessageHandler.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Client.hpp" line="11" column="1"/>
+  </compounddef>
+</doxygen>

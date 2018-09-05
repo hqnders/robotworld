@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_logger_8cpp" kind="file" language="C++">
+    <compoundname>Logger.cpp</compoundname>
+    <includes refid="_logger_8hpp" local="yes">Logger.hpp</includes>
+    <includes refid="_main_application_8hpp" local="yes">MainApplication.hpp</includes>
+    <includes refid="_main_frame_window_8hpp" local="yes">MainFrameWindow.hpp</includes>
+    <includes refid="_debug_trace_function_8hpp" local="yes">DebugTraceFunction.hpp</includes>
+    <incdepgraph>
+      <node id="679">
+        <label>wx/listbase.h</label>
+      </node>
+      <node id="672">
+        <label>wx/cursor.h</label>
+      </node>
+      <node id="691">
+        <label>limits</label>
+      </node>
+      <node id="659">
+        <label>wx/app.h</label>
+      </node>
+      <node id="664">
+        <label>wx/event.h</label>
+      </node>
+      <node id="673">
+        <label>wx/font.h</label>
+      </node>
+      <node id="661">
+        <label>wx/dcclient.h</label>
+      </node>
+      <node id="683">
+        <label>wx/treebase.h</label>
+      </node>
+      <node id="678">
+        <label>wx/toolbar.h</label>
+      </node>
+      <node id="674">
+        <label>wx/frame.h</label>
+      </node>
+      <node id="689">
+        <label>wx/region.h</label>
+      </node>
+      <node id="687">
+        <label>Size.hpp</label>
+        <link refid="_size_8hpp_source"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>string</label>
+      </node>
+      <node id="666">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="658">
+        <label>Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+      </node>
+      <node id="656">
+        <label>MainApplication.hpp</label>
+        <link refid="_main_application_8hpp_source"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>MainFrameWindow.hpp</label>
+        <link refid="_main_frame_window_8hpp_source"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+      </node>
+      <node id="660">
+        <label>wx/dc.h</label>
+      </node>
+      <node id="675">
+        <label>wx/menu.h</label>
+      </node>
+      <node id="667">
+        <label>wx/imaglist.h</label>
+      </node>
+      <node id="693">
+        <label>DebugTraceFunction.hpp</label>
+        <link refid="_debug_trace_function_8hpp_source"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>wx/defs.h</label>
+      </node>
+      <node id="671">
+        <label>wx/colour.h</label>
+      </node>
+      <node id="669">
+        <label>wx/brush.h</label>
+      </node>
+      <node id="652">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.cpp</label>
+        <link refid="Logger.cpp"/>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="693" relation="include">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>wx/validate.h</label>
+      </node>
+      <node id="680">
+        <label>wx/scrolwin.h</label>
+      </node>
+      <node id="657">
+        <label>vector</label>
+      </node>
+      <node id="665">
+        <label>wx/gbsizer.h</label>
+      </node>
+      <node id="654">
+        <label>Config.hpp</label>
+        <link refid="_config_8hpp_source"/>
+      </node>
+      <node id="682">
+        <label>wx/string.h</label>
+      </node>
+      <node id="686">
+        <label>Point.hpp</label>
+        <link refid="_point_8hpp_source"/>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="676">
+        <label>wx/msgdlg.h</label>
+      </node>
+      <node id="663">
+        <label>wx/dnd.h</label>
+      </node>
+      <node id="668">
+        <label>wx/splitter.h</label>
+      </node>
+      <node id="681">
+        <label>wx/sizer.h</label>
+      </node>
+      <node id="690">
+        <label>CommandlineArgument.hpp</label>
+        <link refid="_commandline_argument_8hpp_source"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+      </node>
+      <node id="653">
+        <label>Logger.hpp</label>
+        <link refid="_logger_8hpp_source"/>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>wx/button.h</label>
+      </node>
+      <node id="688">
+        <label>Region.hpp</label>
+        <link refid="_region_8hpp_source"/>
+        <childnode refid="689" relation="include">
+        </childnode>
+      </node>
+      <node id="685">
+        <label>wx/generic/textdlgg.h</label>
+      </node>
+      <node id="677">
+        <label>wx/statline.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Logger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MainApplication.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MainFrameWindow.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;DebugTraceFunction.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application" kindref="compound">Application</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>static<sp/>*/</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Logger::disable<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*static*/</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_logger_1a0fa1454fb35f3e6980ba46801437f37e" kindref="member">Logger::log</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>aMessage)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_application_1_1_main_frame_window" kindref="compound">Application::MainFrameWindow</ref>*<sp/>frame<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_main_frame_window" kindref="compound">Application::MainFrameWindow</ref>*<sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>Application::TheApp().GetTopWindow());</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(frame<sp/>&amp;&amp;<sp/>!disable)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;getTraceFunction().<ref refid="class_base_1_1_debug_trace_function_1a54f5a1f127e7624e50bb1a43146f8998" kindref="member">trace</ref>(<sp/>aMessage);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>static<sp/>*/</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_application_1_1_logger_1a5440358021658e1f42b19c0fbddd6c41" kindref="member">Logger::setDisable</ref>(<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>aDisable<sp/></highlight><highlight class="comment">/*=<sp/>true*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>disable<sp/>=<sp/>aDisable;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}<sp/></highlight><highlight class="comment">//namespace<sp/>Application</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.cpp"/>
+  </compounddef>
+</doxygen>

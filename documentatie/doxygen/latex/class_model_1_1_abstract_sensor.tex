@@ -1,0 +1,120 @@
+\hypertarget{class_model_1_1_abstract_sensor}{}\section{model\+:\+:Abstract\+Sensor Class Reference}
+\label{class_model_1_1_abstract_sensor}\index{model\+::\+Abstract\+Sensor@{model\+::\+Abstract\+Sensor}}
+
+
+Inheritance diagram for model\+:\+:Abstract\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_abstract_sensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for model\+:\+:Abstract\+Sensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_model_1_1_abstract_sensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Abstract\+Sensor} (\hyperlink{class_model_1_1_abstract_agent}{Abstract\+Agent} $\ast$an\+Agent)\hypertarget{class_model_1_1_abstract_sensor_a787a53fde6320acca0a3500221f11bf4}{}\label{class_model_1_1_abstract_sensor_a787a53fde6320acca0a3500221f11bf4}
+
+\item 
+virtual void \hyperlink{class_model_1_1_abstract_sensor_a958bad26decf903bb28fd45bc835c7bb}{set\+On} (unsigned long a\+Sleep\+Time=100)
+\item 
+virtual void {\bfseries set\+Off} ()\hypertarget{class_model_1_1_abstract_sensor_a31f0eb53ed8252c45e4ac64ea328d7b9}{}\label{class_model_1_1_abstract_sensor_a31f0eb53ed8252c45e4ac64ea328d7b9}
+
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_stimulus}{Abstract\+Stimulus} $>$ {\bfseries get\+Stimulus} () const =0\hypertarget{class_model_1_1_abstract_sensor_a63ae4aa9e8ac1592f48dbdb1b734ddde}{}\label{class_model_1_1_abstract_sensor_a63ae4aa9e8ac1592f48dbdb1b734ddde}
+
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_percept}{Abstract\+Percept} $>$ {\bfseries get\+Percept\+For} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_stimulus}{Abstract\+Stimulus} $>$ an\+Abstract\+Percepts) const =0\hypertarget{class_model_1_1_abstract_sensor_ac9254468d847d18b0895b9fa29fb7871}{}\label{class_model_1_1_abstract_sensor_ac9254468d847d18b0895b9fa29fb7871}
+
+\item 
+virtual void {\bfseries send\+Percept} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_model_1_1_abstract_percept}{Abstract\+Percept} $>$ an\+Abstract\+Percept)\hypertarget{class_model_1_1_abstract_sensor_a2b0fb54fe519b4c58187b939ec612eb0}{}\label{class_model_1_1_abstract_sensor_a2b0fb54fe519b4c58187b939ec612eb0}
+
+\item 
+virtual void {\bfseries run} (unsigned long a\+Sleep\+Time)\hypertarget{class_model_1_1_abstract_sensor_ab85ffa9f6dbdf249681ed95a052bf017}{}\label{class_model_1_1_abstract_sensor_ab85ffa9f6dbdf249681ed95a052bf017}
+
+\item 
+virtual void {\bfseries attach\+Agent} (\hyperlink{class_model_1_1_abstract_agent}{Abstract\+Agent} $\ast$an\+Agent)\hypertarget{class_model_1_1_abstract_sensor_ad78d0c553f653f564fbbe222a1a8bd81}{}\label{class_model_1_1_abstract_sensor_ad78d0c553f653f564fbbe222a1a8bd81}
+
+\item 
+virtual void {\bfseries detach\+Agent} ()\hypertarget{class_model_1_1_abstract_sensor_ab6bc01195b77d486d7ea628f731416db}{}\label{class_model_1_1_abstract_sensor_ab6bc01195b77d486d7ea628f731416db}
+
+\end{DoxyCompactItemize}
+\begin{Indent}{\bf Debug functions}\par
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_abstract_sensor_a85c18d6d51b8b6a3b97f682ad242be9d}{as\+String} () const 
+\item 
+virtual std\+::string \hyperlink{class_model_1_1_abstract_sensor_aa67bce32b6a602772773f0f23d0634f0}{as\+Debug\+String} () const 
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_model_1_1_abstract_agent}{Abstract\+Agent} $\ast$ {\bfseries agent}\hypertarget{class_model_1_1_abstract_sensor_acc26be4569ca92c524e3759f8bda8e36}{}\label{class_model_1_1_abstract_sensor_acc26be4569ca92c524e3759f8bda8e36}
+
+\item 
+bool {\bfseries running}\hypertarget{class_model_1_1_abstract_sensor_ad4cbae39fd0117e9917c33a6a7f09fa5}{}\label{class_model_1_1_abstract_sensor_ad4cbae39fd0117e9917c33a6a7f09fa5}
+
+\item 
+\hyperlink{namespacestd_af8ef78a9cf464d7f7faf334b0648cd20}{std\+::thread} {\bfseries sensor\+Thread}\hypertarget{class_model_1_1_abstract_sensor_a7de4321e9fa04d352cd42b7f33e2ce9c}{}\label{class_model_1_1_abstract_sensor_a7de4321e9fa04d352cd42b7f33e2ce9c}
+
+\item 
+std\+::recursive\+\_\+mutex {\bfseries sensor\+Mutex}\hypertarget{class_model_1_1_abstract_sensor_ab8de89a6213d2a76d930e02a3cac3947}{}\label{class_model_1_1_abstract_sensor_ab8de89a6213d2a76d930e02a3cac3947}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{model\+::\+Abstract\+Sensor@{model\+::\+Abstract\+Sensor}!as\+Debug\+String@{as\+Debug\+String}}
+\index{as\+Debug\+String@{as\+Debug\+String}!model\+::\+Abstract\+Sensor@{model\+::\+Abstract\+Sensor}}
+\subsubsection[{\texorpdfstring{as\+Debug\+String() const }{asDebugString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+Abstract\+Sensor\+::as\+Debug\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_abstract_sensor_aa67bce32b6a602772773f0f23d0634f0}{}\label{class_model_1_1_abstract_sensor_aa67bce32b6a602772773f0f23d0634f0}
+Returns a description of the object with all data of the object usable for debugging 
+
+Reimplemented from \hyperlink{class_model_1_1_model_object_aced22b0b0ee637c598c463de6a1d8d03}{model\+::\+model\+Object}.
+
+
+
+Reimplemented in \hyperlink{class_model_1_1_laser_distance_sensor_ab32d7cbfd19a9a5ec12a0c06ebb02b4f}{model\+::\+Laser\+Distance\+Sensor}.
+
+\index{model\+::\+Abstract\+Sensor@{model\+::\+Abstract\+Sensor}!as\+String@{as\+String}}
+\index{as\+String@{as\+String}!model\+::\+Abstract\+Sensor@{model\+::\+Abstract\+Sensor}}
+\subsubsection[{\texorpdfstring{as\+String() const }{asString() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string model\+::\+Abstract\+Sensor\+::as\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_abstract_sensor_a85c18d6d51b8b6a3b97f682ad242be9d}{}\label{class_model_1_1_abstract_sensor_a85c18d6d51b8b6a3b97f682ad242be9d}
+Returns a 1-\/line description of the object 
+
+Reimplemented from \hyperlink{class_model_1_1_model_object_a9db00b9150a932a1637e425f24c0bdf0}{model\+::\+model\+Object}.
+
+
+
+Reimplemented in \hyperlink{class_model_1_1_laser_distance_sensor_a9403593acd21d557e5af1d79901fde34}{model\+::\+Laser\+Distance\+Sensor}.
+
+\index{model\+::\+Abstract\+Sensor@{model\+::\+Abstract\+Sensor}!set\+On@{set\+On}}
+\index{set\+On@{set\+On}!model\+::\+Abstract\+Sensor@{model\+::\+Abstract\+Sensor}}
+\subsubsection[{\texorpdfstring{set\+On(unsigned long a\+Sleep\+Time=100)}{setOn(unsigned long aSleepTime=100)}}]{\setlength{\rightskip}{0pt plus 5cm}void model\+::\+Abstract\+Sensor\+::set\+On (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{a\+Sleep\+Time = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_model_1_1_abstract_sensor_a958bad26decf903bb28fd45bc835c7bb}{}\label{class_model_1_1_abstract_sensor_a958bad26decf903bb28fd45bc835c7bb}
+A sensor reads 10 stimuli/second (it sleeps for 100 ms) by default 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/hqnders/\+Documents/robotworld/src/Abstract\+Sensor.\+hpp\item 
+/home/hqnders/\+Documents/robotworld/src/Abstract\+Sensor.\+cpp\end{DoxyCompactItemize}

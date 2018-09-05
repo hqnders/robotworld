@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_messaging_1_1_message_1_1_message_header" kind="struct" language="C++" prot="public">
+    <compoundname>Messaging::Message::MessageHeader</compoundname>
+      <sectiondef kind="user-defined">
+      <header>Debug functions</header>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1acdae8972e623d75bd1c7f84e9bf88112" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Messaging::Message::MessageHeader::asString</definition>
+        <argsstring>() const </argsstring>
+        <name>asString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a 1-line description of the object </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="110" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="110" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1ab7d9a533bcbcc875e0c71a854a8d3d7f" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Messaging::Message::MessageHeader::magicNumber1</definition>
+        <argsstring></argsstring>
+        <name>magicNumber1</name>
+        <initializer>= &apos;A&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="118" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1abfc4eabe7cc23af31fcf67be7d3f71bd" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Messaging::Message::MessageHeader::magicNumber2</definition>
+        <argsstring></argsstring>
+        <name>magicNumber2</name>
+        <initializer>= &apos;S&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="119" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1a24692db229162cdaf60b3b7ec52a98f2" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Messaging::Message::MessageHeader::magicNumber3</definition>
+        <argsstring></argsstring>
+        <name>magicNumber3</name>
+        <initializer>= &apos;I&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="120" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1a59e0cecbb4cb66668d6a75cc57c884c8" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Messaging::Message::MessageHeader::magicNumber4</definition>
+        <argsstring></argsstring>
+        <name>magicNumber4</name>
+        <initializer>= &apos;O&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="121" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1aa5c450f8bd19792759093880a748c014" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Messaging::Message::MessageHeader::majorVersion</definition>
+        <argsstring></argsstring>
+        <name>majorVersion</name>
+        <initializer>= &apos;1&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="122" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1ad4d770dcf9125f64181d9373c9a324fd" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char Messaging::Message::MessageHeader::minorVersion</definition>
+        <argsstring></argsstring>
+        <name>minorVersion</name>
+        <initializer>= &apos;0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="123" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1a6a51bcb96a297b4c089379b3726689d7" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Messaging::Message::MessageHeader::messageType</definition>
+        <argsstring></argsstring>
+        <name>messageType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="124" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_messaging_1_1_message_1_1_message_header_1a3aeb117ad4e013955cf32cf217ade75a" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Messaging::Message::MessageHeader::messageLength</definition>
+        <argsstring></argsstring>
+        <name>messageLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="125" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1a0da4d891f5b39f92011244b6d5715f21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Message::MessageHeader::MessageHeader</definition>
+        <argsstring>()</argsstring>
+        <name>MessageHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1a4c1145a87de865721d59faba878540fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Message::MessageHeader::MessageHeader</definition>
+        <argsstring>(char aMessageType, unsigned long aMessageLength)</argsstring>
+        <name>MessageHeader</name>
+        <param>
+          <type>char</type>
+          <declname>aMessageType</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>aMessageLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aMessageType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aMessageLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="41" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1acc197565a5646945320b275fc7432757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Messaging::Message::MessageHeader::MessageHeader</definition>
+        <argsstring>(const std::string &amp;aMessageHeaderBuffer)</argsstring>
+        <name>MessageHeader</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aMessageHeaderBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aMessageHeaderBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="51" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="51" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1a116958570c3ee6e61949d3f25c58d0d6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Messaging::Message::MessageHeader::toString</definition>
+        <argsstring>() const </argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ASCII string representation of the message header </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1a2d6cc32d14554859cc042ae608daee6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Messaging::Message::MessageHeader::fromString</definition>
+        <argsstring>(const std::string &amp;aString)</argsstring>
+        <name>fromString</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stores a ASCII representaion of a message header into this header</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="72" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1a0d33aa180bd6d8dc9e34b02b4fe3e492" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long Messaging::Message::MessageHeader::getHeaderLength</definition>
+        <argsstring>() const </argsstring>
+        <name>getHeaderLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of the header in bytes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="83" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1aef4edcff25790eb3120399b96f8c88d1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char Messaging::Message::MessageHeader::getMessageType</definition>
+        <argsstring>() const </argsstring>
+        <name>getMessageType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The message tpe </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="92" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_messaging_1_1_message_1_1_message_header_1aa89056eba883f701deb9a9fe12b27ffa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned long</type>
+        <definition>unsigned long Messaging::Message::MessageHeader::getMessageLength</definition>
+        <argsstring>() const </argsstring>
+        <name>getMessageLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The length of the message in bytes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="99" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" line="27" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Message.hpp" bodystart="26" bodyend="126"/>
+    <listofallmembers>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1acdae8972e623d75bd1c7f84e9bf88112" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>asString</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a2d6cc32d14554859cc042ae608daee6e" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>fromString</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a0d33aa180bd6d8dc9e34b02b4fe3e492" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>getHeaderLength</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1aa89056eba883f701deb9a9fe12b27ffa" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>getMessageLength</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1aef4edcff25790eb3120399b96f8c88d1" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>getMessageType</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1ab7d9a533bcbcc875e0c71a854a8d3d7f" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>magicNumber1</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1abfc4eabe7cc23af31fcf67be7d3f71bd" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>magicNumber2</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a24692db229162cdaf60b3b7ec52a98f2" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>magicNumber3</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a59e0cecbb4cb66668d6a75cc57c884c8" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>magicNumber4</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1aa5c450f8bd19792759093880a748c014" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>majorVersion</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a0da4d891f5b39f92011244b6d5715f21" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>MessageHeader</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a4c1145a87de865721d59faba878540fe" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>MessageHeader</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1acc197565a5646945320b275fc7432757" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>MessageHeader</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a3aeb117ad4e013955cf32cf217ade75a" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>messageLength</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a6a51bcb96a297b4c089379b3726689d7" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>messageType</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1ad4d770dcf9125f64181d9373c9a324fd" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>minorVersion</name></member>
+      <member refid="struct_messaging_1_1_message_1_1_message_header_1a116958570c3ee6e61949d3f25c58d0d6" prot="public" virt="non-virtual"><scope>Messaging::Message::MessageHeader</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

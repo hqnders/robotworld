@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_application_1_1_logger" kind="class" language="C++" prot="public">
+    <compoundname>Application::Logger</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_application_1_1_logger_1aad5585d2787cbd8f19eea0fc753657dc" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Application::Logger::disable</definition>
+        <argsstring></argsstring>
+        <name>disable</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" line="41" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_application_1_1_logger_1a0fa1454fb35f3e6980ba46801437f37e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::Logger::log</definition>
+        <argsstring>(const std::string &amp;aMessage)</argsstring>
+        <name>log</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If enabled, traces the message to the current DebugTraceFunction</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.cpp" bodystart="12" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logger_1a5440358021658e1f42b19c0fbddd6c41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::Logger::setDisable</definition>
+        <argsstring>(bool aDisable=true)</argsstring>
+        <name>setDisable</name>
+        <param>
+          <type>bool</type>
+          <declname>aDisable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable/enable the logger. Called with true (default) enables the logger, with false disables the logger.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aDisable</parametername>
+<parametername>by</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>default true </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" line="28" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logger_1a0dea306413cd0a5d7680a10419007e33" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Application::Logger::isEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if enabled, false otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" line="33" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" line="14" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Logger.hpp" bodystart="13" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_logger_1aad5585d2787cbd8f19eea0fc753657dc" prot="private" virt="non-virtual"><scope>Application::Logger</scope><name>disable</name></member>
+      <member refid="class_application_1_1_logger_1a0dea306413cd0a5d7680a10419007e33" prot="public" virt="non-virtual"><scope>Application::Logger</scope><name>isEnabled</name></member>
+      <member refid="class_application_1_1_logger_1a0fa1454fb35f3e6980ba46801437f37e" prot="public" virt="non-virtual"><scope>Application::Logger</scope><name>log</name></member>
+      <member refid="class_application_1_1_logger_1a5440358021658e1f42b19c0fbddd6c41" prot="public" virt="non-virtual"><scope>Application::Logger</scope><name>setDisable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

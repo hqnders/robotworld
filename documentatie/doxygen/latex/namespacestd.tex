@@ -1,0 +1,70 @@
+\hypertarget{namespacestd}{}\section{std Namespace Reference}
+\label{namespacestd}\index{std@{std}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::thread \hyperlink{namespacestd_af8ef78a9cf464d7f7faf334b0648cd20}{thread}
+\item 
+typedef boost\+::mutex {\bfseries mutex}\hypertarget{namespacestd_a618c9b161e7909dcd32f45ed5b0d64a8}{}\label{namespacestd_a618c9b161e7909dcd32f45ed5b0d64a8}
+
+\item 
+typedef boost\+::timed\+\_\+mutex {\bfseries timed\+\_\+mutex}\hypertarget{namespacestd_a606f872ad6ccc6988d66cd63edd591d4}{}\label{namespacestd_a606f872ad6ccc6988d66cd63edd591d4}
+
+\item 
+typedef boost\+::recursive\+\_\+mutex {\bfseries recursive\+\_\+mutex}\hypertarget{namespacestd_a2465f8ca56659ee1d8fad0119f8f1482}{}\label{namespacestd_a2465f8ca56659ee1d8fad0119f8f1482}
+
+\item 
+typedef boost\+::recursive\+\_\+timed\+\_\+mutex {\bfseries recursive\+\_\+timed\+\_\+mutex}\hypertarget{namespacestd_acc8e0552c9e703cdbf7e41c8b0ae81ef}{}\label{namespacestd_acc8e0552c9e703cdbf7e41c8b0ae81ef}
+
+\item 
+{\footnotesize template$<$typename Lockable $>$ }\\using {\bfseries lock\+\_\+guard} = boost\+::lock\+\_\+guard$<$ Lockable $>$\hypertarget{namespacestd_aa022dc977c3236c7a8b63d344f5e165e}{}\label{namespacestd_aa022dc977c3236c7a8b63d344f5e165e}
+
+\item 
+{\footnotesize template$<$typename Lockable $>$ }\\using {\bfseries unique\+\_\+lock} = boost\+::unique\+\_\+lock$<$ Lockable $>$\hypertarget{namespacestd_aa81d6994a02829ac5bd9413e427fe44c}{}\label{namespacestd_aa81d6994a02829ac5bd9413e427fe44c}
+
+\item 
+{\footnotesize template$<$typename Lockable $>$ }\\using {\bfseries shared\+\_\+lock} = boost\+::shared\+\_\+lock$<$ Lockable $>$\hypertarget{namespacestd_a774ed93e57639ca1d08e26f22fe71a66}{}\label{namespacestd_a774ed93e57639ca1d08e26f22fe71a66}
+
+\item 
+typedef boost\+::condition\+\_\+variable {\bfseries condition\+\_\+variable}\hypertarget{namespacestd_ab892e2ff6c882ab5bfec75eb202613a2}{}\label{namespacestd_ab892e2ff6c882ab5bfec75eb202613a2}
+
+\item 
+typedef boost\+::condition\+\_\+variable\+\_\+any {\bfseries condition\+\_\+variable\+\_\+any}\hypertarget{namespacestd_aa9fa80fb08efa0cb495e269b77cdfb7f}{}\label{namespacestd_aa9fa80fb08efa0cb495e269b77cdfb7f}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \hyperlink{namespacestd_ad42a977ebc90223e5dc0b424385e3f1e}{to\+\_\+string} (const T \&x)
+\item 
+int \hyperlink{namespacestd_a5a4884a3b1890357be19cd6ff56179da}{stoi} (const std\+::string \&a\+String)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Miscellaneous fixes for missing Min\+GW 4.\+8.\+1 features. 
+
+\subsection{Typedef Documentation}
+\index{std@{std}!thread@{thread}}
+\index{thread@{thread}!std@{std}}
+\subsubsection[{\texorpdfstring{thread}{thread}}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost\+::thread {\bf std\+::thread}}\hypertarget{namespacestd_af8ef78a9cf464d7f7faf334b0648cd20}{}\label{namespacestd_af8ef78a9cf464d7f7faf334b0648cd20}
+Min\+GW 4.\+8.\+1 does not have a working thread support library (yet) 
+
+\subsection{Function Documentation}
+\index{std@{std}!stoi@{stoi}}
+\index{stoi@{stoi}!std@{std}}
+\subsubsection[{\texorpdfstring{stoi(const std\+::string \&a\+String)}{stoi(const std::string &aString)}}]{\setlength{\rightskip}{0pt plus 5cm}int std\+::stoi (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{a\+String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacestd_a5a4884a3b1890357be19cd6ff56179da}{}\label{namespacestd_a5a4884a3b1890357be19cd6ff56179da}
+Mingw 4.\+8.\+1 does not have the \hyperlink{namespacestd_a5a4884a3b1890357be19cd6ff56179da}{std\+::stoi} function (yet) \index{std@{std}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!std@{std}}
+\subsubsection[{\texorpdfstring{to\+\_\+string(const T \&x)}{to_string(const T &x)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::string std\+::to\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacestd_ad42a977ebc90223e5dc0b424385e3f1e}{}\label{namespacestd_ad42a977ebc90223e5dc0b424385e3f1e}
+Mingw 4.\+8.\+1 does not have the \hyperlink{namespacestd_ad42a977ebc90223e5dc0b424385e3f1e}{std\+::to\+\_\+string} family of functions (yet)
+
+This template requires an implemented std\+::ostream\& operator$<$$<$(std\+::ostream\& os,const T\& t) 

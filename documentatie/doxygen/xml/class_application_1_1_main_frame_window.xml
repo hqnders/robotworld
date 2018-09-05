@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_application_1_1_main_frame_window" kind="class" language="C++" prot="public">
+    <compoundname>Application::MainFrameWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Frame</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1a63f2bb0df57ff914a06ecb9023530185" prot="private" static="no" mutable="no">
+        <type>Panel *</type>
+        <definition>Panel* Application::MainFrameWindow::clientPanel</definition>
+        <argsstring></argsstring>
+        <name>clientPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="74" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1ad3441b124b2a0e8d437f1b0dfd4d8531" prot="private" static="no" mutable="no">
+        <type>MenuBar *</type>
+        <definition>MenuBar* Application::MainFrameWindow::menuBar</definition>
+        <argsstring></argsstring>
+        <name>menuBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="75" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1a57fc51a0a6d021fb5ab42bf5f349fcae" prot="private" static="no" mutable="no">
+        <type>SplitterWindow *</type>
+        <definition>SplitterWindow* Application::MainFrameWindow::splitterWindow</definition>
+        <argsstring></argsstring>
+        <name>splitterWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="76" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1a0a67fe0298aded3b7daff71d17a6ff62" prot="private" static="no" mutable="no">
+        <type>Panel *</type>
+        <definition>Panel* Application::MainFrameWindow::lhsPanel</definition>
+        <argsstring></argsstring>
+        <name>lhsPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="78" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1aed9d10e1a7931542a42b683df51690bc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_view_1_1_robot_world_canvas" kindref="compound">View::RobotWorldCanvas</ref> *</type>
+        <definition>View::RobotWorldCanvas* Application::MainFrameWindow::robotWorldCanvas</definition>
+        <argsstring></argsstring>
+        <name>robotWorldCanvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="79" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1ab11850fa7d5e4291b347a511f5b5dc51" prot="private" static="no" mutable="no">
+        <type>Panel *</type>
+        <definition>Panel* Application::MainFrameWindow::rhsPanel</definition>
+        <argsstring></argsstring>
+        <name>rhsPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="81" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1a77fd43db9dae01aae9c0c388d9110ecc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_application_1_1_log_text_ctrl" kindref="compound">LogTextCtrl</ref> *</type>
+        <definition>LogTextCtrl* Application::MainFrameWindow::logTextCtrl</definition>
+        <argsstring></argsstring>
+        <name>logTextCtrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="82" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1aa7a9052b453794fa2b76f6c019f91ab1" prot="private" static="no" mutable="no">
+        <type>Panel *</type>
+        <definition>Panel* Application::MainFrameWindow::buttonPanel</definition>
+        <argsstring></argsstring>
+        <name>buttonPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="83" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_main_frame_window_1a10058131d0a56df8e8444d9a2eef137c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_base_1_1_debug_trace_function" kindref="compound">Base::DebugTraceFunction</ref> *</type>
+        <definition>Base::DebugTraceFunction* Application::MainFrameWindow::debugTraceFunction</definition>
+        <argsstring></argsstring>
+        <name>debugTraceFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="85" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a6cd8f5a881e4589dc8afa01d5f7ed4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application::MainFrameWindow::MainFrameWindow</definition>
+        <argsstring>(const std::string &amp;aTitle)</argsstring>
+        <name>MainFrameWindow</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>aTitle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aTitle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The title which is shown in the title bar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="31" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="37" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a72cb92828187b461ed9034d002bd1b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Application::MainFrameWindow::~MainFrameWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainFrameWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="35" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="54" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a2ab17ead4b86890ec440398eda10273b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_base_1_1_debug_trace_function" kindref="compound">Base::DebugTraceFunction</ref> &amp;</type>
+        <definition>Base::DebugTraceFunction &amp; Application::MainFrameWindow::getTraceFunction</definition>
+        <argsstring>() const </argsstring>
+        <name>getTraceFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="39" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="64" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1afbe4226dcd70f22c2ae32062881ceca6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::initialise</definition>
+        <argsstring>()</argsstring>
+        <name>initialise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="45" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="75" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1abdb6890f8b5edd930f93f2fe51a5e181" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MenuBar *</type>
+        <definition>MenuBar * Application::MainFrameWindow::initialiseMenuBar</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseMenuBar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="49" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="112" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1aa9064ca4429720b231234fba743c4b0f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Panel *</type>
+        <definition>Panel * Application::MainFrameWindow::initialiseClientPanel</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseClientPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="53" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="134" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a88ea2a7e70bcd1a650c3834883d3deef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SplitterWindow *</type>
+        <definition>SplitterWindow * Application::MainFrameWindow::initialiseSplitterWindow</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseSplitterWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="57" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="162" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1ac0a4ced572ac913cdc441d1a35e97842" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Panel *</type>
+        <definition>Panel * Application::MainFrameWindow::initialiseLhsPanel</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseLhsPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="61" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="193" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a9d9bf15eb75cbce36bca4e22ba144161" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Panel *</type>
+        <definition>Panel * Application::MainFrameWindow::initialiseRhsPanel</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseRhsPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="65" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="222" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1acc4b68465595b19ab6d23762b7ce1907" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Panel *</type>
+        <definition>Panel * Application::MainFrameWindow::initialiseButtonPanel</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseButtonPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="69" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="257" bodyend="306"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a12f7f14da09aeb9c2c110f2ed3992ed1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnQuit</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnQuit</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="87" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1aefa56845d94cb62767b88a8669758689" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnWidgetDebugTraceFunction</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnWidgetDebugTraceFunction</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="88" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="317" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1abff72c49273f4a00ebe1ddb5ee593af1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnStdOutDebugTraceFunction</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnStdOutDebugTraceFunction</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="89" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="326" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a66aa2b2bb59f5c3063c066ab184107ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnAbout</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnAbout</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="90" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="337" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a16487fa34813b964e28611d557d494ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnStartRobot</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnStartRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="92" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="344" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1ac02ee686ee02942bbcaa0611dc113030" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnStopRobot</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnStopRobot</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="93" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="356" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1acbf20602a39e5663b4feb92f27fb461a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnPopulate</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnPopulate</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="94" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1ac659cf7fa25849b4ee41272ea32d8b98" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnUnpopulate</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnUnpopulate</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="95" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="375" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a68de56a22de15f26bd20c4d2d44f1501" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnStartListening</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnStartListening</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="96" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="382" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1af0d8ead18bb30139e1d9c8458648a4cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnSendMessage</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnSendMessage</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="97" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="393" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_main_frame_window_1a94468ec60eec818598ac26ddd2e6bc11" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Application::MainFrameWindow::OnStopListening</definition>
+        <argsstring>(CommandEvent &amp;anEvent)</argsstring>
+        <name>OnStopListening</name>
+        <param>
+          <type>CommandEvent &amp;</type>
+          <declname>anEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="98" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.cpp" bodystart="422" bodyend="429"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="524">
+        <label>Frame</label>
+      </node>
+      <node id="523">
+        <label>Application::MainFrameWindow</label>
+        <link refid="class_application_1_1_main_frame_window"/>
+        <childnode refid="524" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="526">
+        <label>Frame</label>
+      </node>
+      <node id="525">
+        <label>Application::MainFrameWindow</label>
+        <link refid="class_application_1_1_main_frame_window"/>
+        <childnode refid="526" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" line="25" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp" bodystart="24" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_main_frame_window_1aa7a9052b453794fa2b76f6c019f91ab1" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>buttonPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a63f2bb0df57ff914a06ecb9023530185" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>clientPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a10058131d0a56df8e8444d9a2eef137c" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>debugTraceFunction</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a2ab17ead4b86890ec440398eda10273b" prot="public" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>getTraceFunction</name></member>
+      <member refid="class_application_1_1_main_frame_window_1afbe4226dcd70f22c2ae32062881ceca6" prot="protected" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>initialise</name></member>
+      <member refid="class_application_1_1_main_frame_window_1acc4b68465595b19ab6d23762b7ce1907" prot="protected" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>initialiseButtonPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1aa9064ca4429720b231234fba743c4b0f" prot="protected" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>initialiseClientPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1ac0a4ced572ac913cdc441d1a35e97842" prot="protected" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>initialiseLhsPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1abdb6890f8b5edd930f93f2fe51a5e181" prot="protected" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>initialiseMenuBar</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a9d9bf15eb75cbce36bca4e22ba144161" prot="protected" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>initialiseRhsPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a88ea2a7e70bcd1a650c3834883d3deef" prot="protected" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>initialiseSplitterWindow</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a0a67fe0298aded3b7daff71d17a6ff62" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>lhsPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a77fd43db9dae01aae9c0c388d9110ecc" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>logTextCtrl</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a6cd8f5a881e4589dc8afa01d5f7ed4ba" prot="public" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>MainFrameWindow</name></member>
+      <member refid="class_application_1_1_main_frame_window_1ad3441b124b2a0e8d437f1b0dfd4d8531" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>menuBar</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a66aa2b2bb59f5c3063c066ab184107ea" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnAbout</name></member>
+      <member refid="class_application_1_1_main_frame_window_1acbf20602a39e5663b4feb92f27fb461a" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnPopulate</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a12f7f14da09aeb9c2c110f2ed3992ed1" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnQuit</name></member>
+      <member refid="class_application_1_1_main_frame_window_1af0d8ead18bb30139e1d9c8458648a4cc" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnSendMessage</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a68de56a22de15f26bd20c4d2d44f1501" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnStartListening</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a16487fa34813b964e28611d557d494ec" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnStartRobot</name></member>
+      <member refid="class_application_1_1_main_frame_window_1abff72c49273f4a00ebe1ddb5ee593af1" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnStdOutDebugTraceFunction</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a94468ec60eec818598ac26ddd2e6bc11" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnStopListening</name></member>
+      <member refid="class_application_1_1_main_frame_window_1ac02ee686ee02942bbcaa0611dc113030" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnStopRobot</name></member>
+      <member refid="class_application_1_1_main_frame_window_1ac659cf7fa25849b4ee41272ea32d8b98" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnUnpopulate</name></member>
+      <member refid="class_application_1_1_main_frame_window_1aefa56845d94cb62767b88a8669758689" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>OnWidgetDebugTraceFunction</name></member>
+      <member refid="class_application_1_1_main_frame_window_1ab11850fa7d5e4291b347a511f5b5dc51" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>rhsPanel</name></member>
+      <member refid="class_application_1_1_main_frame_window_1aed9d10e1a7931542a42b683df51690bc" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>robotWorldCanvas</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a57fc51a0a6d021fb5ab42bf5f349fcae" prot="private" virt="non-virtual"><scope>Application::MainFrameWindow</scope><name>splitterWindow</name></member>
+      <member refid="class_application_1_1_main_frame_window_1a72cb92828187b461ed9034d002bd1b51" prot="public" virt="virtual"><scope>Application::MainFrameWindow</scope><name>~MainFrameWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

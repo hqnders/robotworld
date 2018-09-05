@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_path_algorithm_1_1_a_star" kind="class" language="C++" prot="public">
+    <compoundname>PathAlgorithm::AStar</compoundname>
+    <basecompoundref refid="class_base_1_1_notifier" prot="public" virt="non-virtual">Base::Notifier</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_path_algorithm_1_1_a_star_1ac30f7714d07594a6b75516daa0a26da7" prot="private" static="no" mutable="no">
+        <type>ClosedSet</type>
+        <definition>ClosedSet PathAlgorithm::AStar::closedSet</definition>
+        <argsstring></argsstring>
+        <name>closedSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="290" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_algorithm_1_1_a_star_1a51ac9d9ef516c2317c2c77a919b64532" prot="private" static="no" mutable="no">
+        <type>OpenSet</type>
+        <definition>OpenSet PathAlgorithm::AStar::openSet</definition>
+        <argsstring></argsstring>
+        <name>openSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="294" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_algorithm_1_1_a_star_1a0fb8d0d9ad9822987926c815c9d4353d" prot="private" static="no" mutable="no">
+        <type>VertexMap</type>
+        <definition>VertexMap PathAlgorithm::AStar::predecessorMap</definition>
+        <argsstring></argsstring>
+        <name>predecessorMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="298" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_algorithm_1_1_a_star_1a2352488a734c820b77410b1ed7914a49" prot="private" static="no" mutable="yes">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex PathAlgorithm::AStar::openSetMutex</definition>
+        <argsstring></argsstring>
+        <name>openSetMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="300" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_algorithm_1_1_a_star_1a1c8d2da0af60b0857bfd0abd3fa057ac" prot="private" static="no" mutable="yes">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex PathAlgorithm::AStar::closedSetMutex</definition>
+        <argsstring></argsstring>
+        <name>closedSetMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="301" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_algorithm_1_1_a_star_1ac69b08a85dfe16b7571b33fb9231f9c1" prot="private" static="no" mutable="yes">
+        <type>std::recursive_mutex</type>
+        <definition>std::recursive_mutex PathAlgorithm::AStar::predecessorMapMutex</definition>
+        <argsstring></argsstring>
+        <name>predecessorMapMutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="302" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a9112cf1a7a2e991046d88a1f5cba8925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path PathAlgorithm::AStar::search</definition>
+        <argsstring>(const Point &amp;aStartPoint, const Point &amp;aGoalPoint, const Size &amp;aRobotSize)</argsstring>
+        <name>search</name>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aStartPoint</declname>
+        </param>
+        <param>
+          <type>const Point &amp;</type>
+          <declname>aGoalPoint</declname>
+        </param>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aRobotSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="194" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="100" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a08d4471b622ff7cef2d6a65af869ceb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Path</type>
+        <definition>Path PathAlgorithm::AStar::search</definition>
+        <argsstring>(Vertex aStart, const Vertex &amp;aGoal, const Size &amp;aRobotSize)</argsstring>
+        <name>search</name>
+        <param>
+          <type><ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref></type>
+          <declname>aStart</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aGoal</declname>
+        </param>
+        <param>
+          <type>const Size &amp;</type>
+          <declname>aRobotSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="200" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="113" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a63f88f24acf7bf34cd060051134c9190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathAlgorithm::AStar::addToOpenSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>addToOpenSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="206" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="263" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1afcc23a676145d6e280d1c3430af5380a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathAlgorithm::AStar::removeFromOpenSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>removeFromOpenSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="210" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="272" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1aba29c2585fbf49880cf5e8b9bf6d3eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathAlgorithm::AStar::removeFromOpenSet</definition>
+        <argsstring>(OpenSet::iterator &amp;i)</argsstring>
+        <name>removeFromOpenSet</name>
+        <param>
+          <type>OpenSet::iterator &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="214" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="281" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1ae78bfebdee31135fdfb2f302347f962f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OpenSet::iterator</type>
+        <definition>OpenSet::iterator PathAlgorithm::AStar::findInOpenSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>findInOpenSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="218" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="290" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a657aaaf577ca25e68e6a5af57214e7d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathAlgorithm::AStar::findRemoveInOpenSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>findRemoveInOpenSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="222" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="303" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a5bb18edbbd54833aac9eddfe63ba652d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathAlgorithm::AStar::removeFirstFromOpenSet</definition>
+        <argsstring>()</argsstring>
+        <name>removeFirstFromOpenSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="226" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="318" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a53139e4b3cd3971a2bf85a430e83378f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathAlgorithm::AStar::addToClosedSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>addToClosedSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="230" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="326" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a1b6971a9c5878e859cbdb3270dda93b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathAlgorithm::AStar::removeFromClosedSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>removeFromClosedSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="234" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="335" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a799953993c1255f0ce559f7233d3c926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathAlgorithm::AStar::removeFromClosedSet</definition>
+        <argsstring>(ClosedSet::iterator &amp;i)</argsstring>
+        <name>removeFromClosedSet</name>
+        <param>
+          <type>ClosedSet::iterator &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="238" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="344" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a73d9639e838fd55bb392d01238fc967a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ClosedSet::iterator</type>
+        <definition>ClosedSet::iterator PathAlgorithm::AStar::findInClosedSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>findInClosedSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="242" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="353" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a843db81c9950c0184ee31627313f5793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathAlgorithm::AStar::findRemoveClosedSet</definition>
+        <argsstring>(const Vertex &amp;aVertex)</argsstring>
+        <name>findRemoveClosedSet</name>
+        <param>
+          <type>const <ref refid="struct_path_algorithm_1_1_vertex" kindref="compound">Vertex</ref> &amp;</type>
+          <declname>aVertex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="246" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="371" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a94fcc29f04e6398edbd58effbf59b49a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>ClosedSet</type>
+        <definition>ClosedSet PathAlgorithm::AStar::getClosedSet</definition>
+        <argsstring>() const </argsstring>
+        <name>getClosedSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="250" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="362" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1ae419f2d019378d9b4435d862b70da72f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>OpenSet</type>
+        <definition>OpenSet PathAlgorithm::AStar::getOpenSet</definition>
+        <argsstring>() const </argsstring>
+        <name>getOpenSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="254" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="385" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1ac4ce233712c0f7aac44d029e61888581" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>VertexMap</type>
+        <definition>VertexMap PathAlgorithm::AStar::getPredecessorMap</definition>
+        <argsstring>() const </argsstring>
+        <name>getPredecessorMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="258" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="394" bodyend="399"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a4cb2a6c928a01fcac02533500bd8ace5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ClosedSet &amp;</type>
+        <definition>ClosedSet &amp; PathAlgorithm::AStar::getCS</definition>
+        <argsstring>()</argsstring>
+        <name>getCS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="264" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="404" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a420e1ac8824a265dc2272c7e50899322" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const ClosedSet &amp;</type>
+        <definition>const ClosedSet &amp; PathAlgorithm::AStar::getCS</definition>
+        <argsstring>() const </argsstring>
+        <name>getCS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="268" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="412" bodyend="416"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a48e23107ffca02392bdf2439775baecf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>OpenSet &amp;</type>
+        <definition>OpenSet &amp; PathAlgorithm::AStar::getOS</definition>
+        <argsstring>()</argsstring>
+        <name>getOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="272" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="420" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1af5ea4271f9318edaa68d8030e35d0cf1" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const OpenSet &amp;</type>
+        <definition>const OpenSet &amp; PathAlgorithm::AStar::getOS</definition>
+        <argsstring>() const </argsstring>
+        <name>getOS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="276" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="428" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a4bb6718fd07f503ff836c5cdccd74236" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VertexMap &amp;</type>
+        <definition>VertexMap &amp; PathAlgorithm::AStar::getPM</definition>
+        <argsstring>()</argsstring>
+        <name>getPM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="280" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="436" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="class_path_algorithm_1_1_a_star_1a021ff514f018ce9ec7db705578a210d4" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const VertexMap &amp;</type>
+        <definition>const VertexMap &amp; PathAlgorithm::AStar::getPM</definition>
+        <argsstring>() const </argsstring>
+        <name>getPM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="284" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.cpp" bodystart="444" bodyend="448"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="436">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="435">
+        <label>PathAlgorithm::AStar</label>
+        <link refid="class_path_algorithm_1_1_a_star"/>
+        <childnode refid="436" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="438">
+        <label>Base::Notifier</label>
+        <link refid="class_base_1_1_notifier"/>
+      </node>
+      <node id="437">
+        <label>PathAlgorithm::AStar</label>
+        <link refid="class_path_algorithm_1_1_a_star"/>
+        <childnode refid="438" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" line="189" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp" bodystart="188" bodyend="304"/>
+    <listofallmembers>
+      <member refid="class_base_1_1_notifier_1a5c4e89f48f9688c71ffec225717dd79e" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>addObserver</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a53139e4b3cd3971a2bf85a430e83378f" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>addToClosedSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a63f88f24acf7bf34cd060051134c9190" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>addToOpenSet</name></member>
+      <member refid="class_base_1_1_notifier_1ae9189ab41334252a50dbaa82b6326c12" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>asDebugString</name></member>
+      <member refid="class_base_1_1_notifier_1a5b3d9077ee7023746a05377f2c6b192e" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>asString</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1ac30f7714d07594a6b75516daa0a26da7" prot="private" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>closedSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a1c8d2da0af60b0857bfd0abd3fa057ac" prot="private" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>closedSetMutex</name></member>
+      <member refid="class_base_1_1_notifier_1a050d0bbcf113f31cc16cd3b5229c7576" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>disableNotification</name></member>
+      <member refid="class_base_1_1_notifier_1abed77da5cd65a9a37a3b066aaa02e21d" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>enableNotification</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a73d9639e838fd55bb392d01238fc967a" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>findInClosedSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1ae78bfebdee31135fdfb2f302347f962f" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>findInOpenSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a843db81c9950c0184ee31627313f5793" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>findRemoveClosedSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a657aaaf577ca25e68e6a5af57214e7d4" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>findRemoveInOpenSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a94fcc29f04e6398edbd58effbf59b49a" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getClosedSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a4cb2a6c928a01fcac02533500bd8ace5" prot="protected" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getCS</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a420e1ac8824a265dc2272c7e50899322" prot="protected" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getCS</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1ae419f2d019378d9b4435d862b70da72f" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getOpenSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a48e23107ffca02392bdf2439775baecf" prot="protected" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getOS</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1af5ea4271f9318edaa68d8030e35d0cf1" prot="protected" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getOS</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a4bb6718fd07f503ff836c5cdccd74236" prot="protected" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getPM</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a021ff514f018ce9ec7db705578a210d4" prot="protected" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getPM</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1ac4ce233712c0f7aac44d029e61888581" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>getPredecessorMap</name></member>
+      <member refid="class_base_1_1_notifier_1a2dfb91da06e2150d8b263b804ff93cac" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>isEnabledForNotification</name></member>
+      <member refid="class_base_1_1_notifier_1ade4bd558bcb722ae11f2dc9b9e0af0a3" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>Notifier</name></member>
+      <member refid="class_base_1_1_notifier_1a9a3df81524d8db68dd64f9a26575c6b4" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>notifyObservers</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a51ac9d9ef516c2317c2c77a919b64532" prot="private" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>openSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a2352488a734c820b77410b1ed7914a49" prot="private" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>openSetMutex</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a0fb8d0d9ad9822987926c815c9d4353d" prot="private" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>predecessorMap</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1ac69b08a85dfe16b7571b33fb9231f9c1" prot="private" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>predecessorMapMutex</name></member>
+      <member refid="class_base_1_1_notifier_1a54d234bcf2531b2a96333f8d3876d485" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>removeAllObservers</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a5bb18edbbd54833aac9eddfe63ba652d" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>removeFirstFromOpenSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a1b6971a9c5878e859cbdb3270dda93b4" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>removeFromClosedSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a799953993c1255f0ce559f7233d3c926" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>removeFromClosedSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1afcc23a676145d6e280d1c3430af5380a" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>removeFromOpenSet</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1aba29c2585fbf49880cf5e8b9bf6d3eb5" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>removeFromOpenSet</name></member>
+      <member refid="class_base_1_1_notifier_1abd13a6f822088d759f4464dbe2e6bb88" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>removeObserver</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a9112cf1a7a2e991046d88a1f5cba8925" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>search</name></member>
+      <member refid="class_path_algorithm_1_1_a_star_1a08d4471b622ff7cef2d6a65af869ceb3" prot="public" virt="non-virtual"><scope>PathAlgorithm::AStar</scope><name>search</name></member>
+      <member refid="class_base_1_1_notifier_1ada72bc1d08008fedeaab951a820717ab" prot="public" virt="virtual"><scope>PathAlgorithm::AStar</scope><name>~Notifier</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

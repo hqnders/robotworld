@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_point_8hpp" kind="file" language="C++">
+    <compoundname>Point.hpp</compoundname>
+    <includes local="no">wx/gdicmn.h</includes>
+    <includedby refid="_a_star_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp</includedby>
+    <includedby refid="_bounded_vector_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp</includedby>
+    <includedby refid="_widgets_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp</includedby>
+    <includedby refid="_way_point_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp</includedby>
+    <includedby refid="_shape2_d_utils_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp</includedby>
+    <includedby refid="_shape_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp</includedby>
+    <includedby refid="_robot_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp</includedby>
+    <includedby refid="_log_text_ctrl_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp</includedby>
+    <includedby refid="_robot_world_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp</includedby>
+    <includedby refid="_wall_8hpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp</includedby>
+    <includedby refid="_widgets_8cpp" local="yes">/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.cpp</includedby>
+    <incdepgraph>
+      <node id="1386">
+        <label>wx/gdicmn.h</label>
+      </node>
+      <node id="1385">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Point.hpp</label>
+        <link refid="Point.hpp"/>
+        <childnode refid="1386" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1406">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationHandler.hpp</label>
+        <link refid="_notification_handler_8hpp_source"/>
+        <childnode refid="1401" relation="include">
+        </childnode>
+      </node>
+      <node id="1411">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp</label>
+        <link refid="_robot_world_8hpp_source"/>
+        <childnode refid="1401" relation="include">
+        </childnode>
+      </node>
+      <node id="1392">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Shape2DUtils.hpp</label>
+        <link refid="_shape2_d_utils_8hpp_source"/>
+      </node>
+      <node id="1412">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Wall.hpp</label>
+        <link refid="_wall_8hpp_source"/>
+        <childnode refid="1400" relation="include">
+        </childnode>
+      </node>
+      <node id="1396">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/GoalShape.hpp</label>
+        <link refid="_goal_shape_8hpp_source"/>
+      </node>
+      <node id="1397">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RectangleShape.hpp</label>
+        <link refid="_rectangle_shape_8hpp_source"/>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+      </node>
+      <node id="1393">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Widgets.hpp</label>
+        <link refid="_widgets_8hpp_source"/>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1402" relation="include">
+        </childnode>
+        <childnode refid="1403" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1402">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MainApplication.hpp</label>
+        <link refid="_main_application_8hpp_source"/>
+      </node>
+      <node id="1403">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/MainFrameWindow.hpp</label>
+        <link refid="_main_frame_window_8hpp_source"/>
+      </node>
+      <node id="1408">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WidgetDebugTraceFunction.hpp</label>
+        <link refid="_widget_debug_trace_function_8hpp_source"/>
+      </node>
+      <node id="1389">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Robot.hpp</label>
+        <link refid="_robot_8hpp_source"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1405">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationEvent.hpp</label>
+        <link refid="_notification_event_8hpp_source"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1401">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorldCanvas.hpp</label>
+        <link refid="_robot_world_canvas_8hpp_source"/>
+      </node>
+      <node id="1404">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LogTextCtrl.hpp</label>
+        <link refid="_log_text_ctrl_8hpp_source"/>
+      </node>
+      <node id="1409">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPoint.hpp</label>
+        <link refid="_way_point_8hpp_source"/>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+      </node>
+      <node id="1400">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WallShape.hpp</label>
+        <link refid="_wall_shape_8hpp_source"/>
+      </node>
+      <node id="1407">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/NotificationFunctionTypeTraits.hpp</label>
+        <link refid="_notification_function_type_traits_8hpp_source"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1395">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Shape.hpp</label>
+        <link refid="_shape_8hpp_source"/>
+        <childnode refid="1396" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1399" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+      </node>
+      <node id="1394">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Button.hpp</label>
+        <link refid="_button_8hpp_source"/>
+      </node>
+      <node id="1387">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Point.hpp</label>
+        <link refid="Point.hpp"/>
+        <childnode refid="1388" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+        <childnode refid="1389" relation="include">
+        </childnode>
+        <childnode refid="1404" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+      <node id="1391">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/BoundedVector.hpp</label>
+        <link refid="_bounded_vector_8hpp_source"/>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1389" relation="include">
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/Goal.hpp</label>
+        <link refid="_goal_8hpp_source"/>
+        <childnode refid="1396" relation="include">
+        </childnode>
+      </node>
+      <node id="1399">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/LineShape.hpp</label>
+        <link refid="_line_shape_8hpp_source"/>
+        <childnode refid="1400" relation="include">
+        </childnode>
+      </node>
+      <node id="1390">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/RobotShape.hpp</label>
+        <link refid="_robot_shape_8hpp_source"/>
+      </node>
+      <node id="1388">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/AStar.hpp</label>
+        <link refid="_a_star_8hpp_source"/>
+        <childnode refid="1389" relation="include">
+        </childnode>
+      </node>
+      <node id="1398">
+        <label>/home/hqnders/Documents/han/osm/software/robotworld/src/WayPointShape.hpp</label>
+        <link refid="_way_point_shape_8hpp_source"/>
+        <childnode refid="1396" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespace_widgets">Widgets</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>POINT_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POINT_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2016<sp/>Joost<sp/>Kraaijeveld.<sp/>See<sp/>license.txt<sp/>for<sp/>details.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>For<sp/>information,<sp/>bug<sp/>reports<sp/>and<sp/>additions<sp/>send<sp/>an<sp/>e-mail<sp/>to<sp/>DistributedRobotWorld@Askesis.nl.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Author:<sp/>jkr</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;wx/gdicmn.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_widgets" kindref="compound">Widgets</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>wxPoint<sp/>Point;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Widgets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_widgets" kindref="compound">Widgets</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>POINT_HPP_</highlight></codeline>
+    </programlisting>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Point.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<map id="Base::Observer" name="Base::Observer">
+<area shape="rect" id="node2" href="$class_model_1_1_robot.html" title="model::Robot" alt="" coords="5,80,105,107"/>
+<area shape="rect" id="node3" href="$class_view_1_1_view_object.html" title="View::ViewObject" alt="" coords="129,80,256,107"/>
+<area shape="rect" id="node4" href="$class_view_1_1_robot_world_canvas.html" title="View::RobotWorldCanvas" alt="" coords="26,155,199,181"/>
+<area shape="rect" id="node5" href="$class_view_1_1_shape.html" title="View::Shape" alt="" coords="223,155,319,181"/>
+<area shape="rect" id="node6" href="$class_view_1_1_line_shape.html" title="View::LineShape" alt="" coords="130,229,250,256"/>
+<area shape="rect" id="node8" href="$class_view_1_1_rectangle_shape.html" title="View::RectangleShape" alt="" coords="274,229,429,256"/>
+<area shape="rect" id="node7" href="$class_view_1_1_wall_shape.html" title="View::WallShape" alt="" coords="129,304,251,331"/>
+<area shape="rect" id="node9" href="$class_view_1_1_robot_shape.html" title="View::RobotShape" alt="" coords="281,304,411,331"/>
+<area shape="rect" id="node10" href="$class_view_1_1_way_point_shape.html" title="View::WayPointShape" alt="" coords="435,304,588,331"/>
+<area shape="rect" id="node11" href="$class_view_1_1_goal_shape.html" title="View::GoalShape" alt="" coords="450,379,573,405"/>
+</map>

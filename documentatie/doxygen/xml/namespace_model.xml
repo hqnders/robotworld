@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespace_model" kind="namespace" language="C++">
+    <compoundname>model</compoundname>
+    <innerclass refid="class_model_1_1_abstract_actuator" prot="public">model::AbstractActuator</innerclass>
+    <innerclass refid="class_model_1_1_abstract_agent" prot="public">model::AbstractAgent</innerclass>
+    <innerclass refid="class_model_1_1_abstract_command" prot="public">model::AbstractCommand</innerclass>
+    <innerclass refid="class_model_1_1_abstract_percept" prot="public">model::AbstractPercept</innerclass>
+    <innerclass refid="class_model_1_1_abstract_sensor" prot="public">model::AbstractSensor</innerclass>
+    <innerclass refid="class_model_1_1_abstract_stimulus" prot="public">model::AbstractStimulus</innerclass>
+    <innerclass refid="class_model_1_1_bounded_vector" prot="public">model::BoundedVector</innerclass>
+    <innerclass refid="class_model_1_1_distance_percept" prot="public">model::DistancePercept</innerclass>
+    <innerclass refid="class_model_1_1_distance_stimulus" prot="public">model::DistanceStimulus</innerclass>
+    <innerclass refid="class_model_1_1_goal" prot="public">model::Goal</innerclass>
+    <innerclass refid="class_model_1_1_laser_distance_sensor" prot="public">model::LaserDistanceSensor</innerclass>
+    <innerclass refid="class_model_1_1_model_object" prot="public">model::ModelObject</innerclass>
+    <innerclass refid="class_model_1_1_robot" prot="public">model::Robot</innerclass>
+    <innerclass refid="class_model_1_1_robot_world" prot="public">model::RobotWorld</innerclass>
+    <innerclass refid="class_model_1_1_steering_actuator" prot="public">model::SteeringActuator</innerclass>
+    <innerclass refid="class_model_1_1_wall" prot="public">model::Wall</innerclass>
+    <innerclass refid="class_model_1_1_way_point" prot="public">model::WayPoint</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_abstract_agent_8hpp_1a22a97db314dd07671a56a526cb2bdd72" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_sensor" kindref="compound">AbstractSensor</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;AbstractSensor&gt; model::AbstractSensorPtr</definition>
+        <argsstring></argsstring>
+        <name>AbstractSensorPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="18" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_abstract_agent_8hpp_1a1947f8df39571eb46a03407c109fa550" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_stimulus" kindref="compound">AbstractStimulus</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;AbstractStimulus&gt; model::AbstractStimulusPtr</definition>
+        <argsstring></argsstring>
+        <name>AbstractStimulusPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_abstract_agent_8hpp_1aea5e8e3a0aff47464a340830fea9cbd7" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_actuator" kindref="compound">AbstractActuator</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;AbstractActuator&gt; model::AbstractActuatorPtr</definition>
+        <argsstring></argsstring>
+        <name>AbstractActuatorPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="24" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_abstract_agent_8hpp_1aff678da5bce2ce139b593ae2d28909fe" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_percept" kindref="compound">AbstractPercept</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;AbstractPercept&gt; model::AbstractPerceptPtr</definition>
+        <argsstring></argsstring>
+        <name>AbstractPerceptPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="27" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_abstract_agent_8hpp_1a00eed6b606994d3740d21956a1e2737f" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_abstract_agent" kindref="compound">AbstractAgent</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; AbstractAgent &gt; model::AbstractAgentPtr</definition>
+        <argsstring></argsstring>
+        <name>AbstractAgentPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" line="30" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractAgent.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_goal_8hpp_1a5e6050c016c3ff606861a2d57d6e0fbd" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_goal" kindref="compound">Goal</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; Goal &gt; model::GoalPtr</definition>
+        <argsstring></argsstring>
+        <name>GoalPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/Goal.hpp" line="15" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/Goal.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_laser_distance_sensor_8hpp_1a4fd1b6002d8fbf84011494deeea7227b" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_robot" kindref="compound">Robot</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; Robot &gt; model::RobotPtr</definition>
+        <argsstring></argsstring>
+        <name>RobotPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" line="57" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/LaserDistanceSensor.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_model_object_8hpp_1a097cdbf1f408bab08aa786d4494533f0" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_model_object" kindref="compound">ModelObject</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;ModelObject&gt; model::ModelObjectPtr</definition>
+        <argsstring></argsstring>
+        <name>ModelObjectPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/ModelObject.hpp" line="24" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/ModelObject.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_8hpp_1acca87a0066497ceb612cda7c97340f14" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_way_point" kindref="compound">WayPoint</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; WayPoint &gt; model::WayPointPtr</definition>
+        <argsstring></argsstring>
+        <name>WayPointPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp" line="15" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_8hpp_1ae0172732e3c438a16a828bcf44ae6c91" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_wall" kindref="compound">Wall</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt; Wall &gt; model::WallPtr</definition>
+        <argsstring></argsstring>
+        <name>WallPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp" line="21" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_robot_world_8hpp_1a7e6b3f1b0db04d9e75a26cf80033c369" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="class_model_1_1_robot_world" kindref="compound">RobotWorld</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;RobotWorld&gt; model::RobotWorldPtr</definition>
+        <argsstring></argsstring>
+        <name>RobotWorldPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp" line="24" column="1" bodyfile="/home/hqnders/Documents/han/osm/software/robotworld/src/RobotWorld.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/hqnders/Documents/han/osm/software/robotworld/src/AbstractActuator.cpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>
