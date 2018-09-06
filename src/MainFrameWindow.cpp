@@ -242,62 +242,20 @@ Panel *MainFrameWindow::initialiseButtonPanel() {
 
   GridBagSizer *sizer = new GridBagSizer();
 
-  sizer->Add(makeButton(panel,
-                        "Populate",
-                        [this](CommandEvent &anEvent) { this->OnPopulate(anEvent); }),
-             GBPosition(0, 0),
-             GBSpan(1, 1), EXPAND);
-  sizer->Add(makeButton(panel,
-                        "Unpopulate",
-                        [this](CommandEvent &anEvent) { this->OnUnpopulate(anEvent); }),
-             GBPosition(0, 1),
-             GBSpan(1, 1), EXPAND);
-    sizer->Add(makeButton(panel,
-                        "Calc route",
-                        [this](CommandEvent &anEvent) { this->OnCalcRoute(anEvent); }),
-             GBPosition(0, 2),
-             GBSpan(1, 1), EXPAND);
-
-  sizer->Add(makeButton(panel,
-                        "Start robot",
-                        [this](CommandEvent &anEvent) { this->OnStartRobot(anEvent); }),
-             GBPosition(1, 0),
-             GBSpan(1, 1), EXPAND);
-  sizer->Add(makeButton(panel,
-                        "Stop robot",
-                        [this](CommandEvent &anEvent) { this->OnStopRobot(anEvent); }),
-             GBPosition(1, 1),
-             GBSpan(1, 1), EXPAND);
-  sizer->Add(makeButton(panel,
-                        "Sync",
-                        [this](CommandEvent &anEvent) { this->OnSyncButton(anEvent); }),
-             GBPosition(1, 2),
-             GBSpan(1, 1), EXPAND);
-
-  sizer->Add(makeButton(panel,
-                        "Start listening",
-                        [this](CommandEvent &anEvent) { this->OnStartListening(anEvent); }),
-             GBPosition(2, 0),
-             GBSpan(1, 1), EXPAND);
-  sizer->Add(makeButton(panel,
-                        "Send message",
-                        [this](CommandEvent &anEvent) { this->OnSendMessage(anEvent); }),
-             GBPosition(2, 1),
-             GBSpan(1, 1), EXPAND);
-  sizer->Add(makeButton(panel,
-                        "Stop listening",
-                        [this](CommandEvent &anEvent) { this->OnStopListening(anEvent); }),
-             GBPosition(2, 2),
-             GBSpan(1, 1), EXPAND);
   //sizer->Add(makeButton(panel,
-                        //"Setup Slave",
-                        //[this](CommandEvent &anEvent) { this->OnPopulate(anEvent); this->OnStartListening(anEvent); }),
+                        //"Populate",
+                        //[this](CommandEvent &anEvent) { this->OnPopulate(anEvent); }),
              //GBPosition(0, 0),
              //GBSpan(1, 1), EXPAND);
   //sizer->Add(makeButton(panel,
-                        //"Setup Master",
-                        //[this](CommandEvent &anEvent) { this->OnPopulate(anEvent); this->OnStartListening(anEvent); this->OnSendMessage(anEvent); this->OnSyncButton(anEvent); }),
+                        //"Unpopulate",
+                        //[this](CommandEvent &anEvent) { this->OnUnpopulate(anEvent); }),
              //GBPosition(0, 1),
+             //GBSpan(1, 1), EXPAND);
+    //sizer->Add(makeButton(panel,
+                        //"Calc route",
+                        //[this](CommandEvent &anEvent) { this->OnCalcRoute(anEvent); }),
+             //GBPosition(0, 2),
              //GBSpan(1, 1), EXPAND);
 
   //sizer->Add(makeButton(panel,
@@ -311,10 +269,66 @@ Panel *MainFrameWindow::initialiseButtonPanel() {
              //GBPosition(1, 1),
              //GBSpan(1, 1), EXPAND);
   //sizer->Add(makeButton(panel,
-                        //"Quit",
-                        //[this](CommandEvent &anEvent) { this->OnStopRobot(anEvent); this->OnStopListening(anEvent); this->OnUnpopulate(anEvent); }),
+                        //"Sync",
+                        //[this](CommandEvent &anEvent) { this->OnSyncButton(anEvent); }),
+             //GBPosition(1, 2),
+             //GBSpan(1, 1), EXPAND);
+
+  //sizer->Add(makeButton(panel,
+                        //"Start listening",
+                        //[this](CommandEvent &anEvent) { this->OnStartListening(anEvent); }),
              //GBPosition(2, 0),
              //GBSpan(1, 1), EXPAND);
+  //sizer->Add(makeButton(panel,
+                        //"Send message",
+                        //[this](CommandEvent &anEvent) { this->OnSendMessage(anEvent); }),
+             //GBPosition(2, 1),
+             //GBSpan(1, 1), EXPAND);
+  //sizer->Add(makeButton(panel,
+                        //"Stop listening",
+                        //[this](CommandEvent &anEvent) { this->OnStopListening(anEvent); }),
+             //GBPosition(2, 2),
+             //GBSpan(1, 1), EXPAND);
+  sizer->Add(makeButton(panel,
+                        "Setup Slave",
+                        [this](CommandEvent &anEvent) { this->OnPopulate(anEvent); this->OnStartListening(anEvent); }),
+             GBPosition(0, 0),
+             GBSpan(1, 1), EXPAND);
+  sizer->Add(makeButton(panel,
+                        "Setup Master",
+                        [this](CommandEvent &anEvent) { this->OnPopulate(anEvent); this->OnStartListening(anEvent); this->OnSendMessage(anEvent); this->OnSyncButton(anEvent); }),
+             GBPosition(0, 1),
+             GBSpan(1, 1), EXPAND);
+    sizer->Add(makeButton(panel,
+                        "Sync slave",
+                        [this](CommandEvent &anEvent) { this->OnSendMessage(anEvent); this->OnSyncButton(anEvent); }),
+             GBPosition(0, 2),
+             GBSpan(1, 1), EXPAND);
+  sizer->Add(makeButton(panel,
+                        "Calc route",
+                        [this](CommandEvent &anEvent) { this->OnCalcRoute(anEvent); }),
+             GBPosition(1, 0),
+             GBSpan(1, 1), EXPAND);
+  sizer->Add(makeButton(panel,
+                        "Start robot",
+                        [this](CommandEvent &anEvent) { this->OnStartRobot(anEvent); }),
+             GBPosition(1, 1),
+             GBSpan(1, 1), EXPAND);
+  sizer->Add(makeButton(panel,
+                        "Stop robot",
+                        [this](CommandEvent &anEvent) { this->OnStopRobot(anEvent); }),
+             GBPosition(2, 0),
+             GBSpan(1, 1), EXPAND);
+    sizer->Add(makeButton(panel,
+                        "Stop listening",
+                        [this](CommandEvent &anEvent) { this->OnStopListening(anEvent); }),
+             GBPosition(2, 1),
+             GBSpan(1, 1), EXPAND);
+    sizer->Add(makeButton(panel,
+                        "Unpopulate",
+                        [this](CommandEvent &anEvent) { this->OnUnpopulate(anEvent); }),
+             GBPosition(2, 2),
+             GBSpan(1, 1), EXPAND);
 
   panel->SetSizerAndFit(sizer);
 
