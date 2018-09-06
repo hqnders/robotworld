@@ -149,8 +149,7 @@ void Robot::startCommunicating() {
     }
 
     // Attach it to the communication system
-    Messaging::CommunicationService::getCommunicationService().runRequestHandler(toPtr<Robot>(),
-                                                                                 std::stoi(localPort));
+    Messaging::CommunicationService::getCommunicationService().runRequestHandler(toPtr<Robot>(), std::stoi(localPort));
   }
 }
 
@@ -275,7 +274,11 @@ void Robot::handleRequest(Messaging::Message &aMessage) {
 
     case startRobotRequest: {
       onStartRobotRequest(aMessage);
-      Application::Logger::log(std::string("request"));
+      break;
+    }
+
+    case posUpdateRequest: {
+      onPosUpdateRequest(aMessage);
       break;
     }
 
@@ -342,6 +345,21 @@ void Robot::onStartRobotRequest(Messaging::Message &aMessage) {
   aMessage.setBody("");
 }
 
+void Robot::onPosUpdateRequest(Messaging::Message &aMessage) {
+  RobotPtr robob = RobotWorld::getRobotWorld().getRobot("Robob");
+  if(robob){
+    std::vector<std::string> body;
+    splitStringToStringVec(aMessage.getBody(), ',', body);
+
+
+    Point newPos(stoi(body.at(0)), stoi(body.at(1)));
+    robob->setPosition(newPos);
+    robob->notifyObservers();
+    notifyObservers();
+    std::cout << "Setting robot pos: " + std::to_string(robob->getPosition().x) + "," + std::to_string(robob->getPosition().y) << std::endl;
+  }
+}
+
 void Robot::handleResponse(const Messaging::Message &aMessage) {
   switch (aMessage.getMessageType()) {
     case EchoResponse: {
@@ -356,7 +374,11 @@ void Robot::handleResponse(const Messaging::Message &aMessage) {
 
     case startRobotResponse: {
       onStartRobotResponse(aMessage);
-      Application::Logger::log(std::string("response"));
+      break;
+    }
+
+    case posUpdateResponse: {
+      onPosUpdateResponse(aMessage);
       break;
     }
 
@@ -376,7 +398,8 @@ void Robot::onEchoResponse(const Messaging::Message &aMessage) {
 void Robot::onSynchResponse(const Messaging::Message &aMessage) {
   std::string body = aMessage.getBody();
   std::vector<std::string> objects;
-  Robot::splitStringToStringVec(body, ';', objects);
+  splitStringToStringVec(body, ';', objects);
+
   if (!objects.empty()) {
     for (std::string object : objects) {
       if (!object.empty()) {
@@ -418,11 +441,15 @@ void Robot::onSynchResponse(const Messaging::Message &aMessage) {
 
 void Robot::onStartRobotResponse(const Messaging::Message &aMessage) {
 
-  auto robob = RobotWorld::getRobotWorld().getRobot("Robob");
+  auto robot = RobotWorld::getRobotWorld().getRobot("Robot");
 
-  robob->startActing();
-  robob->notifyObservers();
+  robot->startActing();
+  robot->notifyObservers();
   notifyObservers();
+}
+
+void Robot::onPosUpdateResponse(const Messaging::Message &aMessage) {
+  std::cout << "Not setting robot pos: " + aMessage.getBody() << std::endl;
 }
 
 std::string Robot::asString() const {
@@ -459,7 +486,7 @@ void Robot::drive() {
 
     // Keep the robot on screen
     while (position.x > 0 && position.x < 500 && position.y > 0 && position.y < 500 && pathPoint < path.size()) {
-      // ?
+      // Destination vertex
       const PathAlgorithm::Vertex &vertex = path[pathPoint += speed];
 
       // Decide the front
@@ -468,6 +495,15 @@ void Robot::drive() {
       // Move the robot
       position.x = vertex.x;
       position.y = vertex.y;
+
+      if(client) {
+        Messaging::Message message(posUpdateRequest);
+
+        std::string body = std::to_string(position.x) + "," + std::to_string(position.y);
+
+        message.setBody(body);
+        getClient()->dispatchMessage(message);
+      }
 
       // Check if the robot reached it's goal
       if (arrived(goal) || collision()) {

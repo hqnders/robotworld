@@ -326,8 +326,8 @@ void MainFrameWindow::OnStartRobot(CommandEvent & UNUSEDPARAM(anEvent)) {
   Logger::log("Attempting to start Robot...");
   model::RobotPtr robot = model::RobotWorld::getRobotWorld().getRobot("Robot");
   if (robot && !robot->isActing()) {
-    Messaging::Message message(model::Robot::startRobotRequest);
-    robot->getClient()->dispatchMessage(message);
+//    Messaging::Message message(model::Robot::startRobotRequest);
+//    robot->getClient()->dispatchMessage(message);
     robot->startActing();
   }
 }

@@ -48,7 +48,7 @@ class Robot : public AbstractAgent,
     return size;
   };
 
-  Point getPosition() const {
+  Point getPosition() {
     return position;
   }
 
@@ -215,6 +215,8 @@ class Robot : public AbstractAgent,
   void onSynchResponse(const Messaging::Message &aMessage);
   void onStartRobotRequest(Messaging::Message &aMessage);
   void onStartRobotResponse(const Messaging::Message &aMessage);
+  void onPosUpdateRequest(Messaging::Message &aMessage);
+  void onPosUpdateResponse(const Messaging::Message &aMessage);
   //@}
 
   virtual std::string asString() const;
@@ -231,7 +233,9 @@ class Robot : public AbstractAgent,
     EchoRequest,
     EchoResponse,
     startRobotRequest,
-    startRobotResponse
+    startRobotResponse,
+    posUpdateRequest,
+    posUpdateResponse
   };
 
   /**
