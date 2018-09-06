@@ -1,0 +1,7 @@
+- zet stappen van de knoppen op een rijtje
+- inladen van het speelveld vanaf cli?
+- bij sync alle objecten naar bijde vensters
+- op bijde vensters starten
+- wachten op generatie van bijde paden tot robotworld start
+- bug oplossen wanneer goal wordt geraakt niet naar 0,0
+- zonder andere client maakt nogsteeds "robob"

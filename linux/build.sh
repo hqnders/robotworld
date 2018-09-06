@@ -1,4 +1,4 @@
 #!/bin/bash
-#autoreconf -f -i ../
-#../configure
+autoreconf -f -i ../
+../configure
 make

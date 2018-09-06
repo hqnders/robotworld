@@ -127,7 +127,7 @@ void Robot::startDriving() {
   driving = true;
 
   // Calculate the fastest route towards the goal
-  calculateRoute(goalToFind);
+  //calculateRoute(goalToFind);
 
   drive();
 }
